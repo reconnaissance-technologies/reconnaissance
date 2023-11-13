@@ -14,8 +14,9 @@ export default {
                 'rt-white': '#FFFFFF'
             },
             fontFamily: {
-                sans: ['Graphik', 'sans-serif'],
-                serif: ['Merriweather', 'serif'],
+                sans: ['Nunito', 'sans-serif'],
+                display: ['Nunito', 'sans-serif'],
+                body: ['Nunito', 'sans-serif']
             },
             // backgroundImage: {
             //   'award-leaf': 'url("/assets/img/awrd-leaf.png")',
