@@ -10,6 +10,10 @@ class PagesController extends Controller
         return view('welcome');
     }
 
+    public function our_services() {
+        return view('our-services');
+    }
+
     public function contact_us() {
         return view('contact');
     }
