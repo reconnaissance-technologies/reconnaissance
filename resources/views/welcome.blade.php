@@ -592,8 +592,8 @@
                             </a>
                         </div>
                     </div>
-                    <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-blue-500">
-                        <div class="py-3 p-6 flex rounded-2xl text-white bg-blue-500 lg:w-20 lg:h-20">
+                    <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-green-500">
+                        <div class="py-3 p-6 flex rounded-2xl text-white bg-green-500 lg:w-20 lg:h-20">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
                             </svg>
@@ -603,7 +603,7 @@
                             Hidden Brains expertise in frontend development ensures quick time to market and user-driven outcomes. We use modern frameworks to enable faster development of elements, powerful features, responsive websites, mobility and layouts.
                         </p>
                         <div class="flex justify-end hover:animate-bounce">
-                            <a href="" class="text-blue-500">
+                            <a href="" class="text-green-500">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                                 </svg>
@@ -630,59 +630,473 @@
 
                 <div class="py-6 flex">
                     <div>
-                        <ul class="flex-column space-y space-y-4 text-md font-semibold text-black dark:text-gray-400 md:me-4 mb-4 md:mb-0 w-48" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
-                            <li class="p-4 text-rt-primary border-r-2 border-rt-primary rounded-t-lg active dark:text-rt-primary dark:border-rt-primary" role="presentation">
-                                <button class="inline-block " id="fe-tab" data-tabs-target="#fe" type="button" role="tab" aria-controls="fe" aria-selected="false">
-                                    Frontend
-                                </button>
-                            </li>
-                            <li class="border-r-2 border-transparent hover:text-rt-primary hover:border-rt-primary dark:hover:text-rt-primary" role="presentation">
-                                <button class="inline-block p-4" role="tab" data-tabs-target="#be">
-                                    Backend
-                                </button>
-                            </li>
-                            <li class="p-4 border-r-2 border-transparent hover:text-rt-primary hover:border-rt-primary dark:hover:text-rt-primary" role="presentation">
-                                <button class="inline-block">
-                                    Mobile
-                                </button>
-                            </li>
-                            <li class="p-4 border-r-2 border-transparent hover:text-rt-primary hover:border-rt-primary dark:hover:text-rt-primary" role="presentation">
-                                <button class="inline-block">
-                                    Database
-                                </button>
-                            </li>
-                            <li class="p-4 border-r-2 border-transparent hover:text-rt-primary hover:border-rt-primary dark:hover:text-rt-primary" role="presentation">
-                                <button class="inline-block">
-                                    Cloud / Devops
-                                </button>
-                            </li>
-                            <li class="p-4 border-r-2 border-transparent hover:text-rt-primary hover:border-rt-primary dark:hover:text-rt-primary" role="presentation">
-                                <button class="inline-block">
-                                    Hi-Tech
-                                </button>
-                            </li>
-                            <li class="p-4 border-r-2 border-transparent hover:text-rt-primary hover:border-rt-primary dark:hover:text-rt-primary" role="presentation">
-                                <button class="inline-block">
+                        <ul class="flex-column text-md font-semibold text-black dark:text-gray-400 md:me-4 mb-4 md:mb-0 w-48" id="technology-stack-tab" role="tablist">
+                            <li id="ai-ml-tab"  class=" " role="presentation">
+                                <button class="inline-block p-4 w-full text-left" type="button" role="tab" aria-controls="ai-ml-tab-content" aria-selected="false">
                                     AI / ML
                                 </button>
                             </li>
-                            <li class="p-4 border-r-2 border-transparent hover:text-rt-primary hover:border-rt-primary dark:hover:text-rt-primary" role="presentation">
-                                <button class="inline-block">
+                            <li id="backend-tab" class=" " role="presentation">
+                                <button class="inline-block p-4 w-full text-left" type="button" role="tab" aria-controls="backend-tab-content" aria-selected="false">
+                                    Backend
+                                </button>
+                            </li>
+                            <li id="cloud-devops-tab" class=" " role="presentation">
+                                <button class="inline-block p-4 w-full text-left" type="button" role="tab" aria-controls="cloud-devops-tab-content" aria-selected="false">
+                                    Cloud / Devops
+                                </button>
+                            </li>
+                            <li id="cms-ecommerce-tab" class=" " role="presentation">
+                                <button class="inline-block p-4 w-full text-left" type="button" role="tab" aria-controls="cms-ecommerce-tab-content" aria-selected="false">
+                                    CMS / Ecommerce
+                                </button>
+                            </li>
+                            <li id="database-tab" class=" " role="presentation">
+                                <button class="inline-block p-4 w-full text-left" type="button" role="tab" aria-controls="database-tab-content" aria-selected="false">
+                                    Database
+                                </button>
+                            </li>
+                            <li id="frameworks-tab" class=" " role="presentation">
+                                <button class="inline-block p-4 w-full text-left" type="button" role="tab" aria-controls="frameworks-tab-content" aria-selected="false">
                                     Frameworks
                                 </button>
                             </li>
-                            <li class="p-4 border-r-2 border-transparent rounded-b-lg hover:text-rt-primary hover:border-rt-primary dark:hover:text-rt-primary" role="presentation">
-                                <button class="inline-block">
-                                    CMS / Ecommerce
+                            <li id="frontend-tab" class=" " role="presentation">
+                                <button class="inline-block p-4 w-full text-left" type="button" role="tab" aria-controls="frontend-tab-content" aria-selected="false">
+                                    Frontend
+                                </button>
+                            </li>
+                            <li id="hi-tech-tab" class=" " role="presentation">
+                                <button class="inline-block p-4 w-full text-left" type="button" role="tab" aria-controls="hi-tech-tab-content" aria-selected="false">
+                                    Hi-Tech
+                                </button>
+                            </li>
+                            <li id="mobile-tab"  class=" " role="presentation">
+                                <button class="inline-block p-4 w-full text-left" type="button" role="tab" aria-controls="mobile-tab-content" aria-selected="false">
+                                    Mobile
+                                </button>
+                            </li>
+                            <li id="qa-tab" class=" " role="presentation">
+                                <button class="inline-block p-4 w-full text-left" type="button" role="tab" aria-controls="qa-tab-content" aria-selected="false">
+                                    Quality Assurance
                                 </button>
                             </li>
                         </ul>
                     </div>
-                    <div class="p-6 bg-gray-50 text-medium text-gray-500 dark:text-gray-400 dark:bg-gray-800 rounded-lg w-full">
-                        <div>
-                            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Frontend Technologies</h3>
-                            <p class="mb-2">This is some placeholder content the Profile tab's associated content, clicking another tab will toggle the visibility of this one for the next.</p>
-                            <p>The tab JavaScript swaps classes to control the content visibility and styling.</p> 
+                    <div id="technology-stack-tab-content" class="p-6 bg-gray-50 text-medium text-gray-500 dark:text-gray-400 dark:bg-gray-800 rounded-lg w-full">
+                        <div class="hidden" id="ai-ml-tab-content" role="tabpanel" aria-labelledby="ai-ml-tab">
+                            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">AI / ML Technologies We Use</h3>
+                            <div class="lg:w-full flex justify-between mb-12">
+                                <div class="text-center dark:text-white font-semibold w-24" title="Chatbot">
+                                    <img src="{{ asset('assets/img/technologies/chatbot.svg') }}" class="object-contain" alt="Chatbot Logo">
+                                    <p>Chatbot</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="ChatGPT">
+                                    <img src="{{ asset('assets/img/technologies/chatgpt.png') }}" class="object-contain" alt="ChatGPT Logo">
+                                    <p>ChatGPT</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Computer Vision">
+                                    <img src="{{ asset('assets/img/technologies/computer-vision.png') }}" class="object-contain" alt="Computer Vision Logo">
+                                    <p>Computer Vision</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Convolutional Neural Network">
+                                    <img src="{{ asset('assets/img/technologies/convolutional-neural-network.png') }}" class="object-contain" alt="Convolutional Neural Network Logo">
+                                    <p>Convolutional Neural Network</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Deep Learning">
+                                    <img src="{{ asset('assets/img/technologies/deep-learning.png') }}" class="object-contain" alt="Deep Learning Logo">
+                                    <p>Deep Learning</p>
+                                </div>
+                            </div>
+                            <div class="lg:w-full flex justify-between mb-12">
+                                <div class="text-center dark:text-white font-semibold w-24" title="Generative AI">
+                                    <img src="{{ asset('assets/img/technologies/generative-ai.svg') }}" class="object-contain" alt="Generative AI Logo">
+                                    <p>Generative AI</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Linear Regression">
+                                    <img src="{{ asset('assets/img/technologies/linear-regression.svg') }}" class="object-contain" alt="Linear Regression Logo">
+                                    <p>Linear Regression</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Logistic Regression">
+                                    <img src="{{ asset('assets/img/technologies/logistic-regression.png') }}" class="object-contain" alt="Logistic Regression Logo">
+                                    <p>Logistic Regression</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="NLP">
+                                    <img src="{{ asset('assets/img/technologies/nlp.png') }}" class="object-contain" alt="NLP Logo">
+                                    <p>NLP</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden" id="backend-tab-content" role="tabpanel" aria-labelledby="backend-tab">
+                            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Backend Technologies We Use</h3>
+                            <div class="lg:w-full flex justify-between mb-12">
+                                <div class="text-center dark:text-white font-semibold w-24" title=".NET">
+                                    <img src="{{ asset('assets/img/technologies/dot-net.svg') }}" class="object-contain" alt=".NET Logo">
+                                    <p>.NET</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title=".NET Core">
+                                    <img src="{{ asset('assets/img/technologies/dot-net-core.png') }}" class="object-contain" alt=".NET Core Logo">
+                                    <p>.NET Core</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Java">
+                                    <img src="{{ asset('assets/img/technologies/java.png') }}" class="object-contain" alt="Java Logo">
+                                    <p>Java</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="NodeJs">
+                                    <img src="{{ asset('assets/img/technologies/nodejs.png') }}" class="object-contain" alt="NodeJs Logo">
+                                    <p>NodeJs</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="PHP">
+                                    <img src="{{ asset('assets/img/technologies/php.png') }}" class="object-contain" alt="PHP Logo">
+                                    <p>PHP</p>
+                                </div>
+                            </div>
+                            <div class="lg:w-full flex justify-between mb-12">
+                                <div class="text-center dark:text-white font-semibold w-24" title="Python">
+                                    <img src="{{ asset('assets/img/technologies/python.png') }}" class="object-contain" alt="Python Logo">
+                                    <p>Python</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Ruby">
+                                    <img src="{{ asset('assets/img/technologies/ruby.png') }}" class="object-contain" alt="Ruby Logo">
+                                    <p>Ruby</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden" id="cloud-devops-tab-content" role="tabpanel" aria-labelledby="cloud-devops-tab">
+                            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Cloud / Devops Technologies We Use</h3>
+                            <div class="lg:w-full flex justify-between mb-12">
+                                <div class="text-center dark:text-white font-semibold w-24" title="AWS">
+                                    <img src="{{ asset('assets/img/technologies/aws.png') }}" class="object-contain" alt="AWS Logo">
+                                    <p>AWS</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Azure">
+                                    <img src="{{ asset('assets/img/technologies/azure.png') }}" class="object-contain" alt="Azure Logo">
+                                    <p>Azure</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Docker">
+                                    <img src="{{ asset('assets/img/technologies/docker.png') }}" class="object-contain" alt="Docker Logo">
+                                    <p>Docker</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Google Cloud">
+                                    <img src="{{ asset('assets/img/technologies/google-cloud.png') }}" class="object-contain" alt="Google Cloud Logo">
+                                    <p>Google Cloud</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Jenkins">
+                                    <img src="{{ asset('assets/img/technologies/jenkins.png') }}" class="object-contain" alt="Jenkins Logo">
+                                    <p>Jenkins</p>
+                                </div>
+                            </div>
+                            <div class="lg:w-full flex justify-between mb-12">
+                                <div class="text-center dark:text-white font-semibold w-24" title="Kubernetes">
+                                    <img src="{{ asset('assets/img/technologies/kubernetes.svg') }}" class="object-contain" alt="Kubernetes Logo">
+                                    <p>Kubernetes</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Maven">
+                                    <img src="{{ asset('assets/img/technologies/maven.png') }}" class="object-contain" alt="Maven Logo">
+                                    <p>Maven</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Openshift">
+                                    <img src="{{ asset('assets/img/technologies/openshift.png') }}" class="object-contain" alt="Openshift Logo">
+                                    <p>Openshift</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Oracle Cloud">
+                                    <img src="{{ asset('assets/img/technologies/oracle-cloud.png') }}" class="object-contain" alt="Oracle Cloud Logo">
+                                    <p>Oracle Cloud</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden" id="cms-ecommerce-tab-content" role="tabpanel" aria-labelledby="cms-ecommerce-tab">
+                            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">CMS / Ecommerce Technologies We Use</h3>
+                            <div class="lg:w-full flex justify-between mb-12">
+                                <div class="text-center dark:text-white font-semibold w-24" title="Drupal">
+                                    <img src="{{ asset('assets/img/technologies/drupal.png') }}" class="object-contain" alt="Drupal Logo">
+                                    <p>Drupal</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Magento">
+                                    <img src="{{ asset('assets/img/technologies/magento-logo.png') }}" class="object-contain" alt="Magento Logo">
+                                    <p>Magento</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Shopify">
+                                    <img src="{{ asset('assets/img/technologies/shopify.png') }}" class="object-contain" alt="Shopify Logo">
+                                    <p>Shopify</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Sitecore">
+                                    <img src="{{ asset('assets/img/technologies/sitecore.webp') }}" class="object-contain" alt="Sitecore Logo">
+                                    <p>Sitecore</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Strapi">
+                                    <img src="{{ asset('assets/img/technologies/strapi.png') }}" class="object-contain" alt="Strapi Logo">
+                                    <p>Strapi</p>
+                                </div>
+                            </div>
+                            <div class="lg:w-full flex justify-between mb-12">
+                                <div class="text-center dark:text-white font-semibold w-24" title="WooCommerce">
+                                    <img src="{{ asset('assets/img/technologies/woocommerce.png') }}" class="object-contain" alt="WooCommerce Logo">
+                                    <p>WooCommerce</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Wordpress">
+                                    <img src="{{ asset('assets/img/technologies/wordpress.png') }}" class="object-contain" alt="Wordpress Logo">
+                                    <p>Wordpress</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden" id="database-tab-content" role="tabpanel" aria-labelledby="database-tab">
+                            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Database Technologies We Use</h3>
+                            <div class="lg:w-full flex justify-between mb-12">
+                                <div class="text-center dark:text-white font-semibold w-24" title="Dynamo DB">
+                                    <img src="{{ asset('assets/img/technologies/dynamodb.png') }}" class="object-contain" alt="Dynamo DB Logo">
+                                    <p>Dynamo DB</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="IBM DB2">
+                                    <img src="{{ asset('assets/img/technologies/ibm-db2.png') }}" class="object-contain" alt="IBM DB2 Logo">
+                                    <p>IBM DB2</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Maria DB">
+                                    <img src="{{ asset('assets/img/technologies/mariadb.png') }}" class="object-contain" alt="Maria DB Logo">
+                                    <p>Maria DB</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Mongo DB">
+                                    <img src="{{ asset('assets/img/technologies/mongodb.png') }}" class="object-contain" alt="Mongo DB Logo">
+                                    <p>Mongo DB</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="MySQL">
+                                    <img src="{{ asset('assets/img/technologies/mysql.png') }}" class="object-contain" alt="MySQL Logo">
+                                    <p>MySQL</p>
+                                </div>
+                            </div>
+                            <div class="lg:w-full flex justify-between mb-12">
+                                <div class="text-center dark:text-white font-semibold w-24" title="Oracle DB">
+                                    <img src="{{ asset('assets/img/technologies/oracle-db.png') }}" class="object-contain" alt="Oracle DB Logo">
+                                    <p>Oracle DB</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="PostgreSQL">
+                                    <img src="{{ asset('assets/img/technologies/postgresql.png') }}" class="object-contain" alt="PostgreSQL Logo">
+                                    <p>PostgreSQL</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="SQLite">
+                                    <img src="{{ asset('assets/img/technologies/sqlite.png') }}" class="object-contain" alt="SQLite Logo">
+                                    <p>SQLite</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Sybase">
+                                    <img src="{{ asset('assets/img/technologies/sybase.png') }}" class="object-contain" alt="Sybase Logo">
+                                    <p>Sybase</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden" id="frameworks-tab-content" role="tabpanel" aria-labelledby="frameworks-tab">
+                            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Frameworks Technologies We use</h3>
+                            <div class="lg:w-full flex justify-between mb-12">
+                                <div class="text-center dark:text-white font-semibold w-24" title="Codeigniter">
+                                    <img src="{{ asset('assets/img/technologies/codeigniter.png') }}" class="object-contain" alt="Codeigniter Logo">
+                                    <p>Codeigniter</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Django">
+                                    <img src="{{ asset('assets/img/technologies/django.webp') }}" class="object-contain" alt="Django Logo">
+                                    <p>Django</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title=".NET Core">
+                                    <img src="{{ asset('assets/img/technologies/dot-net-core.png') }}" class="object-contain" alt=".NET Core Logo">
+                                    <p>.NET Core</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title=".NET MVC">
+                                    <img src="{{ asset('assets/img/technologies/dot-net-mvc.png') }}" class="object-contain" alt=".NET MVC Logo">
+                                    <p>.NET MVC</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Express Js">
+                                    <img src="{{ asset('assets/img/technologies/expressjs.png') }}" class="object-contain" alt="Express Js Logo">
+                                    <p>Express Js</p>
+                                </div>
+                            </div>
+                            <div class="lg:w-full flex justify-between mb-12">
+                                <div class="text-center dark:text-white font-semibold w-24" title="Flask">
+                                    <img src="{{ asset('assets/img/technologies/flask.svg') }}" class="object-contain" alt="Flask Logo">
+                                    <p>Flask</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Hibernate">
+                                    <img src="{{ asset('assets/img/technologies/hibernate.svg') }}" class="object-contain" alt="Hibernate Logo">
+                                    <p>Hibernate</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Laravel">
+                                    <img src="{{ asset('assets/img/technologies/laravel.png') }}" class="object-contain" alt="Laravel Logo">
+                                    <p>Laravel</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Spring Boot">
+                                    <img src="{{ asset('assets/img/technologies/spring-boot.png') }}" class="object-contain" alt="Spring Boot Logo">
+                                    <p>Spring Boot</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Spring Cloud">
+                                    <img src="{{ asset('assets/img/technologies/spring-cloud.png') }}" class="object-contain" alt="Spring Cloud Logo">
+                                    <p>Spring Cloud</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden" id="frontend-tab-content" role="tabpanel" aria-labelledby="frontend-tab">
+                            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Frontend Technologies We Use</h3>
+                            <div class="lg:w-full flex justify-between mb-12">
+                                <div class="text-center dark:text-white font-semibold w-24" title="Angular">
+                                    <img src="{{ asset('assets/img/technologies/angular.png') }}" class="object-contain" alt="Angular Logo">
+                                    <p>Angular</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Backbone.Js">
+                                    <img src="{{ asset('assets/img/technologies/backbonejs.png') }}" class="object-contain" alt="Backbone.Js Logo">
+                                    <p>Backbone.Js</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Bootstrap">
+                                    <img src="{{ asset('assets/img/technologies/bootstrap.png') }}" class="object-contain" alt="Bootstrap Logo">
+                                    <p>Bootstrap</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="CSS3">
+                                    <img src="{{ asset('assets/img/technologies/css3.png') }}" class="object-contain" alt="CSS3 Logo">
+                                    <p>CSS3</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="D3 Js">
+                                    <img src="{{ asset('assets/img/technologies/d3js.png') }}" class="object-contain" alt="D3 Js Logo">
+                                    <p>D3 Js</p>
+                                </div>
+                            </div>
+                            <div class="lg:w-full flex justify-between mb-12">
+                                <div class="text-center dark:text-white font-semibold w-24" title="HTML5">
+                                    <img src="{{ asset('assets/img/technologies/html5.png') }}" class="object-contain" alt="HTML5 Logo">
+                                    <p>HTML5</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Javascripts">
+                                    <img src="{{ asset('assets/img/technologies/javascript.png') }}" class="object-contain" alt="Javascript Logo">
+                                    <p>Javascript</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Jquery">
+                                    <img src="{{ asset('assets/img/technologies/jquery.gif') }}" class="object-contain" alt="Jquery Logo">
+                                    <p>Jquery</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Knockout Js">
+                                    <img src="{{ asset('assets/img/technologies/knockoutjs.png') }}" class="object-contain" alt="KnockoutJs Logo">
+                                    <p>KnockoutJs</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Next Js">
+                                    <img src="{{ asset('assets/img/technologies/nextjs.png') }}" class="object-contain" alt="D3 Js Logo">
+                                    <p>NextJs</p>
+                                </div>
+                            </div>
+                            <div class="lg:w-full flex justify-between mb-12">
+                                <div class="text-center dark:text-white font-semibold w-24" title="NuxtJs">
+                                    <img src="{{ asset('assets/img/technologies/nuxtjs.svg') }}" class="object-contain" alt="NuxtJs Logo">
+                                    <p>NuxtJs</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="React">
+                                    <img src="{{ asset('assets/img/technologies/reactjs.png') }}" class="object-contain" alt="React Logo">
+                                    <p>React</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Tailwind CSS">
+                                    <img src="{{ asset('assets/img/technologies/tailwind-css.png') }}" class="object-contain" alt="Tailwind CSS Logo">
+                                    <p>Tailwind CSS</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Typescript">
+                                    <img src="{{ asset('assets/img/technologies/typescript.webp') }}" class="object-contain" alt="Typescript Logo">
+                                    <p>Typescript</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="VueJs">
+                                    <img src="{{ asset('assets/img/technologies/vuejs.png') }}" class="object-contain" alt="VueJs Logo">
+                                    <p>VueJs</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden" id="hi-tech-tab-content" role="tabpanel" aria-labelledby="hi-tech-tab">
+                            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Hi-Tech Technologies We Use</h3>
+                            <div class="lg:w-full flex justify-between mb-12">
+                                <div class="text-center dark:text-white font-semibold w-24" title="AR / VR">
+                                    <img src="{{ asset('assets/img/technologies/ar-vr.svg') }}" class="object-contain" alt="AR / VR Logo">
+                                    <p>AR / VR</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Blockchain">
+                                    <img src="{{ asset('assets/img/technologies/blockchain.png') }}" class="object-contain" alt="Blockchain Logo">
+                                    <p>Blockchain</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Elastic Search">
+                                    <img src="{{ asset('assets/img/technologies/elasticsearch.png') }}" class="object-contain" alt="Elastic Search Logo">
+                                    <p>Elastic Search</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Event-driven Architecture">
+                                    <img src="{{ asset('assets/img/technologies/eventdriven.svg') }}" class="object-contain" alt="Event-driven Architecture Logo">
+                                    <p>Event-driven Architecture</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Kafka">
+                                    <img src="{{ asset('assets/img/technologies/kafka.png') }}" class="object-contain" alt="Kafka Logo">
+                                    <p>Kafka</p>
+                                </div>
+                            </div>
+                            <div class="lg:w-full flex justify-between mb-12">
+                                <div class="text-center dark:text-white font-semibold w-24" title="Metaverse">
+                                    <img src="{{ asset('assets/img/technologies/metaverse.png') }}" class="object-contain" alt="Meta Logo">
+                                    <p>Metaverse</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Microfrontend Architecture">
+                                    <img src="{{ asset('assets/img/technologies/microfrontend.png') }}" class="object-contain" alt="Microfrontend Architecture Logo">
+                                    <p>Microfrontend Architecture</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Microservices Architecture">
+                                    <img src="{{ asset('assets/img/technologies/microservices.png') }}" class="object-contain" alt="Microservices Architecture Logo">
+                                    <p>Microservices Architecture</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="PWA">
+                                    <img src="{{ asset('assets/img/technologies/pwa.png') }}" class="object-contain" alt="PWA Logo">
+                                    <p>PWA</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Rabbit MQ">
+                                    <img src="{{ asset('assets/img/technologies/rabbitmq.png') }}" class="object-contain" alt="Rabbit MQ Logo">
+                                    <p>Rabbit MQ</p>
+                                </div>
+                            </div>
+                            <div class="lg:w-full flex justify-between mb-12">
+                                <div class="text-center dark:text-white font-semibold w-24" title="Serverless Architecture">
+                                    <img src="{{ asset('assets/img/technologies/serverless.png') }}" class="object-contain" alt="Serverless Architecture Logo">
+                                    <p>Serverless Architecture</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden" id="mobile-tab-content" role="tabpanel" aria-labelledby="mobile-tab">
+                            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Mobile Technologies We Use</h3>
+                            <div class="lg:w-full flex justify-between mb-12">
+                                <div class="text-center dark:text-white font-semibold w-24" title="Flutter">
+                                    <img src="{{ asset('assets/img/technologies/flutter.png') }}" class="object-contain" alt="Flutter Logo">
+                                    <p>Flutter</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Kotlin">
+                                    <img src="{{ asset('assets/img/technologies/kotlin.png') }}" class="object-contain" alt="Kotlin Logo">
+                                    <p>Kotlin</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="React Native">
+                                    <img src="{{ asset('assets/img/technologies/react-native.png') }}" class="object-contain" alt="React Native Logo">
+                                    <p>React Native</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Swift">
+                                    <img src="{{ asset('assets/img/technologies/swift.png') }}" class="object-contain" alt="Swift Logo">
+                                    <p>Swift</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Unity 3D">
+                                    <img src="{{ asset('assets/img/technologies/unity-3d.png') }}" class="object-contain" alt="Unity 3D Logo">
+                                    <p>Unity 3D</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden" id="qa-tab-content" role="tabpanel" aria-labelledby="qa-tab">
+                            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Quality Assurance Technologies We Use</h3>
+                            <div class="lg:w-full flex justify-between mb-12">
+                                <div class="text-center dark:text-white font-semibold w-24" title="Circle CI">
+                                    <img src="{{ asset('assets/img/technologies/circle-ci.png') }}" class="object-contain" alt="Circle CI Logo">
+                                    <p>Circle CI</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Gradle">
+                                    <img src="{{ asset('assets/img/technologies/gradle.png') }}" class="object-contain" alt="Gradle Logo">
+                                    <p>Gradle</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Maven">
+                                    <img src="{{ asset('assets/img/technologies/maven.png') }}" class="object-contain" alt="Maven Logo">
+                                    <p>Maven</p>
+                                </div>
+                                <div class="text-center dark:text-white font-semibold w-24" title="Selenuim">
+                                    <img src="{{ asset('assets/img/technologies/selenium.jpg') }}" class="object-contain" alt="Selenium Logo">
+                                    <p>Selenium</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
