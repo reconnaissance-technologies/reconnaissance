@@ -648,7 +648,7 @@
                             </li>
                             <li id="cms-ecommerce-tab" class=" " role="presentation">
                                 <button class="inline-block p-4 w-full text-left" type="button" role="tab" aria-controls="cms-ecommerce-tab-content" aria-selected="false">
-                                    CMS / Ecommerce
+                                    CMS / E-Commerce
                                 </button>
                             </li>
                             <li id="database-tab" class=" " role="presentation">
@@ -1103,6 +1103,135 @@
             </div>
         </section>
         <!-- End of Technology Stack Section -->
+
+        <!-- Case Studies Section -->
+        <section class="px-16 bg-white dark:text-white dark:bg-gray-800 flex justify-between">
+            <div class="w-full py-6">
+                <h3 class="text-rt-primary text-xl uppercase font-semibold">Case Studies</h3>
+                <div class="flex justify-between">
+                    <h1 class="w-3/4 text-xl lg:text-4xl font-bold mt-2 mb-2 lg:mb-6">
+                        Empowering Digital Transformation through Software Solutions
+                    </h1>
+                    
+                    <div>
+                        <a href="{{ route('our-services') }}" class=" flex justify-between items-center p-2 border-2 border-rt-primary rounded-lg hover:bg-rt-primary text-rt-primary hover:text-white">
+                            Case Studies
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full lg:w-full flex justify-between items-center">
+                    <div class="lg:w-3/4">
+                        <p>
+                            Check how our custom software solutions have helped businesses achieve their strategic goals. Our technology consulting, development, and outsourcing services have enabled businesses to navigate the complexities of digitalization.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex justify-between py-8">
+                    <div class="card mx-3 relative overflow-hidden rounded-md border group">
+                        <div class="group">
+                            <img src="{{ asset('assets/img/case-study-mrs.webp') }}" class="rounded-lg" alt="">
+                            <div title="MRS Holdings Oil and Gas" class="absolute top-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-gray-700/70 opacity-0 group-hover:h-full group-hover:opacity-100 duration-500">
+                                <a class="animate-bounce hover:animate-none bg-gray-500 rounded-full p-4 opacity-50 ease-in delay-300 duration-300" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-white">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                    </svg>                                      
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mx-3 relative overflow-hidden rounded-md border group">
+                        <div class="group">
+                            <img src="{{ asset('assets/img/case-study-planvillage.webp') }}" class="rounded-lg" alt="">
+                            <div title="PlantVillage Crop Monitoring" class="absolute top-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-gray-700/70 opacity-0 group-hover:h-full group-hover:opacity-100 duration-500">
+                                <a class="animate-bounce hover:animate-none bg-gray-500 rounded-full p-4 opacity-50 ease-in delay-300 duration-300" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-white">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                    </svg>                                      
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mx-3 relative overflow-hidden rounded-md border group">
+                        <div class="group">
+                            <img src="{{ asset('assets/img/case-study-delivery.webp') }}" class="rounded-lg" alt="">
+                            <div title="DeliverAny Logistics" class="absolute top-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-gray-700/70 opacity-0 group-hover:h-full group-hover:opacity-100 duration-500">
+                                <a class="animate-bounce hover:animate-none bg-gray-500 rounded-full p-4 opacity-50 ease-in delay-300 duration-300" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-white">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                    </svg>                                      
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Case Studies Section -->
+
+        <!-- Industries We Serve Section -->
+        <section class="px-16 bg-white flex justify-between">
+            <div class="w-full py-6">
+                <h3 class="text-rt-primary text-xl uppercase font-semibold">Industries We Serve</h3>
+                <h1 class="w-3/4 text-xl lg:text-4xl font-bold mt-2 mb-2 lg:mb-6">
+                    Delivering Industry-focused software solutions
+                </h1>
+                <div class="w-full lg:w-full flex justify-between items-center">
+                    <p>
+                        Our team of software development experts collaborates with clients to understand their roadblocks and objectives, enabling us to develop custom software development solutions that are efficient and scalable for diverse industries.
+                    </p>
+                </div>
+
+                <div class="py-6 flex">
+                    <div class="grid grid-cols-1 lg:grid-cols-6 gap-8">
+                        <div title="Media & Entertainment" class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-red-500">
+                            <img src="{{ asset('assets/img/industries/communication-media-entertainment.png') }}" class="object-contain" alt="Media & Entertainment Icon">
+                            <h1 class="text-sm">Media & Entertainment</h1>
+                        </div>
+                        <div title="Education" class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-orange-500 ">
+                            <img src="{{ asset('assets/img/industries/education.png') }}" class="object-contain" alt="Education Icon">
+                            <h1 class="text-sm">Education</h1>
+                        </div>
+                        <div title="Healthcare" class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-yellow-500">
+                            <img src="{{ asset('assets/img/industries/healthcare.png') }}" class="object-contain" alt="Healthcare Icon">
+                            <h1 class="text-sm">Healthcare</h1>
+                        </div>
+                        <div title="Hi-Tech" class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-green-500">
+                            <img src="{{ asset('assets/img/industries/hi-tech.png') }}" class="object-contain" alt="Hi-Tech Icon">
+                            <h1 class="text-sm">Hi-Tech</h1>
+                        </div>
+                        <div title="Logistics" class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-blue-500 ">
+                            <img src="{{ asset('assets/img/industries/logistics.png') }}" class="object-contain" alt="Logistics Icon">
+                            <h1 class="text-sm">Logistics</h1>
+                        </div>
+                        <div title="Manufacturing" class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-violet-500">
+                            <img src="{{ asset('assets/img/industries/manufacturing.png') }}" class="object-contain" alt="Manufacturing Icon">
+                            <h1 class="text-sm">Manufacturing</h1>
+                        </div>
+                        <div title="Real Estate & Construction" class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-blue-700">
+                            <img src="{{ asset('assets/img/industries/real-estate-construction.png') }}" class="object-contain" alt="Real Estate & Construction Icon">
+                            <h1 class="text-sm">Real Estate & Construction</h1>
+                        </div>
+                        <div title="Retail & eCommerce" class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-green-700 ">
+                            <img src="{{ asset('assets/img/industries/retail-ecommerce.png') }}" class="object-contain" alt="Retail & eCommerce Icon">
+                            <h1 class="text-sm">Retail & eCommerce</h1>
+                        </div>
+                        <div title="Travel & Hospitality" class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-yellow-700">
+                            <img src="{{ asset('assets/img/industries/travel-hospitality.png') }}" class="object-contain" alt="Travel & Hospitality Icon">
+                            <h1 class="text-sm">Travel & Hospitality</h1>
+                        </div>
+                        <div title="Utilities & On-demand" class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-indigo-700">
+                            <img src="{{ asset('assets/img/industries/utilities-ondemand.png') }}" class="object-contain" alt="Utilities & On-demand Icon">
+                            <h1 class="text-sm">Utilities & On-demand</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Industries We Serve Section -->
     </main>
 </body>
 
