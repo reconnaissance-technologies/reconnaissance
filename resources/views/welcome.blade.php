@@ -1188,50 +1188,83 @@
                 <div class="py-6 flex">
                     <div class="grid grid-cols-1 lg:grid-cols-6 gap-8">
                         <div title="Media & Entertainment" class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-red-500">
-                            <img src="{{ asset('assets/img/industries/communication-media-entertainment.png') }}" class="object-contain" alt="Media & Entertainment Icon">
-                            <h1 class="text-sm">Media & Entertainment</h1>
+                            <a href="">
+                                <img src="{{ asset('assets/img/industries/communication-media-entertainment.png') }}" class="object-contain" alt="Media & Entertainment Icon">
+                                <h1 class="text-sm">Media & Entertainment</h1>
+                            </a>
                         </div>
                         <div title="Education" class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-orange-500 ">
-                            <img src="{{ asset('assets/img/industries/education.png') }}" class="object-contain" alt="Education Icon">
-                            <h1 class="text-sm">Education</h1>
+                            <a href="">
+                                <img src="{{ asset('assets/img/industries/education.png') }}" class="object-contain" alt="Education Icon">
+                                <h1 class="text-sm">Education</h1>
+                            </a>
                         </div>
                         <div title="Healthcare" class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-yellow-500">
-                            <img src="{{ asset('assets/img/industries/healthcare.png') }}" class="object-contain" alt="Healthcare Icon">
-                            <h1 class="text-sm">Healthcare</h1>
+                            <a href="">
+                                <img src="{{ asset('assets/img/industries/healthcare.png') }}" class="object-contain" alt="Healthcare Icon">
+                                <h1 class="text-sm">Healthcare</h1>
+                            </a>
                         </div>
                         <div title="Hi-Tech" class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-green-500">
-                            <img src="{{ asset('assets/img/industries/hi-tech.png') }}" class="object-contain" alt="Hi-Tech Icon">
-                            <h1 class="text-sm">Hi-Tech</h1>
+                            <a href="">
+                                <img src="{{ asset('assets/img/industries/hi-tech.png') }}" class="object-contain" alt="Hi-Tech Icon">
+                                <h1 class="text-sm">Hi-Tech</h1>
+                            </a>
                         </div>
                         <div title="Logistics" class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-blue-500 ">
-                            <img src="{{ asset('assets/img/industries/logistics.png') }}" class="object-contain" alt="Logistics Icon">
-                            <h1 class="text-sm">Logistics</h1>
+                            <a href="">
+                                <img src="{{ asset('assets/img/industries/logistics.png') }}" class="object-contain" alt="Logistics Icon">
+                                <h1 class="text-sm">Logistics</h1>
+                            </a>
                         </div>
                         <div title="Manufacturing" class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-violet-500">
-                            <img src="{{ asset('assets/img/industries/manufacturing.png') }}" class="object-contain" alt="Manufacturing Icon">
-                            <h1 class="text-sm">Manufacturing</h1>
+                            <a href="">
+                                <img src="{{ asset('assets/img/industries/manufacturing.png') }}" class="object-contain" alt="Manufacturing Icon">
+                                <h1 class="text-sm">Manufacturing</h1>
+                            </a>
                         </div>
                         <div title="Real Estate & Construction" class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-blue-700">
-                            <img src="{{ asset('assets/img/industries/real-estate-construction.png') }}" class="object-contain" alt="Real Estate & Construction Icon">
-                            <h1 class="text-sm">Real Estate & Construction</h1>
+                            <a href="">
+                                <img src="{{ asset('assets/img/industries/real-estate-construction.png') }}" class="object-contain" alt="Real Estate & Construction Icon">
+                                <h1 class="text-sm">Real Estate & Construction</h1>
+                            </a>
                         </div>
                         <div title="Retail & eCommerce" class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-green-700 ">
-                            <img src="{{ asset('assets/img/industries/retail-ecommerce.png') }}" class="object-contain" alt="Retail & eCommerce Icon">
-                            <h1 class="text-sm">Retail & eCommerce</h1>
+                            <a href="">
+                                <img src="{{ asset('assets/img/industries/retail-ecommerce.png') }}" class="object-contain" alt="Retail & eCommerce Icon">
+                                <h1 class="text-sm">Retail & eCommerce</h1>
+                            </a>
                         </div>
                         <div title="Travel & Hospitality" class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-yellow-700">
-                            <img src="{{ asset('assets/img/industries/travel-hospitality.png') }}" class="object-contain" alt="Travel & Hospitality Icon">
-                            <h1 class="text-sm">Travel & Hospitality</h1>
+                            <a href="">
+                                <img src="{{ asset('assets/img/industries/travel-hospitality.png') }}" class="object-contain" alt="Travel & Hospitality Icon">
+                                <h1 class="text-sm">Travel & Hospitality</h1>
+                            </a>
                         </div>
                         <div title="Utilities & On-demand" class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-indigo-700">
-                            <img src="{{ asset('assets/img/industries/utilities-ondemand.png') }}" class="object-contain" alt="Utilities & On-demand Icon">
-                            <h1 class="text-sm">Utilities & On-demand</h1>
+                            <a href="">
+                                <img src="{{ asset('assets/img/industries/utilities-ondemand.png') }}" class="object-contain" alt="Utilities & On-demand Icon">
+                                <h1 class="text-sm">Utilities & On-demand</h1>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- End of Industries We Serve Section -->
+
+        <!-- Insights & News Section -->
+        <section class="px-16 bg-white dark:text-white dark:bg-gray-800 flex justify-between">
+            <div class="w-full py-6">
+                <h3 class="text-rt-primary text-xl uppercase font-semibold">Insights & News</h3>
+                <h1 class="w-3/4 text-xl lg:text-4xl font-bold mt-2 mb-2 lg:mb-6">
+                    Discover IT Industry Insights and Technology Trends
+                </h1>
+
+                <div class="py-6 flex"></div>
+            </div>
+        </section>
+        <!-- End of Insights & News Section -->
     </main>
 </body>
 
