@@ -47,4 +47,9 @@
     box-shadow: theme('boxShadow.round');
   }
   /* ... */
+  .card-no-padding{
+    background-color: theme('colors.white');
+    border-radius: theme('borderRadius.lg');
+    box-shadow: theme('boxShadow.round');
+  }
 }
