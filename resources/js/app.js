@@ -6,6 +6,8 @@ window.addEventListener("scroll", function () {
     const navbar = document.querySelector("nav");
     const logoMixed = document.querySelector(".logo-mixed");
     const logoDark = document.querySelector(".logo-dark");
+    const scrollToTop = document.querySelector("#scroll-to-top");
+
     if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         if (window.scrollY > 50) {
             navbar.classList.add("bg-gray-900");
@@ -34,6 +36,12 @@ window.addEventListener("scroll", function () {
             logoMixed.classList.remove("hidden")
             logoDark.classList.add("hidden")
         }
+    }
+
+    if (window.scrollY > 500) {
+        scrollToTop.classList.remove("hidden")
+    } else {
+        scrollToTop.classList.add("hidden")
     }
 });
 
@@ -78,11 +86,11 @@ themeToggleBtn.addEventListener('click', function () {
 
 });
 
-const tabsElement = document.getElementById('technology-stack-tab');
+/** Technology Stack Tabs Implementation */
+const tsTabsElement = document.getElementById('technology-stack-tab');
 
 // create an array of objects with the id, trigger element (eg. button), and the content element
-const tabElements = [
-    {
+const tsTabElements = [{
         id: 'frontend',
         triggerEl: document.querySelector('#frontend-tab'),
         targetEl: document.querySelector('#frontend-tab-content'),
@@ -134,26 +142,27 @@ const tabElements = [
     },
 ];
 
-
-// options with default values
-const options = {
+// technology stack tabs options with default values
+const tsTabsOptions = {
     defaultTabId: 'ai-ml',
     activeClasses: 'text-rt-primary hover:text-rt-primary border-r-2 border-rt-primary first:rounded-t-lg last:rounded-b-lg dark:text-rt-primary dark:border-rt-primary',
     inactiveClasses: 'text-gray-500 hover:text-rt-primary dark:text-gray-400 hover:border-rt-primary dark:hover:text-rt-primary',
-    onShow: () => {
-        console.log('tab is shown');
-    },
+    onShow: () => {},
 };
 
-// instance options with default values
-const instanceOptions = {
+// technoloy stack tabs instance options with default values
+const tsTabsInstanceOptions = {
     id: 'technology-stack-tab',
     override: true
 };
 
 /*
-* tabElements: array of tab objects
-* options: optional
-* instanceOptions: optional
-*/
-const tabs = new Tabs(tabsElement, tabElements, options, instanceOptions);
+ * tsTabElements: array of tab objects
+ * tsTabsOptions: optional
+ * tsTabsInstanceOptions: optional
+ */
+const tabs = new Tabs(tsTabsElement, tsTabElements, tsTabsOptions, tsTabsInstanceOptions);
+/** End of Technology Stack Tabs Implementation */
+
+/** Clients and Testimonials Slider Implementation */
+/** End of Clients and Testimonials Slider Implementation */
