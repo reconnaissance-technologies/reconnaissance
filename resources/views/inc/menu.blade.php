@@ -62,7 +62,7 @@
                         <div class="container w-full flex flex-wrap justify-between mx-2">
                             <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
                                 <div class="flex items-center">
-                                    <h3 class="font-bold text-xl text-bold mb-2 uppercase">Offering</h3>
+                                    <h3 class="font-bold text-lg text-bold mb-2 uppercase">Offering</h3>
                                 </div>
                                 <p class="text-sm">
                                     <ul>
@@ -77,7 +77,7 @@
                             </ul>
                             <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
                                 <div class="flex items-center">
-                                    <h3 class="font-bold text-xl text-bold mb-2 uppercase">Trending Services</h3>
+                                    <h3 class="font-bold text-lg text-bold mb-2 uppercase">Trending Services</h3>
                                 </div>
                                 <p class="text-sm">
                                     <ul>
@@ -90,7 +90,7 @@
                             </ul>
                             <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
                                 <div class="flex items-center">
-                                    <h3 class="font-bold text-xl text-bold mb-2 uppercase">Industries We Serve</h3>
+                                    <h3 class="font-bold text-lg text-bold mb-2 uppercase">Industries We Serve</h3>
                                 </div>
                                 <p class="text-sm">
                                     <ul>
@@ -113,7 +113,7 @@
                             <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
                                 <div class="lg:pb-12">
                                     <div class="flex items-center">
-                                        <h3 class="font-bold text-xl text-bold mb-2 uppercase">Service Models</h3>
+                                        <h3 class="font-bold text-lg text-bold mb-2 uppercase">Service Models</h3>
                                     </div>
                                     <p class="text-sm">
                                         <ul>
@@ -124,7 +124,7 @@
                                 </div>
                                 <div class="flex-col pt-12 justify-between">
                                     <div class="flex items-center">
-                                        <h3 class="font-bold text-xl text-bold mb-2 uppercase">Talk to an Expert</h3>
+                                        <h3 class="font-bold text-lg text-bold mb-2 uppercase">Talk to an Expert</h3>
                                     </div>
                                     <p class="text-sm">
                                         One of our experts would love to respond to your queries
@@ -152,81 +152,37 @@
                         <div class="container w-full flex flex-wrap justify-between mx-2">
                             <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
                                 <div class="flex items-center">
-                                    <h3 class="font-bold text-xl text-bold mb-2 uppercase">Offering</h3>
+                                    <h3 class="font-bold text-lg text-bold mb-2 uppercase">Product Offerings</h3>
                                 </div>
                                 <p class="text-sm">
                                     <ul>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Product Design</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Software Development</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Web Application Development</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Frontend Development</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Cloud & Infrastructure</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Penetration Testing & Cybersecurity</a></li>
+                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Expresso AI</a></li>
+                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Zooli Socials</a></li>
+                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Inventify Plus</a></li>
                                     </ul>
                                 </p>
                             </ul>
                             <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
                                 <div class="flex items-center">
-                                    <h3 class="font-bold text-xl text-bold mb-2 uppercase">Trending Services</h3>
+                                    <h3 class="font-bold text-lg text-bold mb-2 uppercase">Solutions</h3>
                                 </div>
                                 <p class="text-sm">
                                     <ul>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">AR/VR Development</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">AI/ML Development</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">IOT Development</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Chatbot Development</a></li>
+                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">ERP Software</a></li>
+                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Hospital Management</a></li>
+                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Multi-vendor eCommerce Solution</a></li>
+                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Real Estate Management</a></li>
+                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Warehouse & Logistics Solution</a></li>
                                     </ul>
                                 </p>
                             </ul>
-                            <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
+                            <ul class="px-4 w-full sm:w-1/2 lg:w-1/2 pb-6 pt-6 lg:pt-3">
                                 <div class="flex items-center">
-                                    <h3 class="font-bold text-xl text-bold mb-2 uppercase">Industries We Serve</h3>
+                                    <h3 class="font-bold text-lg text-bold mb-2 uppercase">Products & Solutions Overview</h3>
                                 </div>
                                 <p class="text-sm">
-                                    <ul>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Media & Enterntainment</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Education</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Healthcare</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Hi-Tech</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Logistics</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Manufacturing</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Real Estate & Construction</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Retail & eCommerce</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Travel & Hospitality</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Utilities & On-Demand</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">FinTech</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Automotive</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Mining & Agriculture</a></li>
-                                    </ul>
+                                    
                                 </p>
-                            </ul>
-                            <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
-                                <div class="lg:pb-12">
-                                    <div class="flex items-center">
-                                        <h3 class="font-bold text-xl text-bold mb-2 uppercase">Service Models</h3>
-                                    </div>
-                                    <p class="text-sm">
-                                        <ul>
-                                            <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Delivery Model</a></li>
-                                            <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Engagement Model</a></li>
-                                        </ul>
-                                    </p>
-                                </div>
-                                <div class="flex-col pt-12 justify-between">
-                                    <div class="flex items-center">
-                                        <h3 class="font-bold text-xl text-bold mb-2 uppercase">Talk to an Expert</h3>
-                                    </div>
-                                    <p class="text-sm">
-                                        One of our experts would love to respond to your queries
-                                    </p>
-                                    <p class="py-6">
-                                        <!-- CTA Button -->
-                                        <a href="{{ route('contact-us') }}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-                                            Speak to an Expert
-                                        </a>
-                                        <!-- End of CTA Button -->
-                                    </p>
-                                </div>
                             </ul>
                         </div>
                     </div>
@@ -242,7 +198,7 @@
                         <div class="container w-full flex flex-wrap justify-between mx-2">
                             <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
                                 <div class="flex items-center">
-                                    <h3 class="font-bold text-xl text-bold mb-2 uppercase">Offering</h3>
+                                    <h3 class="font-bold text-lg text-bold mb-2 uppercase">Offering</h3>
                                 </div>
                                 <p class="text-sm">
                                     <ul>
@@ -257,7 +213,7 @@
                             </ul>
                             <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
                                 <div class="flex items-center">
-                                    <h3 class="font-bold text-xl text-bold mb-2 uppercase">Trending Services</h3>
+                                    <h3 class="font-bold text-lg text-bold mb-2 uppercase">Trending Services</h3>
                                 </div>
                                 <p class="text-sm">
                                     <ul>
@@ -270,7 +226,7 @@
                             </ul>
                             <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
                                 <div class="flex items-center">
-                                    <h3 class="font-bold text-xl text-bold mb-2 uppercase">Industries We Serve</h3>
+                                    <h3 class="font-bold text-lg text-bold mb-2 uppercase">Industries We Serve</h3>
                                 </div>
                                 <p class="text-sm">
                                     <ul>
@@ -293,7 +249,7 @@
                             <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
                                 <div class="lg:pb-12">
                                     <div class="flex items-center">
-                                        <h3 class="font-bold text-xl text-bold mb-2 uppercase">Service Models</h3>
+                                        <h3 class="font-bold text-lg text-bold mb-2 uppercase">Service Models</h3>
                                     </div>
                                     <p class="text-sm">
                                         <ul>
@@ -304,7 +260,7 @@
                                 </div>
                                 <div class="flex-col pt-12 justify-between">
                                     <div class="flex items-center">
-                                        <h3 class="font-bold text-xl text-bold mb-2 uppercase">Talk to an Expert</h3>
+                                        <h3 class="font-bold text-lg text-bold mb-2 uppercase">Talk to an Expert</h3>
                                     </div>
                                     <p class="text-sm">
                                         One of our experts would love to respond to your queries
@@ -332,7 +288,7 @@
                         <div class="container w-full flex flex-wrap justify-between mx-2">
                             <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
                                 <div class="flex items-center">
-                                    <h3 class="font-bold text-xl text-bold mb-2 uppercase">Overview</h3>
+                                    <h3 class="font-bold text-lg text-bold mb-2 uppercase">Overview</h3>
                                 </div>
                                 <p class="text-sm">
                                     <ul>
@@ -349,7 +305,7 @@
                             </ul>
                             <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
                                 <div class="flex items-center">
-                                    <h3 class="font-bold text-xl text-bold mb-2 uppercase">Insights</h3>
+                                    <h3 class="font-bold text-lg text-bold mb-2 uppercase">Insights</h3>
                                 </div>
                                 <p class="text-sm">
                                     <ul>
@@ -365,7 +321,7 @@
                             </ul>
                             <ul class="px-4 w-full sm:w-1/2 lg:w-1/2 pb-6 pt-6 lg:pt-3">
                                 <div class="flex items-center">
-                                    <h3 class="font-bold text-xl text-bold mb-2 uppercase"></h3>
+                                    <h3 class="font-bold text-lg text-bold mb-2 uppercase"></h3>
                                 </div>
                                 <p class="text-sm">
                                     <img class="rounded-xl" src="{{ asset('assets/img/festives/happy-holidays.jpg') }}" alt="Happy Holidays" title="Thank You & Happy Holidays">
