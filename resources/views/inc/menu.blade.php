@@ -55,7 +55,7 @@
             <ul class="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
                 <!-- Services Menu -->
                 <li  class="hoverable hover:border-t-2 hover:border-t-rt-primary">
-                    <a href="javascript://" class="relative block lg:p-6 text-sm lg:text-base font-bold hover:text-white uppercase">
+                    <a href="javascript://" class="relative block lg:p-6 text-sm lg:text-base font-bold uppercase">
                         Services
                     </a>
                     <div class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl text-black  bg-white">
@@ -145,7 +145,7 @@
 
                 <!-- Our Solutions Menu -->
                 <li  class="hoverable hover:border-t-2 hover:border-t-rt-primary">
-                    <a href="javascript://" class="relative block lg:p-6 text-sm lg:text-base font-bold hover:text-white uppercase">
+                    <a href="javascript://" class="relative block lg:p-6 text-sm lg:text-base font-bold uppercase">
                         Solutions
                     </a>
                     <div class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl text-black  bg-white">
@@ -191,7 +191,7 @@
 
                 <!-- Our Work Menu -->
                 <li  class="hoverable hover:border-t-2 hover:border-t-rt-primary">
-                    <a href="javascript://" class="relative block lg:p-6 text-sm lg:text-base font-bold hover:text-white uppercase">
+                    <a href="javascript://" class="relative block lg:p-6 text-sm lg:text-base font-bold uppercase">
                         Our Work
                     </a>
                     <div class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl text-black  bg-white">
