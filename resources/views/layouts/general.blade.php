@@ -15,7 +15,7 @@
     <meta name="robots" content="@yield('robots')">
     <meta property="og:title" content="@yield('og-title')">
     <meta property="og:site_name" content="@yield('og-sitename')">
-    <meta property="og:url" content="{{ route('index') }}">
+    <meta property="og:url" content="@yield('og-url')">
     <meta property="og:description"
         content="@yield('og-description')">
     <meta property="og:type" content="website">
