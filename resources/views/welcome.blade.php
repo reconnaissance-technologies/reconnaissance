@@ -5,6 +5,7 @@
 @section('robots', 'index, follow')
 @section('og-title', 'Web, Mobile Application & Software Development Company | IT Solutions Provider')
 @section('og-sitename', 'Reconnaissance Technologies')
+@section('og-url', "{{ route('index') }}")
 @section('og-description', 'Reconnaissance Technologies is an award-winning web, mobile application and software development company in Nigeria. 3+ Yrs. Exp. in IT Services & Solutions, 20+ Worldwide Clients, 10+ Experts. Contact Us Now!')
 @section('og-image', "{{ asset('assets/img/logo-dark.png') }}")
 @section('title', '#1 Web, Mobile Application & Software Development Company in Nigeria - Reconnaissance Technologies')
