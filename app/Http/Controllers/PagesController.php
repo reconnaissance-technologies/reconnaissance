@@ -35,43 +35,55 @@ class PagesController extends Controller
     }
 
     public function media_entertainment() {
-        return view('media-entertainment');
+        return view('industries.media-entertainment');
     }
 
     public function education() {
-        return view('education');
+        return view('industries.education');
     }
 
     public function healthcare() {
-        return view('healthcare');
+        return view('industries.healthcare');
     }
 
     public function hi_tech() {
-        return view('hi-tech');
+        return view('industries.hi-tech');
     }
 
     public function logistics() {
-        return view('logistics');
+        return view('industries.logistics');
     }
 
     public function manufacturing() {
-        return view('manufacturing');
+        return view('industries.manufacturing');
     }
 
     public function real_estate_construction() {
-        return view('real-estate-construction');
+        return view('industries.real-estate-construction');
     }
 
     public function retail_ecommerce() {
-        return view('retail-ecommerce');
+        return view('industries.retail-ecommerce');
     }
 
     public function travel_hospitality() {
-        return view('travel-hospitality');
+        return view('industries.travel-hospitality');
     }
 
     public function utilities_on_demand() {
-        return view('utilities-on-demand');
+        return view('industries.utilities-on-demand');
+    }
+
+    public function fintech() {
+        return view('industries.fintech');
+    }
+
+    public function automotive() {
+        return view('industries.automotive');
+    }
+
+    public function mining_agriculture() {
+        return view('industries.mining-agriculture');
     }
 
     public function our_work() {
