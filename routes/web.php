@@ -28,6 +28,9 @@ Route::group(['prefix'=>'industries','as'=>'industries.'], function () {
     Route::get('retail-and-ecommerce', [PagesController::class, 'retail_ecommerce'])->name('retail-ecommerce');
     Route::get('travel-and-hospitality', [PagesController::class, 'travel_hospitality'])->name('travel-hospitality');
     Route::get('utilities-and-on-demand', [PagesController::class, 'utilities_on_demand'])->name('utilities');
+    Route::get('fintech', [PagesController::class, 'fintech'])->name('fintech');
+    Route::get('automotive', [PagesController::class, 'automotive'])->name('automotive');
+    Route::get('mining-agriculture', [PagesController::class, 'mining_agriculture'])->name('mining-agriculture');
 });
 Route::group(['prefix'=>'clients','as'=>'clients.'], function () {
     Route::get('blue-sea-travels', function() {
