@@ -1,4 +1,4 @@
-<nav class="px-16 fixed w-full z-20 top-0 start-0 shadow-lg text-white">
+<nav class="px-16 fixed w-full z-20 top-0 start-0 text-white">
     <div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto py-1">
         <!-- Logo Section -->
         <div class="relative block lg:w-52 md:w-40 sm:w-32">
