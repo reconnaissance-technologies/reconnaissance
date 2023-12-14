@@ -121,11 +121,11 @@
     <!-- Media and Entertainment Solutions Section -->
     <section class="px-16 bg-white dark:text-white dark:bg-gray-800 flex justify-between">
         <div class="w-full py-6">
-            <h1 class="w-3/4 text-xl lg:text-4xl font-bold mt-2 mb-2 lg:mb-6 text-center">
+            <h1 class="w-full text-xl lg:text-4xl font-bold mt-2 mb-2 lg:mb-6 text-center">
                 Media & Entertainment Software Solutions
             </h1>
             <div class="w-full lg:w-full flex justify-between items-center text-center">
-                <div class="lg:w-3/4">
+                <div class="lg:w-full">
                     <p>
                         Web, mobile and software applications involving live streaming, for efficient multimedia content distribution.
                     </p>
