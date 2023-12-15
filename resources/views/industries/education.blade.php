@@ -60,14 +60,14 @@
                 </div>
             </div>
 
-            <div class="flex justify-between py-8">
+            <div class="grid grid-cols-4 py-8">
                 <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-red-700">
                     <div class="py-3 p-6 flex rounded-2xl text-white bg-red-700 lg:w-20 lg:h-20">
                         <img src="{{ asset('assets/img/instructors-icon.png') }}" class="object-contain" alt="">
                     </div>
                     
                     <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl lg:w-50">
-                        50k+ Course Instructors
+                        50k+ Instructors
                     </h1>
 
                     <p>
@@ -80,7 +80,7 @@
                     </div>
                     
                     <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                        31M+ Online Examination
+                        31M+ Examination
                     </h1>
                     
                     <p>
@@ -94,7 +94,7 @@
                     </div>
                     
                     <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                        7M+ Student Access
+                        7M+ Access
                     </h1>
                     
                     <p>
@@ -132,7 +132,7 @@
                 </div>
             </div>
 
-            <div class="flex justify-between py-8">
+            <div class="grid grid-cols-4 py-8">
                 <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-violet-600 w-[500]">
                     <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl lg:w-50">
                         School Management System

@@ -60,7 +60,7 @@
                 </div>
             </div>
 
-            <div class="flex justify-between py-8">
+            <div class="grid grid-cols-4 py-8">
                 <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-red-700 w-[500]">
                     <div class="py-3 p-6 flex rounded-2xl text-white bg-red-700 lg:w-20 lg:h-20">
                         <img src="{{ asset('assets/img/song-icon.png') }}" class="object-contain" alt="">
@@ -132,7 +132,7 @@
                 </div>
             </div>
 
-            <div class="flex justify-between py-8">
+            <div class="grid grid-cols-4 py-8">
                 <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-violet-600 w-[500]">
                     <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl lg:w-50">
                         Music Streaming Application
@@ -162,7 +162,7 @@
                 </div>
                 <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-lime-500">
                     <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                        Dating & Matchmaking Applications
+                        Dating & Matchmaking Apps
                     </h1>
 
                     <p>
