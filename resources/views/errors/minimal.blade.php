@@ -31,7 +31,7 @@
                     </a> 
                 </div>
                 <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-                    <img src="{{ asset('@yield('image')') }}" />
+                    <img src="{{ asset(@yield('image')) }}" />
                 </div>                
             </div>
         </section>
