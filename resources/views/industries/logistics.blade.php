@@ -5,7 +5,7 @@
 @section('robots', 'index, follow')
 @section('og-title', 'Logistics IT Solution Company, Transport Logistics IT Solutions | Reconnaissance Technologies')
 @section('og-sitename', 'Reconnaissance Technologies')
-@section('og-url', "{{ route('industries.media-and-entertainment') }}")
+@section('og-url', "{{ route('industries.logistics') }}")
 @section('og-description', 'Best logistics IT and technology solutions provider in Nigeria. Our transportation & logistic software development services gives a new era to your industry.')
 @section('og-image', "{{ asset('assets/img/logo-dark.png') }}")
 @section('title', 'Logistics IT Solution Company, Transport Logistics IT Solutions - Reconnaissance Technologies')
