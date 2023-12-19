@@ -23,7 +23,6 @@ Route::group(['prefix'=>'industries','as'=>'industries.'], function () {
     Route::get('healthcare', [PagesController::class, 'healthcare'])->name('healthcare');
     Route::get('hi-tech', [PagesController::class, 'hi_tech'])->name('hi-tech');
     Route::get('logistics', [PagesController::class, 'logistics'])->name('logistics');
-    Route::get('manufacturing', [PagesController::class, 'manufacturing'])->name('manufacturing');
     Route::get('real-estate-and-construction', [PagesController::class, 'real_estate_construction'])->name('real-estate');
     Route::get('retail-and-ecommerce', [PagesController::class, 'retail_ecommerce'])->name('retail-ecommerce');
     Route::get('travel-and-hospitality', [PagesController::class, 'travel_hospitality'])->name('travel-hospitality');

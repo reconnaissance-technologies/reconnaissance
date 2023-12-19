@@ -54,10 +54,6 @@ class PagesController extends Controller
         return view('industries.logistics');
     }
 
-    public function manufacturing() {
-        return view('industries.manufacturing');
-    }
-
     public function real_estate_construction() {
         return view('industries.real-estate-construction');
     }
