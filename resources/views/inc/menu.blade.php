@@ -99,7 +99,6 @@
                                         <li class="py-1"><a href="{{ route('industries.healthcare') }}" class="hover:border-b-rt-primary hover:border-b-2">Healthcare</a></li>
                                         <li class="py-1"><a href="{{ route('industries.hi-tech') }}" class="hover:border-b-rt-primary hover:border-b-2">Hi-Tech</a></li>
                                         <li class="py-1"><a href="{{ route('industries.logistics') }}" class="hover:border-b-rt-primary hover:border-b-2">Logistics</a></li>
-                                        <li class="py-1"><a href="{{ route('industries.manufacturing') }}" class="hover:border-b-rt-primary hover:border-b-2">Manufacturing</a></li>
                                         <li class="py-1"><a href="{{ route('industries.real-estate') }}" class="hover:border-b-rt-primary hover:border-b-2">Real Estate & Construction</a></li>
                                         <li class="py-1"><a href="{{ route('industries.retail-ecommerce') }}" class="hover:border-b-rt-primary hover:border-b-2">Retail & eCommerce</a></li>
                                         <li class="py-1"><a href="{{ route('industries.travel-hospitality') }}" class="hover:border-b-rt-primary hover:border-b-2">Travel & Hospitality</a></li>
