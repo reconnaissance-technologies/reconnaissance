@@ -1148,7 +1148,7 @@
                     </div>
                     <div title="Manufacturing"
                         class="card p-12 hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-violet-500">
-                        <a href="{{ route('industries.manufacturing') }}">
+                        <a href="javascript://">
                             <img src="{{ asset('assets/img/industries/manufacturing.png') }}"
                                 class="object-contain" alt="Manufacturing Icon">
                             <h1 class="text-sm">Manufacturing</h1>
