@@ -37,9 +37,9 @@
                 <!-- End of CTA Button -->
 
             </div>
-            <div class="w-full lg:w-1/2 pt-28">
+            <div class="w-full lg:w-1/2 pt-10">
                 <img src="{{ asset('assets/img/logistics-image.webp') }}"
-                    class="object-fill" alt="Transport & Logistics IT Solutions - Reconnaissance Technologies">
+                    class="object-contain p-10" alt="Transport & Logistics IT Solutions - Reconnaissance Technologies">
             </div>
         </div>
     </section>
