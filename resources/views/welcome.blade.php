@@ -1105,87 +1105,139 @@
             </div>
 
             <div class="py-6 flex">
-                <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
-                    <div title="Media & Entertainment"
-                        class="card p-12 hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-red-500">
-                        <a href="{{ route('industries.media-and-entertainment') }}">
-                            <img src="{{ asset('assets/img/industries/communication-media-entertainment.png') }}"
-                                class="object-contain" alt="Media & Entertainment Icon">
+                <div class="grid grid-cols-1 lg:grid-cols-6 gap-8">
+                    <a href="{{ route('industries.media-and-entertainment') }}">
+                        <div title="Media & Entertainment"
+                            class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-red-500">
+                            <div class="p-6">
+                                    <img src="{{ asset('assets/img/industries/communication-media-entertainment.png') }}"
+                                        class="object-contain" alt="Media & Entertainment Icon">
+                            </div>
                             <h1 class="text-sm">Media & Entertainment</h1>
-                        </a>
-                    </div>
-                    <div title="Education"
-                        class="card p-12 hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-orange-500 ">
-                        <a href="{{ route('industries.education') }}">
-                            <img src="{{ asset('assets/img/industries/education.png') }}"
-                                class="object-contain" alt="Education Icon">
+                        </div>
+                    </a>
+
+                    <a href="{{ route('industries.education') }}">
+                        <div title="Education"
+                            class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-orange-500 ">
+                            <div class="p-6">
+                                    <img src="{{ asset('assets/img/industries/education.png') }}"
+                                        class="object-contain" alt="Education Icon">
+                            </div>
                             <h1 class="text-sm">Education</h1>
-                        </a>
-                    </div>
-                    <div title="Healthcare"
-                        class="card p-12 hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-yellow-500">
-                        <a href="{{ route('industries.healthcare') }}">
-                            <img src="{{ asset('assets/img/industries/healthcare.png') }}"
-                                class="object-contain" alt="Healthcare Icon">
+                        </div>
+                    </a>
+
+                    <a href="{{ route('industries.healthcare') }}">
+                        <div title="Healthcare"
+                            class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-yellow-500">
+                            <div class="p-6">
+                                    <img src="{{ asset('assets/img/industries/healthcare.png') }}"
+                                        class="object-contain" alt="Healthcare Icon">
+                            </div>
                             <h1 class="text-sm">Healthcare</h1>
-                        </a>
-                    </div>
-                    <div title="Hi-Tech"
-                        class="card p-12 hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-green-500">
-                        <a href="{{ route('industries.hi-tech') }}">
-                            <img src="{{ asset('assets/img/industries/hi-tech.png') }}"
-                                class="object-contain" alt="Hi-Tech Icon">
+                        </div>
+                    </a>
+
+                    <a href="{{ route('industries.hi-tech') }}">
+                        <div title="Hi-Tech"
+                            class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-green-500">
+                            <div class="p-6">
+                                    <img src="{{ asset('assets/img/industries/hi-tech.png') }}"
+                                        class="object-contain" alt="Hi-Tech Icon">
+                            </div>
                             <h1 class="text-sm">Hi-Tech</h1>
-                        </a>
-                    </div>
-                    <div title="Logistics"
-                        class="card p-12 hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-blue-500 ">
-                        <a href="{{ route('industries.logistics') }}">
-                            <img src="{{ asset('assets/img/industries/logistics.png') }}"
-                                class="object-contain" alt="Logistics Icon">
+                        </div>
+                    </a>
+
+                    <a href="{{ route('industries.logistics') }}">
+                        <div title="Logistics"
+                            class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-blue-500 ">
+                            <div class="p-6">
+                                    <img src="{{ asset('assets/img/industries/logistics.png') }}"
+                                        class="object-contain" alt="Logistics Icon">
+                            </div>
                             <h1 class="text-sm">Logistics</h1>
-                        </a>
-                    </div>
-                    <div title="Manufacturing"
-                        class="card p-12 hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-violet-500">
-                        <a href="javascript://">
-                            <img src="{{ asset('assets/img/industries/manufacturing.png') }}"
-                                class="object-contain" alt="Manufacturing Icon">
+                        </div>
+                    </a>
+
+                    <a href="javascript://">
+                        <div title="Manufacturing"
+                            class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-violet-500">
+                            <div class="p-6">
+                                <img src="{{ asset('assets/img/industries/manufacturing.png') }}"
+                                    class="object-contain" alt="Manufacturing Icon">
+                            </div>
                             <h1 class="text-sm">Manufacturing</h1>
-                        </a>
-                    </div>
-                    <div title="Real Estate & Construction"
-                        class="card p-12 hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-blue-700">
-                        <a href="{{ route('industries.real-estate') }}">
-                            <img src="{{ asset('assets/img/industries/real-estate-construction.png') }}"
-                                class="object-contain" alt="Real Estate & Construction Icon">
+                        </div>
+                    </a>
+
+                    <a href="{{ route('industries.real-estate') }}">
+                        <div title="Real Estate & Construction"
+                            class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-blue-700">
+                            <div class="p-6">
+                                    <img src="{{ asset('assets/img/industries/real-estate-construction.png') }}"
+                                        class="object-contain" alt="Real Estate & Construction Icon">
+                            </div>
                             <h1 class="text-sm">Real Estate & Construction</h1>
-                        </a>
-                    </div>
-                    <div title="Retail & eCommerce"
-                        class="card p-12 hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-green-700 ">
-                        <a href="{{ route('industries.retail-ecommerce') }}">
-                            <img src="{{ asset('assets/img/industries/retail-ecommerce.png') }}"
+                        </div>
+                    </a>
+
+                    <a href="{{ route('industries.retail-ecommerce') }}">
+                        <div title="Retail & eCommerce"
+                            class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-green-700 ">
+                            <div class="p-6">
+                                <img src="{{ asset('assets/img/industries/retail-ecommerce.png') }}"
                                 class="object-contain" alt="Retail & eCommerce Icon">
+                            </div>
                             <h1 class="text-sm">Retail & eCommerce</h1>
-                        </a>
-                    </div>
-                    <div title="Travel & Hospitality"
-                        class="card p-12 hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-yellow-700">
-                        <a href="{{ route('industries.travel-hospitality') }}">
-                            <img src="{{ asset('assets/img/industries/travel-hospitality.png') }}"
+                        </div>
+                    </a>
+
+                    <a href="{{ route('industries.travel-hospitality') }}">
+                        <div title="Travel & Hospitality"
+                            class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-yellow-700">
+                            <div class="p-6">
+                                <img src="{{ asset('assets/img/industries/travel-hospitality.png') }}"
                                 class="object-contain" alt="Travel & Hospitality Icon">
+                            </div>
                             <h1 class="text-sm">Travel & Hospitality</h1>
-                        </a>
-                    </div>
-                    <div title="Utilities & On-demand"
-                        class="card p-12 hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-indigo-700">
-                        <a href="{{ route('industries.utilities') }}">
-                            <img src="{{ asset('assets/img/industries/utilities-ondemand.png') }}"
+                            
+                        </div>
+                    </a>
+
+                    <a href="javascript://">
+                        <div title="Utilities & On-demand"
+                            class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-indigo-700">
+                            <div class="p-6">
+                                <img src="{{ asset('assets/img/industries/utilities-ondemand.png') }}"
                                 class="object-contain" alt="Utilities & On-demand Icon">
+                            </div>
                             <h1 class="text-sm">Utilities & On-demand</h1>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
+
+                    <a href="javascript://">
+                        <div title="FinTech"
+                            class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-amber-900">
+                            <div class="p-6">
+                                <img src="{{ asset('assets/img/industries/fintech-icon.png') }}"
+                                class="object-contain" alt="FinTech Icon">
+                            </div>
+                            <h1 class="text-sm">FinTech</h1>
+                        </div>
+                    </a>
+
+                    <a href="javascript://">
+                        <div title="Minng & Agriculture"
+                            class="card hover:drop-shadow-lg text-center mx-3 hover:border-b-8 border-b-fuchsia-500">
+                            <div class="p-6">
+                                <img src="{{ asset('assets/img/industries/mining-icon.png') }}"
+                                class="object-contain" alt="Mining & Agriculture Icon">
+                            </div>
+                            <h1 class="text-sm">Mining & Agriculture</h1>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
