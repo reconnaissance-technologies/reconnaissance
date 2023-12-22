@@ -102,10 +102,10 @@
                                         <li class="py-1"><a href="{{ route('industries.real-estate') }}" class="hover:border-b-rt-primary hover:border-b-2">Real Estate & Construction</a></li>
                                         <li class="py-1"><a href="{{ route('industries.retail-ecommerce') }}" class="hover:border-b-rt-primary hover:border-b-2">Retail & eCommerce</a></li>
                                         <li class="py-1"><a href="{{ route('industries.travel-hospitality') }}" class="hover:border-b-rt-primary hover:border-b-2">Travel & Hospitality</a></li>
-                                        <li class="py-1"><a href="{{ route('industries.utilities') }}" class="hover:border-b-rt-primary hover:border-b-2">Utilities & On-Demand</a></li>
-                                        <li class="py-1"><a href="{{ route('industries.fintech') }}" class="hover:border-b-rt-primary hover:border-b-2">FinTech</a></li>
-                                        <li class="py-1"><a href="{{ route('industries.automotive') }}" class="hover:border-b-rt-primary hover:border-b-2">Automotive</a></li>
-                                        <li class="py-1"><a href="{{ route('industries.mining-agriculture') }}" class="hover:border-b-rt-primary hover:border-b-2">Mining & Agriculture</a></li>
+                                        {{-- <li class="py-1"><a href="{{ route('industries.utilities') }}" class="hover:border-b-rt-primary hover:border-b-2">Utilities & On-Demand</a></li> --}}
+                                        {{-- <li class="py-1"><a href="{{ route('industries.fintech') }}" class="hover:border-b-rt-primary hover:border-b-2">FinTech</a></li> --}}
+                                        {{-- <li class="py-1"><a href="{{ route('industries.automotive') }}" class="hover:border-b-rt-primary hover:border-b-2">Automotive</a></li> --}}
+                                        {{-- <li class="py-1"><a href="{{ route('industries.mining-agriculture') }}" class="hover:border-b-rt-primary hover:border-b-2">Mining & Agriculture</a></li> --}}
                                     </ul>
                                 </p>
                             </ul>
