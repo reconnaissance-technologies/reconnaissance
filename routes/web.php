@@ -17,7 +17,20 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PagesController::class, 'index'])->name('index');
 Route::get('about-us', [PagesController::class, 'about_us'])->name('about-us');
 Route::get('our-services', [PagesController::class, 'our_services'])->name('our-services');
-Route::group(['prefix'=>'industries','as'=>'industries.'], function () {
+
+Route::group(['prefix'  =>  'our-services', 'as'    => 'services.'], function () {
+    Route::get('product-design', [PagesController::class, 'product_design'])->name('product-design');
+    Route::get('software-devlopment', [PagesController::class, 'software_development'])->name('software-devlopment');
+    Route::get('web-appliaction-development', [PagesController::class, 'web_app'])->name('web-app');
+    Route::get('frontend-development', [PagesController::class, 'frontend_development'])->name('frontend-development');
+    Route::get('cloud-infrastructure', [PagesController::class, 'cloud_infrastructure'])->name('cloud-infrastructure');
+    Route::get('pentesting', [PagesController::class, 'pentesting'])->name('pentesting');
+    Route::get('ar-vr-development', [PagesController::class, 'ar_vr_development'])->name('ar-vr-development');
+    Route::get('ai-ml-development', [PagesController::class, 'ai_ml_development'])->name('ai-ml-development');
+    Route::get('iot-development', [PagesController::class, 'iot_development'])->name('iot-development');
+    Route::get('chatbot-development', [PagesController::class, 'chatbot_development'])->name('chatbot-development');
+});
+Route::group(['prefix'  =>  'industries','as'=>'industries.'], function () {
     Route::get('media-and-entertainment', [PagesController::class, 'media_entertainment'])->name('media-and-entertainment');
     Route::get('education', [PagesController::class, 'education'])->name('education');
     Route::get('healthcare', [PagesController::class, 'healthcare'])->name('healthcare');
@@ -48,6 +61,7 @@ Route::group(['prefix'=>'clients','as'=>'clients.'], function () {
         return redirect('https://cacfoundation.com.ng');
     })->name('cac-foundation');
 });
+
 Route::get('our-work', [PagesController::class, 'our_work'])->name('our-work');
 Route::get('our-solutions', [PagesController::class, 'our_solutions'])->name('our-solutions');
 Route::get('careers', [PagesController::class, 'careers'])->name('careers');

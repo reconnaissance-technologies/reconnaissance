@@ -34,6 +34,46 @@ class PagesController extends Controller
         return view('our-services');
     }
 
+    public function product_design() {
+        return view('our-services.product-design');
+    }
+
+    public function software_development() {
+        return view('our-services.software-development');
+    }
+
+    public function web_app() {
+        return view('our-services.web-app-development');
+    }
+
+    public function frontend_development() {
+        return view('our-services.frontend-development');
+    }
+
+    public function cloud_infrastructure() {
+        return view('our-services.cloud-infrastructure');
+    }
+
+    public function pentesting() {
+        return view('our-services.pentesting');
+    }
+
+    public function ai_ml_development() {
+        return view('our-services.ai-ml-development');
+    }
+
+    public function ar_vr_development() {
+        return view('our-services.ar-vr-development');
+    }
+
+    public function iot_development() {
+        return view('our-services.iot-development');
+    }
+
+    public function chatbot_development() {
+        return view('our-services.chatbot-development');
+    }
+
     public function media_entertainment() {
         return view('industries.media-entertainment');
     }
