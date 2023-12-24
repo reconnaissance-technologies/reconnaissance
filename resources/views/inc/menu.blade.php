@@ -66,12 +66,12 @@
                                 </div>
                                 <p class="text-sm">
                                     <ul>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Product Design</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Software Development</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Web Application Development</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Frontend Development</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Cloud & Infrastructure</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Penetration Testing & Cybersecurity</a></li>
+                                        <li class="py-1"><a href="{{ route('services.product-design') }}" class="hover:border-b-rt-primary hover:border-b-2">Product Design</a></li>
+                                        <li class="py-1"><a href="{{ route('services.software-devlopment') }}" class="hover:border-b-rt-primary hover:border-b-2">Software Development</a></li>
+                                        <li class="py-1"><a href="{{ route('services.web-app') }}" class="hover:border-b-rt-primary hover:border-b-2">Web Application Development</a></li>
+                                        <li class="py-1"><a href="{{ route('services.frontend-development') }}" class="hover:border-b-rt-primary hover:border-b-2">Frontend Development</a></li>
+                                        <li class="py-1"><a href="{{ route('services.cloud-infrastructure') }}" class="hover:border-b-rt-primary hover:border-b-2">Cloud & Infrastructure</a></li>
+                                        <li class="py-1"><a href="{{ route('services.pentesting') }}" class="hover:border-b-rt-primary hover:border-b-2">Penetration Testing & Cybersecurity</a></li>
                                     </ul>
                                 </p>
                             </ul>
@@ -81,10 +81,10 @@
                                 </div>
                                 <p class="text-sm">
                                     <ul>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">AR/VR Development</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">AI/ML Development</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">IOT Development</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Chatbot Development</a></li>
+                                        <li class="py-1"><a href="{{ route('services.ar-vr-development') }}" class="hover:border-b-rt-primary hover:border-b-2">AR/VR Development</a></li>
+                                        <li class="py-1"><a href="{{ route('services.ai-ml-development') }}" class="hover:border-b-rt-primary hover:border-b-2">AI/ML Development</a></li>
+                                        <li class="py-1"><a href="{{ route('services.iot-development') }}" class="hover:border-b-rt-primary hover:border-b-2">IOT Development</a></li>
+                                        <li class="py-1"><a href="{{ route('services.chatbot-development') }}" class="hover:border-b-rt-primary hover:border-b-2">Chatbot Development</a></li>
                                     </ul>
                                 </p>
                             </ul>
