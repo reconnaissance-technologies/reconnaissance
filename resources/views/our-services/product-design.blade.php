@@ -5,7 +5,7 @@
 @section('robots', 'index, follow')
 @section('og-title', 'The Best Product Design Services & Solutions| Reconnaissance Technologies')
 @section('og-sitename', 'Reconnaissance Technologies')
-@section('og-url', "{{ route('industries.media-and-entertainment') }}")
+@section('og-url', "{{ route('services.product-design') }}")
 @section('og-description', 'Get the best Product Design Services from the top firm, Reconnaissance Technologies. Expertise in creating innovative, efficient designs for diverse product design & engineering needs.')
 @section('og-image', "{{ asset('assets/img/logo-dark.png') }}")
 @section('title', 'The Best Product Design Services & Solutions - Reconnaissance Technologies')
