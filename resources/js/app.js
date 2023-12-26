@@ -163,8 +163,81 @@ const tsTabsInstanceOptions = {
  * tsTabsOptions: optional
  * tsTabsInstanceOptions: optional
  */
-const tabs = new Tabs(tsTabsElement, tsTabElements, tsTabsOptions, tsTabsInstanceOptions);
+const tsTabs = new Tabs(tsTabsElement, tsTabElements, tsTabsOptions, tsTabsInstanceOptions);
 /** End of Technology Stack Tabs Implementation */
+
+/** Technology Stack Tabs Implementation */
+const wwdTabsElement = document.getElementById('wwd-tab');
+
+// create an array of objects with the id, trigger element (eg. button), and the content element
+const wwdTabElements = [{
+        id: 'experience',
+        triggerEl: document.querySelector('#experience-tab'),
+        targetEl: document.querySelector('#experience-tab-content'),
+    },
+    {
+        id: 'architecture',
+        triggerEl: document.querySelector('#architecture-tab'),
+        targetEl: document.querySelector('#architecture-tab-content'),
+    },
+    {
+        id: 'cloud',
+        triggerEl: document.querySelector('#cloud-tab'),
+        targetEl: document.querySelector('#cloud-tab-content'),
+    },
+    {
+        id: 'perfomance-insights',
+        triggerEl: document.querySelector('#performance-insights-tab'),
+        targetEl: document.querySelector('#performance-insights-tab-content'),
+    },
+    {
+        id: 'process',
+        triggerEl: document.querySelector('#process-tab'),
+        targetEl: document.querySelector('#process-tab-content'),
+    },
+    {
+        id: 'security',
+        triggerEl: document.querySelector('#security-tab'),
+        targetEl: document.querySelector('#security-tab-content'),
+    },
+    {
+        id: 'legal',
+        triggerEl: document.querySelector('#legal-tab'),
+        targetEl: document.querySelector('#legal-tab-content'),
+    },
+    {
+        id: 'compliance',
+        triggerEl: document.querySelector('#compliance-tab'),
+        targetEl: document.querySelector('#compliance-tab-content'),
+    },
+    {
+        id: 'innovation',
+        triggerEl: document.querySelector('#innovation-tab'),
+        targetEl: document.querySelector('#innovation-tab-content'),
+    },
+];
+
+// what we deliver tabs options with default values
+const wwdTabsOptions = {
+    defaultTabId: 'ai-ml',
+    activeClasses: 'text-rt-primary hover:text-rt-primary border-r-2 border-rt-primary first:rounded-t-lg last:rounded-b-lg dark:text-rt-primary dark:border-rt-primary',
+    inactiveClasses: 'text-gray-500 hover:text-rt-primary dark:text-gray-400 hover:border-rt-primary dark:hover:text-rt-primary',
+    onShow: () => {},
+};
+
+// what we deliver tabs instance options with default values
+const wwdTabsInstanceOptions = {
+    id: 'wwd-tab',
+    override: true
+};
+
+/*
+ * wwdTabElements: array of tab objects
+ * wwdTabsOptions: optional
+ * wwdTabsInstanceOptions: optional
+ */
+const tabs = new Tabs(tsTabsElement, tsTabElements, tsTabsOptions, tsTabsInstanceOptions);
+/** End of What We Deliver Tabs Implementation */
 
 /** Clients and Testimonials Slider Implementation */
 /** End of Clients and Testimonials Slider Implementation */
