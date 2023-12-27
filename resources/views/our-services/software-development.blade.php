@@ -572,7 +572,7 @@
             </div>
 
             <div class="grid grid-cols-3 gap-8 py-8">
-                <div class="card hover:drop-shadow-lg dark:text-black hover:border-b-8 hover:border-b-violet-600 ">
+                <div class="card hover:drop-shadow-lg dark:text-black hover:border-b-8 hover:border-b-violet-400 ">
                     <div class="flex items-end">
                         <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl lg:w-50">
                             Data Protection and Privacy Laws
@@ -594,19 +594,6 @@
                         Adherence to HIPAA and HITECH regulations for healthcare-related software, safe guarding patient data and ensuring confidentiality and integrity.
                     </p>
                 </div>
-                <div class="card hover:drop-shadow-lg dark:text-black hover:border-b-8 hover:border-b-slate-800">
-                    <div class="flex items-end">
-                        <img src="{{ asset('assets/img/our-services/scalability-icon.svg') }}" class="w-20 h-20" alt="Design Scalability Solution - Reconnaissance Technologies">
-
-                        <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                            Scalability
-                        </h1>
-                    </div>
-                    
-                    <p>
-                        We utilize cloud-based arcitectures and scalable database solutions to accommodate the dynamic growth of your data infrastructure to ensure the freedom of business expansion.
-                    </p>
-                </div>
                 <div class="card hover:drop-shadow-lg dark:text-black hover:border-b-8 hover:border-b-lime-500">
                     <div class="flex items-end">
                         <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
@@ -618,7 +605,7 @@
                         Compliance with financial industry standards such as PCI DSS and Sarbanes-Oxley Act, ensuring secure and reliable financial transactions and data handling
                     </p>
                 </div>
-                <div class="card hover:drop-shadow-lg dark:text-black hover:border-b-8 hover:border-b-lime-900">
+                <div class="card hover:drop-shadow-lg dark:text-black hover:border-b-8 hover:border-b-fuchsia-950">
                     <div class="flex items-end">
                         <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
                             Quality and Safety Standards
@@ -629,7 +616,7 @@
                         Following ISO standards and other quality control measures to deliver safe, reliable, and high-quality software products.
                     </p>
                 </div>
-                <div class="card hover:drop-shadow-lg dark:text-black hover:border-b-8 hover:border-b-lime-900">
+                <div class="card hover:drop-shadow-lg dark:text-black hover:border-b-8 hover:border-b-gray-700">
                     <div class="flex items-end">
                         <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
                             Accessibility Standards
@@ -640,7 +627,7 @@
                         Commitment to WCAG and ADA standards, ensuring our software products are accessible to all users, including those with disabilties.
                     </p>
                 </div>
-                <div class="card hover:drop-shadow-lg dark:text-black hover:border-b-8 hover:border-b-lime-900">
+                <div class="card hover:drop-shadow-lg dark:text-black hover:border-b-8 hover:border-b-red-900">
                     <div class="flex items-end">
                         <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
                             Intellectual Property Rights (IPR)
