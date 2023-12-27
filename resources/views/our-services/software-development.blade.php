@@ -550,17 +550,17 @@
     </section>
     <!-- End of Our Capabilities Section -->
 
-    <!-- Business Benefits Section -->
+    <!-- Our Commitment Section -->
     <section class="px-16 bg-white dark:text-white dark:bg-gray-800 flex justify-between">
         <div class="w-full py-6">
-            <h3 class="text-rt-primary text-xl uppercase font-semibold">How We Do It</h3>
+            <h3 class="text-rt-primary text-xl uppercase font-semibold">Our Commitment To</h3>
             <h1 class="w-3/4 text-xl lg:text-4xl font-bold mt-2 mb-2 lg:mb-6">
-                Unlock Business Benefits with Reconnaissance Technologies
+                Legal and Ethical Software Product Development Practices
             </h1>
             <div class="w-full lg:w-full flex justify-between items-center">
                 <div class="lg:w-3/4">
                     <p>
-                        At Reconnaissance Technologeis, we straighten out the complexitites of product design, empowering enterprises to navigate challenges and seize opportunities. Here are a few benefits of collaborating with our team
+                        Reconnaissance Technologies understands the importance of adhering to relevant laws and compliance standards in software product development. Our ‘commitment to legal integrity and ethical practices ensures that our solutions not only meet but exceed the required legal and regulatory frameworks.
                     </p>
                 </div>
                 <div>
@@ -574,28 +574,24 @@
             <div class="grid grid-cols-3 gap-8 py-8">
                 <div class="card hover:drop-shadow-lg dark:text-black hover:border-b-8 hover:border-b-violet-600 ">
                     <div class="flex items-end">
-                        <img src="{{ asset('assets/img/our-services/consistency-icon.svg') }}" class="w-20 h-20" alt="Design Consistency - Reconnaissance Technologies">
-                    
                         <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl lg:w-50">
-                            Consistency
+                            Data Protection and Privacy Laws
                         </h1>
                     </div>
 
                     <p class="py-8">
-                        We implement standardized data models and integration protocols for enforcing consistency in data sotrage, processing, and retrieval across your enterprise systems.
+                        Strict adherence to NDPR, GDPR, CCPA, and other global data protection regulations, ensuring the highest standards of data privacy and security for user information.
                     </p>
                 </div>
                 <div class="card hover:drop-shadow-lg dark:text-black hover:border-b-8 hover:border-b-purple-900">
                     <div class="flex items-end">
-                        <img src="{{ asset('assets/img/our-services/efficiency.svg') }}" class="w-20 h-20" alt="Design Efficiency - Reconnaissance Technologies">
-
                         <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                            Efficiency
+                            Healthcare Compliance
                         </h1>
                     </div>
                     
                     <p class="py-8">
-                        By employing data cleansing, transformation, and automation techniques to eliminate inefficiencies, we help enhance overall data processing speed and resource utilization.
+                        Adherence to HIPAA and HITECH regulations for healthcare-related software, safe guarding patient data and ensuring confidentiality and integrity.
                     </p>
                 </div>
                 <div class="card hover:drop-shadow-lg dark:text-black hover:border-b-8 hover:border-b-slate-800">
@@ -613,125 +609,51 @@
                 </div>
                 <div class="card hover:drop-shadow-lg dark:text-black hover:border-b-8 hover:border-b-lime-500">
                     <div class="flex items-end">
-                        <img src="{{ asset('assets/img/our-services/user-experience-icon.svg') }}" class="w-20 h-20" alt="Improved user Experience - Reconnaissance Technologies">
-
                         <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                            Improved User Experience
+                            Financial Regulations
                         </h1>
                     </div>
 
                     <p class="py-8">
-                        To transform user interactions and user engagements, we implement advanced data analytics and visualization tools to offer real-time insights, enancing user decision-making and overall experience.
+                        Compliance with financial industry standards such as PCI DSS and Sarbanes-Oxley Act, ensuring secure and reliable financial transactions and data handling
                     </p>
                 </div>
                 <div class="card hover:drop-shadow-lg dark:text-black hover:border-b-8 hover:border-b-lime-900">
                     <div class="flex items-end">
-                        <img src="{{ asset('assets/img/our-services/brand-recognition-icon.svg') }}" class="w-20 h-20" alt="Brand Recognition - Reconnaissance Technologies">
-
                         <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                            Brand Recognition
+                            Quality and Safety Standards
                         </h1>
                     </div>
 
                     <p class="py-8">
-                        Elevate your brand presence through Reconnaissance Technologies' product design services, by building a centralized data repository, ensuring accurate and accessible information for better decision-making and brand consistency across touchpoints.
+                        Following ISO standards and other quality control measures to deliver safe, reliable, and high-quality software products.
+                    </p>
+                </div>
+                <div class="card hover:drop-shadow-lg dark:text-black hover:border-b-8 hover:border-b-lime-900">
+                    <div class="flex items-end">
+                        <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
+                            Accessibility Standards
+                        </h1>
+                    </div>
+
+                    <p class="py-8">
+                        Commitment to WCAG and ADA standards, ensuring our software products are accessible to all users, including those with disabilties.
+                    </p>
+                </div>
+                <div class="card hover:drop-shadow-lg dark:text-black hover:border-b-8 hover:border-b-lime-900">
+                    <div class="flex items-end">
+                        <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
+                            Intellectual Property Rights (IPR)
+                        </h1>
+                    </div>
+
+                    <p class="py-8">
+                        Rigorous compliance with IPR laws, respecting and protecting the intellectual property rights of clients and third parties.
                     </p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End of Business Benefits Section -->
-
-    <!-- Business Benefits Section -->
-    <section class="px-16 bg-white dark:text-white dark:bg-gray-800 flex justify-between">
-        <div class="w-full py-6">
-            <h3 class="text-rt-primary text-xl uppercase font-semibold">How We Do It</h3>
-            <h1 class="w-3/4 text-xl lg:text-4xl font-bold mt-2 mb-2 lg:mb-6">
-                Unlock Business Benefits with Reconnaissance Technologies
-            </h1>
-            <div class="w-full lg:w-full flex justify-between items-center">
-                <div class="lg:w-3/4">
-                    <p>
-                        At Reconnaissance Technologeis, we straighten out the complexitites of product design, empowering enterprises to navigate challenges and seize opportunities. Here are a few benefits of collaborating with our team
-                    </p>
-                </div>
-                <div>
-                    <a href="{{ route('contact-us') }}"
-                        class="p-4 border-2 border-rt-primary rounded-lg hover:bg-rt-primary text-rt-primary hover:text-white">
-                        Speak to an Expert
-                    </a>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-3 gap-8 py-8">
-                <div class="card hover:drop-shadow-lg dark:text-black hover:border-b-8 hover:border-b-violet-600 ">
-                    <div class="flex items-end">
-                        <img src="{{ asset('assets/img/our-services/consistency-icon.svg') }}" class="w-20 h-20" alt="Design Consistency - Reconnaissance Technologies">
-                    
-                        <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl lg:w-50">
-                            Consistency
-                        </h1>
-                    </div>
-
-                    <p class="py-8">
-                        We implement standardized data models and integration protocols for enforcing consistency in data sotrage, processing, and retrieval across your enterprise systems.
-                    </p>
-                </div>
-                <div class="card hover:drop-shadow-lg dark:text-black hover:border-b-8 hover:border-b-purple-900">
-                    <div class="flex items-end">
-                        <img src="{{ asset('assets/img/our-services/efficiency.svg') }}" class="w-20 h-20" alt="Design Efficiency - Reconnaissance Technologies">
-
-                        <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                            Efficiency
-                        </h1>
-                    </div>
-                    
-                    <p class="py-8">
-                        By employing data cleansing, transformation, and automation techniques to eliminate inefficiencies, we help enhance overall data processing speed and resource utilization.
-                    </p>
-                </div>
-                <div class="card hover:drop-shadow-lg dark:text-black hover:border-b-8 hover:border-b-slate-800">
-                    <div class="flex items-end">
-                        <img src="{{ asset('assets/img/our-services/scalability-icon.svg') }}" class="w-20 h-20" alt="Design Scalability Solution - Reconnaissance Technologies">
-
-                        <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                            Scalability
-                        </h1>
-                    </div>
-                    
-                    <p>
-                        We utilize cloud-based arcitectures and scalable database solutions to accommodate the dynamic growth of your data infrastructure to ensure the freedom of business expansion.
-                    </p>
-                </div>
-                <div class="card hover:drop-shadow-lg dark:text-black hover:border-b-8 hover:border-b-lime-500">
-                    <div class="flex items-end">
-                        <img src="{{ asset('assets/img/our-services/user-experience-icon.svg') }}" class="w-20 h-20" alt="Improved user Experience - Reconnaissance Technologies">
-
-                        <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                            Improved User Experience
-                        </h1>
-                    </div>
-
-                    <p class="py-8">
-                        To transform user interactions and user engagements, we implement advanced data analytics and visualization tools to offer real-time insights, enancing user decision-making and overall experience.
-                    </p>
-                </div>
-                <div class="card hover:drop-shadow-lg dark:text-black hover:border-b-8 hover:border-b-lime-900">
-                    <div class="flex items-end">
-                        <img src="{{ asset('assets/img/our-services/brand-recognition-icon.svg') }}" class="w-20 h-20" alt="Brand Recognition - Reconnaissance Technologies">
-
-                        <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                            Brand Recognition
-                        </h1>
-                    </div>
-
-                    <p class="py-8">
-                        Elevate your brand presence through Reconnaissance Technologies' product design services, by building a centralized data repository, ensuring accurate and accessible information for better decision-making and brand consistency across touchpoints.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End of Business Benefits Section -->
+    <!-- End of Our Commitment Section -->
 </main>
 @endsection
