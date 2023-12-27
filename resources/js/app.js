@@ -219,9 +219,9 @@ const wwdTabElements = [{
 
 // what we deliver tabs options with default values
 const wwdTabsOptions = {
-    defaultTabId: 'ai-ml',
-    activeClasses: 'text-rt-primary hover:text-rt-primary border-r-2 border-rt-primary first:rounded-t-lg last:rounded-b-lg dark:text-rt-primary dark:border-rt-primary',
-    inactiveClasses: 'text-gray-500 hover:text-rt-primary dark:text-gray-400 hover:border-rt-primary dark:hover:text-rt-primary',
+    defaultTabId: 'experience',
+    activeClasses: 'text-bold',
+    inactiveClasses: '',
     onShow: () => {},
 };
 
@@ -236,7 +236,7 @@ const wwdTabsInstanceOptions = {
  * wwdTabsOptions: optional
  * wwdTabsInstanceOptions: optional
  */
-const tabs = new Tabs(tsTabsElement, tsTabElements, tsTabsOptions, tsTabsInstanceOptions);
+const wwdTabs = new Tabs(wwdTabsElement, wwdTabElements, wwdTabsOptions, wwdTabsInstanceOptions);
 /** End of What We Deliver Tabs Implementation */
 
 /** Clients and Testimonials Slider Implementation */
