@@ -15,34 +15,35 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [PagesController::class, 'index'])->name('index');
-Route::get('about-us', [PagesController::class, 'about_us'])->name('about-us');
-Route::get('our-services', [PagesController::class, 'our_services'])->name('our-services');
+Route::get('about-us', [PagesController::class, 'aboutUs'])->name('about-us');
+Route::get('our-services', [PagesController::class, 'ourServices'])->name('our-services');
 
 Route::group(['prefix'  =>  'our-services', 'as'    => 'services.'], function () {
-    Route::get('product-design', [PagesController::class, 'product_design'])->name('product-design');
-    Route::get('software-devlopment', [PagesController::class, 'software_development'])->name('software-devlopment');
-    Route::get('web-appliaction-development', [PagesController::class, 'web_app'])->name('web-app');
-    Route::get('frontend-development', [PagesController::class, 'frontend_development'])->name('frontend-development');
-    Route::get('cloud-infrastructure', [PagesController::class, 'cloud_infrastructure'])->name('cloud-infrastructure');
+    Route::get('product-design', [PagesController::class, 'productDesign'])->name('product-design');
+    Route::get('software-devlopment', [PagesController::class, 'softwareDevelopment'])->name('software-devlopment');
+    Route::get('web-appliaction-development', [PagesController::class, 'webApp'])->name('web-app');
+    Route::get('mobile-app-development', [PagesController::class, 'mobileApp'])->name('mobile-app');
+    Route::get('frontend-development', [PagesController::class, 'frontendDevelopment'])->name('frontend-development');
+    Route::get('cloud-infrastructure', [PagesController::class, 'cloudInfrastructure'])->name('cloud-infrastructure');
     Route::get('pentesting', [PagesController::class, 'pentesting'])->name('pentesting');
-    Route::get('ar-vr-development', [PagesController::class, 'ar_vr_development'])->name('ar-vr-development');
-    Route::get('ai-ml-development', [PagesController::class, 'ai_ml_development'])->name('ai-ml-development');
-    Route::get('iot-development', [PagesController::class, 'iot_development'])->name('iot-development');
-    Route::get('chatbot-development', [PagesController::class, 'chatbot_development'])->name('chatbot-development');
+    Route::get('ar-vr-development', [PagesController::class, 'arVrDevelopment'])->name('ar-vr-development');
+    Route::get('ai-ml-development', [PagesController::class, 'aiMlDevelopment'])->name('ai-ml-development');
+    Route::get('iot-development', [PagesController::class, 'iotDevelopment'])->name('iot-development');
+    Route::get('chatbot-development', [PagesController::class, 'chatbotDevelopment'])->name('chatbot-development');
 });
 Route::group(['prefix'  =>  'industries','as'=>'industries.'], function () {
-    Route::get('media-and-entertainment', [PagesController::class, 'media_entertainment'])->name('media-and-entertainment');
+    Route::get('media-and-entertainment', [PagesController::class, 'mediaEntertainment'])->name('media-and-entertainment');
     Route::get('education', [PagesController::class, 'education'])->name('education');
     Route::get('healthcare', [PagesController::class, 'healthcare'])->name('healthcare');
-    Route::get('hi-tech', [PagesController::class, 'hi_tech'])->name('hi-tech');
+    Route::get('hi-tech', [PagesController::class, 'hiTech'])->name('hi-tech');
     Route::get('logistics', [PagesController::class, 'logistics'])->name('logistics');
-    Route::get('real-estate-and-construction', [PagesController::class, 'real_estate_construction'])->name('real-estate');
-    Route::get('retail-and-ecommerce', [PagesController::class, 'retail_ecommerce'])->name('retail-ecommerce');
-    Route::get('travel-and-hospitality', [PagesController::class, 'travel_hospitality'])->name('travel-hospitality');
-    Route::get('utilities-and-on-demand', [PagesController::class, 'utilities_on_demand'])->name('utilities');
+    Route::get('real-estate-and-construction', [PagesController::class, 'realEstateConstruction'])->name('real-estate');
+    Route::get('retail-and-ecommerce', [PagesController::class, 'retailEcommerce'])->name('retail-ecommerce');
+    Route::get('travel-and-hospitality', [PagesController::class, 'travelHospitality'])->name('travel-hospitality');
+    Route::get('utilities-and-on-demand', [PagesController::class, 'utilitiesOnDemand'])->name('utilities');
     Route::get('fintech', [PagesController::class, 'fintech'])->name('fintech');
     Route::get('automotive', [PagesController::class, 'automotive'])->name('automotive');
-    Route::get('mining-agriculture', [PagesController::class, 'mining_agriculture'])->name('mining-agriculture');
+    Route::get('mining-agriculture', [PagesController::class, 'miningAgriculture'])->name('mining-agriculture');
 });
 Route::group(['prefix'=>'clients','as'=>'clients.'], function () {
     Route::get('blue-sea-travels', function() {
@@ -62,9 +63,9 @@ Route::group(['prefix'=>'clients','as'=>'clients.'], function () {
     })->name('cac-foundation');
 });
 
-Route::get('our-work', [PagesController::class, 'our_work'])->name('our-work');
-Route::get('our-solutions', [PagesController::class, 'our_solutions'])->name('our-solutions');
+Route::get('our-work', [PagesController::class, 'ourWork'])->name('our-work');
+Route::get('our-solutions', [PagesController::class, 'ourSolutions'])->name('our-solutions');
 Route::get('careers', [PagesController::class, 'careers'])->name('careers');
 Route::get('csr', [PagesController::class, 'csr'])->name('csr');
-Route::get('our-blog', [PagesController::class, 'our_blog'])->name('our-blog');
-Route::get('contact-us', [PagesController::class, 'contact_us'])->name('contact-us');
+Route::get('our-blog', [PagesController::class, 'ourBlog'])->name('our-blog');
+Route::get('contact-us', [PagesController::class, 'contactUs'])->name('contact-us');

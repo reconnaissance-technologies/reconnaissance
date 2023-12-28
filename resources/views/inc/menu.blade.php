@@ -69,6 +69,7 @@
                                         <li class="py-1"><a href="{{ route('services.product-design') }}" class="hover:border-b-rt-primary hover:border-b-2">Product Design</a></li>
                                         <li class="py-1"><a href="{{ route('services.software-devlopment') }}" class="hover:border-b-rt-primary hover:border-b-2">Software Development</a></li>
                                         <li class="py-1"><a href="{{ route('services.web-app') }}" class="hover:border-b-rt-primary hover:border-b-2">Web Application Development</a></li>
+                                        <li class="py-1"><a href="{{ route('services.mobile-app') }}" class="hover:border-b-rt-primary hover:border-b-2">Mobile App Development</a></li>
                                         <li class="py-1"><a href="{{ route('services.frontend-development') }}" class="hover:border-b-rt-primary hover:border-b-2">Frontend Development</a></li>
                                         <li class="py-1"><a href="{{ route('services.cloud-infrastructure') }}" class="hover:border-b-rt-primary hover:border-b-2">Cloud & Infrastructure</a></li>
                                         <li class="py-1"><a href="{{ route('services.pentesting') }}" class="hover:border-b-rt-primary hover:border-b-2">Penetration Testing & Cybersecurity</a></li>

@@ -10,15 +10,15 @@ class PagesController extends Controller
         return view('welcome');
     }
 
-    public function about_us() {
+    public function aboutUs() {
         return view('about-us');
     }
 
-    public function our_solutions() {
+    public function ourSolutions() {
         return view('our-solutions');
     }
 
-    public function our_blog() {
+    public function ourBlog() {
         return view('our-blog');
     }
 
@@ -30,27 +30,31 @@ class PagesController extends Controller
         return view('careers');
     }
 
-    public function our_services() {
+    public function ourServices() {
         return view('our-services');
     }
 
-    public function product_design() {
+    public function productDesign() {
         return view('our-services.product-design');
     }
 
-    public function software_development() {
+    public function softwareDevelopment() {
         return view('our-services.software-development');
     }
 
-    public function web_app() {
+    public function webApp() {
         return view('our-services.web-app-development');
     }
 
-    public function frontend_development() {
+    public function mobileApp() {
+        return view('our-services.mobile-app-development');
+    }
+
+    public function frontendDevelopment() {
         return view('our-services.frontend-development');
     }
 
-    public function cloud_infrastructure() {
+    public function cloudInfrastructure() {
         return view('our-services.cloud-infrastructure');
     }
 
@@ -58,23 +62,23 @@ class PagesController extends Controller
         return view('our-services.pentesting');
     }
 
-    public function ai_ml_development() {
+    public function aiMlDevelopment() {
         return view('our-services.ai-ml-development');
     }
 
-    public function ar_vr_development() {
+    public function arVrDevelopment() {
         return view('our-services.ar-vr-development');
     }
 
-    public function iot_development() {
+    public function iotDevelopment() {
         return view('our-services.iot-development');
     }
 
-    public function chatbot_development() {
+    public function chatbotDevelopment() {
         return view('our-services.chatbot-development');
     }
 
-    public function media_entertainment() {
+    public function mediaEntertainment() {
         return view('industries.media-entertainment');
     }
 
@@ -86,7 +90,7 @@ class PagesController extends Controller
         return view('industries.healthcare');
     }
 
-    public function hi_tech() {
+    public function hiTech() {
         return view('industries.hi-tech');
     }
 
@@ -94,19 +98,19 @@ class PagesController extends Controller
         return view('industries.logistics');
     }
 
-    public function real_estate_construction() {
+    public function realEstateConstruction() {
         return view('industries.real-estate-construction');
     }
 
-    public function retail_ecommerce() {
+    public function retailEcommerce() {
         return view('industries.retail-ecommerce');
     }
 
-    public function travel_hospitality() {
+    public function travelHospitality() {
         return view('industries.travel-hospitality');
     }
 
-    public function utilities_on_demand() {
+    public function utilitiesOnDemand() {
         return view('industries.utilities-on-demand');
     }
 
@@ -118,15 +122,15 @@ class PagesController extends Controller
         return view('industries.automotive');
     }
 
-    public function mining_agriculture() {
+    public function miningAgriculture() {
         return view('industries.mining-agriculture');
     }
 
-    public function our_work() {
+    public function ourWork() {
         return view('our-work');
     }
 
-    public function contact_us() {
+    public function contactUs() {
         return view('contact');
     }
 }
