@@ -200,7 +200,7 @@
                 Transform Your Business
             </h1>
             <p>
-                Experience the Transformational Impact of AI & ML Partner with Hidden Brains for Next-Level Business Success!
+                Experience the Transformational Impact of AI & ML Partner with Reconnaissance Technologies for Next-Level Business Success!
             </p>
         </div>
 
@@ -220,7 +220,7 @@
             <div class="w-full lg:w-full flex justify-between items-center">
                 <div class="lg:w-3/4">
                     <p>
-                        Explore our proven track record of delivering artificial intelligence solutions services to diverse customer segments ranging from startups to large enterprises. Discover how we can assist you in achieving your business goals.
+                        Explore our proven track record of delivering artificial intelligence solutions to diverse customer segments ranging from startups to large enterprises. Discover how we can assist you in achieving your business goals.
                     </p>
                 </div>
             </div>
