@@ -72,7 +72,7 @@
                                         <li class="py-1"><a href="{{ route('services.mobile-app') }}" class="hover:border-b-rt-primary hover:border-b-2">Mobile App Development</a></li>
                                         <li class="py-1"><a href="{{ route('services.frontend-development') }}" class="hover:border-b-rt-primary hover:border-b-2">Frontend Development</a></li>
                                         <li class="py-1"><a href="{{ route('services.cloud-infrastructure') }}" class="hover:border-b-rt-primary hover:border-b-2">Cloud & Infrastructure</a></li>
-                                        <li class="py-1"><a href="{{ route('services.pentesting') }}" class="hover:border-b-rt-primary hover:border-b-2">Penetration Testing & Cybersecurity</a></li>
+                                        <li class="py-1"><a href="{{ route('services.cybersecurity') }}" class="hover:border-b-rt-primary hover:border-b-2">Cybersecurity</a></li>
                                     </ul>
                                 </p>
                             </ul>

@@ -25,7 +25,7 @@ Route::group(['prefix'  =>  'our-services', 'as'    => 'services.'], function ()
     Route::get('mobile-app-development', [PagesController::class, 'mobileApp'])->name('mobile-app');
     Route::get('frontend-development', [PagesController::class, 'frontendDevelopment'])->name('frontend-development');
     Route::get('cloud-infrastructure', [PagesController::class, 'cloudInfrastructure'])->name('cloud-infrastructure');
-    Route::get('pentesting', [PagesController::class, 'pentesting'])->name('pentesting');
+    Route::get('cybersecurity', [PagesController::class, 'cybersecurity'])->name('cybersecurity');
     Route::get('ar-vr-development', [PagesController::class, 'arVrDevelopment'])->name('ar-vr-development');
     Route::get('ai-ml-development', [PagesController::class, 'aiMlDevelopment'])->name('ai-ml-development');
     Route::get('iot-development', [PagesController::class, 'iotDevelopment'])->name('iot-development');

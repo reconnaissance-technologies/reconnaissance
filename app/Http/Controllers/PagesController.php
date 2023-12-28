@@ -58,8 +58,8 @@ class PagesController extends Controller
         return view('our-services.cloud-infrastructure');
     }
 
-    public function pentesting() {
-        return view('our-services.pentesting');
+    public function cybersecurity() {
+        return view('our-services.cybersecurity');
     }
 
     public function aiMlDevelopment() {
