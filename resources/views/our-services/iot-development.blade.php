@@ -186,7 +186,7 @@
                     </h1>
                     
                     <p>
-                        Hidden Brains offers a background in GE Predix to build apps that connect people with industrial machines for business outcomes.
+                        Reconnaissance Technologies offers a background in GE Predix to build apps that connect people with industrial machines for business outcomes.
                     </p>
                 </div>
                 <div class="card drop-shadow-lg dark:text-black border border-blue-800">
