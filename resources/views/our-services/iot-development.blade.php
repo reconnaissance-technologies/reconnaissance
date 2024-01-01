@@ -39,7 +39,7 @@
             </div>
             <div class="w-full lg:w-1/2 my-10">
                 <img src="{{ asset('assets/img/iot-image.png') }}"
-                    class="object-fill" alt="AI & ML Solutions - Reconnaissance Technologies">
+                    class="object-fill" alt="IoT Application Development - Reconnaissance Technologies">
             </div>
         </div>
     </section>
