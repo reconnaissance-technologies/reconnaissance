@@ -152,7 +152,7 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-3 gap-8 py-8">
+            <div class="grid grid-cols-2 gap-8 py-8">
                 <div class="card drop-shadow-lg dark:text-black border border-blue-800">
                     <img src="{{ asset('assets/img/our-services/arcore-icon.png') }}" width="50" alt="ARCore - Reconnaissance Technologies">
                     
