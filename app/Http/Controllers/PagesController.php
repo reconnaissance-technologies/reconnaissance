@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 class PagesController extends Controller
 {
     public function index() {
@@ -76,6 +74,14 @@ class PagesController extends Controller
 
     public function chatbotDevelopment() {
         return view('our-services.chatbot-development');
+    }
+
+    public function deliveryServiceModel() {
+        return view('our-services.service-models.delivery-model');
+    } 
+
+    public function engagementServiceModel() {
+        return view('our-services.service-models.engagement-model');
     }
 
     public function mediaEntertainment() {

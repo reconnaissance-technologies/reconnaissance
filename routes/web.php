@@ -31,6 +31,10 @@ Route::group(['prefix'  =>  'our-services', 'as'    => 'services.'], function ()
     Route::get('iot-development', [PagesController::class, 'iotDevelopment'])->name('iot-development');
     Route::get('chatbot-development', [PagesController::class, 'chatbotDevelopment'])->name('chatbot-development');
 });
+Route::group(['prefix'  =>  'service-model', 'as'    => 'sm.'], function () {
+    Route::get('delivery-model', [PagesController::class, 'deliveryServiceModel'])->name('delivery');
+    Route::get('engagement-model', [PagesController::class, 'engagementServiceModel'])->name('engagement');
+});
 Route::group(['prefix'  =>  'industries','as'=>'industries.'], function () {
     Route::get('media-and-entertainment', [PagesController::class, 'mediaEntertainment'])->name('media-and-entertainment');
     Route::get('education', [PagesController::class, 'education'])->name('education');
