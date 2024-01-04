@@ -117,7 +117,7 @@
                                     </div>
                                     <p class="text-sm">
                                         <ul>
-                                            <li class="py-1"><a href="{{ route('sm.delivery') }}" class="hover:border-b-rt-primary hover:border-b-2">Delivery Model</a></li>
+                                            <li class="py-1"><a href="{{ route('sm.delivery') }}" class="hover:border-b-rt-primary hover:border-b-2">Global Delivery Model</a></li>
                                             <li class="py-1"><a href="{{ route('sm.engagement') }}" class="hover:border-b-rt-primary hover:border-b-2">Engagement Model</a></li>
                                         </ul>
                                     </p>
