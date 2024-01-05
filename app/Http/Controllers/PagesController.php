@@ -84,6 +84,18 @@ class PagesController extends Controller
         return view('our-services.service-models.engagement-model');
     }
 
+    public function expressoAi() {
+        return view('product-offering.expresso-ai');
+    }
+
+    public function zooliSocial() {
+        return view('product-offering.zooli-social');
+    }
+
+    public function inventifyPlus() {
+        return view('product-offering.inventify-plus');
+    }
+
     public function mediaEntertainment() {
         return view('industries.media-entertainment');
     }

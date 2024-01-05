@@ -35,6 +35,11 @@ Route::group(['prefix'  =>  'service-model', 'as'    => 'sm.'], function () {
     Route::get('delivery-model', [PagesController::class, 'deliveryServiceModel'])->name('delivery');
     Route::get('engagement-model', [PagesController::class, 'engagementServiceModel'])->name('engagement');
 });
+Route::group(['prefix'  =>  'product-offering', 'as'    => 'po.'], function () {
+    Route::get('expresso-ai', [PagesController::class, 'expressoAi'])->name('expresso-ai');
+    Route::get('zooli-social', [PagesController::class, 'zooliSocial'])->name('zooli-social');
+    Route::get('inventify-plus', [PagesController::class, 'inventifyPlus'])->name('inventify-plus');
+});
 Route::group(['prefix'  =>  'industries','as'=>'industries.'], function () {
     Route::get('media-and-entertainment', [PagesController::class, 'mediaEntertainment'])->name('media-and-entertainment');
     Route::get('education', [PagesController::class, 'education'])->name('education');
