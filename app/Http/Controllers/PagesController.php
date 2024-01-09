@@ -88,8 +88,8 @@ class PagesController extends Controller
         return view('product-offering.expresso-ai');
     }
 
-    public function zooliSocial() {
-        return view('product-offering.zooli-social');
+    public function buzzForge() {
+        return view('product-offering.buzzforge');
     }
 
     public function inventifyPlus() {

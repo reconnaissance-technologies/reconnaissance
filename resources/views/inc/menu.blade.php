@@ -157,7 +157,7 @@
                                 <p class="text-sm">
                                     <ul>
                                         <li class="py-1"><a href="{{ route('po.expresso-ai') }}" class="hover:border-b-rt-primary hover:border-b-2">Expresso AI</a></li>
-                                        <li class="py-1"><a href="{{ route('po.zooli-social') }}" class="hover:border-b-rt-primary hover:border-b-2">Zooli Socials</a></li>
+                                        <li class="py-1"><a href="{{ route('po.buzzforge') }}" class="hover:border-b-rt-primary hover:border-b-2">Zooli Socials</a></li>
                                         <li class="py-1"><a href="{{ route('po.inventify-plus') }}" class="hover:border-b-rt-primary hover:border-b-2">Inventify Plus</a></li>
                                     </ul>
                                 </p>

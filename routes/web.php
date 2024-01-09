@@ -37,7 +37,7 @@ Route::group(['prefix'  =>  'service-model', 'as'    => 'sm.'], function () {
 });
 Route::group(['prefix'  =>  'product-offering', 'as'    => 'po.'], function () {
     Route::get('expresso-ai', [PagesController::class, 'expressoAi'])->name('expresso-ai');
-    Route::get('zooli-social', [PagesController::class, 'zooliSocial'])->name('zooli-social');
+    Route::get('buzzforge', [PagesController::class, 'buzzForge'])->name('buzzforge');
     Route::get('inventify-plus', [PagesController::class, 'inventifyPlus'])->name('inventify-plus');
 });
 Route::group(['prefix'  =>  'industries','as'=>'industries.'], function () {
