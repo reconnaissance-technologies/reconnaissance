@@ -84,8 +84,8 @@ class PagesController extends Controller
         return view('our-services.service-models.engagement-model');
     }
 
-    public function expressoAi() {
-        return view('product-offering.expresso-ai');
+    public function magico() {
+        return view('product-offering.magico');
     }
 
     public function buzzForge() {
