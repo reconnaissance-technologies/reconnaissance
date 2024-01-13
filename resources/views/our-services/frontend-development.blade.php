@@ -91,7 +91,7 @@
                     </h1>
                     
                     <p>
-                        Leveraging the power of industry-leading FrontEnd frameworks like React, Angular, and Vue.js, we at Hidden Brains excel in creating sophisticated digital experiences. Our proficiency in these frameworks enables us to build scalable, modular, and feature-rich applications that not only meet but exceed modern web standards.
+                        Leveraging the power of industry-leading FrontEnd frameworks like React, Angular, and Vue.js, we at Reconnaissance Technologies excel in creating sophisticated digital experiences. Our proficiency in these frameworks enables us to build scalable, modular, and feature-rich applications that not only meet but exceed modern web standards.
                     </p>
                 </div>
                 <div class="card drop-shadow-lg dark:text-black border-b-8 border-b-blue-500">

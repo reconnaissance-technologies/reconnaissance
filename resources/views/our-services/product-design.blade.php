@@ -128,7 +128,7 @@
             <div class="w-full lg:w-full flex justify-between items-center text-center">
                 <div class="lg:w-full">
                     <p>
-                        Discover the breadth of our offerings at Hidden Brains, where each service is tailored to revolutionize and enhance your enterprise's digital journey
+                        Discover the breadth of our offerings at Reconnaissance Technologies, where each service is tailored to revolutionize and enhance your enterprise's digital journey
                     </p>
                 </div>
             </div>

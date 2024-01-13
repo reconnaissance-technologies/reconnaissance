@@ -85,7 +85,7 @@
                     </h1>
                     
                     <p>
-                        Smart energy monitoring IoT solutions to eliminate waste, reduce and control current level of energy uses for optimum utilization of resources. Hidden Brains is focused on offering solutions to provide companies with data, insights and systems to drive energy monitoring and sustainability.
+                        Smart energy monitoring IoT solutions to eliminate waste, reduce and control current level of energy uses for optimum utilization of resources. Reconnaissance Technologies is focused on offering solutions to provide companies with data, insights and systems to drive energy monitoring and sustainability.
                     </p>
                 </div>
                 <div class="card drop-shadow-lg dark:text-black border-b-8 border-b-green-500">

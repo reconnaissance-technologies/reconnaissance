@@ -55,7 +55,7 @@
             <div class="w-full lg:w-full flex justify-between items-center">
                 <div class="lg:w-3/4">
                     <p>
-                        In an ever-evolving business landscape, enterprises face a myriad of unique challenges. Hidden Brains' Artificial Intelligence and Machine Learning solutions are expertly designed to tackle these complexities, offering innovative and efficient pathways to success for businesses worldwide.
+                        In an ever-evolving business landscape, enterprises face a myriad of unique challenges. Reconnaissance Technologies' Artificial Intelligence and Machine Learning solutions are expertly designed to tackle these complexities, offering innovative and efficient pathways to success for businesses worldwide.
                     </p>
                 </div>
             </div>
@@ -67,7 +67,7 @@
                     </h1>
 
                     <p>
-                        As cyber threats evolve, businesses need sophisticated protection. Hidden Brains' AI/ML-driven cybersecurity solutions proactively identify and mitigate potential threats, ensuring robust security and safeguarding valuable data.
+                        As cyber threats evolve, businesses need sophisticated protection. Reconnaissance Technologies' AI/ML-driven cybersecurity solutions proactively identify and mitigate potential threats, ensuring robust security and safeguarding valuable data.
                     </p>
                 </div>
                 <div class="card drop-shadow-lg dark:text-black border-b-8 border-b-orange-500">

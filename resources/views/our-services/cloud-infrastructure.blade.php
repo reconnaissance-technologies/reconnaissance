@@ -1,12 +1,12 @@
 @extends('layouts.general')
 
-@section('meta-description', 'Enhance your IT capabilities with the best Cloud Infrastructure Services from Hidden Brains. Expertise in cloud solutions for agility, efficiency, and growth.')
+@section('meta-description', 'Enhance your IT capabilities with the best Cloud Infrastructure Services from Reconnaissance Technologies. Expertise in cloud solutions for agility, efficiency, and growth.')
 @section('meta-keywords', 'Managed Cloud Services, Cloud Computing Solutions, Enterprise Cloud Infrastructure Management, Hybrid Cloud Integration Services, Cloud Storage and Data Services, Cloud Network Security Solutions, Scalable Cloud Hosting Services, Cloud-Based Disaster Recovery Solutions')
 @section('robots', 'index, follow')
 @section('og-title', 'Cloud Infrastructure Services & Solutions | Reconnaissance Technologies')
 @section('og-sitename', 'Reconnaissance Technologies')
 @section('og-url', "{{ route('services.cloud-infrastructure') }}")
-@section('og-description', 'Enhance your IT capabilities with the best Cloud Infrastructure Services from Hidden Brains. Expertise in cloud solutions for agility, efficiency, and growth.')
+@section('og-description', 'Enhance your IT capabilities with the best Cloud Infrastructure Services from Reconnaissance Technologies. Expertise in cloud solutions for agility, efficiency, and growth.')
 @section('og-image', "{{ asset('assets/img/logo-dark.png') }}")
 @section('title', 'Cloud Infrastructure Services & Solutions - Reconnaissance Technologies')
 
