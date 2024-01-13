@@ -36,9 +36,15 @@ Route::group(['prefix'  =>  'service-model', 'as'    => 'sm.'], function () {
     Route::get('engagement-model', [PagesController::class, 'engagementServiceModel'])->name('engagement');
 });
 Route::group(['prefix'  =>  'product-offering', 'as'    => 'po.'], function () {
-    Route::get('magico', [PagesController::class, 'magico'])->name('magico');
-    Route::get('buzzforge', [PagesController::class, 'buzzForge'])->name('buzzforge');
-    Route::get('inventify-plus', [PagesController::class, 'inventifyPlus'])->name('inventify-plus');
+    Route::get('magico', function(){
+        return redirect('https://magico.reconnaissancetechnologies.com');
+    })->name('magico');
+    Route::get('buzzforge', function(){
+        return redirect('https://buzzforge.reconnaissancetechnologies.com');
+    })->name('buzzforge');
+    Route::get('stoqit', function(){
+        return redirect('https://stoqit.reconnaissancetechnologies.com');
+    })->name('stoqit');
 });
 Route::group(['prefix'  =>  'industries','as'=>'industries.'], function () {
     Route::get('media-and-entertainment', [PagesController::class, 'mediaEntertainment'])->name('media-and-entertainment');

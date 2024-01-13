@@ -84,18 +84,6 @@ class PagesController extends Controller
         return view('our-services.service-models.engagement-model');
     }
 
-    public function magico() {
-        return view('product-offering.magico');
-    }
-
-    public function buzzForge() {
-        return view('product-offering.buzzforge');
-    }
-
-    public function inventifyPlus() {
-        return view('product-offering.inventify-plus');
-    }
-
     public function mediaEntertainment() {
         return view('industries.media-entertainment');
     }

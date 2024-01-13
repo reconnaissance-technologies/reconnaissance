@@ -158,7 +158,7 @@
                                     <ul>
                                         <li class="py-1"><a href="{{ route('po.magico') }}" class="hover:border-b-rt-primary hover:border-b-2">Mágico<sup class="text-red-500 animate-pulse">new</sup></a></li>
                                         <li class="py-1"><a href="{{ route('po.buzzforge') }}" class="hover:border-b-rt-primary hover:border-b-2">BuzzForge<sup class="text-red-500 animate-pulse">new</sup></a></li>
-                                        <li class="py-1"><a href="{{ route('po.inventify-plus') }}" class="hover:border-b-rt-primary hover:border-b-2">Inventify Plus</a></li>
+                                        <li class="py-1"><a href="{{ route('po.stoqit') }}" class="hover:border-b-rt-primary hover:border-b-2">Stoqit</a></li>
                                     </ul>
                                 </p>
                             </ul>
