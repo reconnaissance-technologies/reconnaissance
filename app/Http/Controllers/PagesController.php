@@ -12,6 +12,10 @@ class PagesController extends Controller
         return view('about-us');
     }
 
+    public function developmentMethodology() {
+        return view('development-methodology');
+    }
+
     public function caseStudies() {
         return view('case-studies');
     }

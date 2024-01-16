@@ -290,7 +290,7 @@
                                         <li class="py-1"><a href="{{ route('about-us') }}" class="hover:border-b-rt-primary hover:border-b-2">About Us</a></li>
                                         {{-- <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Our Infrastructure</a></li>
                                         <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Our Team</a></li> --}}
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Development Methodology</a></li>
+                                        <li class="py-1"><a href="{{ route('development-methodology') }}" class="hover:border-b-rt-primary hover:border-b-2">Development Methodology</a></li>
                                         <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Certifications</a></li>
                                         <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Alliances</a></li>
                                         <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Career Overview</a></li>
