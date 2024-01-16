@@ -4,10 +4,10 @@
         <div class="relative block lg:w-52 md:w-40 sm:w-32">
             <a href="{{ route('index') }}">
                 <img src="{{ asset('assets/img/logo-mixed.svg') }}"
-                    class="hidden dark:block logo-mixed object-contain" alt="Reconnaissance Technologies Logo"
+                    class="dark:block logo-mixed object-contain" alt="Reconnaissance Technologies Logo"
                     title="Reconnaissance Technologies Logo">
                 <img src="{{ asset('assets/img/logo-dark.svg') }}"
-                    class="logo-dark dark:hidden object-contain" alt="Reconnaissance Technologies Logo"
+                    class="logo-dark hidden dark:hidden object-contain" alt="Reconnaissance Technologies Logo"
                     title="Reconnaissance Technologies Logo">
             </a>
         </div>
@@ -144,7 +144,7 @@
                 <!-- End of Services Menu Section -->
 
                 <!-- Our Solutions Menu -->
-                <li  class="hoverable hover:border-t-2 hover:border-t-rt-primary">
+                {{-- <li  class="hoverable hover:border-t-2 hover:border-t-rt-primary">
                     <a href="javascript://" class="relative block lg:p-6 text-sm lg:text-base font-bold uppercase">
                         Solutions
                     </a>
@@ -186,7 +186,7 @@
                             </ul>
                         </div>
                     </div>
-                </li>
+                </li> --}}
                 <!-- End of Our Solutions Menu -->
 
                 <!-- Our Work Menu -->
@@ -200,29 +200,52 @@
                                 <div class="flex items-center">
                                     <h3 class="font-bold text-lg text-bold mb-2 uppercase">Testimonials</h3>
                                 </div>
-                                <p class="text-sm">
-                                    <ul>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Product Design</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Software Development</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Web Application Development</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Frontend Development</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Cloud & Infrastructure</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Penetration Testing & Cybersecurity</a></li>
-                                    </ul>
-                                </p>
+                                <div id="custom-controls-gallery" class="relative w-full" data-carousel="slide">
+                                    <!-- Carousel wrapper -->
+                                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                                        <!-- Item 1 -->
+                                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                            <p class="text-lg font-bold font-italic italic">
+                                                Excellent team with superb service delivery and attention to details. Their personalized touch towards project execution made us comfortable.
+
+                                                <br>
+                                                <br>
+                                                Don Williams,<br/>
+                                                Scotland, UK
+                                            </p>
+                                        </div>
+                                        <!-- Item 2 -->
+                                        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                                            <p class="text-lg font-bold font-italic italic">
+                                                Easy to deal with, swift to revert and their approach to our ecommerce website and CRM development is commendable.
+                                                <br>
+                                                <br>
+                                                Deborah Ayigbi,<br/>
+                                                Lagos, Nigeria
+                                            </p>
+                                        </div>
+                                        <!-- Item 3 -->
+                                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                            <p class="text-lg font-bold font-italic italic">
+                                                Working together with them is simple. thanks to Reconnaissance Technologies. They take a professional approach to their work. They are excellent communicators and constantly keep you up to date on any tasks or new developments.
+                                                <br>
+                                                <br>
+                                                Joan Ewuruje,<br/>
+                                                Abuja, Nigeria
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </ul>
                             <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
                                 <div class="flex items-center">
                                     <h3 class="font-bold text-lg text-bold mb-2 uppercase">Case Studies</h3>
                                 </div>
-                                <p class="text-sm">
-                                    <ul>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">AR/VR Development</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">AI/ML Development</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">IOT Development</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Chatbot Development</a></li>
-                                    </ul>
-                                </p>
+                                <a href="{{ route('work.case-studies') }}" class="p-6 hover:bg-gray-500 hover:rounded-md">
+                                    <p class="text-sm hover:rounded-md hover:shadow-round">
+                                        <img src="{{ asset('assets/img/case-study.jpg') }}" class="hover:rounded-md" alt="Case Studies - Reconnaissance Technologies">
+                                    </p>
+                                </a>
                             </ul>
                             <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
                                 <div class="flex items-center">
@@ -264,9 +287,9 @@
                                 </div>
                                 <p class="text-sm">
                                     <ul>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">About Us</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Our Infrastructure</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Our Team</a></li>
+                                        <li class="py-1"><a href="{{ route('about-us') }}" class="hover:border-b-rt-primary hover:border-b-2">About Us</a></li>
+                                        {{-- <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Our Infrastructure</a></li>
+                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Our Team</a></li> --}}
                                         <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Development Methodology</a></li>
                                         <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Certifications</a></li>
                                         <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Alliances</a></li>

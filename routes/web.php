@@ -18,6 +18,9 @@ Route::get('/', [PagesController::class, 'index'])->name('index');
 Route::get('about-us', [PagesController::class, 'aboutUs'])->name('about-us');
 Route::get('our-services', [PagesController::class, 'ourServices'])->name('our-services');
 
+Route::group(['prefix'  =>  'our-work', 'as'    => 'work.'], function () {
+    Route::get('case-studies', [PagesController::class, 'caseStudies'])->name('case-studies');
+});
 Route::group(['prefix'  =>  'our-services', 'as'    => 'services.'], function () {
     Route::get('product-design', [PagesController::class, 'productDesign'])->name('product-design');
     Route::get('software-devlopment', [PagesController::class, 'softwareDevelopment'])->name('software-devlopment');
