@@ -12,9 +12,9 @@ class PagesController extends Controller
         return view('about-us');
     }
 
-    public function developmentMethodology() {
-        return view('development-methodology');
-    }
+    // public function developmentMethodology() {
+    //     return view('development-methodology');
+    // }
 
     public function certifications() {
         return view('certifications');

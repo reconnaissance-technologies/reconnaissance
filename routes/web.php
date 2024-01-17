@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PagesController::class, 'index'])->name('index');
 Route::get('our-company/about-us', [PagesController::class, 'aboutUs'])->name('about-us');
 Route::get('our-company/development-methodology', [PagesController::class, 'developmentMethodology'])->name('development-methodology');
-Route::get('our-company/certifications', [PagesController::class, 'certifications'])->name('certifications');
+// Route::get('our-company/certifications', [PagesController::class, 'certifications'])->name('certifications');
 Route::get('our-services', [PagesController::class, 'ourServices'])->name('our-services');
 
 Route::group(['prefix'  =>  'our-work', 'as'    => 'work.'], function () {
