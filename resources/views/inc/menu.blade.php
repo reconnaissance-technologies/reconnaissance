@@ -241,33 +241,25 @@
                                 <div class="flex items-center">
                                     <h3 class="font-bold text-lg text-bold mb-2 uppercase">Case Studies</h3>
                                 </div>
-                                <a href="{{ route('work.case-studies') }}" class="p-6 hover:bg-gray-500 hover:rounded-md">
-                                    <p class="text-sm hover:rounded-md hover:shadow-round">
-                                        <img src="{{ asset('assets/img/case-study.jpg') }}" class="hover:rounded-md" alt="Case Studies - Reconnaissance Technologies">
-                                    </p>
-                                </a>
+                                <div class="hover:bg-gray-500 hover:rounded-md p-3">
+                                    <a href="{{ route('work.case-studies') }}">
+                                        <p class="text-sm hover:rounded-md hover:shadow-round">
+                                            <img src="{{ asset('assets/img/case-study.jpg') }}" class="hover:rounded-md" alt="Case Studies - Reconnaissance Technologies">
+                                        </p>
+                                    </a>
+                                </div>
                             </ul>
                             <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
                                 <div class="flex items-center">
                                     <h3 class="font-bold text-lg text-bold mb-2 uppercase">Portfolio</h3>
                                 </div>
-                                <p class="text-sm">
-                                    <ul>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Media & Enterntainment</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Education</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Healthcare</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Hi-Tech</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Logistics</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Manufacturing</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Real Estate & Construction</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Retail & eCommerce</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Travel & Hospitality</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Utilities & On-Demand</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">FinTech</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Automotive</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Mining & Agriculture</a></li>
-                                    </ul>
-                                </p>
+                                <div class="hover:bg-gray-500 hover:rounded-md p-3">
+                                    <a href="{{ route('work.case-studies') }}">
+                                        <p class="text-sm hover:rounded-md hover:shadow-round">
+                                            <img src="{{ asset('assets/img/portfolio-image.png') }}" class="hover:rounded-md" alt="Case Studies - Reconnaissance Technologies">
+                                        </p>
+                                    </a>
+                                </div>
                             </ul>
                         </div>
                     </div>
