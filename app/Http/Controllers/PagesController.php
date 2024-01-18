@@ -12,17 +12,21 @@ class PagesController extends Controller
         return view('about-us');
     }
 
-    // public function developmentMethodology() {
-    //     return view('development-methodology');
-    // }
+    public function developmentMethodology() {
+        return view('development-methodology');
+    }
 
     public function partnerships() {
         return view('partnerships');
     }
 
-    public function certifications() {
-        return view('certifications');
+    public function careerOverview() {
+        return view('career-overview');
     }
+
+    // public function certifications() {
+    //     return view('certifications');
+    // }
 
     public function caseStudies() {
         return view('case-studies');
