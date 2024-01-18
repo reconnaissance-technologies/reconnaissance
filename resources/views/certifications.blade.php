@@ -58,7 +58,7 @@
                 </div>
                 <div class="w-1/2 py-8 p-6">
                     <p class="pb-8">
-                        The digital age and proliferation of technology makes it imperative for businesses to transform. We have worked for clients in almost every industry and believe each and every project has different needs and requirements. We at Hidden Brains offer different methodologies based on business dynamics, customer expectations, timeline, budget allocations and level of expertise required and experience of resources.
+                        The digital age and proliferation of technology makes it imperative for businesses to transform. We have worked for clients in almost every industry and believe each and every project has different needs and requirements. We at Reconnaissance Technologies offer different methodologies based on business dynamics, customer expectations, timeline, budget allocations and level of expertise required and experience of resources.
                     </p>
                 </div>
             </div>
