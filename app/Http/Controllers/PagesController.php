@@ -16,6 +16,10 @@ class PagesController extends Controller
     //     return view('development-methodology');
     // }
 
+    public function partnerships() {
+        return view('partnerships');
+    }
+
     public function certifications() {
         return view('certifications');
     }

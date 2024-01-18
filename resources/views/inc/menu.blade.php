@@ -284,7 +284,7 @@
                                         <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Our Team</a></li> --}}
                                         <li class="py-1"><a href="{{ route('development-methodology') }}" class="hover:border-b-rt-primary hover:border-b-2">Development Methodology</a></li>
                                         {{-- <li class="py-1"><a href="{{ route('certifications') }}" class="hover:border-b-rt-primary hover:border-b-2">Certifications</a></li> --}}
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Alliances</a></li>
+                                        <li class="py-1"><a href="{{ route('partnerships') }}" class="hover:border-b-rt-primary hover:border-b-2">Partnerships</a></li>
                                         <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Career Overview</a></li>
                                         <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Contact Us</a></li>
                                     </ul>
