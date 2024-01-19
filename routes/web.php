@@ -20,6 +20,8 @@ Route::get('our-company/development-methodology', [PagesController::class, 'deve
 // Route::get('our-company/certifications', [PagesController::class, 'certifications'])->name('certifications');
 Route::get('our-company/partnerships', [PagesController::class, 'partnerships'])->name('partnerships');
 Route::get('our-company/career-overview', [PagesController::class, 'careerOverview'])->name('career-overview');
+Route::get('our-company/contact-us', [PagesController::class, 'contactUs'])->name('contact-us');
+Route::get('our-company/csr', [PagesController::class, 'csr'])->name('csr');
 Route::get('our-services', [PagesController::class, 'ourServices'])->name('our-services');
 
 Route::group(['prefix'  =>  'our-work', 'as'    => 'work.'], function () {
@@ -87,7 +89,4 @@ Route::group(['prefix'=>'clients','as'=>'clients.'], function () {
 
 Route::get('our-work', [PagesController::class, 'ourWork'])->name('our-work');
 Route::get('our-solutions', [PagesController::class, 'ourSolutions'])->name('our-solutions');
-Route::get('careers', [PagesController::class, 'careers'])->name('careers');
-Route::get('csr', [PagesController::class, 'csr'])->name('csr');
 Route::get('our-blog', [PagesController::class, 'ourBlog'])->name('our-blog');
-Route::get('contact-us', [PagesController::class, 'contactUs'])->name('contact-us');
