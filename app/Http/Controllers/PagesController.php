@@ -32,6 +32,10 @@ class PagesController extends Controller
         return view('awards');
     }
 
+    public function mediaCoverage() {
+        return view('media-coverage');
+    }
+
     public function caseStudies() {
         return view('case-studies');
     }

@@ -23,6 +23,7 @@ Route::get('our-company/career-overview', [PagesController::class, 'careerOvervi
 Route::get('our-company/contact-us', [PagesController::class, 'contactUs'])->name('contact-us');
 Route::get('our-company/csr', [PagesController::class, 'csr'])->name('csr');
 Route::get('our-company/awards', [PagesController::class, 'awards'])->name('awards');
+Route::get('our-company/media-coverage', [PagesController::class, 'mediaCoverage'])->name('media-coverage');
 Route::get('our-services', [PagesController::class, 'ourServices'])->name('our-services');
 
 Route::group(['prefix'  =>  'our-work', 'as'    => 'work.'], function () {

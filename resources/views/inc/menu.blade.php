@@ -297,7 +297,7 @@
                                 <p class="text-sm">
                                     <ul>
                                         <li class="py-1"><a href="{{ route('awards') }}" class="hover:border-b-rt-primary hover:border-b-2">Awards</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Media Coverage</a></li>
+                                        <li class="py-1"><a href="{{ route('media-coverage') }}" class="hover:border-b-rt-primary hover:border-b-2">Media Coverage</a></li>
                                         <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Events & Celebrations</a></li>
                                         <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">C S R</a></li>
                                         <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">FAQs</a></li>
