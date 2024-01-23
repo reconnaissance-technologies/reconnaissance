@@ -28,6 +28,10 @@ class PagesController extends Controller
     //     return view('certifications');
     // }
 
+    public function awards() {
+        return view('awards');
+    }
+
     public function caseStudies() {
         return view('case-studies');
     }

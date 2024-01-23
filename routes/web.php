@@ -22,6 +22,7 @@ Route::get('our-company/partnerships', [PagesController::class, 'partnerships'])
 Route::get('our-company/career-overview', [PagesController::class, 'careerOverview'])->name('career-overview');
 Route::get('our-company/contact-us', [PagesController::class, 'contactUs'])->name('contact-us');
 Route::get('our-company/csr', [PagesController::class, 'csr'])->name('csr');
+Route::get('our-company/awards', [PagesController::class, 'awards'])->name('awards');
 Route::get('our-services', [PagesController::class, 'ourServices'])->name('our-services');
 
 Route::group(['prefix'  =>  'our-work', 'as'    => 'work.'], function () {
