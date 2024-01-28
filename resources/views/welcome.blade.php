@@ -1256,7 +1256,7 @@
                 <!-- Our Work Section -->
                 <div title="Our Work" class="card-no-padding drop-shadow-lg rounded-xl col-span-2 max-h-max">
                     <figure class="relative transition-all duration-300 cursor-pointer">
-                        <a href="{{ route('our-work') }}">
+                        <a href="{{ route('work.portfolio') }}">
                             <img class="rounded-t-lg w-full max-h-72"
                                 src="{{ asset('assets/img/our-work.jpg') }}"
                                 alt="Our Work Image - Reconnaissance Technologies">
@@ -1272,7 +1272,7 @@
                         </p>
 
                         <div class="flex justify-end text-rt-primary">
-                            <a href="{{ route('our-work') }}"
+                            <a href="{{ route('work.portfolio') }}"
                                 class="shadow-xl hover:animate-ping rounded-full p-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -1294,7 +1294,7 @@
                                 Gain a comprehensive understanding of the latest breakthroughs, best practices, and
                                 future prospects that drive progress and define the future of the Software &
                                 Information Technology sector. </p>
-                            <div class="flex justify-end text-rt-primary">
+                            {{-- <div class="flex justify-end text-rt-primary">
                                 <a href="{{ route('our-blog') }}"
                                     class="shadow-xl hover:animate-ping rounded-full p-3">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -1303,7 +1303,7 @@
                                             d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                                     </svg>
                                 </a>
-                            </div>
+                            </div> --}}
                         </div>
                         <!-- End of Our Blog Section -->
 
@@ -1358,7 +1358,7 @@
                                 partnership with The Iwoni Foundation to create lasting change, empower lives, and
                                 pave the way for a brighter future.
                             </p>
-                            <div class="flex justify-end text-rt-primary">
+                            {{-- <div class="flex justify-end text-rt-primary">
                                 <a href="{{ route('csr') }}"
                                     class="shadow-xl hover:animate-ping rounded-full p-3">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -1367,7 +1367,7 @@
                                             d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                                     </svg>
                                 </a>
-                            </div>
+                            </div> --}}
                         </div>
                         <!-- End of CSR Section -->
                     </div>
