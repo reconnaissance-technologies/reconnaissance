@@ -144,7 +144,7 @@
                 <!-- End of Services Menu Section -->
 
                 <!-- Our Solutions Menu -->
-                {{-- <li  class="hoverable hover:border-t-2 hover:border-t-rt-primary">
+                <li  class="hoverable hover:border-t-2 hover:border-t-rt-primary">
                     <a href="javascript://" class="relative block lg:p-6 text-sm lg:text-base font-bold uppercase">
                         Solutions
                     </a>
@@ -186,7 +186,7 @@
                             </ul>
                         </div>
                     </div>
-                </li> --}}
+                </li>
                 <!-- End of Our Solutions Menu -->
 
                 <!-- Our Work Menu -->
@@ -237,7 +237,7 @@
                                     </div>
                                 </div>
                             </ul>
-                            <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
+                            {{-- <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
                                 <div class="flex items-center">
                                     <h3 class="font-bold text-lg text-bold mb-2 uppercase">Case Studies</h3>
                                 </div>
@@ -248,13 +248,13 @@
                                         </p>
                                     </a>
                                 </div>
-                            </ul>
+                            </ul> --}}
                             <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
                                 <div class="flex items-center">
                                     <h3 class="font-bold text-lg text-bold mb-2 uppercase">Portfolio</h3>
                                 </div>
                                 <div class="hover:bg-gray-500 hover:rounded-md p-3">
-                                    <a href="{{ route('work.case-studies') }}">
+                                    <a href="{{ route('work.portfolio') }}">
                                         <p class="text-sm hover:rounded-md hover:shadow-round">
                                             <img src="{{ asset('assets/img/portfolio-image.png') }}" class="hover:rounded-md" alt="Case Studies - Reconnaissance Technologies">
                                         </p>
@@ -296,13 +296,12 @@
                                 </div>
                                 <p class="text-sm">
                                     <ul>
-                                        <li class="py-1"><a href="{{ route('awards') }}" class="hover:border-b-rt-primary hover:border-b-2">Awards</a></li>
-                                        <li class="py-1"><a href="{{ route('media-coverage') }}" class="hover:border-b-rt-primary hover:border-b-2">Media Coverage</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Events & Celebrations</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">C S R</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">FAQs</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Blogs</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Webinar</a></li>
+                                        {{-- <li class="py-1"><a href="{{ route('awards') }}" class="hover:border-b-rt-primary hover:border-b-2">Awards</a></li> --}}
+                                        {{-- <li class="py-1"><a href="{{ route('media-coverage') }}" class="hover:border-b-rt-primary hover:border-b-2">Media Coverage</a></li> --}}
+                                        {{-- <li class="py-1"><a href="{{ route('events') }}" class="hover:border-b-rt-primary hover:border-b-2">Events & Celebrations</a></li> --}}
+                                        {{-- <li class="py-1"><a href="{{ route('csr') }}" class="hover:border-b-rt-primary hover:border-b-2">C S R</a></li> --}}
+                                        {{-- <li class="py-1"><a href="{{ route('blog') }}" class="hover:border-b-rt-primary hover:border-b-2">Blogs</a></li> --}}
+                                        {{-- <li class="py-1"><a href="{{ route('webinars') }}" class="hover:border-b-rt-primary hover:border-b-2">Webinar</a></li> --}}
                                     </ul>
                                 </p>
                             </ul>
