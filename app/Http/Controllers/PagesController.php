@@ -36,6 +36,10 @@ class PagesController extends Controller
         return view('media-coverage');
     }
 
+    public function events() {
+        return view('events');
+    }
+
     public function caseStudies() {
         return view('case-studies');
     }
@@ -45,7 +49,11 @@ class PagesController extends Controller
     }
 
     public function ourBlog() {
-        return view('our-blog');
+        return view('blog.index');
+    }
+
+    public function webinars() {
+        return view('webinars');
     }
 
     public function csr() {
@@ -160,7 +168,7 @@ class PagesController extends Controller
         return view('industries.mining-agriculture');
     }
 
-    public function ourWork() {
+    public function portfolio() {
         return view('our-work');
     }
 
