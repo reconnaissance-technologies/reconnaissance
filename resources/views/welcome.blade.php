@@ -1542,7 +1542,7 @@
     <!-- End of Locations & Enquiry Section -->
 
     <!-- Partners & Certifications Section -->
-    <section class="px-16 bg-white dark:text-white dark:bg-gray-800 flex justify-between">
+    {{-- <section class="px-16 bg-white dark:text-white dark:bg-gray-800 flex justify-between">
         <div class="w-full pt-16">
             <div
                 class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 dark:text-gray-400">
@@ -1673,7 +1673,7 @@
                 </a>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- End of Partners & Certification Section -->
 </main>
 @endsection
