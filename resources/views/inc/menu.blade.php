@@ -144,7 +144,7 @@
                 <!-- End of Services Menu Section -->
 
                 <!-- Our Solutions Menu -->
-                <li  class="hoverable hover:border-t-2 hover:border-t-rt-primary">
+                {{-- <li  class="hoverable hover:border-t-2 hover:border-t-rt-primary">
                     <a href="javascript://" class="relative block lg:p-6 text-sm lg:text-base font-bold uppercase">
                         Solutions
                     </a>
@@ -186,7 +186,7 @@
                             </ul>
                         </div>
                     </div>
-                </li>
+                </li> --}}
                 <!-- End of Our Solutions Menu -->
 
                 <!-- Our Work Menu -->
@@ -290,29 +290,29 @@
                                     </ul>
                                 </p>
                             </ul>
-                            <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
+                            {{-- <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
                                 <div class="flex items-center">
                                     <h3 class="font-bold text-lg text-bold mb-2 uppercase">Insights</h3>
                                 </div>
                                 <p class="text-sm">
                                     <ul>
-                                        {{-- <li class="py-1"><a href="{{ route('awards') }}" class="hover:border-b-rt-primary hover:border-b-2">Awards</a></li> --}}
-                                        {{-- <li class="py-1"><a href="{{ route('media-coverage') }}" class="hover:border-b-rt-primary hover:border-b-2">Media Coverage</a></li> --}}
-                                        {{-- <li class="py-1"><a href="{{ route('events') }}" class="hover:border-b-rt-primary hover:border-b-2">Events & Celebrations</a></li> --}}
-                                        {{-- <li class="py-1"><a href="{{ route('csr') }}" class="hover:border-b-rt-primary hover:border-b-2">C S R</a></li> --}}
-                                        {{-- <li class="py-1"><a href="{{ route('blog') }}" class="hover:border-b-rt-primary hover:border-b-2">Blogs</a></li> --}}
-                                        {{-- <li class="py-1"><a href="{{ route('webinars') }}" class="hover:border-b-rt-primary hover:border-b-2">Webinar</a></li> --}}
+                                        <li class="py-1"><a href="{{ route('awards') }}" class="hover:border-b-rt-primary hover:border-b-2">Awards</a></li>
+                                        <li class="py-1"><a href="{{ route('media-coverage') }}" class="hover:border-b-rt-primary hover:border-b-2">Media Coverage</a></li>
+                                        <li class="py-1"><a href="{{ route('events') }}" class="hover:border-b-rt-primary hover:border-b-2">Events & Celebrations</a></li>
+                                        <li class="py-1"><a href="{{ route('csr') }}" class="hover:border-b-rt-primary hover:border-b-2">C S R</a></li>
+                                        <li class="py-1"><a href="{{ route('blog') }}" class="hover:border-b-rt-primary hover:border-b-2">Blogs</a></li>
+                                        <li class="py-1"><a href="{{ route('webinars') }}" class="hover:border-b-rt-primary hover:border-b-2">Webinar</a></li>
                                     </ul>
                                 </p>
-                            </ul>
-                            <ul class="px-4 w-full sm:w-1/2 lg:w-1/2 pb-6 pt-6 lg:pt-3">
+                            </ul> --}}
+                            {{-- <ul class="px-4 w-full sm:w-1/2 lg:w-1/2 pb-6 pt-6 lg:pt-3">
                                 <div class="flex items-center">
                                     <h3 class="font-bold text-lg text-bold mb-2 uppercase"></h3>
                                 </div>
                                 <p class="text-sm">
                                     <img class="rounded-xl" src="{{ asset('assets/img/festives/happy-holidays.jpg') }}" alt="Happy Holidays" title="Thank You & Happy Holidays">
                                 </p>
-                            </ul>
+                            </ul> --}}
                         </div>
                     </div>
                 </li>
