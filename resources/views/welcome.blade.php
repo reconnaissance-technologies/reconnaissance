@@ -1512,8 +1512,7 @@
                     </svg>
                     <div class="pl-3 ">
                         <p class="text-xl font-medium">
-                            <a href="tel:+2347080639008" title="Call Reconnaissance Technologies Nigeria">+234 708
-                                063 9008</a>
+                            <a href="tel:+2342013309246" title="Call Reconnaissance Technologies Nigeria">+234 201 330 9246</a>
                         </p>
                     </div>
                 </div>
