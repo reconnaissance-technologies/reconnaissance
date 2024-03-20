@@ -21,10 +21,12 @@ Route::get('our-company/development-methodology', [PagesController::class, 'deve
 Route::get('our-company/partnerships', [PagesController::class, 'partnerships'])->name('partnerships');
 Route::get('our-company/career-overview', [PagesController::class, 'careerOverview'])->name('career-overview');
 Route::get('our-company/contact-us', [PagesController::class, 'contactUs'])->name('contact-us');
+Route::post('our-company/contact-us', [PagesController::class, 'sendContactForm'])->name('send-contact-form');
 // Route::get('our-company/csr', [PagesController::class, 'csr'])->name('csr');
 // Route::get('our-company/awards', [PagesController::class, 'awards'])->name('awards');
 // Route::get('our-company/media-coverage', [PagesController::class, 'mediaCoverage'])->name('media-coverage');
 // Route::get('our-company/events', [PagesController::class, 'events'])->name('events');
+Route::get('our-company/privacy-policy', [PagesController::class, 'privacyPolicy'])->name('privacy-policy');
 // Route::get('webinars', [PagesController::class, 'webinars'])->name('webinars');
 
 Route::get('our-services', [PagesController::class, 'ourServices'])->name('our-services');
