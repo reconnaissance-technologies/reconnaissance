@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactForm;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+
 class PagesController extends Controller
 {
     public function index() {
@@ -174,5 +178,34 @@ class PagesController extends Controller
 
     public function contactUs() {
         return view('contact');
+    }
+
+    public function privacyPolicy() {
+        return view('privacy-policy');
+    }
+
+    public function sendContactForm(Request $request) {
+        
+        $request->validate([
+            'floating_name'     =>  'required|string|max:50',
+            'foating_email'     =>  'required|email',
+            'floating_phone'    =>  'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
+            'floating_company'  =>  'required',
+            'floating_message'  =>  'required'
+        ]);
+
+        if($request->is('our-company/contact-us')) {
+            $request->validate([
+                'floating_service'     =>  'required'
+            ]);
+        }
+
+        $mailSent = Mail::to('enquiries@reconnaissancetechnologies.com')->send(new ContactForm($request->all()));
+
+        if($mailSent) {
+            return back()->with('success', 'Message sent successfully!');
+        } else {
+            return back()->with('error', 'Message failed to send!');
+        }
     }
 }
