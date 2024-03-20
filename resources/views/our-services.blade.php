@@ -53,8 +53,8 @@
             </h1>
             <div class="w-full lg:w-full flex justify-between items-center"></div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
-            <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-red-600">
-            <div class="py-3 p-6 flex rounded-2xl text-white bg-red-600 lg:w-20 lg:h-20">
+            <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-red-700">
+            <div class="py-3 p-6 flex rounded-2xl text-white bg-red-700 lg:w-20 lg:h-20">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-12 h-12">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -67,27 +67,7 @@
             </a>
 
             <div class="flex justify-end hover:animate-bounce">
-                <a href="{{ route('services.frontend-development') }}" class="text-red-600">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-        <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-amber-600">
-            <div class="py-3 p-6 flex rounded-2xl text-white bg-amber-600 lg:w-20 lg:h-20">
-            <img src="{{ asset('assets/img/softcoding.svg') }}" class="object-contain"
-                            alt="">
-            </div>
-            <a href="{{ route('services.software-devlopment') }}">
-                <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">Software
-                    Development</h1>
-            </a>
-
-            <div class="flex justify-end hover:animate-bounce">
-                <a href="{{ route('services.software-devlopment') }}" class="text-amber-600">
+                <a href="{{ route('services.frontend-development') }}" class="text-red-700">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -98,6 +78,26 @@
         </div>
         <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-orange-500">
             <div class="py-3 p-6 flex rounded-2xl text-white bg-orange-500 lg:w-20 lg:h-20">
+            <img src="{{ asset('assets/img/softcoding.svg') }}" class="object-contain"
+                            alt="">
+            </div>
+            <a href="{{ route('services.software-devlopment') }}">
+                <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">Software
+                    Development</h1>
+            </a>
+
+            <div class="flex justify-end hover:animate-bounce">
+                <a href="{{ route('services.software-devlopment') }}" class="text-orange-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-yellow-300">
+            <div class="py-3 p-6 flex rounded-2xl text-white bg-yellow-300 lg:w-20 lg:h-20">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-12 h-12">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -110,7 +110,7 @@
             </a>
 
             <div class="flex justify-end hover:animate-bounce">
-                <a href="{{ route('services.mobile-app') }}" class="text-orange-500">
+                <a href="{{ route('services.mobile-app') }}" class="text-yellow-300">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -119,8 +119,8 @@
                 </a>
             </div>
         </div>
-        <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-[#0284c7]">
-            <div class="py-3 p-6 flex rounded-2xl text-white bg-[#0284c7] lg:w-20 lg:h-20">
+        <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-green-700">
+            <div class="py-3 p-6 flex rounded-2xl text-white bg-green-700 lg:w-20 lg:h-20">
             <img src="{{ asset('assets/img/webdev.svg') }}" class="object-contain"
                             alt="">
             </div>
@@ -130,7 +130,7 @@
             </a>
 
             <div class="flex justify-end hover:animate-bounce">
-                <a href="{{ route('services.web-app') }}" class="text-[#0284c7]">
+                <a href="{{ route('services.web-app') }}" class="text-green-700">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -139,8 +139,8 @@
                 </a>
             </div>
         </div>
-        <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-amber-500">
-            <div class="py-3 p-6 flex rounded-2xl text-white bg-amber-500 lg:w-20 lg:h-20">
+        <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-blue-500">
+            <div class="py-3 p-6 flex rounded-2xl text-white bg-blue-500 lg:w-20 lg:h-20">
             <img src="{{ asset('assets/img/ui-ux.webp') }}" class="object-contain"
                             alt="">
             </div>
@@ -150,7 +150,7 @@
             </a>
 
             <div class="flex justify-end hover:animate-bounce">
-                <a href="{{ route('services.product-design') }}" class="text-amber-500">
+                <a href="{{ route('services.product-design') }}" class="text-blue-500">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -159,8 +159,8 @@
                 </a>
             </div>
         </div>
-        <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-blue-300">
-            <div class="py-3 p-6 flex rounded-2xl text-white bg-blue-300 lg:w-20 lg:h-20">
+        <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-indigo-400">
+            <div class="py-3 p-6 flex rounded-2xl text-white bg-indigo-400 lg:w-20 lg:h-20">
             <img src="{{ asset('assets/img/cloud-ui-ux.svg.svg') }}" class="object-contain"
                             alt="">
             </div>
@@ -170,7 +170,7 @@
             </a>
 
             <div class="flex justify-end hover:animate-bounce">
-                <a href="{{ route('services.cloud-infrastructure') }}" class="text-blue-300">
+                <a href="{{ route('services.cloud-infrastructure') }}" class="text-indigo-400">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -179,8 +179,8 @@
                 </a>
             </div>
         </div>
-        <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-blue-600">
-            <div class="py-3 p-6 flex rounded-2xl text-white bg-blue-600 lg:w-20 lg:h-20">
+        <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-violet-600">
+            <div class="py-3 p-6 flex rounded-2xl text-white bg-violet-600 lg:w-20 lg:h-20">
             <img src="{{ asset('assets/img/cybersec1.svg') }}" class="object-contain"
                             alt="">
             </div>
@@ -190,7 +190,7 @@
             </a>
 
             <div class="flex justify-end hover:animate-bounce">
-                <a href="{{ route('services.cybersecurity') }}" class="text-blue-600">
+                <a href="{{ route('services.cybersecurity') }}" class="text-violet-600">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -199,8 +199,8 @@
                 </a>
             </div>
         </div>
-        <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-purple-500">
-            <div class="py-3 p-6 flex rounded-2xl text-white bg-purple-500 lg:w-20 lg:h-20">
+        <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-[#22d3ee]">
+            <div class="py-3 p-6 flex rounded-2xl text-white bg-[#22d3ee] lg:w-20 lg:h-20">
             <img src="{{ asset('assets/img/ar&vr.svg') }}" class="object-contain"
                             alt="">
             </div>
@@ -210,7 +210,7 @@
             </a>
 
             <div class="flex justify-end hover:animate-bounce">
-                <a href="{{ route('services.ar-vr-development') }}" class="text-purple-500">
+                <a href="{{ route('services.ar-vr-development') }}" class="text-[#22d3ee]">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
                         <path stroke-linecap="round" stroke-linejoin="round"
