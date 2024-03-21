@@ -1,0 +1,89 @@
+<?php
+
+namespace App\Mail;
+
+use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Mail\Mailable;
+use Illuminate\Mail\Mailables\Content;
+use Illuminate\Mail\Mailables\Envelope;
+use Illuminate\Queue\SerializesModels;
+use Illuminate\Mail\Mailables\Address;
+use Illuminate\Mail\Mailables\Attachment;
+
+class ContactForm extends Mailable
+{
+    use Queueable, SerializesModels;
+
+    public $name;
+    public $email;
+    public $phone;
+    public $company;
+    public $service;
+    public $enquiry;
+    public $filePath;
+
+    /**
+     * Create a new message instance.
+     */
+    public function __construct($name, $email, $phone, $company, $service, $enquiry, $filePath)
+    {
+        $this->name = $name;
+        $this->email = $email;
+        $this->phone = $phone;
+        $this->company = $company;
+        $this->service = $service;
+        $this->enquiry = $enquiry;
+        $this->filePath = $filePath;
+    }
+
+    /**
+     * Get the message envelope.
+     */
+    public function envelope(): Envelope
+    {
+        return new Envelope(
+            from: new Address($this->email, $this->name),
+            replyTo: [
+                new Address($this->email, $this->name),
+            ],
+            subject: 'Enquiry Via Contact Form',
+        );
+    }
+
+    /**
+     * Get the message content definition.
+     */
+    public function content(): Content
+    {
+        return new Content(
+            view: 'emails.contact-form',
+            with: [
+                'name'          =>  $this->name,
+                'email'         =>  $this->email,
+                'phone'         =>  $this->phone,
+                'company'       =>  $this->company,
+                'service'       =>  $this->service ?? 'No service selected',
+                'enquiry'       =>  $this->enquiry,
+            ]
+        );
+    }
+
+    /**
+     * Get the attachments for the message.
+     *
+     * @return array<int, \Illuminate\Mail\Mailables\Attachment>
+     */
+    public function attachments(): array
+    {
+        if($this->filePath) {
+            return [
+                Attachment::fromPath(public_path('storage/' . $this->filePath))
+                        ->as(time() . '_' . 'enquiry.pdf')
+                        ->withMime('application/pdf'),
+            ];
+        }
+
+        return [];
+    }
+}

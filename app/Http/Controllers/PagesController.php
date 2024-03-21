@@ -185,27 +185,33 @@ class PagesController extends Controller
     }
 
     public function sendContactForm(Request $request) {
-        
         $request->validate([
-            'floating_name'     =>  'required|string|max:50',
-            'foating_email'     =>  'required|email',
-            'floating_phone'    =>  'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
-            'floating_company'  =>  'required',
-            'floating_message'  =>  'required'
+            'floating_name'     => 'required|string',
+            'floating_email'    => 'required|email',
+            'floating_phone'    => 'required|regex:/^\+[0-9]{1,3}-[0-9]{3}-[0-9]{3}-[0-9]{4}$/',
+            'floating_company'  => 'required|string',
+            'floating_service'  => 'nullable|string',
+            'floating_message'  => 'required|string',
+            'floating_file'     => 'nullable|mimes:pdf|max:5120', // Max 5MB
         ]);
 
-        if($request->is('our-company/contact-us')) {
-            $request->validate([
-                'floating_service'     =>  'required'
-            ]);
+        $filePath = null;
+        if ($request->hasFile('floating_file')) {
+            $file = $request->file('floating_file');
+            $fileName = time() . '_' . $file->getClientOriginalName();
+            $filePath = $file->storeAs('uploads', $fileName, 'public');
         }
 
-        $mailSent = Mail::to('enquiries@reconnaissancetechnologies.com')->send(new ContactForm($request->all()));
+        Mail::to('enquiries@reconnaissancetechnologies.com')->send(new ContactForm(
+            $request->floating_name,
+            $request->floating_email,
+            $request->floating_phone,
+            $request->floating_company,
+            $request->floating_service,
+            $request->floating_message,
+            $filePath
+        ));
 
-        if($mailSent) {
-            return back()->with('success', 'Message sent successfully!');
-        } else {
-            return back()->with('error', 'Message failed to send!');
-        }
+        return response()->json(['message' => 'Enquiry sent successfully. We typically respond within 24 hours.']);
     }
 }
