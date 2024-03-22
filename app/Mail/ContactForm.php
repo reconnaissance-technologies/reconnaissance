@@ -63,7 +63,7 @@ class ContactForm extends Mailable
                 'email'         =>  $this->email,
                 'phone'         =>  $this->phone,
                 'company'       =>  $this->company,
-                'service'       =>  $this->service ?? 'No service selected',
+                'service'       =>  $this->service,
                 'enquiry'       =>  $this->enquiry,
             ]
         );

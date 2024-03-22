@@ -1,394 +1,873 @@
 <!DOCTYPE html>
-<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+    xmlns:o="urn:schemas-microsoft-com:office:office">
 
 <head>
-	<title></title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--[if mso]><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch><o:AllowPNG/></o:OfficeDocumentSettings></xml><![endif]--><!--[if !mso]><!-->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css"><!--<![endif]-->
-	<style>
-		* {
-			box-sizing: border-box;
-		}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="x-apple-disable-message-reformatting">
+    <title></title>
+    <style id="" media="all">
+        /* devanagari */
+        <blade font|-face%20%7B%0D>font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 200;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_Z11lFc-K.woff2) format('woff2');
+        unicode-range: U+0900-097F,
+        U+1CD0-1CF9,
+        U+200C-200D,
+        U+20A8,
+        U+20B9,
+        U+20F0,
+        U+25CC,
+        U+A830-A839,
+        U+A8E0-A8FF,
+        U+11B00-11B09;
+        }
 
-		body {
-			margin: 0;
-			padding: 0;
-		}
+        /* latin-ext */
+        <blade font|-face%20%7B%0D>font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 200;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_Z1JlFc-K.woff2) format('woff2');
+        unicode-range: U+0100-02AF,
+        U+0304,
+        U+0308,
+        U+0329,
+        U+1E00-1E9F,
+        U+1EF2-1EFF,
+        U+2020,
+        U+20A0-20AB,
+        U+20AD-20C0,
+        U+2113,
+        U+2C60-2C7F,
+        U+A720-A7FF;
+        }
 
-		a[x-apple-data-detectors] {
-			color: inherit !important;
-			text-decoration: inherit !important;
-		}
+        /* latin */
+        <blade font|-face%20%7B%0D>font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 200;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_Z1xlFQ.woff2) format('woff2');
+        unicode-range: U+0000-00FF,
+        U+0131,
+        U+0152-0153,
+        U+02BB-02BC,
+        U+02C6,
+        U+02DA,
+        U+02DC,
+        U+0304,
+        U+0308,
+        U+0329,
+        U+2000-206F,
+        U+2074,
+        U+20AC,
+        U+2122,
+        U+2191,
+        U+2193,
+        U+2212,
+        U+2215,
+        U+FEFF,
+        U+FFFD;
+        }
 
-		#MessageViewBody a {
-			color: inherit;
-			text-decoration: none;
-		}
+        /* devanagari */
+        <blade font|-face%20%7B%0D>font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z11lFc-K.woff2) format('woff2');
+        unicode-range: U+0900-097F,
+        U+1CD0-1CF9,
+        U+200C-200D,
+        U+20A8,
+        U+20B9,
+        U+20F0,
+        U+25CC,
+        U+A830-A839,
+        U+A8E0-A8FF,
+        U+11B00-11B09;
+        }
 
-		p {
-			line-height: inherit
-		}
+        /* latin-ext */
+        <blade font|-face%20%7B%0D>font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1JlFc-K.woff2) format('woff2');
+        unicode-range: U+0100-02AF,
+        U+0304,
+        U+0308,
+        U+0329,
+        U+1E00-1E9F,
+        U+1EF2-1EFF,
+        U+2020,
+        U+20A0-20AB,
+        U+20AD-20C0,
+        U+2113,
+        U+2C60-2C7F,
+        U+A720-A7FF;
+        }
 
-		.desktop_hide,
-		.desktop_hide table {
-			mso-hide: all;
-			display: none;
-			max-height: 0px;
-			overflow: hidden;
-		}
+        /* latin */
+        <blade font|-face%20%7B%0D>font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2) format('woff2');
+        unicode-range: U+0000-00FF,
+        U+0131,
+        U+0152-0153,
+        U+02BB-02BC,
+        U+02C6,
+        U+02DA,
+        U+02DC,
+        U+0304,
+        U+0308,
+        U+0329,
+        U+2000-206F,
+        U+2074,
+        U+20AC,
+        U+2122,
+        U+2191,
+        U+2193,
+        U+2212,
+        U+2215,
+        U+FEFF,
+        U+FFFD;
+        }
 
-		.image_block img+div {
-			display: none;
-		}
+        /* devanagari */
+        <blade font|-face%20%7B%0D>font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format('woff2');
+        unicode-range: U+0900-097F,
+        U+1CD0-1CF9,
+        U+200C-200D,
+        U+20A8,
+        U+20B9,
+        U+20F0,
+        U+25CC,
+        U+A830-A839,
+        U+A8E0-A8FF,
+        U+11B00-11B09;
+        }
 
-		.menu_block.desktop_hide .menu-links span {
-			mso-hide: all;
-		}
+        /* latin-ext */
+        <blade font|-face%20%7B%0D>font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format('woff2');
+        unicode-range: U+0100-02AF,
+        U+0304,
+        U+0308,
+        U+0329,
+        U+1E00-1E9F,
+        U+1EF2-1EFF,
+        U+2020,
+        U+20A0-20AB,
+        U+20AD-20C0,
+        U+2113,
+        U+2C60-2C7F,
+        U+A720-A7FF;
+        }
 
-		@media (max-width:660px) {
+        /* latin */
+        <blade font|-face%20%7B%0D>font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+        unicode-range: U+0000-00FF,
+        U+0131,
+        U+0152-0153,
+        U+02BB-02BC,
+        U+02C6,
+        U+02DA,
+        U+02DC,
+        U+0304,
+        U+0308,
+        U+0329,
+        U+2000-206F,
+        U+2074,
+        U+20AC,
+        U+2122,
+        U+2191,
+        U+2193,
+        U+2212,
+        U+2215,
+        U+FEFF,
+        U+FFFD;
+        }
 
-			.desktop_hide table.icons-inner,
-			.social_block.desktop_hide .social-table {
-				display: inline-block !important;
-			}
+        /* devanagari */
+        <blade font|-face%20%7B%0D>font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z11lFc-K.woff2) format('woff2');
+        unicode-range: U+0900-097F,
+        U+1CD0-1CF9,
+        U+200C-200D,
+        U+20A8,
+        U+20B9,
+        U+20F0,
+        U+25CC,
+        U+A830-A839,
+        U+A8E0-A8FF,
+        U+11B00-11B09;
+        }
 
-			.icons-inner {
-				text-align: center;
-			}
+        /* latin-ext */
+        <blade font|-face%20%7B%0D>font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2) format('woff2');
+        unicode-range: U+0100-02AF,
+        U+0304,
+        U+0308,
+        U+0329,
+        U+1E00-1E9F,
+        U+1EF2-1EFF,
+        U+2020,
+        U+20A0-20AB,
+        U+20AD-20C0,
+        U+2113,
+        U+2C60-2C7F,
+        U+A720-A7FF;
+        }
 
-			.icons-inner td {
-				margin: 0 auto;
-			}
+        /* latin */
+        <blade font|-face%20%7B%0D>font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format('woff2');
+        unicode-range: U+0000-00FF,
+        U+0131,
+        U+0152-0153,
+        U+02BB-02BC,
+        U+02C6,
+        U+02DA,
+        U+02DC,
+        U+0304,
+        U+0308,
+        U+0329,
+        U+2000-206F,
+        U+2074,
+        U+20AC,
+        U+2122,
+        U+2191,
+        U+2193,
+        U+2212,
+        U+2215,
+        U+FEFF,
+        U+FFFD;
+        }
 
-			.menu-checkbox[type=checkbox]~.menu-links {
-				display: none !important;
-				padding: 5px 0;
-			}
+        /* devanagari */
+        <blade font|-face%20%7B%0D>font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z11lFc-K.woff2) format('woff2');
+        unicode-range: U+0900-097F,
+        U+1CD0-1CF9,
+        U+200C-200D,
+        U+20A8,
+        U+20B9,
+        U+20F0,
+        U+25CC,
+        U+A830-A839,
+        U+A8E0-A8FF,
+        U+11B00-11B09;
+        }
 
-			.menu-checkbox[type=checkbox]:checked~.menu-trigger .menu-open,
-			.menu-checkbox[type=checkbox]~.menu-links span.sep {
-				display: none !important;
-			}
+        /* latin-ext */
+        <blade font|-face%20%7B%0D>font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2) format('woff2');
+        unicode-range: U+0100-02AF,
+        U+0304,
+        U+0308,
+        U+0329,
+        U+1E00-1E9F,
+        U+1EF2-1EFF,
+        U+2020,
+        U+20A0-20AB,
+        U+20AD-20C0,
+        U+2113,
+        U+2C60-2C7F,
+        U+A720-A7FF;
+        }
 
-			.menu-checkbox[type=checkbox]:checked~.menu-links,
-			.menu-checkbox[type=checkbox]~.menu-trigger {
-				display: block !important;
-				max-width: none !important;
-				max-height: none !important;
-				font-size: inherit !important;
-			}
+        /* latin */
+        <blade font|-face%20%7B%0D>font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2');
+        unicode-range: U+0000-00FF,
+        U+0131,
+        U+0152-0153,
+        U+02BB-02BC,
+        U+02C6,
+        U+02DA,
+        U+02DC,
+        U+0304,
+        U+0308,
+        U+0329,
+        U+2000-206F,
+        U+2074,
+        U+20AC,
+        U+2122,
+        U+2191,
+        U+2193,
+        U+2212,
+        U+2215,
+        U+FEFF,
+        U+FFFD;
+        }
 
-			.menu-checkbox[type=checkbox]~.menu-links>a,
-			.menu-checkbox[type=checkbox]~.menu-links>span.label {
-				display: block !important;
-				text-align: center;
-			}
+        /* devanagari */
+        <blade font|-face%20%7B%0D>font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z11lFc-K.woff2) format('woff2');
+        unicode-range: U+0900-097F,
+        U+1CD0-1CF9,
+        U+200C-200D,
+        U+20A8,
+        U+20B9,
+        U+20F0,
+        U+25CC,
+        U+A830-A839,
+        U+A8E0-A8FF,
+        U+11B00-11B09;
+        }
 
-			.menu-checkbox[type=checkbox]:checked~.menu-trigger .menu-close {
-				display: block !important;
-			}
+        /* latin-ext */
+        <blade font|-face%20%7B%0D>font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1JlFc-K.woff2) format('woff2');
+        unicode-range: U+0100-02AF,
+        U+0304,
+        U+0308,
+        U+0329,
+        U+1E00-1E9F,
+        U+1EF2-1EFF,
+        U+2020,
+        U+20A0-20AB,
+        U+20AD-20C0,
+        U+2113,
+        U+2C60-2C7F,
+        U+A720-A7FF;
+        }
 
-			.mobile_hide {
-				display: none;
-			}
+        /* latin */
+        <blade font|-face%20%7B%0D>font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(/fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format('woff2');
+        unicode-range: U+0000-00FF,
+        U+0131,
+        U+0152-0153,
+        U+02BB-02BC,
+        U+02C6,
+        U+02DA,
+        U+02DC,
+        U+0304,
+        U+0308,
+        U+0329,
+        U+2000-206F,
+        U+2074,
+        U+20AC,
+        U+2122,
+        U+2191,
+        U+2193,
+        U+2212,
+        U+2215,
+        U+FEFF,
+        U+FFFD;
+        }
 
-			.row-content {
-				width: 100% !important;
-			}
+    </style>
+    <style>
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+            background: #f1f1f1;
+        }
 
-			.stack .column {
-				width: 100%;
-				display: block;
-			}
+        /* What it does: Stops email clients resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
 
-			.mobile_hide {
-				min-height: 0;
-				max-height: 0;
-				max-width: 0;
-				overflow: hidden;
-				font-size: 0px;
-			}
+        /* What it does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
 
-			.desktop_hide,
-			.desktop_hide table {
-				display: table !important;
-				max-height: none !important;
-			}
-		}
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
 
-		#memu-r0c0m3:checked~.menu-links {
-			background-color: transparent !important;
-		}
+        /* What it does: Fixes webkit padding issue. */
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+        }
 
-		#memu-r0c0m3:checked~.menu-links a,
-		#memu-r0c0m3:checked~.menu-links span {
-			color: #000000 !important;
-		}
-	</style>
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+        a {
+            text-decoration: none;
+        }
+
+        /* What it does: A work-around for email clients meddling in triggered links. */
+        *[x-apple-data-detectors],
+        /* iOS */
+        .unstyle-auto-detected-links *,
+        .aBn {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+        .a6S {
+            display: none !important;
+            opacity: 0.01 !important;
+        }
+
+        /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+        .im {
+            color: inherit !important;
+        }
+
+        /* If the above doesn't work, add a .g-img class to any image in question. */
+        img.g-img+div {
+            display: none !important;
+        }
+
+        /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+        /* Create one of these media queries for each additional viewport size you'd like to fix */
+        /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+        <blade media|%20only%20screen%20and%20(min-device-width%3A%20320px)%20and%20(max-device-width%3A%20374px)%20%7B%0D>u~div .email-container {
+            min-width: 320px !important;
+        }
+        }
+
+        /* iPhone 6, 6S, 7, 8, and X */
+        <blade media|%20only%20screen%20and%20(min-device-width%3A%20375px)%20and%20(max-device-width%3A%20413px)%20%7B%0D>u~div .email-container {
+            min-width: 375px !important;
+        }
+        }
+
+        /* iPhone 6+, 7+, and 8+ */
+        <blade media|%20only%20screen%20and%20(min-device-width%3A%20414px)%20%7B%0D>u~div .email-container {
+            min-width: 414px !important;
+        }
+        }
+
+    </style>
+    <style>
+        .primary {
+            background: #17bebb;
+        }
+
+        .bg_white {
+            background: #ffffff;
+        }
+
+        .bg_light {
+            background: #f7fafa;
+        }
+
+        .bg_black {
+            background: #000000;
+        }
+
+        .bg_dark {
+            background: rgba(0, 0, 0, .8);
+        }
+
+        .email-section {
+            padding: 2.5em;
+        }
+
+        /*BUTTON*/
+        .btn {
+            padding: 10px 15px;
+            display: inline-block;
+        }
+
+        .btn.btn-primary {
+            border-radius: 5px;
+            background: #17bebb;
+            color: #ffffff;
+        }
+
+        .btn.btn-white {
+            border-radius: 5px;
+            background: #ffffff;
+            color: #000000;
+        }
+
+        .btn.btn-white-outline {
+            border-radius: 5px;
+            background: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+        }
+
+        .btn.btn-black-outline {
+            border-radius: 0px;
+            background: transparent;
+            border: 2px solid #000;
+            color: #000;
+            font-weight: 700;
+        }
+
+        .btn-custom {
+            color: rgba(0, 0, 0, .3);
+            text-decoration: underline;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', sans-serif;
+            color: #000000;
+            margin-top: 0;
+            font-weight: 400;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 1.8;
+            color: rgba(0, 0, 0, .4);
+        }
+
+        a {
+            color: #17bebb;
+        }
+
+        table {}
+
+        /*LOGO*/
+        .logo h1 {
+            margin: 0;
+        }
+
+        .logo h1 a {
+            color: #17bebb;
+            font-size: 24px;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /*HERO*/
+        .hero {
+            position: relative;
+            z-index: 0;
+        }
+
+        .hero .text {
+            color: rgba(0, 0, 0, .3);
+        }
+
+        .hero .text h2 {
+            color: #000;
+            font-size: 34px;
+            margin-bottom: 0;
+            font-weight: 200;
+            line-height: 1.4;
+        }
+
+        .hero .text h3 {
+            font-size: 24px;
+            font-weight: 300;
+        }
+
+        .hero .text h2 span {
+            font-weight: 600;
+            color: #000;
+        }
+
+        .text-author {
+            bordeR: 1px solid rgba(0, 0, 0, .05);
+            max-width: 50%;
+            margin: 0 auto;
+            padding: 2em;
+        }
+
+        .text-author img {
+            border-radius: 50%;
+            padding-bottom: 20px;
+        }
+
+        .text-author h3 {
+            margin-bottom: 0;
+        }
+
+        ul.social {
+            padding: 0;
+        }
+
+        ul.social li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        /*FOOTER*/
+        .footer {
+            border-top: 1px solid rgba(0, 0, 0, .05);
+            color: rgba(0, 0, 0, .5);
+        }
+
+        .footer .heading {
+            color: #000;
+            font-size: 20px;
+        }
+
+        .footer ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer ul li {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+
+        .footer ul li a {
+            color: rgba(0, 0, 0, 1);
+        }
+
+        @mediascreen and (max-width: 500px) {}
+
+    </style>
+    <meta name="robots" content="noindex, follow">
+    <script nonce="f9caee2b-ed1e-41f9-8d84-dbfceb78edcb">
+        try {
+            (function (w, d) {
+                ! function (lD, lE, lF, lG) {
+                    lD[lF] = lD[lF] || {};
+                    lD[lF].executed = [];
+                    lD.zaraz = {
+                        deferred: [],
+                        listeners: []
+                    };
+                    lD.zaraz.q = [];
+                    lD.zaraz._f = function (lH) {
+                        return async function () {
+                            var lI = Array.prototype.slice.call(arguments);
+                            lD.zaraz.q.push({
+                                m: lH,
+                                a: lI
+                            })
+                        }
+                    };
+                    for (const lJ of ["track", "set", "debug"]) lD.zaraz[lJ] = lD.zaraz._f(lJ);
+                    lD.zaraz.init = () => {
+                        var lK = lE.getElementsByTagName(lG)[0],
+                            lL = lE.createElement(lG),
+                            lM = lE.getElementsByTagName("title")[0];
+                        lM && (lD[lF].t = lE.getElementsByTagName("title")[0].text);
+                        lD[lF].x = Math.random();
+                        lD[lF].w = lD.screen.width;
+                        lD[lF].h = lD.screen.height;
+                        lD[lF].j = lD.innerHeight;
+                        lD[lF].e = lD.innerWidth;
+                        lD[lF].l = lD.location.href;
+                        lD[lF].r = lE.referrer;
+                        lD[lF].k = lD.screen.colorDepth;
+                        lD[lF].n = lE.characterSet;
+                        lD[lF].o = (new Date).getTimezoneOffset();
+                        if (lD.dataLayer)
+                            for (const lQ of Object.entries(Object.entries(dataLayer).reduce(((lR, lS) => ({
+                                    ...lR[1],
+                                    ...lS[1]
+                                })), {}))) zaraz.set(lQ[0], lQ[1], {
+                                scope: "page"
+                            });
+                        lD[lF].q = [];
+                        for (; lD.zaraz.q.length;) {
+                            const lT = lD.zaraz.q.shift();
+                            lD[lF].q.push(lT)
+                        }
+                        lL.defer = !0;
+                        for (const lU of [localStorage, sessionStorage]) Object.keys(lU || {}).filter((lW => lW
+                            .startsWith("_zaraz_"))).forEach((lV => {
+                            try {
+                                lD[lF]["z_" + lV.slice(7)] = JSON.parse(lU.getItem(lV))
+                            } catch {
+                                lD[lF]["z_" + lV.slice(7)] = lU.getItem(lV)
+                            }
+                        }));
+                        lL.referrerPolicy = "origin";
+                        lL.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(lD[lF])));
+                        lK.parentNode.insertBefore(lL, lK)
+                    };
+                    ["complete", "interactive"].includes(lE.readyState) ? zaraz.init() : lD.addEventListener(
+                        "DOMContentLoaded", zaraz.init)
+                }(w, d, "zarazData", "script");
+            })(window, document)
+        } catch (e) {
+            throw fetch("/cdn-cgi/zaraz/t"), e;
+        };
+
+    </script>
 </head>
 
-<body style="margin: 0; background-color: #ffffff; padding: 0; -webkit-text-size-adjust: none; text-size-adjust: none;">
-	<table class="nl-container" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-size: auto; background-position: top center; background-color: #ffffff; background-image: url('https://d1oco4z2z1fhwp.cloudfront.net/templates/default/7061/background-email-new.png'); background-repeat: repeat;">
-		<tbody>
-			<tr>
-				<td>
-					<table class="row row-1" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-						<tbody>
-							<tr>
-								<td>
-									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-position: top center; background-color: #ffffff; background-image: url('https://d1oco4z2z1fhwp.cloudfront.net/templates/default/7061/gradient-top1.png'); background-repeat: no-repeat; color: #000000; width: 640px; margin: 0 auto;" width="640">
-										<tbody>
-											<tr>
-												<td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
-													<div class="spacer_block block-1" style="height:35px;line-height:35px;font-size:1px;">&#8202;</div>
-													<table class="image_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-														<tr>
-															<td class="pad" style="padding-bottom:5px;padding-top:5px;width:100%;">
-																<div class="alignment" align="center" style="line-height:10px">
-																	<div style="max-width: 100px;"><img src="https://reconnaissancetechnologies.com/assets/img/logo-dark.svg" style="display: block; height: auto; border: 0; width: 100%;" width="100" alt="Reconnaissance Technologies Logo" title="Reconnaissance Technologies Logo"></div>
-																</div>
-															</td>
-														</tr>
-													</table>
-													<div class="spacer_block block-3" style="height:20px;line-height:20px;font-size:1px;">&#8202;</div>
-													<table class="menu_block block-4" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-														<tr>
-															<td class="pad" style="color:#000000;font-family:inherit;font-size:15px;text-align:center;">
-																
-															</td>
-														</tr>
-													</table>
-													<div class="spacer_block block-5" style="height:60px;line-height:60px;font-size:1px;">&#8202;</div>
-													<table class="image_block block-6" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-														<tr>
-															<td class="pad" style="width:100%;">
-																<div class="alignment" align="center" style="line-height:10px">
-																	<div style="max-width: 470px;"><img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/7061/Illustration-header.png" style="display: block; height: auto; border: 0; width: 100%;" width="470" alt="Person Jmping With Arms Up Illustration" title="Person Jmping With Arms Up Illustration"></div>
-																</div>
-															</td>
-														</tr>
-													</table>
-													<div class="spacer_block block-7" style="height:30px;line-height:30px;font-size:1px;">&#8202;</div>
-													<table class="heading_block block-8" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-														<tr>
-															<td class="pad" style="padding-left:20px;padding-right:20px;text-align:center;width:100%;">
-																<h1 style="margin: 0; color: #070954; direction: ltr; font-family: 'Roboto Slab', Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 40px; font-weight: 700; letter-spacing: 2px; line-height: 180%; text-align: center; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 72px;"><span class="tinyMce-placeholder">CONGRATS!<br></span></h1>
-															</td>
-														</tr>
-													</table>
-													<table class="heading_block block-9" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-														<tr>
-															<td class="pad" style="padding-left:20px;padding-right:20px;text-align:center;width:100%;">
-																<h1 style="margin: 0; color: #070954; direction: ltr; font-family: 'Roboto Slab', Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 26px; font-weight: 400; letter-spacing: 2px; line-height: 180%; text-align: center; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 46.800000000000004px;"><span class="tinyMce-placeholder">New Enquiry from your Website<br></span></h1>
-															</td>
-														</tr>
-													</table>
-													<div class="spacer_block block-10" style="height:30px;line-height:30px;font-size:1px;">&#8202;</div>
-													<table class="paragraph_block block-11" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
-														<tr>
-															<td class="pad" style="padding-bottom:10px;padding-left:20px;padding-right:20px;padding-top:10px;">
-																<div style="color:#070954;font-family:Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;font-size:16px;line-height:150%;text-align:center;mso-line-height-alt:24px;">
-																	<p style="margin: 0; word-break: break-word;"><span>{{ $enquiry }}</span></p>
-																</div>
-															</td>
-														</tr>
-													</table>
-													<div class="spacer_block block-12" style="height:30px;line-height:30px;font-size:1px;">&#8202;</div>
-													<table class="icons_block block-13" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-														<tr>
-															<td class="pad" style="vertical-align: middle; color: #000000; font-family: inherit; font-size: 14px; text-align: center;">
-																<table class="alignment" cellpadding="0" cellspacing="0" role="presentation" align="center" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-																	<tr>
-																		<td style="vertical-align: middle; text-align: center; padding-top: 5px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px;"><img class="icon" src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/7061/line1.png" height="64" width="6" align="center" style="display: block; height: auto; margin: 0 auto; border: 0;"></td>
-																	</tr>
-																</table>
-															</td>
-														</tr>
-													</table>
-													<div class="spacer_block block-14" style="height:40px;line-height:40px;font-size:1px;">&#8202;</div>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<table class="row row-2" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-						<tbody>
-							<tr>
-								<td>
-									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffffff; color: #000000; width: 640px; margin: 0 auto;" width="640">
-										<tbody>
-											<tr>
-												<td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
-													<table class="heading_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-														<tr>
-															<td class="pad" style="padding-left:20px;padding-right:20px;text-align:center;width:100%;">
-																<h1 style="margin: 0; color: #070954; direction: ltr; font-family: 'Roboto Slab', Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 26px; font-weight: 400; letter-spacing: 2px; line-height: 180%; text-align: center; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 46.800000000000004px;"><span class="tinyMce-placeholder">Helpful Info<br></span></h1>
-															</td>
-														</tr>
-													</table>
-													<div class="spacer_block block-2" style="height:10px;line-height:10px;font-size:1px;">&#8202;</div>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<table class="row row-4" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-						<tbody>
-							<tr>
-								<td>
-									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffffff; color: #000000; width: 640px; margin: 0 auto;" width="640">
-										<tbody>
-											<tr>
-												<td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
-													<div class="spacer_block block-1" style="height:30px;line-height:30px;font-size:1px;">&#8202;</div>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<table class="row row-5" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-						<tbody>
-							<tr>
-								<td>
-									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffffff; color: #000000; width: 640px; margin: 0 auto;" width="640">
-										<tbody>
-											<tr>
-												<td class="column column-1" width="50%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
-													<table class="image_block block-1" width="100%" border="0" cellpadding="10" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-														<tr>
-															<td class="pad">
-																<div class="alignment" align="center" style="line-height:10px">
-																	<div style="max-width: 39px;"><a href="http://www.example.com" target="_blank" style="outline:none" tabindex="-1"><img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/7061/contact.png" style="display: block; height: auto; border: 0; width: 100%;" width="39" alt="Phone Icon" title="Phone Icon"></a></div>
-																</div>
-															</td>
-														</tr>
-													</table>
-													<table class="heading_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-														<tr>
-															<td class="pad" style="padding-left:20px;padding-right:20px;text-align:center;width:100%;">
-																<h1 style="margin: 0; color: #070954; direction: ltr; font-family: 'Roboto Slab', Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 20px; font-weight: 400; letter-spacing: 2px; line-height: 180%; text-align: center; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 36px;"><span class="tinyMce-placeholder"><a href="http://www.example.com" target="_blank" style="text-decoration: none; color: #070954;" rel="noopener">Contact</a></span></h1>
-															</td>
-														</tr>
-													</table>
-												</td>
-												<td class="column column-2" width="50%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
-													<table class="heading_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-														<tr>
-															<td class="pad" style="padding-left:20px;padding-right:20px;text-align:center;width:100%;">
-																<h1 style="margin: 0; color: #070954; direction: ltr; font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; font-size: 20px; font-weight: 400; letter-spacing: 2px; line-height: 180%; text-align: left; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 36px;"><span class="tinyMce-placeholder">{{ $name }}<br></span></h1>
-															</td>
-														</tr>
-														<tr>
-															<td class="pad" style="padding-left:20px;padding-right:20px;text-align:center;width:100%;">
-																<h1 style="margin: 0; color: #070954; direction: ltr; font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; font-size: 20px; font-weight: 400; letter-spacing: 2px; line-height: 180%; text-align: left; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 36px;"><span class="tinyMce-placeholder">{{ $phone }}<br></span></h1>
-															</td>
-														</tr>
-														<tr>
-															<td class="pad" style="padding-left:20px;padding-right:20px;text-align:center;width:100%;">
-																<h1 style="margin: 0; color: #070954; direction: ltr; font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; font-size: 20px; font-weight: 400; letter-spacing: 2px; line-height: 180%; text-align: left; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 36px;"><span class="tinyMce-placeholder">{{ $company }}<br></span></h1>
-															</td>
-														</tr>
-														<tr>
-															<td class="pad" style="padding-left:20px;padding-right:20px;text-align:center;width:100%;">
-																<h1 style="margin: 0; color: #070954; direction: ltr; font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; font-size: 20px; font-weight: 400; letter-spacing: 2px; line-height: 180%; text-align: left; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 36px;"><span class="tinyMce-placeholder">{{ $service }}<br></span></h1>
-															</td>
-														</tr>
-													</table>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					
-				<table class="row row-18" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-position: top center;">
-						<tbody>
-							<tr>
-								<td>
-									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffffff; color: #000000; width: 640px; margin: 0 auto;" width="640">
-										<tbody>
-											<tr>
-												<td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 10px; padding-top: 10px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
-													<div class="spacer_block block-1" style="height:40px;line-height:40px;font-size:1px;">&#8202;</div>
-													<table class="image_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-														<tr>
-															<td class="pad" style="width:100%;">
-																<div class="alignment" align="center" style="line-height:10px">
-																	<div style="max-width: 100px;"><img src="https://reconnaissancetechnologies.com/assets/img/logo-dark.svg" style="display: block; height: auto; border: 0; width: 100%;" width="100" alt="Your Logo" title="Your Logo"></div>
-																</div>
-															</td>
-														</tr>
-													</table>
-													<div class="spacer_block block-3" style="height:15px;line-height:15px;font-size:1px;">&#8202;</div>
-													<table class="paragraph_block block-4" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
-														<tr>
-															<td class="pad" style="padding-bottom:10px;padding-left:30px;padding-right:30px;padding-top:10px;">
-																<div style="color:#070954;font-family:Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;font-size:16px;line-height:180%;text-align:center;mso-line-height-alt:28.8px;">
-																	<p style="margin: 0; word-break: break-word;"><span><span>Kindly follow up with the above message as required. Pass it on to the necessary department for follow-up.</span></span></p>
-																</div>
-															</td>
-														</tr>
-													</table>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<table class="row row-19" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffffff;">
-						<tbody>
-							<tr>
-								<td>
-									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffffff; color: #000000; width: 640px; margin: 0 auto;" width="640">
-										<tbody>
-											<tr>
-												<td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
-													<table class="icons_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-														<tr>
-															<td class="pad" style="vertical-align: middle; color: #1e0e4b; font-family: 'Inter', sans-serif; font-size: 15px; padding-bottom: 5px; padding-top: 5px; text-align: center;">
-																<table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-																	<tr>
-																		<td class="alignment" style="vertical-align: middle; text-align: center;"><!--[if vml]><table align="center" cellpadding="0" cellspacing="0" role="presentation" style="display:inline-block;padding-left:0px;padding-right:0px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><![endif]-->
-																			<!--[if !vml]><!-->
-																			<table class="icons-inner" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; display: inline-block; margin-right: -4px; padding-left: 0px; padding-right: 0px;" cellpadding="0" cellspacing="0" role="presentation"><!--<![endif]-->
-																				<tr>
-																					<td style="vertical-align: middle; text-align: center; padding-top: 5px; padding-bottom: 5px; padding-left: 5px; padding-right: 6px;"><a href="http://designedwithbeefree.com/" target="_blank" style="text-decoration: none;"><img class="icon" alt="Beefree Logo" src="https://reconnaissancetechnologies.com/assets/img/logo-dark.svg" height="32" width="34" align="center" style="display: block; height: auto; margin: 0 auto; border: 0;"></a></td>
-																				</tr>
-																			</table>
-																		</td>
-																	</tr>
-																</table>
-															</td>
-														</tr>
-													</table>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</td>
-			</tr>
-		</tbody>
-	</table><!-- End -->
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #f1f1f1;">
+    <center style="width: 100%; background-color: #f1f1f1;">
+        <div
+            style="display: none; font-size: 1px;max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+            &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+        </div>
+        <div style="max-width: 600px; margin: 0 auto;" class="email-container">
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                style="margin: auto;">
+                <tr>
+                    <td valign="top" class="bg_white" style="padding: 1em 2.5em 0 2.5em;">
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td class="logo" style="text-align: center;">
+                                    <h1>
+                                        <a href="https://reconnaissancetechnologies.com">
+                                            <div style="max-width: 100px;"><img
+                                                    src="https://reconnaissancetechnologies.com/assets/img/logo-dark.svg"
+                                                    style="display: block; height: auto; border: 0; width: 100%;"
+                                                    width="100" alt="Reconnaissance Technologies Logo"
+                                                    title="Reconnaissance Technologies Logo"></div>
+                                        </a>
+                                    </h1>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="middle" class="hero bg_white" style="padding: 2em 0 4em 0;">
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td style="padding: 0 2.5em; text-align: left; padding-bottom: 3em;">
+                                    <div class="text">
+                                        <p class="name">Hello,</p>
+                                        @if(!empty($service))
+                                            <p>I am interested in making an enquiry about your {{ $service }}</p>
+                                        @endif
+                                        <p>{{ $enquiry }}</p>
+                                    </div> <br>
+                                    <div>
+                                        <span class="position">Regards, <br> {{ $name }}</span><br>
+                                        <span class="position">{{ $company }}</span><br>
+                                        <span class="position">{{ $phone }}</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left;">
+
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                style="margin: auto;">
+                <tr>
+                    <td valign="middle" class="bg_light footer email-section">
+                        <table>
+                            <tr>
+                                <td valign="top" style="padding-top: 20px;">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td style="text-align: left; padding-left: 5px; padding-right: 5px;">
+                                                <h3 class="heading">Contact Info</h3>
+                                                <ul>
+                                                    <li>
+                                                        <span class="text">{{ $company }}</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="text">{{ $phone }}</span>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bg_light" style="text-align: center;">
+                        <p><b>Kindly follow up with the above message as required. Pass it on to the necessary
+                                department for follow-up.</b></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </center>
+    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>-->
+    <!--<script>-->
+    <!--  window.dataLayer = window.dataLayer || [];-->
+
+    <!--  function gtag() {-->
+    <!--    dataLayer.push(arguments);-->
+    <!--  }-->
+    <!--  gtag('js', new Date());-->
+    <!--  gtag('config', 'UA-23581568-13');-->
+    <!--</script>-->
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
+        integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
+        data-cf-beacon='{"rayId":"8680b3e1fd0876d2","version":"2024.3.0","token":"cd0b4b3a733644fc843ef0b185f98241"}'
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
