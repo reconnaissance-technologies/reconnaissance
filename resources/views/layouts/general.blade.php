@@ -141,13 +141,15 @@
     <!-- End of Footer Section -->
 
     <!-- Scroll to Top Button -->
-    <button id="scroll-to-top" onclick="window.scrollTo(0, 0);" title="Back to Top"
-        class="hidden fixed z-90 bottom-10 right-8 bg-white w-16 h-16 rounded-full drop-shadow-lg flex justify-center items-center text-white text-4xl hover:drop-shadow-3xl hover:animate-bounce duration-300">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="w-6 h-6 text-rt-primary">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75L12 3m0 0l3.75 3.75M12 3v18" />
-        </svg>
-    </button>
+    <div id="scroll-to-top" class="hidden">
+        <button  onclick="window.scrollTo(0, 0);" title="Back to Top"
+            class="fixed z-90 bottom-10 right-8 bg-white w-16 h-16 rounded-full drop-shadow-lg flex justify-center items-center text-white text-4xl hover:drop-shadow-3xl hover:animate-bounce duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                class="w-6 h-6 text-rt-primary">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75L12 3m0 0l3.75 3.75M12 3v18" />
+            </svg>
+        </button>
+    </div>
     <!-- End of Scroll to Top Button -->
 </body>
 
