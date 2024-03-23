@@ -51,238 +51,351 @@
             <h1 class="w-3/4 text-xl lg:text-3xl font-bold mt-2 mb-2 lg:mb-6">
                 We offer professional IT Services
             </h1>
-            <div class="w-full lg:w-full flex justify-between items-center"></div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
-            <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-red-700">
-            <div class="py-3 p-6 flex rounded-2xl text-white bg-red-700 lg:w-20 lg:h-20">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-12 h-12">
+       <div class="flex flex-col sm:flex-row items-center justify-center gap-4 py-10">
+        <div class="group h-96 w-80 [perspective:1000px]">
+              <div class="relative h-full w-full shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] border-b-8 border-b-red-700 border-t-8 border-t-red-700 rounded-lg">
+              <div class="absolute inset-0 p-4 bg-[#fdfcf7] bg-opacity-10 rounded-xl">
+              <div class="flex flex-col justify-between h-full">
+                <img src="{{ asset('assets/img/our-services/frontendcoding.png') }}" class="text-white py-2 rounded-md bg-red-600" width="52">
+                <h1 class="mt-auto font-light text-4xl leading-5 text-black block">Frontend Development</h1>
+              </div>
+             </div>
+              <div class="absolute inset-0 h-full w-full rounded-xl bg-[#fdfcf7] p-8 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+               <div class="h-full">
+                <div class="mt-2 space-y-2">
+                    <p class="text-black text-lg font-light leading-5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, enim.
+                    </p>
+                    <p class="text-black text-lg font-light leading-5">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam maiores dolorem inventore vero fugiat quos.
+                    </p>
+                </div>
+                <div class="flex justify-end hover:animate-bounce">
+                    <a href="{{ route('services.frontend-development') }}" class="text-red-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
                             <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                         </svg>
+                    </a>
+                </div>
+               </div>
+              </div>
+           </div>
+          </div>
+                <div class="group h-96 w-80 [perspective:1000px]">
+                    <div class="relative h-full w-full shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] border-b-8 border-b-orange-500 border-t-8 border-t-orange-500 rounded-lg">
+                        <div class="absolute inset-0 p-4 bg-[#fdfcf7] bg-opacity-10 rounded-xl">
+                            <div class="flex flex-col justify-between h-full">
+                                <img src="{{ asset('assets/img/our-services/softcoding.png') }}" class="text-white p-2 rounded-md bg-orange-500" width="52">
+                                <h1 class="mt-auto font-light text-4xl leading-5 text-black block">Software Development</h1>
+                            </div>
+                        </div>
+                        <div class="absolute inset-0 h-full w-full rounded-xl bg-[#fdfcf7] p-8 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                            <div class="h-full">
+                                <div class="mt-2 space-y-2">
+                                    <p class="text-black text-lg font-light leading-5">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam reiciendis minus eum, doloremque minima tempore.
+                                    </p>
+                                    <p class="text-black text-lg font-light leading-5">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe rerum mollitia consequatur repellendus magnam corrupti.
+                                    </p>
+                                </div>
+                                <div class="flex justify-end hover:animate-bounce">
+                                  <a href="{{ route('services.software-devlopment') }}" class="text-orange-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                      stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                                       <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                    </svg>
+                                  </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group h-96 w-80 [perspective:1000px]">
+                    <div class="relative h-full w-full shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] border-b-8 border-b-yellow-300 border-t-8 border-t-yellow-300 rounded-lg">
+                        <div class="absolute inset-0 p-4 bg-[#fdfcf7] bg-opacity-10 rounded-xl">
+                            <div class="flex flex-col justify-between h-full">
+                                <img src="{{ asset('assets/img/our-services/mobilecoding.png') }}" class="text-white py-1 rounded-md bg-yellow-300" width="52">
+                                <h1 class="mt-auto font-light text-4xl leading-5 text-black block">Mobile App Development</h1>
+                            </div>
+                        </div>
+                        <div class="absolute inset-0 h-full w-full rounded-xl bg-[#fdfcf7] p-8 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                            <div class="h-full">
+                                <div class="mt-2 space-y-2">
+                                    <p class="text-black text-lg font-light leading-5">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam doloribus eaque reiciendis et illo minus.
+                                    </p>
+                                    <p class="text-black text-lg font-light leading-5">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus rerum ullam sint cupiditate, provident veritatis.
+                                    </p>
+                                </div>
+                                <div class="flex justify-end hover:animate-bounce">
+                                  <a href="{{ route('services.mobile-app') }}" class="text-yellow-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                      stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                                       <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                    </svg>
+                                  </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group h-96 w-80 [perspective:1000px]">
+                    <div class="relative h-full w-full shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] border-b-8 border-b-green-700 border-t-8 border-t-green-700 rounded-lg">
+                        <div class="absolute inset-0 p-4 bg-[#fdfcf7] bg-opacity-10 rounded-xl">
+                            <div class="flex flex-col justify-between h-full">
+                                <img src="{{ asset('assets/img/webdevelopment.png') }}" width="52" class="text-white p-2 rounded-md bg-green-700">
+                                <h1 class="mt-auto font-light text-4xl leading-5 text-black block">Web Application Development</h1>
+                            </div>
+                        </div>
+                        <div class="absolute inset-0 h-full w-full rounded-xl bg-[#fdfcf7] p-8 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                            <div class="h-full">
+                                <div class="mt-2 space-y-2">
+                                    <p class="text-black text-lg font-light leading-5">
+                                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut porro explicabo est non pariatur aperiam!
+                                    </p>
+                                    <p class="text-black text-lg font-light leading-5">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum itaque, possimus laudantium officia delectus natus?
+                                    </p>
+                                </div>
+                                <div class="flex justify-end hover:animate-bounce">
+                                  <a href="{{ route('services.web-app') }}" class="text-green-700">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                      stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                                       <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                    </svg>
+                                  </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <a href="{{ route('services.frontend-development') }}">
-                <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">Frontend
-                    Development</h1>
-            </a>
-
-            <div class="flex justify-end hover:animate-bounce">
-                <a href="{{ route('services.frontend-development') }}" class="text-red-700">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                    </svg>
-                </a>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 py-5">
+                <div class="group h-96 w-80 [perspective:1000px]">
+                    <div class="relative h-full w-full shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] border-b-8 border-b-blue-500 border-t-8 border-t-blue-500 rounded-lg">
+                        <div class="absolute inset-0 p-4 bg-[#fdfcf7] bg-opacity-10 rounded-xl">
+                            <div class="flex flex-col justify-between h-full">
+                                <img src="{{ asset('assets/img/ui-ux.webp') }}" width="52" class="text-white p-2 rounded-md bg-blue-500" >
+                                <h1 class="mt-auto font-light text-4xl leading-5 text-black block">Product Design</h1>
+                            </div>
+                        </div>
+                        <div class="absolute inset-0 h-full w-full rounded-xl bg-[#fdfcf7] p-8 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                            <div class="h-full">
+                                <div class="mt-2 space-y-2">
+                                    <p class="text-black text-lg font-light leading-5">
+                                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, officiis architecto odit dolore officia ipsum.
+                                    </p>
+                                    <p class="text-black text-lg font-light leading-5">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, pariatur placeat fuga officiis quisquam dicta?
+                                    </p>
+                                </div>
+                                <div class="flex justify-end hover:animate-bounce">
+                                  <a href="{{ route('services.product-design') }}" class="text-blue-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                      stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                                       <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                    </svg>
+                                  </a>
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="group h-96 w-80 [perspective:1000px]">
+                    <div class="relative h-full w-full shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] border-b-8 border-b-indigo-400 border-t-8 border-t-indigo-400 rounded-lg">
+                        <div class="absolute inset-0 p-4 bg-[#fdfcf7] bg-opacity-10 rounded-xl">
+                            <div class="flex flex-col justify-between h-full">
+                                <img src="{{ asset('assets/img/cloud-ui-ux.svg.svg') }}" width="52" class="text-white p-2 rounded-md bg-indigo-400">
+                                <h1 class="mt-auto font-light text-4xl leading-5 text-black block">Cloud & Infrastructure</h1>
+                            </div>
+                        </div>
+                        <div class="absolute inset-0 h-full w-full rounded-xl bg-[#fdfcf7] p-8 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                            <div class="h-full">
+                                <div class="mt-2 space-y-2">
+                                    <p class="text-black text-lg font-light leading-5">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, corporis.
+                                    </p>
+                                    <p class="text-black text-lg font-light leading-5">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi omnis eum perspiciatis quas illum in.
+                                    </p>
+                                </div>
+                                <div class="flex justify-end hover:animate-bounce">
+                                  <a href="{{ route('services.cloud-infrastructure') }}" class="text-indigo-400">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                      stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                                       <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                    </svg>
+                                  </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group h-96 w-80 [perspective:1000px]">
+                    <div class="relative h-full w-full shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] border-b-8 border-b-violet-600 border-t-8 border-t-violet-600 rounded-lg">
+                        <div class="absolute inset-0 p-4 bg-[#fdfcf7] bg-opacity-10 rounded-xl">
+                            <div class="flex flex-col justify-between h-full">
+                                <img src="{{ asset('assets/img/cybersec1.svg') }}" width="52" class="text-white p-2 rounded-md bg-violet-600">
+                                <h1 class="mt-auto font-light text-4xl leading-5 text-black block">Cybersecurity</h1>
+                            </div>
+                        </div>
+                        <div class="absolute inset-0 h-full w-full rounded-xl bg-[#fdfcf7] p-8 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                            <div class="h-full">
+                                <div class="mt-2 space-y-2">
+                                    <p class="text-black text-lg font-light leading-5">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum eum qui suscipit, cumque animi blanditiis!
+                                    </p>
+                                    <p class="text-black text-lg font-light leading-5">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores deserunt recusandae nemo ad, maxime accusamus.
+                                    </p>
+                                </div>
+                                <div class="flex justify-end hover:animate-bounce">
+                                  <a href="{{ route('services.cybersecurity') }}" class="text-violet-600">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                      stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                                       <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                    </svg>
+                                  </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group h-96 w-80 [perspective:1000px]">
+                    <div class="relative h-full w-full shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] border-b-8 border-b-[#22d3ee] border-t-8 border-t-[#22d3ee] rounded-lg">
+                        <div class="absolute inset-0 p-4 bg-[#fdfcf7] bg-opacity-10 rounded-xl">
+                            <div class="flex flex-col justify-between h-full">
+                                <img src="{{ asset('assets/img/ar&vr.svg') }}" width="52" class="text-white p-2 rounded-md bg-[#22d3ee]">
+                                <h1 class="mt-auto font-light text-4xl leading-5 text-black block">AR/VR Development</h1>
+                            </div>
+                        </div>
+                        <div class="absolute inset-0 h-full w-full rounded-xl bg-[#fdfcf7] p-8 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                            <div class="h-full">
+                                <div class="mt-2 space-y-2">
+                                    <p class="text-black text-lg font-light leading-5">
+                                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate illo sed culpa voluptatum iusto atque?
+                                    </p>
+                                    <p class="text-black text-lg font-light leading-5">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quo fugit error perspiciatis eius beatae.
+                                    </p>
+                                </div>
+                                <div class="flex justify-end hover:animate-bounce">
+                                  <a href="{{ route('services.ar-vr-development') }}" class="text-[#22d3ee]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                      stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                                       <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                    </svg>
+                                  </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-orange-500">
-            <div class="py-3 p-6 flex rounded-2xl text-white bg-orange-500 lg:w-20 lg:h-20">
-            <img src="{{ asset('assets/img/softcoding.svg') }}" class="object-contain"
-                            alt="">
-            </div>
-            <a href="{{ route('services.software-devlopment') }}">
-                <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">Software
-                    Development</h1>
-            </a>
-
-            <div class="flex justify-end hover:animate-bounce">
-                <a href="{{ route('services.software-devlopment') }}" class="text-orange-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-        <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-yellow-300">
-            <div class="py-3 p-6 flex rounded-2xl text-white bg-yellow-300 lg:w-20 lg:h-20">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-12 h-12">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-                        </svg>
-            </div>
-            <a href="{{ route('services.mobile-app') }}">
-                <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">Mobile Application
-                    Development</h1>
-            </a>
-
-            <div class="flex justify-end hover:animate-bounce">
-                <a href="{{ route('services.mobile-app') }}" class="text-yellow-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-        <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-green-700">
-            <div class="py-3 p-6 flex rounded-2xl text-white bg-green-700 lg:w-20 lg:h-20">
-            <img src="{{ asset('assets/img/webdev.svg') }}" class="object-contain"
-                            alt="">
-            </div>
-            <a href="{{ route('services.web-app') }}">
-                <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">Web Application
-                    Development</h1>
-            </a>
-
-            <div class="flex justify-end hover:animate-bounce">
-                <a href="{{ route('services.web-app') }}" class="text-green-700">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-        <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-blue-500">
-            <div class="py-3 p-6 flex rounded-2xl text-white bg-blue-500 lg:w-20 lg:h-20">
-            <img src="{{ asset('assets/img/ui-ux.webp') }}" class="object-contain"
-                            alt="">
-            </div>
-            <a href="{{ route('services.product-design') }}">
-                <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">Product
-                    Design</h1>
-            </a>
-
-            <div class="flex justify-end hover:animate-bounce">
-                <a href="{{ route('services.product-design') }}" class="text-blue-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-        <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-indigo-400">
-            <div class="py-3 p-6 flex rounded-2xl text-white bg-indigo-400 lg:w-20 lg:h-20">
-            <img src="{{ asset('assets/img/cloud-ui-ux.svg.svg') }}" class="object-contain"
-                            alt="">
-            </div>
-            <a href="{{ route('services.cloud-infrastructure') }}">
-                <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">Cloud &
-                    Infrastructure</h1>
-            </a>
-
-            <div class="flex justify-end hover:animate-bounce">
-                <a href="{{ route('services.cloud-infrastructure') }}" class="text-indigo-400">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-        <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-violet-600">
-            <div class="py-3 p-6 flex rounded-2xl text-white bg-violet-600 lg:w-20 lg:h-20">
-            <img src="{{ asset('assets/img/cybersec1.svg') }}" class="object-contain"
-                            alt="">
-            </div>
-            <a href="{{ route('services.cybersecurity') }}">
-                <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">Cybersecurity
-                    </h1>
-            </a>
-
-            <div class="flex justify-end hover:animate-bounce">
-                <a href="{{ route('services.cybersecurity') }}" class="text-violet-600">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-        <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-[#22d3ee]">
-            <div class="py-3 p-6 flex rounded-2xl text-white bg-[#22d3ee] lg:w-20 lg:h-20">
-            <img src="{{ asset('assets/img/ar&vr.svg') }}" class="object-contain"
-                            alt="">
-            </div>
-            <a href="{{ route('services.ar-vr-development') }}">
-                <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">AR/VR
-                    Development</h1>
-            </a>
-
-            <div class="flex justify-end hover:animate-bounce">
-                <a href="{{ route('services.ar-vr-development') }}" class="text-[#22d3ee]">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-        <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-gray-500">
-            <div class="py-3 p-6 flex rounded-2xl text-white bg-gray-500 lg:w-20 lg:h-20">
-            <img src="{{ asset('assets/img/AI&ML.svg') }}" class="object-contain"
-                            alt="">
-            </div>
-            <a href="{{ route('services.ai-ml-development') }}">
-                <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">AI/ML
-                    Development</h1>
-            </a>
-
-            <div class="flex justify-end hover:animate-bounce">
-                <a href="{{ route('services.ai-ml-development') }}" class="text-gray-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-        <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-yellow-500">
-            <div class="py-3 p-6 flex rounded-2xl text-white bg-yellow-500 lg:w-20 lg:h-20">
-            <img src="{{ asset('assets/img/iot.svg') }}" class="object-contain"
-                            alt="">
-            </div>
-            <a href="{{ route('services.iot-development') }}">
-                <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">IOT
-                    Development</h1>
-            </a>
-
-            <div class="flex justify-end hover:animate-bounce">
-                <a href="{{ route('services.iot-development') }}" class="text-yellow-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-        <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-green-500">
-            <div class="py-3 p-6 flex rounded-2xl text-white bg-green-500 lg:w-20 lg:h-20">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-12 h-12">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
-                        </svg>
-            </div>
-            <a href="{{ route('services.chatbot-development') }}">
-                <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">Chatbot 
-                    Development</h1>
-            </a>
-
-            <div class="flex justify-end hover:animate-bounce">
-                <a href="{{ route('services.chatbot-development') }}" class="text-green-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                            
-                    </svg>
-                </a>
-            </div>
-        </div>             
-            </div>      
-        </div>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 py-5">
+                <div class="group h-96 w-80 [perspective:1000px]">
+                    <div class="relative h-full w-full shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] border-b-8 border-b-gray-500 border-t-8 border-t-gray-500 rounded-lg">
+                        <div class="absolute inset-0 p-4 bg-[#fdfcf7] bg-opacity-10 rounded-xl">
+                            <div class="flex flex-col justify-between h-full">
+                                <img src="{{ asset('assets/img/AI&ML.svg') }}" width="52" class="text-white p-2 rounded-md bg-gray-500">
+                                <h1 class="mt-auto font-light text-4xl leading-5 text-black block">AI/ML Development</h1>
+                            </div>
+                        </div>
+                        <div class="absolute inset-0 h-full w-full rounded-xl bg-[#fdfcf7] p-8 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                            <div class="h-full">
+                                <div class="mt-2 space-y-2">
+                                    <p class="text-black text-lg font-light leading-5">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa odio deleniti hic rerum dolorem perspiciatis laboriosam fugiat repudiandae nemo dolorum!
+                                    </p>
+                                    <p class="text-black text-lg font-light leading-5">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit molestias, exercitationem vero voluptatum asperiores eos!
+                                    </p>
+                                </div>
+                                <div class="flex justify-end hover:animate-bounce">
+                                  <a href="{{ route('services.ai-ml-development') }}" class="text-gray-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                      stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                                       <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                    </svg>
+                                  </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group h-96 w-80 [perspective:1000px]">
+                    <div class="relative h-full w-full shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] border-b-8 border-b-yellow-500 border-t-8 border-t-yellow-500 rounded-lg">
+                        <div class="absolute inset-0 p-4 bg-[#fdfcf7] bg-opacity-10 rounded-xl">
+                            <div class="flex flex-col justify-between h-full">
+                                <img src="{{ asset('assets/img/iot.svg') }}" width="52" class="text-white p-2 rounded-md bg-yellow-500">
+                                <h1 class="mt-auto font-light text-4xl leading-5 text-black block">IOT Development</h1>
+                            </div>
+                        </div>
+                        <div class="absolute inset-0 h-full w-full rounded-xl bg-[#fdfcf7] p-8 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                            <div class="h-full">
+                                <div class="mt-2 space-y-2">
+                                    <p class="text-black text-lg font-light leading-5">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In vel sint quis! Quae rem labore odio minima beatae enim illo!
+                                    </p>
+                                    <p class="text-black text-lg font-light leading-5">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae laboriosam veritatis obcaecati quis alias minus!
+                                    </p>
+                                </div>
+                                <div class="flex justify-end hover:animate-bounce">
+                                  <a href="{{ route('services.iot-development') }}" class="text-yellow-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                      stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                                       <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                    </svg>
+                                  </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group h-96 w-80 [perspective:1000px]">
+                    <div class="relative h-full w-full shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] border-b-8 border-b-green-300 border-t-8 border-t-green-300 rounded-lg">
+                        <div class="absolute inset-0 p-4 bg-[#fdfcf7] bg-opacity-10 rounded-xl">
+                            <div class="flex flex-col justify-between h-full">
+                                <img src="{{ asset('assets/img/our-services/chatbotcoding.png') }}" width="52" class="text-white py-2 rounded-md bg-green-500">
+                                <h1 class="mt-auto font-light text-4xl leading-5 text-black block">Chatbot Development</h1>
+                            </div>
+                        </div>
+                        <div class="absolute inset-0 h-full w-full rounded-xl bg-[#fdfcf7] p-8 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                            <div class="h-full">
+                                <div class="mt-2 space-y-2">
+                                    <p class="text-black text-lg font-light leading-5">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quae assumenda doloremque possimus ullam magnam dicta sit suscipit sequi est?
+                                    </p>
+                                    <p class="text-black text-lg font-light leading-5">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita hic saepe natus exercitationem ipsum labore.
+                                    </p>
+                                </div>
+                                <div class="flex justify-end hover:animate-bounce">
+                                  <a href="{{ route('services.chatbot-development') }}" class="text-green-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                      stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                                       <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                    </svg>
+                                  </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
     </section>
