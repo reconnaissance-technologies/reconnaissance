@@ -152,4 +152,72 @@
 </body>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+@if ( Request::is('/') || Request::is('our-company/contact-us'))
+<script>
+    $(document).ready(function() {
+        $('#contactForm').submit(function(e) {
+            e.preventDefault();
+
+            // Show the progress indicator and hide the form content
+            $('#sendBtn').addClass('hidden');
+            $('#progressIndicator').removeClass('hidden');
+
+            var formData = new FormData(this);
+
+            $.ajax({
+                url: '{{ route('send-contact-form') }}',
+                type: 'POST',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function(response) {
+                    // console.log(response.message);
+                    $('#responseMessage').text(response.message);
+                },
+                error: function(xhr, status, error) {
+                    var errors = xhr.responseJSON.errors;
+
+                    $.each(errors, function(key, value) {
+                        console.log(value);
+                        $('input[name="' + key + '"]').next('span').text(value);
+                        $('textarea[name="' + key + '"]').next('span').text(value);
+                    });
+                },
+                complete: function() {
+                    // Hide the progress indicator and show the form content
+                    $('#progressIndicator').addClass('hidden');
+                    $('#contactForm').trigger("reset");
+                    $('#responseDiv').removeClass('hidden');
+                    setInterval(function() {
+                        $('#responseDiv').addClass('hidden');
+                        $('#formContent').removeClass('hidden');
+                        $('#sendBtn').removeClass('hidden');
+                    }, 3000);
+                    
+                }
+            });
+        });
+    });
+    
+    function formatPhoneNumber(input) {
+        // Remove all non-numeric characters from the input value
+        var cleaned = input.value.replace(/\D/g, '');
+
+        // Check if the cleaned number is empty or not
+        if (cleaned === '') {
+            input.value = '';
+            return;
+        }
+
+        // Format the cleaned number with dashes
+        var formatted = cleaned.slice(0, 3) + '-' + cleaned.slice(3, 6) + '-' + cleaned.slice(6, 9) + '-' + cleaned.slice(9, 13);
+        if (formatted.length > 0) {
+            if (formatted[0] !== '+') {
+                input.value= '+' + formatted;
+            }
+        }
+        // input.value = formatted;
+    }
+</script>
+@endif
 </html>
