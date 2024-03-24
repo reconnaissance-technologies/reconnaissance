@@ -38,12 +38,12 @@
 
                 <div class="w-full flex py-6">
                     <div class="flex items-center justify-between">
-                        <a href="javascript://" class="px-6 object-contain w-36"
+                        <a href="https://clutch.co/profile/reconnaissance-technologies" target="_blank" class="px-6 object-contain w-36"
                             title="Clutch.co 2023 Top Health &  Wellness App Developer, Nigeria">
                             <img src="{{ asset('assets/img/recognition/clutch-health-wellness-app-developers-nigeria-2023.png') }}"
                                 alt="Clutch.co 2023 Top Health &  Wellness App Developer, Nigeria Badge">
                         </a>
-                        <a href="javascript://" class="px-6 object-contain w-36"
+                        <a href="https://techbehemoths.com/awards-2023/cybersecurity/nigeria#view=60717" target="_blank" class="px-6 object-contain w-36"
                             title="TechBehemoths Top Cyber Security Company in Nigeria Awards 2023">
                             <img class="dark:hidden"
                                 src="{{ asset('assets/img/recognition/banner-award-2023-white-winner (2).png') }}"
@@ -52,10 +52,11 @@
                                 src="{{ asset('assets/img/recognition/tb-cyber-security.png') }}"
                                 alt="TechBehemoths Top Cyber Security Company in Nigeria Awards 2023 Badge">
                         </a>
-                        <a href="javascript://" class="px-6 object-contain w-36"
-                            title="TechBehemoths Top Custom Software Development Company in Nigeria Awards 2023"><img
-                                src="{{ asset('assets/img/recognition/banner-award-2023-white-winner (1).png') }}"
-                                alt="TechBehemoths Top Custom Software Development Company in Nigeria Awards 2023 Badge"></a>
+                        <a href="https://techbehemoths.com/awards-2023/custom-software-development/nigeria#view=60717" target="_blank" class="px-6 object-contain w-36"
+                            title="TechBehemoths Top Custom Software Development Company in Nigeria Awards 2023">
+                            <img src="{{ asset('assets/img/recognition/banner-award-2023-white-winner (1).png') }}"
+                                alt="TechBehemoths Top Custom Software Development Company in Nigeria Awards 2023 Badge">
+                        </a>
                     </div>
                 </div>
             </div>
