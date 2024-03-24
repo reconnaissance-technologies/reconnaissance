@@ -44,18 +44,18 @@
                                 alt="Clutch.co 2023 Top Health &  Wellness App Developer, Nigeria Badge">
                         </a>
                         <a href="javascript://" class="px-6 object-contain w-36"
-                            title="Tech Behomoth Top Cyber Security Company in Nigeria Awards 2023">
+                            title="TechBehemoths Top Cyber Security Company in Nigeria Awards 2023">
                             <img class="dark:hidden"
                                 src="{{ asset('assets/img/recognition/banner-award-2023-white-winner (2).png') }}"
-                                alt="Tech Behomoth Top Cyber Security Company in Nigeria Awards 2023 Badge">
+                                alt="TechBehemoths Top Cyber Security Company in Nigeria Awards 2023 Badge">
                             <img class="hidden dark:block"
                                 src="{{ asset('assets/img/recognition/tb-cyber-security.png') }}"
-                                alt="Tech Behomoth Top Cyber Security Company in Nigeria Awards 2023 Badge">
+                                alt="TechBehemoths Top Cyber Security Company in Nigeria Awards 2023 Badge">
                         </a>
                         <a href="javascript://" class="px-6 object-contain w-36"
-                            title="Tech Behomoth Top Custom Software Development Company in Nigeria Awards 2023"><img
+                            title="TechBehemoths Top Custom Software Development Company in Nigeria Awards 2023"><img
                                 src="{{ asset('assets/img/recognition/banner-award-2023-white-winner (1).png') }}"
-                                alt="Tech Behomoth Top Custom Software Development Company in Nigeria Awards 2023 Badge"></a>
+                                alt="TechBehemoths Top Custom Software Development Company in Nigeria Awards 2023 Badge"></a>
                     </div>
                 </div>
             </div>
