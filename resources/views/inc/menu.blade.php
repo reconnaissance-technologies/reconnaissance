@@ -202,21 +202,22 @@
                                 </div>
                                 <div id="custom-controls-gallery" class="relative w-full" data-carousel="slide">
                                     <!-- Carousel wrapper -->
-                                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                                    <div class="relative h-60 overflow-hidden rounded-lg md:h-60">
                                         <!-- Item 1 -->
-                                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                                            <p class="text-lg font-bold font-italic italic">
+                                        <div class="hidden duration-700 ease-linear" data-carousel-item>
+                                            <p class="text-sm font-bold font-italic italic">
                                                 Excellent team with superb service delivery and attention to details. Their personalized touch towards project execution made us comfortable.
 
                                                 <br>
                                                 <br>
                                                 Don Williams,<br/>
+                                                BlissTribe Movement,<br/>
                                                 Scotland, UK
                                             </p>
                                         </div>
                                         <!-- Item 2 -->
-                                        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                                            <p class="text-lg font-bold font-italic italic">
+                                        <div class="hidden duration-700 ease-linear" data-carousel-item>
+                                            <p class="text-sm font-bold font-italic italic">
                                                 Easy to deal with, swift to revert and their approach to our ecommerce website and CRM development is commendable.
                                                 <br>
                                                 <br>
@@ -225,12 +226,13 @@
                                             </p>
                                         </div>
                                         <!-- Item 3 -->
-                                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                                            <p class="text-lg font-bold font-italic italic">
+                                        <div class="hidden duration-700 ease-linear" data-carousel-item>
+                                            <p class="text-sm font-bold font-italic italic">
                                                 Working together with them is simple. thanks to Reconnaissance Technologies. They take a professional approach to their work. They are excellent communicators and constantly keep you up to date on any tasks or new developments.
                                                 <br>
                                                 <br>
                                                 Joan Ewuruje,<br/>
+                                                Ultrashot,<br/>
                                                 Abuja, Nigeria
                                             </p>
                                         </div>
