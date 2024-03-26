@@ -95,7 +95,7 @@
                                 </div>
                                 <p class="text-sm">
                                     <ul>
-                                        <li class="py-1"><a href="{{ route('industries.media-and-entertainment') }}" class="hover:border-b-rt-primary hover:border-b-2">Media & Enterntainment</a></li>
+                                        <li class="py-1"><a href="{{ route('industries.media-and-entertainment') }}" class="hover:border-b-rt-primary hover:border-b-2">Media & Entertainment</a></li>
                                         <li class="py-1"><a href="{{ route('industries.education') }}" class="hover:border-b-rt-primary hover:border-b-2">Education</a></li>
                                         <li class="py-1"><a href="{{ route('industries.healthcare') }}" class="hover:border-b-rt-primary hover:border-b-2">Healthcare</a></li>
                                         <li class="py-1"><a href="{{ route('industries.hi-tech') }}" class="hover:border-b-rt-primary hover:border-b-2">Hi-Tech</a></li>
@@ -144,7 +144,7 @@
                 <!-- End of Services Menu Section -->
 
                 <!-- Our Solutions Menu -->
-                {{-- <li  class="hoverable hover:border-t-2 hover:border-t-rt-primary">
+                <li  class="hoverable hover:border-t-2 hover:border-t-rt-primary">
                     <a href="javascript://" class="relative block lg:p-6 text-sm lg:text-base font-bold uppercase">
                         Solutions
                     </a>
@@ -186,7 +186,7 @@
                             </ul>
                         </div>
                     </div>
-                </li> --}}
+                </li>
                 <!-- End of Our Solutions Menu -->
 
                 <!-- Our Work Menu -->
@@ -239,7 +239,7 @@
                                     </div>
                                 </div>
                             </ul>
-                            {{-- <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
+                            <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
                                 <div class="flex items-center">
                                     <h3 class="font-bold text-lg text-bold mb-2 uppercase">Case Studies</h3>
                                 </div>
@@ -250,7 +250,7 @@
                                         </p>
                                     </a>
                                 </div>
-                            </ul> --}}
+                            </ul>
                             <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
                                 <div class="flex items-center">
                                     <h3 class="font-bold text-lg text-bold mb-2 uppercase">Portfolio</h3>
@@ -282,17 +282,15 @@
                                 <p class="text-sm">
                                     <ul>
                                         <li class="py-1"><a href="{{ route('about-us') }}" class="hover:border-b-rt-primary hover:border-b-2">About Us</a></li>
-                                        {{-- <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Our Infrastructure</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Our Team</a></li> --}}
                                         <li class="py-1"><a href="{{ route('development-methodology') }}" class="hover:border-b-rt-primary hover:border-b-2">Development Methodology</a></li>
-                                        {{-- <li class="py-1"><a href="{{ route('certifications') }}" class="hover:border-b-rt-primary hover:border-b-2">Certifications</a></li> --}}
+                                        <li class="py-1"><a href="{{ route('certifications') }}" class="hover:border-b-rt-primary hover:border-b-2">Certifications</a></li>
                                         <li class="py-1"><a href="{{ route('partnerships') }}" class="hover:border-b-rt-primary hover:border-b-2">Partnerships</a></li>
                                         <li class="py-1"><a href="{{ route('career-overview') }}" class="hover:border-b-rt-primary hover:border-b-2">Career Overview</a></li>
                                         <li class="py-1"><a href="{{ route('contact-us') }}" class="hover:border-b-rt-primary hover:border-b-2">Contact Us</a></li>
                                     </ul>
                                 </p>
                             </ul>
-                            {{-- <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
+                            <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
                                 <div class="flex items-center">
                                     <h3 class="font-bold text-lg text-bold mb-2 uppercase">Insights</h3>
                                 </div>
@@ -306,15 +304,15 @@
                                         <li class="py-1"><a href="{{ route('webinars') }}" class="hover:border-b-rt-primary hover:border-b-2">Webinar</a></li>
                                     </ul>
                                 </p>
-                            </ul> --}}
-                            {{-- <ul class="px-4 w-full sm:w-1/2 lg:w-1/2 pb-6 pt-6 lg:pt-3">
+                            </ul>
+                            <ul class="px-4 w-full sm:w-1/2 lg:w-1/2 pb-6 pt-6 lg:pt-3">
                                 <div class="flex items-center">
                                     <h3 class="font-bold text-lg text-bold mb-2 uppercase"></h3>
                                 </div>
                                 <p class="text-sm">
                                     <img class="rounded-xl" src="{{ asset('assets/img/festives/happy-holidays.jpg') }}" alt="Happy Holidays" title="Thank You & Happy Holidays">
                                 </p>
-                            </ul> --}}
+                            </ul>
                         </div>
                     </div>
                 </li>

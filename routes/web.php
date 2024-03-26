@@ -17,22 +17,22 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PagesController::class, 'index'])->name('index');
 Route::get('our-company/about-us', [PagesController::class, 'aboutUs'])->name('about-us');
 Route::get('our-company/development-methodology', [PagesController::class, 'developmentMethodology'])->name('development-methodology');
-// Route::get('our-company/certifications', [PagesController::class, 'certifications'])->name('certifications');
+Route::get('our-company/certifications', [PagesController::class, 'certifications'])->name('certifications');
 Route::get('our-company/partnerships', [PagesController::class, 'partnerships'])->name('partnerships');
 Route::get('our-company/career-overview', [PagesController::class, 'careerOverview'])->name('career-overview');
 Route::get('our-company/contact-us', [PagesController::class, 'contactUs'])->name('contact-us');
 Route::post('our-company/contact-us', [PagesController::class, 'sendContactForm'])->name('send-contact-form');
-// Route::get('our-company/csr', [PagesController::class, 'csr'])->name('csr');
-// Route::get('our-company/awards', [PagesController::class, 'awards'])->name('awards');
-// Route::get('our-company/media-coverage', [PagesController::class, 'mediaCoverage'])->name('media-coverage');
-// Route::get('our-company/events', [PagesController::class, 'events'])->name('events');
+Route::get('our-company/csr', [PagesController::class, 'csr'])->name('csr');
+Route::get('our-company/awards', [PagesController::class, 'awards'])->name('awards');
+Route::get('our-company/media-coverage', [PagesController::class, 'mediaCoverage'])->name('media-coverage');
+Route::get('our-company/events', [PagesController::class, 'events'])->name('events');
 Route::get('our-company/privacy-policy', [PagesController::class, 'privacyPolicy'])->name('privacy-policy');
-// Route::get('webinars', [PagesController::class, 'webinars'])->name('webinars');
+Route::get('webinars', [PagesController::class, 'webinars'])->name('webinars');
 
 Route::get('our-services', [PagesController::class, 'ourServices'])->name('our-services');
 
 Route::group(['prefix'  =>  'our-work', 'as'    => 'work.'], function () {
-    // Route::get('case-studies', [PagesController::class, 'caseStudies'])->name('case-studies');
+    Route::get('case-studies', [PagesController::class, 'caseStudies'])->name('case-studies');
     Route::get('portfolio', [PagesController::class, 'portfolio'])->name('portfolio');
 });
 Route::group(['prefix'  =>  'our-services', 'as'    => 'services.'], function () {
@@ -97,4 +97,4 @@ Route::group(['prefix'=>'clients','as'=>'clients.'], function () {
 
 
 Route::get('our-solutions', [PagesController::class, 'ourSolutions'])->name('our-solutions');
-// Route::get('blog', [PagesController::class, 'ourBlog'])->name('blog');
+Route::get('blog', [PagesController::class, 'ourBlog'])->name('blog');
