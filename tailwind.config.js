@@ -14,9 +14,9 @@ export default {
                 'rt-white': '#FFFFFF'
             },
             fontFamily: {
-                sans: ['Raleway', 'sans-serif'],
-                display: ['Raleway', 'sans-serif'],
-                body: ['Raleway', 'sans-serif']
+                sans: ['Inter', 'sans-serif'],
+                display: ['Inter', 'sans-serif'],
+                body: ['Inter', 'sans-serif']
             },
             boxShadow: {
                 sm: '0 1px 2px 0 rgb(0 0 0 / 0.05)',
