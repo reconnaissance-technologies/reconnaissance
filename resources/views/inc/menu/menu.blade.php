@@ -3,37 +3,20 @@
         <!-- Logo Section -->
         <div class="relative block lg:w-52 md:w-40 sm:w-32">
             <a href="{{ route('index') }}">
-                <img src="{{ asset('assets/img/logo-mixed.svg') }}"
-                    class="dark:block logo-mixed object-contain" alt="Reconnaissance Technologies Logo"
-                    title="Reconnaissance Technologies Logo">
-                <img src="{{ asset('assets/img/logo-dark.svg') }}"
-                    class="logo-dark hidden dark:hidden object-contain" alt="Reconnaissance Technologies Logo"
-                    title="Reconnaissance Technologies Logo">
+                <img src="{{ asset('assets/img/logo-mixed.svg') }}" class="dark:block logo-mixed object-contain" alt="Reconnaissance Technologies Logo" title="Reconnaissance Technologies Logo">
+                <img src="{{ asset('assets/img/logo-dark.svg') }}" class="logo-dark hidden dark:hidden object-contain" alt="Reconnaissance Technologies Logo" title="Reconnaissance Technologies Logo">
             </a>
         </div>
         <!-- End of Logo Section -->
 
         <div class="flex items-center md:order-2 space-x-1 md:space-x-2 rtl:space-x-reverse">
-            <!-- Dark Mode Toggle Switch -->
-            <button id="theme-toggle" type="button"
-                class="px-3 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg text-sm p-2.5">
-                <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                </svg>
-                <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                        fill-rule="evenodd" clip-rule="evenodd"></path>
-                </svg>
-            </button>
-            <!-- End of Dark Mode Toggle Switch -->
-
             <!-- CTA Button -->
-            <a href="{{ route('contact-us') }}"
-                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Get
-                in Touch</a>
+            <a href="{{ route('contact-us') }}" class="bg-white hover:bg-rt-primary text-rt-primary hover:text-rt-white font-bold py-2 px-4 rounded inline-flex items-center">
+                <span>Get in Touch</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                </svg>                      
+            </a>
             <!-- End of CTA Button -->
 
             <!-- Hamburger Menu -->
@@ -54,93 +37,7 @@
         <div id="mega-menu" class="pt-4 items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
             <ul class="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
                 <!-- Services Menu -->
-                <li  class="hoverable hover:border-t-2 hover:border-t-rt-primary">
-                    <a href="javascript://" class="relative block lg:p-6 text-sm lg:text-base font-bold uppercase">
-                        Services
-                    </a>
-                    <div class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl text-black  bg-white">
-                        <div class="container w-full flex flex-wrap justify-between mx-2">
-                            <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
-                                <div class="flex items-center">
-                                    <h3 class="font-bold text-lg text-bold mb-2 uppercase">Offering</h3>
-                                </div>
-                                <p class="text-sm">
-                                    <ul>
-                                        <li class="py-1"><a href="{{ route('services.product-design') }}" class="hover:border-b-rt-primary hover:border-b-2">Product Design</a></li>
-                                        <li class="py-1"><a href="{{ route('services.software-devlopment') }}" class="hover:border-b-rt-primary hover:border-b-2">Software Development</a></li>
-                                        <li class="py-1"><a href="{{ route('services.web-app') }}" class="hover:border-b-rt-primary hover:border-b-2">Web Application Development</a></li>
-                                        <li class="py-1"><a href="{{ route('services.mobile-app') }}" class="hover:border-b-rt-primary hover:border-b-2">Mobile App Development</a></li>
-                                        <li class="py-1"><a href="{{ route('services.frontend-development') }}" class="hover:border-b-rt-primary hover:border-b-2">Frontend Development</a></li>
-                                        <li class="py-1"><a href="{{ route('services.cloud-infrastructure') }}" class="hover:border-b-rt-primary hover:border-b-2">Cloud & Infrastructure</a></li>
-                                        <li class="py-1"><a href="{{ route('services.cybersecurity') }}" class="hover:border-b-rt-primary hover:border-b-2">Cybersecurity</a></li>
-                                    </ul>
-                                </p>
-                            </ul>
-                            <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
-                                <div class="flex items-center">
-                                    <h3 class="font-bold text-lg text-bold mb-2 uppercase">Trending Services</h3>
-                                </div>
-                                <p class="text-sm">
-                                    <ul>
-                                        <li class="py-1"><a href="{{ route('services.ar-vr-development') }}" class="hover:border-b-rt-primary hover:border-b-2">AR/VR Development</a></li>
-                                        <li class="py-1"><a href="{{ route('services.ai-ml-development') }}" class="hover:border-b-rt-primary hover:border-b-2">AI/ML Development</a></li>
-                                        <li class="py-1"><a href="{{ route('services.iot-development') }}" class="hover:border-b-rt-primary hover:border-b-2">IOT Development</a></li>
-                                        <li class="py-1"><a href="{{ route('services.chatbot-development') }}" class="hover:border-b-rt-primary hover:border-b-2">Chatbot Development</a></li>
-                                    </ul>
-                                </p>
-                            </ul>
-                            <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
-                                <div class="flex items-center">
-                                    <h3 class="font-bold text-lg text-bold mb-2 uppercase">Industries We Serve</h3>
-                                </div>
-                                <p class="text-sm">
-                                    <ul>
-                                        <li class="py-1"><a href="{{ route('industries.media-and-entertainment') }}" class="hover:border-b-rt-primary hover:border-b-2">Media & Entertainment</a></li>
-                                        <li class="py-1"><a href="{{ route('industries.education') }}" class="hover:border-b-rt-primary hover:border-b-2">Education</a></li>
-                                        <li class="py-1"><a href="{{ route('industries.healthcare') }}" class="hover:border-b-rt-primary hover:border-b-2">Healthcare</a></li>
-                                        <li class="py-1"><a href="{{ route('industries.hi-tech') }}" class="hover:border-b-rt-primary hover:border-b-2">Hi-Tech</a></li>
-                                        <li class="py-1"><a href="{{ route('industries.logistics') }}" class="hover:border-b-rt-primary hover:border-b-2">Logistics</a></li>
-                                        <li class="py-1"><a href="{{ route('industries.real-estate') }}" class="hover:border-b-rt-primary hover:border-b-2">Real Estate & Construction</a></li>
-                                        <li class="py-1"><a href="{{ route('industries.retail-ecommerce') }}" class="hover:border-b-rt-primary hover:border-b-2">Retail & eCommerce</a></li>
-                                        <li class="py-1"><a href="{{ route('industries.travel-hospitality') }}" class="hover:border-b-rt-primary hover:border-b-2">Travel & Hospitality</a></li>
-                                        {{-- <li class="py-1"><a href="{{ route('industries.utilities') }}" class="hover:border-b-rt-primary hover:border-b-2">Utilities & On-Demand</a></li> --}}
-                                        {{-- <li class="py-1"><a href="{{ route('industries.fintech') }}" class="hover:border-b-rt-primary hover:border-b-2">FinTech</a></li> --}}
-                                        {{-- <li class="py-1"><a href="{{ route('industries.automotive') }}" class="hover:border-b-rt-primary hover:border-b-2">Automotive</a></li> --}}
-                                        {{-- <li class="py-1"><a href="{{ route('industries.mining-agriculture') }}" class="hover:border-b-rt-primary hover:border-b-2">Mining & Agriculture</a></li> --}}
-                                    </ul>
-                                </p>
-                            </ul>
-                            <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
-                                <div class="lg:pb-12">
-                                    <div class="flex items-center">
-                                        <h3 class="font-bold text-lg text-bold mb-2 uppercase">Service Models</h3>
-                                    </div>
-                                    <p class="text-sm">
-                                        <ul>
-                                            <li class="py-1"><a href="{{ route('sm.delivery') }}" class="hover:border-b-rt-primary hover:border-b-2">Global Delivery Model</a></li>
-                                            <li class="py-1"><a href="{{ route('sm.engagement') }}" class="hover:border-b-rt-primary hover:border-b-2">Engagement Model</a></li>
-                                        </ul>
-                                    </p>
-                                </div>
-                                <div class="flex-col pt-12 justify-between">
-                                    <div class="flex items-center">
-                                        <h3 class="font-bold text-lg text-bold mb-2 uppercase">Talk to an Expert</h3>
-                                    </div>
-                                    <p class="text-sm">
-                                        One of our experts would love to respond to your queries
-                                    </p>
-                                    <p class="py-6">
-                                        <!-- CTA Button -->
-                                        <a href="{{ route('contact-us') }}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-                                            Speak to an Expert
-                                        </a>
-                                        <!-- End of CTA Button -->
-                                    </p>
-                                </div>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
+                
                 <!-- End of Services Menu Section -->
 
                 <!-- Our Solutions Menu -->
