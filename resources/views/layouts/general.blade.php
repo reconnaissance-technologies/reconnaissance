@@ -78,7 +78,7 @@
     <!-- Header Section -->
     <header>
         <!-- Navigation and Logo Implementation -->
-        @include('inc.menu')
+        @include('inc.menu.menu')
         <!-- End of Navigation and Logo Implementation -->
     </header>
     <!-- End of Header Section -->
