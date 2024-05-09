@@ -35,185 +35,46 @@
 
         <!-- Mega Menu Section -->
         <div id="mega-menu" class="pt-4 items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
-            <ul class="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
+            <ul class="flex flex-col mt-4 font-medium md:flex-row md:mt-0 rtl:space-x-reverse">
                 <!-- Services Menu -->
-                
+                @include('inc.menu.services')
                 <!-- End of Services Menu Section -->
 
                 <!-- Our Solutions Menu -->
-                <li  class="hoverable hover:border-t-2 hover:border-t-rt-primary">
-                    <a href="javascript://" class="relative block lg:p-6 text-sm lg:text-base font-bold uppercase">
+                <li  class="hover:border-b-2 hover:border-b-rt-white">
+                    <a href="{{ route('our-solutions') }}" class="relative block lg:p-6 text-sm lg:text-base font-bold uppercase">
                         Solutions
                     </a>
-                    <div class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl text-black bg-white">
-                        <div class="container w-full flex flex-wrap justify-between mx-2">
-                            <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
-                                <div class="flex items-center">
-                                    <h3 class="font-bold text-lg text-bold mb-2 uppercase">Product Offerings</h3>
-                                </div>
-                                <p class="text-sm">
-                                    <ul>
-                                        <li class="py-1"><a href="{{ route('po.magico') }}" class="hover:border-b-rt-primary hover:border-b-2">Mágico<sup class="text-red-500 animate-pulse">new</sup></a></li>
-                                        <li class="py-1"><a href="{{ route('po.buzzforge') }}" class="hover:border-b-rt-primary hover:border-b-2">BuzzForge<sup class="text-red-500 animate-pulse">new</sup></a></li>
-                                        <li class="py-1"><a href="{{ route('po.stoqit') }}" class="hover:border-b-rt-primary hover:border-b-2">Stoqit</a></li>
-                                    </ul>
-                                </p>
-                            </ul>
-                            <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
-                                <div class="flex items-center">
-                                    <h3 class="font-bold text-lg text-bold mb-2 uppercase">Solutions</h3>
-                                </div>
-                                <p class="text-sm">
-                                    <ul>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">ERP Software</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Hospital Management</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Multi-vendor eCommerce Solution</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Real Estate Management</a></li>
-                                        <li class="py-1"><a href="" class="hover:border-b-rt-primary hover:border-b-2">Warehouse & Logistics Solution</a></li>
-                                    </ul>
-                                </p>
-                            </ul>
-                            <ul class="px-4 w-full sm:w-1/2 lg:w-1/2 pb-6 pt-6 lg:pt-3">
-                                <div class="flex items-center">
-                                    <h3 class="font-bold text-lg text-bold mb-2 uppercase">Products & Solutions Overview</h3>
-                                </div>
-                                <p class="text-sm">
-                                    
-                                </p>
-                            </ul>
-                        </div>
-                    </div>
                 </li>
                 <!-- End of Our Solutions Menu -->
-
-                <!-- Our Work Menu -->
-                <li  class="hoverable hover:border-t-2 hover:border-t-rt-primary">
-                    <a href="javascript://" class="relative block lg:p-6 text-sm lg:text-base font-bold uppercase">
-                        Our Work
-                    </a>
-                    <div class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl text-black  bg-white">
-                        <div class="container w-full flex flex-wrap justify-between mx-2">
-                            <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
-                                <div class="flex items-center">
-                                    <h3 class="font-bold text-lg text-bold mb-2 uppercase">Testimonials</h3>
-                                </div>
-                                <div id="custom-controls-gallery" class="relative w-full" data-carousel="slide">
-                                    <!-- Carousel wrapper -->
-                                    <div class="relative h-60 overflow-hidden rounded-lg md:h-60">
-                                        <!-- Item 1 -->
-                                        <div class="hidden duration-700 ease-linear" data-carousel-item>
-                                            <p class="text-sm font-bold font-italic italic">
-                                                Excellent team with superb service delivery and attention to details. Their personalized touch towards project execution made us comfortable.
-
-                                                <br>
-                                                <br>
-                                                Don Williams,<br/>
-                                                BlissTribe Movement,<br/>
-                                                Scotland, UK
-                                            </p>
-                                        </div>
-                                        <!-- Item 2 -->
-                                        <div class="hidden duration-700 ease-linear" data-carousel-item>
-                                            <p class="text-sm font-bold font-italic italic">
-                                                Easy to deal with, swift to revert and their approach to our ecommerce website and CRM development is commendable.
-                                                <br>
-                                                <br>
-                                                Deborah Ayigbi,<br/>
-                                                Lagos, Nigeria
-                                            </p>
-                                        </div>
-                                        <!-- Item 3 -->
-                                        <div class="hidden duration-700 ease-linear" data-carousel-item>
-                                            <p class="text-sm font-bold font-italic italic">
-                                                Working together with them is simple. thanks to Reconnaissance Technologies. They take a professional approach to their work. They are excellent communicators and constantly keep you up to date on any tasks or new developments.
-                                                <br>
-                                                <br>
-                                                Joan Ewuruje,<br/>
-                                                Ultrashot,<br/>
-                                                Abuja, Nigeria
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </ul>
-                            <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
-                                <div class="flex items-center">
-                                    <h3 class="font-bold text-lg text-bold mb-2 uppercase">Case Studies</h3>
-                                </div>
-                                <div class="hover:bg-gray-500 hover:rounded-md p-3">
-                                    <a href="{{ route('work.case-studies') }}">
-                                        <p class="text-sm hover:rounded-md hover:shadow-round">
-                                            <img src="{{ asset('assets/img/case-study.jpg') }}" class="hover:rounded-md" alt="Case Studies - Reconnaissance Technologies">
-                                        </p>
-                                    </a>
-                                </div>
-                            </ul>
-                            <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
-                                <div class="flex items-center">
-                                    <h3 class="font-bold text-lg text-bold mb-2 uppercase">Portfolio</h3>
-                                </div>
-                                <div class="hover:bg-gray-500 hover:rounded-md p-3">
-                                    <a href="{{ route('work.portfolio') }}">
-                                        <p class="text-sm hover:rounded-md hover:shadow-round">
-                                            <img src="{{ asset('assets/img/portfolio-image.png') }}" class="hover:rounded-md" alt="Case Studies - Reconnaissance Technologies">
-                                        </p>
-                                    </a>
-                                </div>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <!-- End of Our Work Menu -->
                 
-                <!-- Who We Are Menu -->
-                <li  class="hoverable hover:border-t-2 hover:border-t-rt-primary">
-                    <a href="javascript://" class="relative block lg:p-6 text-sm lg:text-base font-bold uppercase">
-                        Who We Are
+                <!-- Company Menu -->
+                @include('inc.menu.company')
+                <!-- End of Company Menu -->
+
+                <!-- Industries Menu -->
+                <li  class="hover:border-b-2 hover:border-b-rt-white">
+                    <a href="{{ route('our-solutions') }}" class="relative block lg:p-6 text-sm lg:text-base font-bold uppercase">
+                        Industries
                     </a>
-                    <div class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl text-black  bg-white">
-                        <div class="container w-full flex flex-wrap justify-between mx-2">
-                            <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
-                                <div class="flex items-center">
-                                    <h3 class="font-bold text-lg text-bold mb-2 uppercase">Overview</h3>
-                                </div>
-                                <p class="text-sm">
-                                    <ul>
-                                        <li class="py-1"><a href="{{ route('about-us') }}" class="hover:border-b-rt-primary hover:border-b-2">About Us</a></li>
-                                        <li class="py-1"><a href="{{ route('development-methodology') }}" class="hover:border-b-rt-primary hover:border-b-2">Development Methodology</a></li>
-                                        <li class="py-1"><a href="{{ route('certifications') }}" class="hover:border-b-rt-primary hover:border-b-2">Certifications</a></li>
-                                        <li class="py-1"><a href="{{ route('partnerships') }}" class="hover:border-b-rt-primary hover:border-b-2">Partnerships</a></li>
-                                        <li class="py-1"><a href="{{ route('career-overview') }}" class="hover:border-b-rt-primary hover:border-b-2">Career Overview</a></li>
-                                        <li class="py-1"><a href="{{ route('contact-us') }}" class="hover:border-b-rt-primary hover:border-b-2">Contact Us</a></li>
-                                    </ul>
-                                </p>
-                            </ul>
-                            <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
-                                <div class="flex items-center">
-                                    <h3 class="font-bold text-lg text-bold mb-2 uppercase">Insights</h3>
-                                </div>
-                                <p class="text-sm">
-                                    <ul>
-                                        <li class="py-1"><a href="{{ route('awards') }}" class="hover:border-b-rt-primary hover:border-b-2">Awards</a></li>
-                                        <li class="py-1"><a href="{{ route('media-coverage') }}" class="hover:border-b-rt-primary hover:border-b-2">Media Coverage</a></li>
-                                        <li class="py-1"><a href="{{ route('events') }}" class="hover:border-b-rt-primary hover:border-b-2">Events & Celebrations</a></li>
-                                        <li class="py-1"><a href="{{ route('csr') }}" class="hover:border-b-rt-primary hover:border-b-2">C S R</a></li>
-                                        <li class="py-1"><a href="{{ route('blog') }}" class="hover:border-b-rt-primary hover:border-b-2">Blogs</a></li>
-                                        <li class="py-1"><a href="{{ route('webinars') }}" class="hover:border-b-rt-primary hover:border-b-2">Webinar</a></li>
-                                    </ul>
-                                </p>
-                            </ul>
-                            <ul class="px-4 w-full sm:w-1/2 lg:w-1/2 pb-6 pt-6 lg:pt-3">
-                                <div class="flex items-center">
-                                    <h3 class="font-bold text-lg text-bold mb-2 uppercase"></h3>
-                                </div>
-                                <p class="text-sm">
-                                    <img class="rounded-xl" src="{{ asset('assets/img/festives/happy-holidays.jpg') }}" alt="Happy Holidays" title="Thank You & Happy Holidays">
-                                </p>
-                            </ul>
-                        </div>
-                    </div>
                 </li>
-                <!-- End of Who We Are Menu -->
+                <!-- End of Industries Menu -->
+
+                <!-- Our Technologies Menu -->
+                <li  class="hoverable hover:border-b-2 hover:border-b-rt-white">
+                    <a href="{{ route('our-solutions') }}" class="relative block lg:p-6 text-sm lg:text-base font-bold uppercase">
+                        Technologies
+                    </a>
+                </li>
+                <!-- End of Our Technologies Menu -->
+
+                <!-- Our Blog Menu -->
+                <li  class="hoverable hover:border-b-2 hover:border-b-rt-white">
+                    <a href="{{ route('our-solutions') }}" class="relative block lg:p-6 text-sm lg:text-base font-bold uppercase">
+                        Blog
+                    </a>
+                </li>
+                <!-- End of Ou rBlog Menu -->
             </ul>
         </div>
         <!-- End of Mega Menu Section -->
