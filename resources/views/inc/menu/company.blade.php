@@ -1,5 +1,5 @@
 <li  class="hoverable hover:border-t-2 hover:border-t-rt-white">
-    <a href="javascript://" class="block lg:p-6 text-sm lg:text-base font-bold uppercase">
+    <a href="javascript://" class="block lg:p-6 text-sm lg:text-base font-bold">
         Company
     </a>
     <div class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl text-black  bg-white">

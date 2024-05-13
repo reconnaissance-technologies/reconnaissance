@@ -42,7 +42,7 @@
 
                 <!-- Our Solutions Menu -->
                 <li  class="hover:border-b-2 hover:border-b-rt-white">
-                    <a href="{{ route('our-solutions') }}" class="relative block lg:p-6 text-sm lg:text-base font-bold uppercase">
+                    <a href="{{ route('our-solutions') }}" class="relative block lg:p-6 text-sm lg:text-base font-bold">
                         Solutions
                     </a>
                 </li>
@@ -54,7 +54,7 @@
 
                 <!-- Industries Menu -->
                 <li  class="hover:border-b-2 hover:border-b-rt-white">
-                    <a href="{{ route('our-solutions') }}" class="relative block lg:p-6 text-sm lg:text-base font-bold uppercase">
+                    <a href="{{ route('our-solutions') }}" class="relative block lg:p-6 text-sm lg:text-base font-bold">
                         Industries
                     </a>
                 </li>
@@ -62,7 +62,7 @@
 
                 <!-- Our Technologies Menu -->
                 <li  class="hoverable hover:border-b-2 hover:border-b-rt-white">
-                    <a href="{{ route('our-solutions') }}" class="relative block lg:p-6 text-sm lg:text-base font-bold uppercase">
+                    <a href="{{ route('our-solutions') }}" class="relative block lg:p-6 text-sm lg:text-base font-bold">
                         Technologies
                     </a>
                 </li>
@@ -70,7 +70,7 @@
 
                 <!-- Our Blog Menu -->
                 <li  class="hoverable hover:border-b-2 hover:border-b-rt-white">
-                    <a href="{{ route('our-solutions') }}" class="relative block lg:p-6 text-sm lg:text-base font-bold uppercase">
+                    <a href="{{ route('our-solutions') }}" class="relative block lg:p-6 text-sm lg:text-base font-bold">
                         Blog
                     </a>
                 </li>
