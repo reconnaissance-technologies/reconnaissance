@@ -8,37 +8,22 @@ window.addEventListener("scroll", function () {
     const logoDark = document.querySelector(".logo-dark");
     const scrollToTop = document.querySelector("#scroll-to-top");
 
-    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        if (window.scrollY > 50) {
-            navbar.classList.add("bg-gray-900");
-            navbar.classList.add("text-white")
-            navbar.classList.remove("text-black")
-            logoMixed.classList.add("hidden")
-            logoDark.classList.remove("hidden")
-        } else {
-            navbar.classList.remove("bg-gray-900");
-            navbar.classList.remove("text-white")
-            navbar.classList.add("text-black")
-            logoMixed.classList.remove("hidden")
-            logoDark.classList.add("hidden")
-        }
+    if (window.scrollY > 50) {
+        navbar.classList.add("bg-white");
+        navbar.classList.add("text-black")
+        navbar.classList.add("shadow-lg")
+        navbar.classList.remove("text-white")
+        logoMixed.classList.add("hidden")
+        logoDark.classList.remove("hidden")
     } else {
-        if (window.scrollY > 50) {
-            navbar.classList.add("bg-white");
-            navbar.classList.add("text-black")
-            navbar.classList.add("shadow-lg")
-            navbar.classList.remove("text-white")
-            logoMixed.classList.add("hidden")
-            logoDark.classList.remove("hidden")
-        } else {
-            navbar.classList.remove("bg-white");
-            navbar.classList.remove("text-black")
-            navbar.classList.remove("shadow-lg")
-            navbar.classList.add("text-white")
-            logoMixed.classList.remove("hidden")
-            logoDark.classList.add("hidden")
-        }
+        navbar.classList.remove("bg-white");
+        navbar.classList.remove("text-black")
+        navbar.classList.remove("shadow-lg")
+        navbar.classList.add("text-white")
+        logoMixed.classList.remove("hidden")
+        logoDark.classList.add("hidden")
     }
+    
 
     if (window.scrollY > 500) {
         scrollToTop.classList.remove("hidden")
@@ -147,8 +132,8 @@ const tsTabElements = [{
 // technology stack tabs options with default values
 const tsTabsOptions = {
     defaultTabId: 'ai-ml',
-    activeClasses: 'text-rt-primary hover:text-rt-primary border-r-2 border-rt-primary first:rounded-t-lg last:rounded-b-lg dark:text-rt-primary dark:border-rt-primary',
-    inactiveClasses: 'text-gray-500 hover:text-rt-primary dark:text-gray-400 hover:border-rt-primary dark:hover:text-rt-primary',
+    activeClasses: 'text-rt-primary hover:text-rt-primary border-r-2 border-rt-primary first:rounded-t-lg last:rounded-b-lg',
+    inactiveClasses: 'text-gray-500 hover:text-rt-primary hover:border-rt-primary ',
     onShow: () => {},
 };
 
