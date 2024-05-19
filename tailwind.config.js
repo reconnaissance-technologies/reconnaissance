@@ -10,6 +10,7 @@ export default {
         extend: {
             colors: {
                 'rt-primary': '#1C4B96',
+                'rt-primary-dark': '#143669',
                 'rt-secondary': '#02B5F1',
                 'rt-white': '#FFFFFF'
             },
