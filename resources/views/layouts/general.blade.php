@@ -74,7 +74,7 @@
     </script>
 </head>
 
-<body class="text-black antialiased bg-white dark:bg-gray-800">
+<body class="text-black antialiased bg-white">
     <!-- Header Section -->
     <header>
         <!-- Navigation and Logo Implementation -->
