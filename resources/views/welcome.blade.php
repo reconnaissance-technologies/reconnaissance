@@ -25,108 +25,100 @@
 @section('content')
 <main class="w-full">
     <!-- Hero Section -->
-    <section class="bg-black px-16">
-        <!-- hero section content goes here -->
-        <div class="w-full lg:flex items-center">
-            <div class="w-full lg:w-1/2 md:w1/2 lg:pt-32">
-                <!-- hero section description goes here -->
-                <h2 class="text-md lg:text-3xl text-white">Future Ready</h2>
-                <h1 class="text-xl lg:text-5xl font-bold text-white mt-2 mb-2 lg:mb-6">Software
-                    Development Company</h1>
-                <p class="text-md lg:text-xl text-white mb-8">Leveraging the power
-                    of technology to build smart software systems and intelligent solutions</p>
+    <section class="relative flex items-center justify-center h-screen overflow-hidden bg-black">
+        <!-- Video Background -->
+        <video autoplay muted loop class="absolute inset-0 object-cover w-full h-full" src="https://s3-figma-videos-production-sig.figma.com/video/1134555079227565548/TEAM/1bfb/2cc8/-84f7-407b-a6ec-4685afbc8772?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JzrGZMmfDZ~pgYevM2NbKeuSzTBpwk64eibYg~j36QdLP27B6L15pDb3yghIj1K1SKRiWP53IKBoaiC6w7g-tTV7B-87kBEov3a7cLVW-FM2~e2snmC7LkxHhy2u6PQ4y7hmfIQWUn4mDiXcfDj7VlyVbsbV9xfIlTHG25GzWXrMd~bSaiDGb6RDE2xWS3OEs~6ijDFTMYxRPi~xxYOU1nw1PjdV9xYxLARWYFMR9hJ7hpDEm6bcfO6MZyD1j2D713mBFyM1Acc-T2-tCR4c2sDf1PhDZDCK0x7Xl7uQi6PaNjq0ysvGmOsi~jDO-xegmC~GU8h9J1IYdp0BLl9GSg__"></video>
 
-                <div class="w-full flex py-6">
-                    <div class="flex items-center justify-between">
-                        <a href="https://clutch.co/profile/reconnaissance-technologies" target="_blank" class="px-6 object-contain w-36"
-                            title="Clutch.co 2023 Top Health &  Wellness App Developer, Nigeria">
-                            <img src="{{ asset('assets/img/recognition/clutch-health-wellness-app-developers-nigeria-2023.png') }}"
-                                alt="Clutch.co 2023 Top Health &  Wellness App Developer, Nigeria Badge">
-                        </a>
-                        <a href="https://techbehemoths.com/awards-2023/cybersecurity/nigeria#view=60717" target="_blank" class="px-6 object-contain w-36"
-                            title="TechBehemoths Top Cyber Security Company in Nigeria Awards 2023">
-                            <img class="dark:hidden"
-                                src="{{ asset('assets/img/recognition/banner-award-2023-white-winner (2).png') }}"
-                                alt="TechBehemoths Top Cyber Security Company in Nigeria Awards 2023 Badge">
-                            <img class="hidden dark:block"
-                                src="{{ asset('assets/img/recognition/tb-cyber-security.png') }}"
-                                alt="TechBehemoths Top Cyber Security Company in Nigeria Awards 2023 Badge">
-                        </a>
-                        <a href="https://techbehemoths.com/awards-2023/custom-software-development/nigeria#view=60717" target="_blank" class="px-6 object-contain w-36"
-                            title="TechBehemoths Top Custom Software Development Company in Nigeria Awards 2023">
-                            <img src="{{ asset('assets/img/recognition/banner-award-2023-white-winner (1).png') }}"
-                                alt="TechBehemoths Top Custom Software Development Company in Nigeria Awards 2023 Badge">
-                        </a>
-                    </div>
-                </div>
+        <!-- Hero Content -->
+        <div class="text-center text-white z-10">
+            <h6 class="text-sm md:text-lg uppercase">At Reconnaissance Technologies, We Are known for</h6>
+            <h2 class="text-3xl md:text-5xl font-bold py-2">Empowering Ideas, One Pixel at a Time</h2>
+            <p class="text-sm md:text-lg mb-4">While leveraging the power of technology to build smart software systems and intelligent solutions</p>
+            <div class="flex justify-center mx-3">
+                <a href="#" class="border border-rt-white px-8 py-3.5 text-base font-medium text-white inline-flex items-center hover:font-bold  hover:bg-rt-primary hover:border-rt-primary focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center mr-10">
+                    Case Studies
+                </a>
+
+                <a href="#" class="px-8 py-3.5 text-base font-medium text-black inline-flex items-center bg-rt-white hover:text-rt-primary hover:font-bold focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center">
+                    Start a Project
+                    <img class="px-2 w-8" src="{{ asset('assets/icons/send.svg') }}" alt="">
+                </a>
             </div>
-            <div class="w-full lg:w-1/2">
-                <img src="{{ asset('assets/img/3.7-Emerging-Tech-1.png') }}"
-                    class="object-fill" alt="Reconnaissance Technologies Emerging Technology Image">
-            </div>
+        </div>
+
+        <!-- Awards Display Image Overlay -->
+        <div class="flex justify-end absolute bottom-0 right-0 mb-4 mr-16 z-10">
+            <a href="https://clutch.co/profile/reconnaissance-technologies" target="_blank" class="px-3 object-contain w-20"  title="Clutch.co 2023 Top Health &  Wellness App Developer, Nigeria">
+                <img src="{{ asset('assets/img/recognition/clutch-health-wellness-app-developers-nigeria-2023.png') }}" alt="Clutch.co 2023 Top Health &  Wellness App Developer, Nigeria Badge">
+            </a>
+            <a href="https://techbehemoths.com/awards-2023/cybersecurity/nigeria#view=60717" target="_blank" class="px-3 object-contain w-28" title="TechBehemoths Top Cyber Security Company in Nigeria Awards 2023">
+                <img src="{{ asset('assets/img/recognition/tb-cyber-security.png') }}" alt="TechBehemoths Top Cyber Security Company in Nigeria Awards 2023 Badge">
+            </a>
+            <a href="https://techbehemoths.com/awards-2023/custom-software-development/nigeria#view=60717" target="_blank" class="px-3 object-contain w-28" title="TechBehemoths Top Custom Software Development Company in Nigeria Awards 2023">
+                <img src="{{ asset('assets/img/recognition/tb-custom-dev.png') }}" alt="TechBehemoths Top Custom Software Development Company in Nigeria Awards 2023 Badge">
+            </a>
         </div>
     </section>
     <!-- End of Hero Section -->
 
     <!-- About Us Section -->
-    <section class="px-16 bg-white dark:bg-gray-800 flex justify-between">
-        <div class="lg:w-1/2 py-6">
-            <h3 class="text-rt-primary text-xl uppercase font-semibold">Reconnaissance Technologies</h3>
-            <h1 class="w-3/4 text-xl lg:text-4xl dark:text-white font-bold mt-2 mb-2 lg:mb-6">
-                An End-to-End Software Solutions Company
-            </h1>
-            <p class="dark:text-white">
-                Reconnaissance Technologies is a seasoned software development company leveraging years of expertise
-                to guide clients seamlessly through digital transformation journeys.
-                Our team comprises visionaries and tech experts committed to providing cutting-edge software product
-                development services for enterprises.
-                Positioned as a frontrunner in the industry, we boast a track record of achievements and prioritize
-                staying at the forefront by consistently pioneering and adopting the latest technological
-                advancements.
-            </p>
-            <p class="pt-6 dark:text-white">
-                Our commitment lies in empowering businesses to excel in the ever-evolving market landscape.
-                We achieve this by delivering impactful software development and enterprise technology solutions
-                that yield tangible and measurable outcomes.
-            </p>
-
-            <div class="pt-6">
-                <a href="{{ route('about-us') }}"
-                    class="flex justify-between items-center lg:w-44 py-3 px-6 border border-transparent hover:border-rt-primary rounded-lg bg-rt-primary hover:bg-transparent hover:text-rt-primary text-white text-lg">
-                    Know More
-
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                    </svg>
-                </a>
+    <section class="px-16 bg-[#F5F5FB] dark:bg-gray-800">
+        <div class="w-full flex justify-between">
+            <div class="lg:w-1/2 py-6">
+                <h3 class="text-rt-primary text-lg uppercase font-semibold">Introduction</h3>
+                <h4 class="w-3/4 text-lg lg:text-lg dark:text-white font-bold mt-2 mb-2 lg:mb-6">
+                    Our commitment lies in empowering businesses to excel in the ever-evolving market landscape.
+                    We achieve this by delivering impactful software development and enterprise technology solutions
+                    that yield tangible and measurable outcomes.
+                </h4>
+            </div>
+    
+            <div class="lg:w-1/2 py-6">
+                <h3 class="text-[#F5F5FB] text-xl uppercase font-semibold">Introduction</h3>
+                <div>
+                    <p class="dark:text-white">
+                        Reconnaissance Technologies is a seasoned software development company leveraging years of expertise
+                        to guide clients seamlessly through digital transformation journeys.
+                        Our team comprises visionaries and tech experts committed to providing cutting-edge software product
+                        development services for enterprises.
+                        Positioned as a frontrunner in the industry, we boast a track record of achievements and prioritize
+                        staying at the forefront by consistently pioneering and adopting the latest technological
+                        advancements.
+                        <ul class='py-3 marker:text-green list-outside list-disc ml-6'>
+                            <li class="py-2">Innovative</li>
+                            <li class="py-2">Impactful</li>
+                            <li class="py-2">Growth-driven</li>
+                        </ul>
+                    </p>
+                </div>
             </div>
         </div>
 
-        <div class="lg:w-1/2 py-6 flex justify-between">
-            <div class="px-3 lg:w-80">
-                <div class="card drop-shadow-lg border-b-8 border-b-rt-primary hover:scale-90">
-                    <h3 class="py-3 font-semibold text-rt-primary">Y E A R S</h3>
-                    <h1 class="py-3 font-semibold text-black lg:text-6xl">3+</h1>
-                    <p class="py-3">Wealth of expertise in providing IT solutions and services.</p>
+        <div class="lg:w-full pt-3 pb-12">
+            <div class="grid grid-cols-4 gap-3">
+                <div class="rounded-lg bg-rt-white p-6">
+                    <img src="{{ asset('assets/icons/medal-star.svg') }}" alt="">
+                    <h4 class="pt-2 font-semibold text-black lg:text-4xl">3+</h4>
+                    <h6 class="font-semibold text-rt-primary">Years in Business</h6>
+                    <p class="py-3">Vast experience in delivering comprehensive IT solutions and services</p>
                 </div>
-                <div class="card mt-10 drop-shadow-lg border-b-8 border-b-green-950 hover:scale-90">
-                    <h3 class="py-3 font-semibold text-rt-primary">E X P E R T S</h3>
-                    <h1 class="py-3 font-semibold text-black lg:text-6xl">10+</h1>
-                    <p class="py-3">Dedicated team of committed, skilled and proficient professionals.</p>
+                <div class="rounded-lg bg-rt-white p-6">
+                    <img src="{{ asset('assets/icons/cup.svg') }}" alt="">
+                    <h4 class="pt-2 font-semibold text-black lg:text-4xl">5+</h4>
+                    <h6 class="font-semibold text-rt-primary">Awards</h6>
+                    <p class="py-3">Achieving acclaim via esteemed industry accolades for exceptional performance</p>
                 </div>
-            </div>
-            <div class="px-3 py-12 lg:w-80">
-                <div class="card drop-shadow-lg border-b-8 border-b-red-700 hover:scale-90">
-                    <h3 class="py-3 font-semibold text-rt-primary">A W A R D S</h3>
-                    <h1 class="py-3 font-semibold text-black lg:text-6xl">5+</h1>
-                    <p class="py-3">Recognition through prestigious industry awards for excellence.</p>
+                <div class="rounded-lg bg-rt-white p-6">
+                    <img src="{{ asset('assets/icons/teacher.svg') }}" alt="">
+                    <h4 class="pt-2 font-semibold text-black lg:text-4xl">10+</h4>
+                    <h6 class="font-semibold text-rt-primary">Experts</h6>
+                    <p class="py-3">A commited team of passionate, experienced, and highly skilled professionals</p>
                 </div>
-                <div class="card mt-10 drop-shadow-lg border-b-8 border-b-rt-secondary hover:scale-90">
-                    <h3 class="py-3 font-semibold text-rt-primary">C L I E N T S</h3>
-                    <h1 class="py-3 font-semibold text-black lg:text-6xl">12+</h1>
-                    <p class="py-3">Global clients affirming our quality and processes through testimonials.</p>
+                <div class="rounded-lg bg-rt-white p-6">
+                    <img src="{{ asset('assets/icons/people.svg') }}" alt="">
+                    <h4 class="pt-2 font-semibold text-black lg:text-4xl">12+</h4>
+                    <h6 class="font-semibold text-rt-primary">Clients</h6>
+                    <p class="py-3">Our quality and processes are validated by testimonials from clients worldwide</p>
                 </div>
             </div>
         </div>
@@ -136,117 +128,65 @@
     <!-- Our Services Section -->
     <section class="px-16 bg-white dark:text-white dark:bg-gray-800 flex justify-between">
         <div class="w-full py-6">
-            <h3 class="text-rt-primary text-xl uppercase font-semibold">Our Services</h3>
-            <h1 class="w-3/4 text-xl lg:text-4xl font-bold mt-2 mb-2 lg:mb-6">
-                Drive technological innovation through software development services
-            </h1>
-            <div class="w-full lg:w-full flex justify-between items-center">
-                <div class="lg:w-3/4">
-                    <p>
-                        Whether it's intricate enterprise software development or seamless software integration, our
-                        IT consulting services and software development will elevate your business to the next level
-                        of success
-                    </p>
+            <h3 class="text-black text-lg uppercase font-semibold">Our Services</h3>
+
+            <div class="sm:hidden">
+                <label for="tabs" class="sr-only">Select your country</label>
+                <select id="tabs" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option>Profile</option>
+                    <option>Dashboard</option>
+                    <option>setting</option>
+                    <option>Invoioce</option>
+                </select>
+            </div>
+            <ul class="hidden text-sm font-medium text-center text-gray-500 rounded-lg shadow sm:flex dark:divide-gray-700 dark:text-gray-400">
+                <li class="w-full focus-within:z-10">
+                    <a href="#" class="inline-block w-full p-4 text-gray-900 bg-gray-100 border-r border-gray-200 dark:border-gray-700 rounded-s-lg focus:ring-4 focus:ring-blue-300 active focus:outline-none dark:bg-gray-700 dark:text-white" aria-current="page">Profile</a>
+                </li>
+                <li class="w-full focus-within:z-10">
+                    <a href="#" class="inline-block w-full p-4 bg-white border-r border-gray-200 dark:border-gray-700 hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Dashboard</a>
+                </li>
+                <li class="w-full focus-within:z-10">
+                    <a href="#" class="inline-block w-full p-4 bg-white border-r border-gray-200 dark:border-gray-700 hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Settings</a>
+                </li>
+                <li class="w-full focus-within:z-10">
+                    <a href="#" class="inline-block w-full p-4 bg-white border-s-0 border-gray-200 dark:border-gray-700 rounded-e-lg hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Invoice</a>
+                </li>
+            </ul>
+
+            
+            <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+                <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+                    <li class="me-2" role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+                    </li>
+                    <li class="me-2" role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Dashboard</button>
+                    </li>
+                    <li class="me-2" role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Settings</button>
+                    </li>
+                    <li role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Contacts</button>
+                    </li>
+                </ul>
+            </div>
+            <div id="default-tab-content">
+                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Profile tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
                 </div>
-                <div>
-                    <a href="{{ route('our-services') }}"
-                        class="p-4 border-2 border-rt-primary rounded-lg hover:bg-rt-primary text-rt-primary hover:text-white">
-                        View More Services
-                    </a>
+                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                </div>
+                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Settings tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                </div>
+                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Contacts tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
                 </div>
             </div>
 
-            <div class="flex justify-between py-8">
-                <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-red-700">
-                    <div class="py-3 p-6 flex rounded-2xl text-white bg-red-700 lg:w-20 lg:h-20">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-12 h-12">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
-                        </svg>
-                    </div>
-                    <a href="">
-                        <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl lg:w-50">Frontend
-                            Development</h1>
-                    </a>
 
-                    <div class="flex justify-end hover:animate-bounce">
-                        <a href="" class="text-red-700">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-orange-500">
-                    <div class="py-3 p-6 flex rounded-2xl text-white bg-orange-500 lg:w-20 lg:h-20">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-12 h-12">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-                        </svg>
-                    </div>
-                    <a href="">
-                        <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">Application
-                            Development</h1>
-                    </a>
-
-                    <div class="flex justify-end hover:animate-bounce">
-                        <a href="" class="text-orange-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-yellow-500">
-                    <div class="py-3 p-6 flex rounded-2xl text-white bg-yellow-500 lg:w-20 lg:h-20">
-                        <img src="{{ asset('assets/img/ui-ux.webp') }}" class="object-contain"
-                            alt="">
-                    </div>
-                    <a href="">
-                        <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">Product
-                            Prototyping</h1>
-                    </a>
-
-                    <div class="flex justify-end hover:animate-bounce">
-                        <a href="" class="text-yellow-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="card drop-shadow-lg dark:text-black mx-3 border-b-8 border-b-green-500">
-                    <div class="py-3 p-6 flex rounded-2xl text-white bg-green-500 lg:w-20 lg:h-20">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-12 h-12">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
-                        </svg>
-                    </div>
-                    <a href="">
-                        <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">Chatbot
-                            Development</h1>
-                    </a>
-
-                    <div class="flex justify-end hover:animate-bounce">
-                        <a href="" class="text-green-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
     <!-- End of Our Services Section -->
@@ -1003,109 +943,134 @@
     </section>
     <!-- End of Technology Stack Section -->
 
-    <!-- Case Studies Section -->
-    {{-- <section class="px-16 bg-white dark:text-white dark:bg-gray-800 flex justify-between">
-        <div class="w-full py-6">
-            <h3 class="text-rt-primary text-xl uppercase font-semibold">Case Studies</h3>
-            <div class="flex justify-between">
-                <h1 class="w-3/4 text-xl lg:text-4xl font-bold mt-2 mb-2 lg:mb-6">
-                    Enabling digital transformation via software-based solutions
-                </h1>
-
-                <div>
-                    <a href="{{ route('our-services') }}" class=" flex justify-between items-center p-2 border-2 border-rt-primary rounded-lg hover:bg-rt-primary text-rt-primary hover:text-white">
-                        Case Studies
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 ">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="w-full lg:w-full flex justify-between items-center">
-                <div class="lg:w-3/4">
-                    <p>
-                        Explore the impact of our bespoke software solutions on businesses achieving their strategic
-                        objectives. Our array of technology consulting, development, and outsourcing services has
-                        empowered businesses to navigate the intricacies of digitalization.
-                    </p>
-                </div>
-            </div>
-
-            <div class="flex justify-between py-8">
-                <div class="card mx-3 relative overflow-hidden rounded-md border group">
-                    <div class="group">
-                        <img src="{{ asset('assets/img/case-study-mrs.webp') }}"
-                            class="rounded-lg" alt="">
-                        <div title="MRS Holdings Oil and Gas"
-                            class="absolute top-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-gray-700/70 opacity-0 group-hover:h-full group-hover:opacity-100 duration-500">
-                            <a class="animate-bounce hover:animate-none bg-gray-500 rounded-full p-4 opacity-50 ease-in delay-300 duration-300"
-                                href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-white">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mx-3 relative overflow-hidden rounded-md border group">
-                    <div class="group">
-                        <img src="{{ asset('assets/img/case-study-planvillage.webp') }}"
-                            class="rounded-lg" alt="">
-                        <div title="PlantVillage Crop Monitoring"
-                            class="absolute top-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-gray-700/70 opacity-0 group-hover:h-full group-hover:opacity-100 duration-500">
-                            <a class="animate-bounce hover:animate-none bg-gray-500 rounded-full p-4 opacity-50 ease-in delay-300 duration-300"
-                                href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-white">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mx-3 relative overflow-hidden rounded-md border group">
-                    <div class="group">
-                        <img src="{{ asset('assets/img/case-study-delivery.webp') }}"
-                            class="rounded-lg" alt="">
-                        <div title="DeliverAny Logistics"
-                            class="absolute top-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-gray-700/70 opacity-0 group-hover:h-full group-hover:opacity-100 duration-500">
-                            <a class="animate-bounce hover:animate-none bg-gray-500 rounded-full p-4 opacity-50 ease-in delay-300 duration-300"
-                                href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-white">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-    <!-- End of Case Studies Section -->
 
     <!-- Industries We Serve Section -->
-    <section class="px-16 bg-white flex justify-between">
+    <section class="px-16 bg-[#F5F5FB] flex justify-between">
         <div class="w-full py-6">
-            <h3 class="text-rt-primary text-xl uppercase font-semibold">Industries We Serve</h3>
-            <h1 class="w-3/4 text-xl lg:text-3xl font-bold mt-2 mb-2 lg:mb-6">
-                Specialized software solutions tailored to specific industries
-            </h1>
-            <div class="w-full lg:w-full flex justify-between items-center">
+            <h3 class="text-rt-primary text-lg uppercase font-semibold">Industries We Serve</h3>
+            <div class="w-3/4 py-5 lg:w-3/4 flex justify-between items-center">
                 <p>
-                    Our team of software development specialists works closely with clients, comprehending their
-                    challenges and goals. This collaboration enables us to craft custom software solutions that are
-                    both efficient and scalable, catering to diverse .
+                    Collaborating closely with our clients, our team of software development experts understands their challenges and goals, enabling us to create bespoke software solutions that are efficient, scalable, and cater to diverse needs.
                 </p>
             </div>
 
-            <div class="py-6 flex">
+            <div class="sm:hidden">
+                <label for="tabs" class="sr-only">Select your country</label>
+                <select id="tabs" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option>Media & Entertainment</option>
+                    <option>Dashboard</option>
+                    <option>setting</option>
+                    <option>Invoioce</option>
+                </select>
+            </div>
+            <ul class="hidden text-sm font-medium text-center text-gray-500 rounded-lg shadow sm:flex dark:divide-gray-700 dark:text-gray-400">
+                <li class="w-full focus-within:z-10">
+                    <a href="#" class="inline-block w-full p-4 text-gray-900 bg-gray-100 border-r border-gray-200 dark:border-gray-700 rounded-s-lg focus:ring-4 focus:ring-blue-300 active focus:outline-none dark:bg-gray-700 dark:text-white" aria-current="page">Media & Entertainment</a>
+                </li>
+                <li class="w-full focus-within:z-10">
+                    <a href="#" class="inline-block w-full p-4 text-gray-900 bg-gray-100 border-r border-gray-200 dark:border-gray-700 rounded-s-lg focus:ring-4 focus:ring-blue-300 active focus:outline-none dark:bg-gray-700 dark:text-white" aria-current="page">Media & Entertainment</a>
+                </li>
+                <li class="w-full focus-within:z-10">
+                    <a href="#" class="inline-block w-full p-4 text-gray-900 bg-gray-100 border-r border-gray-200 dark:border-gray-700 rounded-s-lg focus:ring-4 focus:ring-blue-300 active focus:outline-none dark:bg-gray-700 dark:text-white" aria-current="page">Media & Entertainment</a>
+                </li>
+                <li class="w-full focus-within:z-10">
+                    <a href="#" class="inline-block w-full p-4 text-gray-900 bg-gray-100 border-r border-gray-200 dark:border-gray-700 rounded-s-lg focus:ring-4 focus:ring-blue-300 active focus:outline-none dark:bg-gray-700 dark:text-white" aria-current="page">Media & Entertainment</a>
+                </li>
+                <li class="w-full focus-within:z-10">
+                    <a href="#" class="inline-block w-full p-4 text-gray-900 bg-gray-100 border-r border-gray-200 dark:border-gray-700 rounded-s-lg focus:ring-4 focus:ring-blue-300 active focus:outline-none dark:bg-gray-700 dark:text-white" aria-current="page">Media & Entertainment</a>
+                </li>
+                <li class="w-full focus-within:z-10">
+                    <a href="#" class="inline-block w-full p-4 text-gray-900 bg-gray-100 border-r border-gray-200 dark:border-gray-700 rounded-s-lg focus:ring-4 focus:ring-blue-300 active focus:outline-none dark:bg-gray-700 dark:text-white" aria-current="page">Media & Entertainment</a>
+                </li>
+                <li class="w-full focus-within:z-10">
+                    <a href="#" class="inline-block w-full p-4 text-gray-900 bg-gray-100 border-r border-gray-200 dark:border-gray-700 rounded-s-lg focus:ring-4 focus:ring-blue-300 active focus:outline-none dark:bg-gray-700 dark:text-white" aria-current="page">Media & Entertainment</a>
+                </li>
+                <li class="w-full focus-within:z-10">
+                    <a href="#" class="inline-block w-full p-4 text-gray-900 bg-gray-100 border-r border-gray-200 dark:border-gray-700 rounded-s-lg focus:ring-4 focus:ring-blue-300 active focus:outline-none dark:bg-gray-700 dark:text-white" aria-current="page">Media & Entertainment</a>
+                </li>
+                <li class="w-full focus-within:z-10">
+                    <a href="#" class="inline-block w-full p-4 text-gray-900 bg-gray-100 border-r border-gray-200 dark:border-gray-700 rounded-s-lg focus:ring-4 focus:ring-blue-300 active focus:outline-none dark:bg-gray-700 dark:text-white" aria-current="page">Media & Entertainment</a>
+                </li>
+                <li class="w-full focus-within:z-10">
+                    <a href="#" class="inline-block w-full p-4 text-gray-900 bg-gray-100 border-r border-gray-200 dark:border-gray-700 rounded-s-lg focus:ring-4 focus:ring-blue-300 active focus:outline-none dark:bg-gray-700 dark:text-white" aria-current="page">Media & Entertainment</a>
+                </li>
+                <li class="w-full focus-within:z-10">
+                    <a href="#" class="inline-block w-full p-4 text-gray-900 bg-gray-100 border-r border-gray-200 dark:border-gray-700 rounded-s-lg focus:ring-4 focus:ring-blue-300 active focus:outline-none dark:bg-gray-700 dark:text-white" aria-current="page">Media & Entertainment</a>
+                </li>
+                <li class="w-full focus-within:z-10">
+                    <a href="#" class="inline-block w-full p-4 text-gray-900 bg-gray-100 border-r border-gray-200 dark:border-gray-700 rounded-s-lg focus:ring-4 focus:ring-blue-300 active focus:outline-none dark:bg-gray-700 dark:text-white" aria-current="page">Media & Entertainment</a>
+                </li>
+
+                {{-- <li class="w-full focus-within:z-10">
+                    <a href="#" class="inline-block w-full p-4 bg-white border-r border-gray-200 dark:border-gray-700 hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Dashboard</a>
+                </li>
+                <li class="w-full focus-within:z-10">
+                    <a href="#" class="inline-block w-full p-4 bg-white border-r border-gray-200 dark:border-gray-700 hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Settings</a>
+                </li>
+                <li class="w-full focus-within:z-10">
+                    <a href="#" class="inline-block w-full p-4 bg-white border-s-0 border-gray-200 dark:border-gray-700 rounded-e-lg hover:text-gray-700 hover:bg-gray-50 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700">Invoice</a>
+                </li> --}}
+            </ul>
+
+
+
+            <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+                <ul class="hidden text-sm font-medium text-center text-gray-500 shadow sm:flex dark:divide-gray-700 dark:text-gray-400">
+                {{-- <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist"> --}}
+                    <li class="w-full focus-within:z-10" role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Education</button>
+                    </li>
+                    <li class="w-full focus-within:z-10" role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">FinTech</button>
+                    </li>
+                    <li class="me-2" role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Healthcare</button>
+                    </li>
+                    <li role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Hi-Tech</button>
+                    </li>
+                    <li class="me-2" role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Logistics</button>
+                    </li>
+                    <li class="me-2" role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Manufacturing</button>
+                    </li>
+                    <li class="me-2" role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Media & Entertainment</button>
+                    </li>
+                    <li role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Mining & Agriculture</button>
+                    </li>
+                    <li class="me-2" role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Real Estate & Contrusction</button>
+                    </li>
+                    <li class="me-2" role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Retail & eCommerce</button>
+                    </li>
+                    <li class="me-2" role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Travel & Hospitality</button>
+                    </li>
+                    <li role="presentation">
+                        <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Utility & On-demand</button>
+                    </li>
+                </ul>
+            </div>
+            <div id="default-tab-content">
+                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Profile tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                </div>
+                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                </div>
+                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Settings tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                </div>
+                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Contacts tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                </div>
+            </div>
+
+            {{-- <div class="py-6 flex">
                 <div class="grid grid-cols-1 lg:grid-cols-6 gap-8">
                     <a href="{{ route('industries.media-and-entertainment') }}">
                         <div title="Media & Entertainment"
@@ -1240,7 +1205,7 @@
                         </div>
                     </a>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </section>
     <!-- End of Industries We Serve Section -->
@@ -1477,68 +1442,7 @@
     <!-- End of Clients Showcase & Testimonials Section -->
 
     <!-- Locations & Enquiry Section -->
-    <section class="bg-white dark:text-white dark:bg-gray-800 flex justify-between">
-        <div class="w-full py-6">
-            <div class="px-16">
-                <h3 class="text-rt-primary text-xl uppercase font-semibold">Enquiry</h3>
-                <h1 class="w-3/4 text-xl lg:text-4xl font-bold mt-2 mb-2 lg:mb-6">
-                    Get In Touch With Us
-                </h1>
-            </div>
-            <div
-                class="relative h-96 py-6 bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
-                <h1 class="pl-16 text-2xl text-white underline uppercase font-semibold">Nigeria</h1>
-                <div class="flex pt-6 pl-16 text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-                    </svg>
-                    <div class="pl-3 text-white">
-                        <p class="text-xl font-medium">
-                            No 50, Ebitu Ukiwe Street,<br>
-                            Jabi, Abuja - 900108,<br>
-                            FCT
-                        </p>
-                    </div>
-                </div>
-
-                <div class="flex py-3 text-white pl-16">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
-                    </svg>
-                    <div class="pl-3 ">
-                        <p class="text-xl font-medium">
-                            <a href="tel:+2342013309246" title="Call Reconnaissance Technologies Nigeria">+234 201 330 9246</a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="flex text-white pl-16 rounded-lg">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-                    </svg>
-                    <div class="pl-3 ">
-                        <p class="text-xl font-medium">
-                            <a href="mailto:enquiries@reconnaissancetechnologies.com"
-                                title="Email Reconnaissance Technologies for enquiries">enquiries@reconnaissancetechnologies.com</a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="absolute lg:w-[500px] xl:w-[500px] 2xl:w-[500px] left-[650px] -top-28 p-4 bg-white border-gray-200 rounded-lg shadow-lg sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
-                    <h3 class="text-black mb-6 text-xl font-semibold">Hola :)</h3>
-                    @include('inc.get-a-quote-form')
-                </div>
-            </div>
-        </div>
-    </section>
+    @include('inc.location-enquiry-section')
     <!-- End of Locations & Enquiry Section -->
 
     <!-- Partners & Certifications Section -->
