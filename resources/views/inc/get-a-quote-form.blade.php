@@ -18,7 +18,7 @@
                                         <span class="text-red-500 text-sm"></span>
                                     <label for="floating_email"
                                         class="peer-focus:font-medium absolute text-sm dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
-                                        address</label>
+                                        </label>
                                 </div>
                             </div>
     
@@ -31,7 +31,7 @@
                                         <span class="text-red-500 text-sm"></span>
                                     <label for="floating_phone"
                                         class="peer-focus:font-medium absolute text-sm  dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
-                                        Mobile (+234-123-456-7890)
+                                        Phone
                                     </label>
                                 </div>
                                 <div class="relative z-0 w-full mb-5 group">
@@ -41,7 +41,7 @@
                                         <span class="text-red-500 text-sm"></span>
                                     <label for="floating_company"
                                         class="peer-focus:font-medium absolute text-sm  dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
-                                        Company (ex. Google)
+                                        Company
                                     </label>
                                 </div>
                             </div>
@@ -78,7 +78,7 @@
                                     <span class="text-red-500 text-sm"></span>
                                 <label for="floating_message"
                                     class="peer-focus:font-medium absolute text-sm  dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
-                                    @if (Request::is('our-company/contact-us'))Project Brief / @endif Enquiries
+                                    @if (Request::is('our-company/contact-us'))Project Brief / @endif Tell us about your product and business challenges.
                                 </label>
                             </div>
     
@@ -91,10 +91,10 @@
                             </div>
                             @endif
     
-                            <div class="flex items-center py-4">
+                            <!-- <div class="flex items-center py-4">
                                 <input id="link-checkbox" type="checkbox" required value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
                                 <label for="link-checkbox" class="ms-2 text-sm font-medium dark:text-gray-300">I agree with the <a href="{{ route('privacy-policy') }}" class="text-rt-white dark:text-blue-500 hover:underline italic">privacy policy</a>.</label>
-                            </div>
+                            </div> -->
     
                             @if (Request::is('our-company/contact-us'))
                             <div class="flex items-center py-4">
@@ -104,7 +104,7 @@
                             @endif
     
                             <button id="sendBtn" type="submit" class="text-rt-primary bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Send
-                                Message
+                                
                             </button>
 
                             <!-- Progress indicator -->

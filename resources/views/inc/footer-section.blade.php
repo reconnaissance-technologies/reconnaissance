@@ -40,7 +40,7 @@
                         <a href="{{ route('services.iot-development') }}" class="hover:underline">IOT Development</a>
                     </li>
                     <li class="mb-2">
-                        <a href="{{ route('services.chatbot-development') }}" class="hover:underline">ChatBot Development</a>
+                        <a href="{{ route('services.chatbot-development') }}" class="hover:underline">ChatBot</a>
                     </li>
                 </ul>
             </div>
@@ -53,6 +53,15 @@
                     <li class="mb-2">
                         <a href="{{ route('sm.engagement') }}" class="hover:underline">Engagement Model</a>
                     </li>
+                    <li class="mb-2">
+                        <a href="{{ route('development-methodology') }}" class="hover:underline">Development Methodology</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="{{ route('partnerships') }}" class="hover:underline">Partnerships</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="{{ route('career-overview') }}" class="hover:underline">Career</a>
+                    </li>
                 </ul>
             </div>
             <div class="w-1/4">
@@ -62,11 +71,12 @@
                         <a href="{{ route('about-us') }}" class="hover:underline">About Us</a>
                     </li>
                     <li class="mb-2">
-                        <a href="{{ route('about-us') }}" class="hover:underline">Our Process</a>
+                        <a href="{{ route('certifications') }}" class="hover:underline">Our Clients</a>
                     </li>
                     <li class="mb-2">
-                        <a href="{{ route('development-methodology') }}" class="hover:underline">Development Methodology</a>
+                        <a href="{{ route('about-us') }}" class="hover:underline">Our Process</a>
                     </li>
+                    
                     <li class="mb-2">
                         <a href="{{ route('about-us') }}" class="hover:underline">Testimonials</a>
                     </li>
@@ -77,8 +87,10 @@
                         <a href="{{ route('blog') }}" class="hover:underline">Blog</a>
                     </li>
                     <li class="mb-2">
-                        <a href="{{ route('career-overview') }}" class="hover:underline">Careers</a>
+                        <a href="{{ route('contact-us') }}" class="hover:underline">Contact us</a>
                     </li>
+                    
+                    
                 </ul>
             </div>
         </div>
