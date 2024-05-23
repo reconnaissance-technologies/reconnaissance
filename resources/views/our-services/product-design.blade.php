@@ -25,35 +25,25 @@
 
     <!-- hero section content goes here -->
     <div class="relative w-full lg:flex items-center justify-center">
-        <div class="w-full lg:w-1/2 md:w-1/2 lg:pt-32 my-6">
+        <div class="w-full md:pt-40 lg:pt-48 z-10 text-center text-white">
             <!-- hero section description goes here -->
-            <h1 class="text-center text-white text-[30px] font-semibold font-['Inter'] leading-[58px] whitespace-nowrap">
+            <h2 class="text-center justify-center text-white text-xl md:text-5xl py-2 font-bold whitespace-nowrap">
                 Designing Products that Delight and Deliver Results 
-            </h1>
-            <p class="text-md lg:text-sm text-white mb-8">
-                Our Design-led Approach Focuses on Creating Innovative and User-centered Products that Resonate with your Audience and Drive Success in the Market.
+            </h2>
+            <p class="text-sm md:text-lg mb-4">
+                Our Design-led Approach Focuses on Creating Innovative and User-centered Products that Resonate with your <br> Audience and Drive Success in the Market.
             </p>
 
             <!-- CTA Button -->
-            <div class="justify-center items-center gap-[17px] inline-flex mb-16">
-                <div class="flex py-6">
-                    <a href="{{ route('contact-us') }}" class="text-white bg-transparent hover:bg-white hover:text-black focus:ring-4 border border-white font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 lg:px-11 lg:py-2 focus:outline-none whitespace-nowrap">
-                        Case Studies
-                    </a>
-                </div>
-                <div class="flex py-6">
-                    <a href="{{ route('contact-us') }}" class="text-black bg-white hover:bg-white focus:ring-4 border border-b-rt-white font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 lg:px-10 lg:py-2 focus:outline-none flex items-center whitespace-nowrap">
-                        Start a project
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-1">
-                            <g id="vuesax/bold/send">
-                                <g id="send">
-                                    <path id="Vector" d="M3.5 21.25H20.5C20.91 21.25 21.25 21.59 21.25 22C21.25 22.41 20.91 22.75 20.5 22.75H3.5C3.09 22.75 2.75 22.41 2.75 22C2.75 21.59 3.09 21.25 3.5 21.25Z" fill="#292D32"/>
-                                    <path id="Vector_2" d="M19 14.52C18.59 14.52 18.25 14.18 18.25 13.77V5.31L5.53 18.03C5.38 18.18 5.19 18.25 5 18.25C4.81 18.25 4.62 18.18 4.47 18.03C4.18 17.74 4.18 17.26 4.47 16.97L17.19 4.25H8.73C8.32 4.25 7.98 3.91 7.98 3.5C7.98 3.09 8.32 2.75 8.73 2.75H19C19.1 2.75 19.19 2.77 19.29 2.81C19.47 2.88 19.62 3.03 19.69 3.21C19.73 3.31 19.75 3.4 19.75 3.5V13.77C19.75 14.18 19.41 14.52 19 14.52Z" fill="#292D32"/>
-                                </g>
-                            </g>
-                        </svg>
-                    </a>
-                </div>
+            <div class="flex justify-center mx-3">
+                <a href="#" class="border border-rt-white px-8 py-3.5 text-base font-medium text-white inline-flex items-center hover:font-bold  hover:bg-white hover:text-rt-primary hover:border-white focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center mr-10">
+                    Case Studies
+                </a>
+
+                <a href="#" class="px-8 py-3.5 text-base font-medium text-black inline-flex items-center bg-rt-white hover:text-rt-primary hover:font-bold focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center">
+                    Start a Project
+                    <img class="px-2 w-8" src="{{ asset('assets/icons/send.svg') }}" alt="">
+                </a>
             </div>
             <!-- End of CTA Button -->
         </div>
@@ -66,8 +56,8 @@
                 <img src="{{ asset('assets/img/recognition/clutch-health-wellness-app-developers-nigeria-2023.png') }}" alt="Clutch.co 2023 Top Health &  Wellness App Developer, Nigeria Badge">
             </a>
             <a href="https://techbehemoths.com/awards-2023/cybersecurity/nigeria#view=60717" target="_blank" class="w-20 h-auto" title="TechBehemoths Top Cyber Security Company in Nigeria Awards 2023">
-                <img class="dark:hidden" src="{{ asset('assets/img/recognition/banner-award-2023-white-winner-alt (2).png') }}" alt="TechBehemoths Top Cyber Security Company in Nigeria Awards 2023 Badge">
-                <img class="hidden dark:block" src="{{ asset('assets/img/recognition/tb-cyber-security.png') }}" alt="TechBehemoths Top Cyber Security Company in Nigeria Awards 2023 Badge">
+                <img class="" src="{{ asset('assets/img/recognition/banner-award-2023-white-winner-alt (2).png') }}" alt="TechBehemoths Top Cyber Security Company in Nigeria Awards 2023 Badge">
+                <img class="hidden" src="{{ asset('assets/img/recognition/tb-cyber-security.png') }}" alt="TechBehemoths Top Cyber Security Company in Nigeria Awards 2023 Badge">
             </a>
             <a href="https://techbehemoths.com/awards-2023/custom-software-development/nigeria#view=60717" target="_blank" class="w-20 h-auto" title="TechBehemoths Top Custom Software Development Company in Nigeria Awards 2023">
                 <img src="{{ asset('assets/img/recognition/banner-award-2023-white-winner-alt (1).png') }}" alt="TechBehemoths Top Custom Software Development Company in Nigeria Awards 2023 Badge">
@@ -94,10 +84,10 @@
     <!-- End of Hero Section -->
 
     <!-- What Makes Us Different Section -->
-<section class="px-16 pt-6 bg-gray-200 dark:text-white dark:bg-gray-800 flex justify-center items-center">
+<section class="px-16 pt-6 bg-gray-200 flex justify-center items-center">
     <div class="w-full py-6">
-        <h3 class="text-rt-primary text-xl uppercase font-semibold">What Makes Us Different</h3>
-        <h4 class="w-3/4 text-xl lg:text-xl font-bold mt-2 mb-2 lg:mb-6">
+        <h3 class="text-rt-primary text-lg uppercase font-semibold">What Makes Us Different</h3>
+        <h4 class="w-3/4 text-lg lg:text-lg font-bold mt-2 mb-2 lg:mb-6">
             "Unlocking innovation, one design at a time-where creativity meets functionality to shape tomorrow's success." 
         </h4>
         <div class="w-full lg:w-full flex justify-between items-center">
@@ -119,7 +109,7 @@
                     </g>
                 </svg>
                 <div class="text-center z-10">
-                    <div class="text-zinc-900 text-lg font-semibold">Client-centric Collaboration</div>
+                    <div class="text-[#17191C] text-lg font-semibold">Client-centric Collaboration</div>
                     <div class="text-gray-700 text-sm leading-tight mt-2">We prioritize your vision, fostering collaboration to transform it into a design masterpiece with ongoing support from our dedicated team.</div>
                 </div>
             </div>
@@ -140,7 +130,7 @@
                 </g>
             </svg>
                 <div class="text-center z-10">
-                    <div class="text-zinc-900 text-lg font-semibold">Customized Design Solutions</div>
+                    <div class="text-[#17191C] text-lg font-semibold">Customized Design Solutions</div>
                     <div class="text-gray-700 text-sm leading-tight mt-2">At our core, we craft tailor-made designs that uniquely cater to each client's distinct needs and aspirations, ensuring seamless alignment with their individual vision and objectives.</div>
                 </div>
             </div>
@@ -161,7 +151,7 @@
                 </g>
             </svg>
                 <div class="text-center z-10">
-                    <div class="text-zinc-900 text-lg font-semibold">Agile & Adaptive Methodology</div>
+                    <div class="text-[#17191C] text-lg font-semibold">Agile & Adaptive Methodology</div>
                     <div class="text-gray-700 text-sm leading-tight mt-2">With our agile and adaptive approach, we proactively respond to market shifts and client input, ensuring your project's sustained relevance and success.</div>
                 </div>
             </div>
@@ -180,7 +170,7 @@
                     </g>
                 </svg>
                 <div class="text-center z-10">
-                    <div class="text-zinc-900 text-lg font-semibold">Future-ready Design Solution</div>
+                    <div class="text-[#17191C] text-lg font-semibold">Future-ready Design Solution</div>
                     <div class="text-gray-700 text-sm leading-tight mt-2">In today's sustainable landscape, we prioritize forward-thinking design solutions that address present requirements while propelling us towards a more environmentally conscious future.</div>
                 </div>
             </div>
@@ -201,7 +191,7 @@
                 </g>
             </svg>
                 <div class="text-center z-10">
-                    <div class="text-zinc-900 text-lg font-semibold">Customized Design Solutions</div>
+                    <div class="text-[#17191C] text-lg font-semibold">Customized Design Solutions</div>
                     <div class="text-gray-700 text-sm leading-tight mt-2">At our core, we craft tailor-made designs that uniquely cater to each client's distinct needs and aspirations, ensuring seamless alignment with their individual vision and objectives.</div>
                 </div>
             </div>
@@ -216,29 +206,29 @@
     <!-- Banner CTA Section -->
 
 <div class="w-full h-[605px] relative bg-white flex flex-col px-16">
-    <div class="text-zinc-900 text-lg font-semibold font-['Inter'] leading-relaxed mt-6">An Array of What We Offer</div>
+    <div class="text-[#17191C] text-xl font-semibold mt-6">An Array of What We Offer</div>
 
     <!-- Holistic Sustainability Card (Higher Position) -->
     <div class="pl-3 pr-3 pt-[26.50px] pb-[27.50px] absolute top-[112px] bg-[#006295] rounded-lg flex flex-col items-center" style="left: 50%; transform: translateX(-50%);">
-        <div class="text-center text-white text-xl font-medium font-['Inter'] leading-[29px]">Holistic Sustainability</div>
-        <div class="w-[238px] text-center text-white text-[15px] font-normal font-['Inter'] leading-snug mt-4">Like a finely tuned symphony, our design process harmonizes <br> aesthetic appeal with eco- <br> conscious principles, fostering products that not only excel in performance but also champion sustainability for generations to <br> come.</div>
+        <div class="text-center text-white text-xl font-medium">Holistic Sustainability</div>
+        <div class="w-[238px] text-center text-white text-[15px] font-normal mt-4">Like a finely tuned symphony, our design process harmonizes <br> aesthetic appeal with eco- <br> conscious principles, fostering products that not only excel in performance but also champion sustainability for generations to <br> come.</div>
     </div>
 
     <!-- Innovative Ideation Card (Aligned Below) -->
     <div class="px-3 pt-[59.50px] pb-[60.50px] absolute top-[222px] bg-[#A671B6] rounded-lg flex flex-col items-center" style="left: 25%; transform: translateX(-50%);">
-        <div class="text-center text-white text-xl font-medium font-['Inter'] leading-[29px]">Innovative Ideation</div>
-        <div class="w-[236px] text-center text-white text-[15px] font-normal font-['Inter'] leading-snug mt-4">We orchestrate a harmonious <br> blend of creativity and <br> functionality, sculpting <br> innovative product designs that captivate and inspire.</div>
+        <div class="text-center text-white text-xl font-medium">Innovative Ideation</div>
+        <div class="w-[236px] text-center text-white text-[15px] font-normal mt-4">We orchestrate a harmonious <br> blend of creativity and <br> functionality, sculpting <br> innovative product designs that captivate and inspire.</div>
     </div>
 
     <!-- User-Centric Approach Card (Aligned Below) -->
     <div class="px-3 pt-[60.48px] pb-[59.52px] absolute top-[222px] bg-[#484A85] rounded-lg flex flex-col items-center" style="left: 75%; transform: translateX(-50%);">
-        <div class="text-center text-white text-xl font-medium font-['Inter'] leading-[29px]">User-Centric Approach</div>
-        <div class="w-[250px] text-center text-white text-[15px] font-normal font-['Inter'] leading-snug mt-4">With a conductor's precision, we prioritize the user experience, <br> crafting intuitive and empathetic <br> designs that resonate deeply with <br> your audience.</div>
+        <div class="text-center text-white text-xl font-medium">User-Centric Approach</div>
+        <div class="w-[250px] text-center text-white text-[15px] font-normal mt-4">With a conductor's precision, we prioritize the user experience, <br> crafting intuitive and empathetic <br> designs that resonate deeply with <br> your audience.</div>
     </div>
 
     <!-- Button Below Holistic Sustainability -->
     <a href="{{ route('contact-us') }}" class="pl-[22px] pr-5 pt-5 pb-4 absolute top-[450px] bg-[#143669] rounded-lg flex justify-center items-center" style="left: 50%; transform: translateX(-50%);">
-        <div class="text-white text-base font-normal font-['Inter'] leading-normal">Request a Free 15mins Consultation</div>
+        <div class="text-white text-base font-normal">Request a Free 15mins Consultation</div>
     </a>
 </div>
 
@@ -247,52 +237,52 @@
 
 
     <!-- Product Design Solutions Section -->
-<section class="w-[1440px] h-[747px] px-[100px] pr-[150px] pt-[85px] pb-[69px] flex-col justify-end items-start gap-[62px] inline-flex bg-white dark:bg-gray-800">
+<section class="w-[1440px] h-[747px] px-[100px] pr-[150px] pt-[85px] pb-[69px] flex-col justify-end items-start gap-[62px] inline-flex bg-white">
     <div class="self-stretch flex-col justify-center items-start gap-6 inline-flex">
-        <h1 class="text-center text-zinc-900 dark:text-white text-lg font-bold font-['Inter'] leading-relaxed">Our Product Design Framework</h1>
-        <p class="text-gray-700 dark:text-gray-300 text-base font-medium font-['Inter'] leading-normal">
+        <h1 class="text-center text-[#17191C] text-xl font-bold">Our Product Design Framework</h1>
+        <p class="text-[#3B4454] font-medium">
             Professionalism is key to us & here's a refined version that underscores the professionalism of your company:
         </p>
     </div>
     <div class="self-stretch flex-col justify-start items-start gap-[62px] inline-flex">
-        <div class="grid grid-cols-2 gap-[120px]">
+        <div class="grid grid-cols-2 gap-[80px]">
             <div class="flex-col justify-start items-start gap-[15px] inline-flex">
-                <h2 class="text-zinc-900 dark:text-white text-base font-semibold font-['Inter'] leading-normal">Guiding Your Success</h2>
-                <p class="w-[545px] text-zinc-900 dark:text-gray-300 text-[15px] font-normal font-['Inter'] leading-snug">
+                <h2 class="text-[#17191C] font-semibold">Guiding Your Success</h2>
+                <p class="w-[545px] text-[#17191C] text-[15px] font-normal">
                     At Reconnaissance, we unveil the blueprint guiding our efforts to engineer <br> software solutions that epitomize excellence and drive your success.
                 </p>
             </div>
             <div class="flex-col justify-start items-start gap-[15px] inline-flex">
-                <h2 class="text-zinc-900 dark:text-white text-base font-semibold font-['Inter'] leading-normal">Your Vision, Our Expertise</h2>
-                <p class="w-[550px] text-zinc-900 dark:text-gray-300 text-[15px] font-normal font-['Inter'] leading-snug">
+                <h2 class="text-[#17191C] font-semibold">Your Vision, Our Expertise</h2>
+                <p class="w-[550px] text-[#17191C] text-[15px] font-normal">
                     We operate at the intersection of innovation and precision. Your insights are <br> the cornerstone of our design process, meticulously crafted by our team of <br> seasoned professionals to elevate your vision to new heights.
                 </p>
             </div>
         </div>
-        <div class="grid grid-cols-2 gap-[120px]">
+        <div class="grid grid-cols-2 gap-[80px]">
             <div class="flex-col justify-start items-start gap-[15px] inline-flex">
-                <h2 class="text-zinc-900 dark:text-white text-base font-semibold font-['Inter'] leading-normal">Precision in Evolution</h2>
-                <p class="w-[545px] text-zinc-900 dark:text-gray-300 text-[15px] font-normal font-['Inter'] leading-snug">
+                <h2 class="text-[#17191C] font-semibold">Precision in Evolution</h2>
+                <p class="w-[545px] text-[#17191C] text-[15px] font-normal">
                     Our approach is as dynamic as it is exacting. With an unwavering <br> commitment to excellence, we continuously refine and elevate our designs <br> to mirror the evolution of your business landscape.
                 </p>
             </div>
             <div class="flex-col justify-start items-start gap-[15px] inline-flex">
-                <h2 class="text-zinc-900 dark:text-white text-base font-semibold font-['Inter'] leading-normal">Commitment to Excellence</h2>
-                <p class="w-[550px] text-zinc-900 dark:text-gray-300 text-[15px] font-normal font-['Inter'] leading-snug">
+                <h2 class="text-[#17191C] font-semibold">Commitment to Excellence</h2>
+                <p class="w-[550px] text-[#17191C] text-[15px] font-normal">
                     Your journey is our top priority. From inception to implementation, we uphold <br> the highest standards of professionalism, ensuring a seamless and enriching <br> experience at every turn.
                 </p>
             </div>
         </div>
-        <div class="grid grid-cols-2 gap-[120px]">
+        <div class="grid grid-cols-2 gap-[80px]">
             <div class="flex-col justify-start items-start gap-[15px] inline-flex">
-                <h2 class="text-zinc-900 dark:text-white text-base font-semibold font-['Inter'] leading-normal">Agile Mastery</h2>
-                <p class="w-[545px] text-zinc-900 dark:text-gray-300 text-[15px] font-normal font-['Inter'] leading-snug">
+                <h2 class="text-[#17191C] font-semibold">Agile Mastery</h2>
+                <p class="w-[545px] text-[#17191C] text-[15px] font-normal">
                     Agility is our forte. Leveraging agile methodologies, we adeptly adapt to your <br> evolving needs, guaranteeing that our designs remain at the forefront of <br> innovation and efficacy.
                 </p>
             </div>
             <div class="flex-col justify-start items-start gap-[15px] inline-flex">
-                <h2 class="text-zinc-900 dark:text-white text-base font-semibold font-['Inter'] leading-normal">Engineering for Tomorrow</h2>
-                <p class="w-[550px] text-zinc-900 dark:text-gray-300 text-[15px] font-normal font-['Inter'] leading-snug">
+                <h2 class="text-[#17191C] font-semibold">Engineering for Tomorrow</h2>
+                <p class="w-[550px] text-[#17191C] text-[15px] font-normal">
                     Our designs transcend aesthetics; they embody the essence of <br> sophistication and foresight. With a keen focus on sustainability, accessibility, <br> and scalability, we engineer solutions that stand as testaments to your <br> enduring success.
                 </p>
             </div>
@@ -306,14 +296,14 @@
 <section class="w-full h-[502px] px-16 pt-[69px] pb-[70px] bg-[#EDEDF8] flex justify-center items-center">
     <div class="w-full max-w-[1200px] pl-[93px] pr-[94px] pt-[47px] pb-12 bg-[#143669] rounded-lg flex justify-between items-center">
         <div class="flex flex-col justify-start items-start gap-[27px]">
-            <div class="w-[450px] text-white text-2xl font-medium whitespace-nowrap leading-[34.80px]">
+            <div class="w-[450px] text-white text-2xl font-medium whitespace-nowrap">
                 Discover how our Product Design Services <br> transformed VIVINO's digital product, resulting <br> in a 60% increase in engagement and a 10% <br> decrease in bounce rate.
             </div>
             <div class="flex justify-start items-center gap-[26px]">
                 <img class="w-[67px] h-[67px] relative rounded-[100px]" src="{{ asset('assets/img/testimonials/Heinelayout.png') }}" />
                 <div class="flex flex-col justify-start items-start gap-2">
-                    <div class="text-white text-sm font-bold leading-tight">HEINE ZACHARIASSEN</div>
-                    <div class="text-white text-sm font-normal leading-tight">Founder & CEO</div>
+                    <div class="text-white text-sm font-bold">HEINE ZACHARIASSEN</div>
+                    <div class="text-white text-sm font-normal">Founder & CEO</div>
                 </div>
             </div>
         </div>
@@ -330,10 +320,10 @@
      <!-- Call to Action Section -->
 <section class="w-full h-[356px] flex justify-center items-center bg-slate-50 px-4">
     <div class="max-w-[933px] flex flex-col justify-start items-center gap-[53px] text-center">
-        <div class="text-[#17191C] text-2xl font-bold font-['Inter'] leading-[34.80px]">
+        <div class="text-[#17191C] text-2xl font-bold">
             Require the expertise of a Product Design Specialist to streamline your product development process?
         </div>
-        <a href="{{ route('contact-us') }}" class="px-[48px] py-3 bg-[#143669] rounded-lg text-white text-base font-normal font-['Inter'] leading-normal hover:bg-[#143671]">
+        <a href="{{ route('contact-us') }}" class="px-8 py-4 bg-[#143669] rounded-lg text-white text-base font-normal hover:bg-[#143671]">
             Hire a Product Designer
         </a>
     </div>
@@ -343,34 +333,34 @@
 <!-- Pricing Section -->
 <section class="pricing-section container w-full max-w-[1440px] h-auto relative bg-gray-50 p-6">
     <div class="flex flex-col justify-start pl-16 gap-2.5">
-        <h2 class="text-zinc-800 text-lg font-semibold font-['Inter'] leading-relaxed">OUR FLEXIBLE PAYMENT PLANS</h2>
-        <p class="text-zinc-800 text-[15px] font-normal font-['Inter'] leading-snug">We provide flexible models to meet your budgets and business objectives.</p>
+        <h2 class="text-[#17191C] text-xl font-bold">OUR FLEXIBLE PAYMENT PLANS</h2>
+        <p class="text-[#292D32] text-[15px] font-normal">We provide flexible models to meet your budgets and business objectives.</p>
     </div>
     <div class="flex flex-wrap justify-center items-center gap-8 mt-8">
         <div class="flex flex-col p-6 w-[350px] h-[250px] rounded-md border border-[#008080] relative">
             <img src="{{ asset('assets/img/our-services/dollar-circle.png') }}" alt="icon" class="w-10 h-10 absolute top-4 left-4">
-            <h3 class="mt-14 text-center text-[#008080] text-lg font-medium font-['Inter'] leading-relaxed">Fixed Price Model</h3>
-            <p class="text-center whitespace-nowrap text-[#008080] text-[15px] font-normal font-['Inter'] leading-snug mt-2">
+            <h3 class="mt-14 text-center text-[#008080] text-lg font-medium">Fixed Price Model</h3>
+            <p class="text-center whitespace-nowrap text-[#008080] text-[15px] font-normal">
                 As a software development company, when <br> your project objectives are clearly defined, you <br> have the option to choose a fixed-price model, <br> offering a predetermined production cost, <br> contingent upon the maintenance of the <br> original scope.
             </p>
         </div>
         <div class="flex flex-col p-6 w-[350px] h-[250px] rounded-md border border-[#FFA500] relative">
             <img src="{{ asset('assets/img/our-services/watchIcon.png') }}" alt="icon" class="w-10 h-10 absolute top-4 left-4">
-            <h3 class="mt-14 text-center text-[#FFA500] text-lg font-medium font-['Inter'] leading-relaxed">Phased Payment Structure</h3>
-            <p class="text-center whitespace-nowrap text-[#FFA500] text-[15px] font-normal font-['Inter'] leading-snug mt-2">
+            <h3 class="mt-14 text-center text-[#FFA500] text-lg font-medium">Phased Payment Structure</h3>
+            <p class="text-center whitespace-nowrap text-[#FFA500] text-[15px] font-normal mt-2">
                 Tailored for progressive development <br> initiatives, this model ensures enhanced <br> adaptability, with payments synchronized to <br> the achievement of predefined project <br> milestones.
             </p>
         </div>
         <div class="flex flex-col p-6 w-[350px] h-[250px] rounded-md border border-[#444444] relative">
             <img src="{{ asset('assets/img/our-services/peopleIcon.png') }}" alt="icon" class="w-10 h-10 absolute top-4 left-4">
-            <h3 class="mt-14 text-center text-[#444444] text-lg font-medium font-['Inter'] leading-relaxed">Leverage Elite Expertise</h3>
-            <p class="text-center whitespace-nowrap text-[#444444] text-[15px] font-normal font-['Inter'] leading-snug mt-2">
+            <h3 class="mt-14 text-center text-[#444444] text-lg font-medium">Leverage Elite Expertise</h3>
+            <p class="text-center whitespace-nowrap text-[#444444] text-[15px] font-normal mt-2">
                 Access our onshore and offshore teams of top- <br> tier professionals to bolster your bespoke <br> product development.
             </p>
         </div>
     </div>
     <div class="flex justify-center items-center mt-8">
-    <a href="{{ route('contact-us') }}" class=" px-[80px] py-3 bg-[#143669] rounded-lg text-white text-base font-normal font-['Inter'] leading-normal hover:bg-[#143671]">
+    <a href="{{ route('contact-us') }}" class=" px-12 py-3 bg-[#143669] rounded-lg text-white text-base font-normal hover:bg-[#143671]">
             Start a Project
         </a>
     </div>
@@ -430,7 +420,7 @@
                     </div>
                 </div>
 
-                <div class="absolute lg:w-[500px] xl:w-[500px] 2xl:w-[500px] left-[650px] -top-28 p-4 bg-rt-primary border-gray-200 rounded-lg shadow-lg sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+                <div class="absolute lg:w-[500px] xl:w-[500px] 2xl:w-[500px] left-[650px] -top-28 p-4 bg-rt-primary border-gray-200 rounded-lg shadow-lg sm:p-6 md:p-8">
                     <!-- <h3 class="text-black mb-6 text-xl font-semibold">Hola :)</h3> -->
                     @include('inc.get-a-quote-form')
                 </div>
@@ -442,50 +432,50 @@
     <!-- Frequently Asked Question Section -->
 <section class="bg-violet-50 px-16 py-12 flex justify-center items-center">
     <div class="w-full max-w-4xl">
-        <div class="text-center text-zinc-900 text-2xl font-semibold mb-8">FAQs</div>
+        <div class="text-center text-[#17191C] text-2xl font-semibold mb-8">FAQs</div>
         <div class="space-y-4">
             <div class="border-b border-gray-200 pb-4">
-                <button class="w-full flex justify-between items-center text-left text-lg font-medium text-zinc-900 focus:outline-none" onclick="toggleFAQ(this)">
+                <button class="w-full flex justify-between items-center text-left text-lg font-medium text-[#17191C] focus:outline-none" onclick="toggleFAQ(this)">
                     What distinguishes your product design services from others in the industry?
                     <span class="transform transition-transform duration-200">&#x25BC;</span>
                 </button>
-                <div class="hidden pt-4 text-zinc-700">
+                <div class="hidden pt-4 text-[#374151]">
                     <p>Our product design services are distinguished by our user-centric approach, innovative solutions, and commitment to delivering high-quality designs that meet the specific needs and preferences of our clients.</p>
                 </div>
             </div>
             <div class="border-b border-gray-200 pb-4">
-                <button class="w-full flex justify-between items-center text-left text-lg font-medium text-zinc-900 focus:outline-none" onclick="toggleFAQ(this)">
+                <button class="w-full flex justify-between items-center text-left text-lg font-medium text-[#17191C] focus:outline-none" onclick="toggleFAQ(this)">
                     How do you ensure that the designs meet our specific needs and preferences?
                     <span class="transform transition-transform duration-200">&#x25BC;</span>
                 </button>
-                <div class="hidden pt-4 text-zinc-700">
+                <div class="hidden pt-4 text-[#374151]">
                     <p>We ensure our designs meet your specific needs and preferences through a collaborative process, involving regular feedback and iterations to refine the design until it perfectly aligns with your vision.</p>
                 </div>
             </div>
             <div class="border-b border-gray-200 pb-4">
-                <button class="w-full flex justify-between items-center text-left text-lg font-medium text-zinc-900 focus:outline-none" onclick="toggleFAQ(this)">
+                <button class="w-full flex justify-between items-center text-left text-lg font-medium text-[#17191C] focus:outline-none" onclick="toggleFAQ(this)">
                     Could you walk us through your product design process?
                     <span class="transform transition-transform duration-200">&#x25BC;</span>
                 </button>
-                <div class="hidden pt-4 text-zinc-700">
+                <div class="hidden pt-4 text-[#374151]">
                     <p>Our product design process involves initial consultations, research and analysis, concept development, prototyping, user testing, and final design delivery, ensuring a thorough and comprehensive approach.</p>
                 </div>
             </div>
             <div class="border-b border-gray-200 pb-4">
-                <button class="w-full flex justify-between items-center text-left text-lg font-medium text-zinc-900 focus:outline-none" onclick="toggleFAQ(this)">
+                <button class="w-full flex justify-between items-center text-left text-lg font-medium text-[#17191C] focus:outline-none" onclick="toggleFAQ(this)">
                     What level of involvement can we expect throughout the design journey?
                     <span class="transform transition-transform duration-200">&#x25BC;</span>
                 </button>
-                <div class="hidden pt-4 text-zinc-700">
+                <div class="hidden pt-4 text-[#374151]">
                     <p>You can expect a high level of involvement throughout the design journey, with regular updates, meetings, and opportunities for feedback to ensure the design aligns with your expectations.</p>
                 </div>
             </div>
             <div class="border-b border-gray-200 pb-4">
-                <button class="w-full flex justify-between items-center text-left text-lg font-medium text-zinc-900 focus:outline-none" onclick="toggleFAQ(this)">
+                <button class="w-full flex justify-between items-center text-left text-lg font-medium text-[#17191C] focus:outline-none" onclick="toggleFAQ(this)">
                     How do you handle feedback and revisions during the design process?
                     <span class="transform transition-transform duration-200">&#x25BC;</span>
                 </button>
-                <div class="hidden pt-4 text-zinc-700">
+                <div class="hidden pt-4 text-[#374151]">
                     <p>We handle feedback and revisions through an iterative process, incorporating your suggestions and making necessary adjustments to the design to ensure it meets your satisfaction.</p>
                 </div>
             </div>
