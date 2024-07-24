@@ -1,4 +1,4 @@
-<section class="px-16 bg-[#EDEDF8] dark:text-white dark:bg-gray-800 flex justify-between">
+<section class="px-16 bg-[#EDEDF8] flex justify-between">
     <div class="w-1/2 p-10">
         <div>
             <h3 class="text-rt-primary text-sm uppercase font-semibold">Get In Touch</h3>
@@ -54,7 +54,7 @@
         </div>
     </div>
     <div class="w-1/2 p-10 text-rt-white">
-        <div class="bg-rt-primary border-gray-200 rounded-lg shadow-lg sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+        <div class="bg-rt-primary border-gray-200 rounded-lg shadow-lg sm:p-6 md:p-8">
             @include('inc.get-a-quote-form')
         </div>
     </div>
