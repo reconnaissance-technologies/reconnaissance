@@ -17,8 +17,8 @@
                                         placeholder=" " required />
                                         <span class="text-red-500 text-sm"></span>
                                     <label for="floating_email"
-                                        class="peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
-                                        address</label>
+                                        class="peer-focus:font-medium absolute text-sm dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
+                                    </label>
                                 </div>
                             </div>
     
@@ -29,8 +29,7 @@
                                         class="block py-2.5 px-0 w-full text-s bg-transparent border-0 border-b-2 border-gray-300 appearance-none cus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                         placeholder=" " required oninput="formatPhoneNumber(this)"/>
                                         <span class="text-red-500 text-sm"></span>
-                                    <label for="floating_phone"
-                                        class="peer-focus:font-medium absolute text-sm  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                                    <label for="floating_phone" class="peer-focus:font-medium absolute text-sm  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
                                         Mobile (+234-123-456-7890)
                                     </label>
                                 </div>
@@ -39,8 +38,7 @@
                                         class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-300 appearance-none cus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                         placeholder=" " required />
                                         <span class="text-red-500 text-sm"></span>
-                                    <label for="floating_company"
-                                        class="peer-focus:font-medium absolute text-sm  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                                    <label for="floating_company" class="peer-focus:font-medium absolute text-sm  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
                                         Company (ex. Google)
                                     </label>
                                 </div>
@@ -76,9 +74,8 @@
                                     class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-300 appearance-none cus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                     placeholder=" " required></textarea>
                                     <span class="text-red-500 text-sm"></span>
-                                <label for="floating_message"
-                                    class="peer-focus:font-medium absolute text-sm  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
-                                    @if (Request::is('our-company/contact-us'))Project Brief / @endif Enquiries
+                                <label for="floating_message" class="peer-focus:font-medium absolute text-sm  dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                                    @if (Request::is('our-company/contact-us'))Project Brief / @endif Tell us about your product and business challenges.
                                 </label>
                             </div>
     
@@ -102,7 +99,7 @@
                                 <label for="nda-checkbox" class="ms-2 text-sm font-medium">I want a copy of a signed NDA</label>
                             </div>
                             @endif
-    
+
                             <button id="sendBtn" type="submit" class="text-rt-primary bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Send
                                 Message
                             </button>

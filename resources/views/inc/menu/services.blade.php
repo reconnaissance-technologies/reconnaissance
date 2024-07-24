@@ -1,6 +1,9 @@
 <li  class="hoverable hover:border-t-2 hover:border-t-rt-white ">
     <a href="javascript://" class="block lg:p-6 text-sm lg:text-base font-bold ">
-        Services        
+        Services 
+        <svg class="w-4 h-4 inline-block ml-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>       
     </a>
     <div class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl text-black  bg-white">
         <div class="container w-full flex flex-wrap justify-center mx-2">
