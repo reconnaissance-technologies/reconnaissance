@@ -9,7 +9,7 @@
         <div class="container w-full flex flex-wrap justify-between mx-2">
             <ul class="px-4 w-full sm:w-1/2 lg:w-1/2 pb-6 pt-6 lg:pt-3">
                 <div class="flex items-center">
-                    <h3 class="font-bold text-lg text-bold mb-2 uppercase">About Us</h3>
+                    <h3 class="font-bold text-lg text-bold mb-2 uppercase text-rt-primary">About Us</h3>
                 </div>
                 <div class="relative w-full">
                     <p class="text-sm">
@@ -25,12 +25,12 @@
             </ul>
             <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3">
                 <div class="flex items-center">
-                    <h3 class="font-bold text-lg text-bold mb-2 uppercase">Explore</h3>
+                    <h3 class="font-bold text-lg text-bold mb-2 uppercase text-rt-primary">Explore</h3>
                 </div>
                 <p class="text-sm">
                     <ul>
                         <li class="py-1">
-                            <a href="{{ route('development-methodology') }}" class="hover:border-b-rt-primary hover:border-b-2">
+                            <a href="{{ route('development-methodology') }}" class="hover:text-rt-primary">
                                 <div class="flex items-center">
                                     <h3 class="font-bold text-sm text-rt-primary">Our Process</h3>
                                 </div>
@@ -38,7 +38,7 @@
                             </a>
                         </li>
                         <li class="py-1">
-                            <a href="{{ route('certifications') }}" class="hover:border-b-rt-primary hover:border-b-2">
+                            <a href="{{ route('certifications') }}" class="hover:text-rt-primary">
                                 <div class="flex items-center">
                                     <h3 class="font-bold text-sm text-rt-primary">Our Clients</h3>
                                 </div>
@@ -49,7 +49,7 @@
                             <div class="flex items-center">
                                 <h3 class="font-bold text-sm text-rt-primary">Our Testimonials</h3>
                             </div>
-                            <a href="{{ route('partnerships') }}" class="hover:border-b-rt-primary hover:border-b-2">
+                            <a href="{{ route('partnerships') }}" class="hover:text-rt-primary">
                                 What Our clients Have to Say
                             </a>
                         </li>
@@ -63,7 +63,7 @@
                 <p class="text-sm">
                     <ul>
                         <li class="py-1">
-                            <a href="{{ route('career-overview') }}" class="hover:border-b-rt-primary hover:border-b-2">
+                            <a href="{{ route('career-overview') }}" class="hover:text-rt-primary">
                                 <div class="flex items-center">
                                     <h3 class="font-bold text-sm text-rt-primary">Careers</h3>
                                 </div>
@@ -71,7 +71,7 @@
                             </a>
                         </li>
                         <li class="py-1">
-                            <a href="{{ route('media-coverage') }}" class="hover:border-b-rt-primary hover:border-b-2">
+                            <a href="{{ route('media-coverage') }}" class="hover:text-rt-primary">
                                 <div class="flex items-center">
                                     <h3 class="font-bold text-sm text-rt-primary">Manifesto</h3>
                                 </div>
