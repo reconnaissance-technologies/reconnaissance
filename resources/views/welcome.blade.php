@@ -175,7 +175,7 @@
     <!-- Our Solutions Section -->
     <section class="px-16 bg-white">
         <div class="w-full py-6">
-            <h3 class="text-black text-sm py-3 uppercase font-semibold">Our Solutions</h3>
+            <h3 class="text-black text-md py-3 font-semibold">Our Solutions</h3>
             <p class="w-full lg:w-full flex justify-between items-center">
                 Elevating Experiences, Empowering Innovation: Our Solutions Redefine Possibilities and Drive Success
             </p>
@@ -184,51 +184,51 @@
         <div class="grid grid-cols-4 gap-8 py-8">
             <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
                 <img class="" src="{{ asset('assets/icons/ecommerce-solution-icon.svg') }}" />
-                <div class="text-zinc-800 pt-3 font-normal leading-snug">eCommerce Solution</div>
+                <div class="text-zinc-800 pt-3 font-normal">eCommerce Solution</div>
             </div>
             <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/eLeraning-solution-icon.svg') }}" />
-                <div class="text-zinc-800 pt-3 font-normal leading-snug">eLearning Solution</div>
+                <div class="text-zinc-800 pt-3 font-normal">eLearning Solution</div>
             </div>
             <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/healthcare-solution-icon.svg') }}" />
-                <div class="text-zinc-800 pt-3 font-normal leading-snug">Healthcare Solution</div>
+                <div class="text-zinc-800 pt-3 font-normal">Healthcare Solution</div>
             </div>
             <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/performance-solution-icon.svg') }}" />
-                <div class="text-zinc-800 pt-3 font-normal leading-snug">Perfomance Solution</div>
+                <div class="text-zinc-800 pt-3 font-normal">Perfomance Solution</div>
             </div>
             <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/inventory-and-invoice-solution-icon.svg') }}" />
-                <div class="text-zinc-800 pt-3 font-normal leading-snug">Invoice & Inventory Solution</div>
+                <div class="text-zinc-800 pt-3 font-normal">Invoice & Inventory Solution</div>
             </div>
             <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/fleet-management-solution-icon.svg') }}" />
-                <div class="text-zinc-800 pt-3 font-normal leading-snug">Fleet Management Solution</div>
+                <div class="text-zinc-800 pt-3 font-normal">Fleet Management Solution</div>
             </div>
             <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/erp-solution-icon.svg') }}" />
-                <div class="text-zinc-800 pt-3 font-normal leading-snug">ERP Solution</div>
+                <div class="text-zinc-800 pt-3 font-normal">ERP Solution</div>
             </div>
             <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/warehouse-solution-icon.svg') }}" />
-                <div class="text-zinc-800 pt-3 font-normal leading-snug">Warehouse Solution</div>
+                <div class="text-zinc-800 pt-3 font-normal">Warehouse Solution</div>
             </div>
             <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/payroll-management-solution-icon.svg') }}" />
-                <div class="text-zinc-800 pt-3 font-normal leading-snug">Payroll Management Solution</div>
+                <div class="text-zinc-800 pt-3 font-normal">Payroll Management Solution</div>
             </div>
             <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/smart-estate-solution-icon.svg') }}" />
-                <div class="text-zinc-800 pt-3 font-normal leading-snug">Smart Estate Solution</div>
+                <div class="text-zinc-800 pt-3 font-normal">Smart Estate Solution</div>
             </div>
             <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/document-management-solution-icon.svg') }}" />
-                <div class="text-zinc-800 pt-3 font-normal leading-snug">Document Management Solution</div>
+                <div class="text-zinc-800 pt-3 font-normal">Document Management Solution</div>
             </div>
             <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/hrm-solution-icon.svg') }}" />
-                <div class="text-zinc-800 pt-3 font-normal leading-snug">HRM Solution</div>
+                <div class="text-zinc-800 pt-3 font-normal">HRM SOLUTION</div>
             </div>
         </div>
     </section>
