@@ -27,7 +27,7 @@
     <!-- Hero Section -->
     <section class="relative flex items-center justify-center h-screen overflow-hidden bg-black">
         <!-- Video Background -->
-        <video autoplay muted loop class="absolute inset-0 object-cover w-full h-full" src="https://s3-figma-videos-production-sig.figma.com/video/1134555079227565548/TEAM/1bfb/2cc8/-84f7-407b-a6ec-4685afbc8772?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JzrGZMmfDZ~pgYevM2NbKeuSzTBpwk64eibYg~j36QdLP27B6L15pDb3yghIj1K1SKRiWP53IKBoaiC6w7g-tTV7B-87kBEov3a7cLVW-FM2~e2snmC7LkxHhy2u6PQ4y7hmfIQWUn4mDiXcfDj7VlyVbsbV9xfIlTHG25GzWXrMd~bSaiDGb6RDE2xWS3OEs~6ijDFTMYxRPi~xxYOU1nw1PjdV9xYxLARWYFMR9hJ7hpDEm6bcfO6MZyD1j2D713mBFyM1Acc-T2-tCR4c2sDf1PhDZDCK0x7Xl7uQi6PaNjq0ysvGmOsi~jDO-xegmC~GU8h9J1IYdp0BLl9GSg__"></video>
+        <video autoplay muted loop class="absolute inset-0 object-cover w-full h-full" src="https://s3-figma-videos-production-sig.figma.com/video/1134555079227565548/TEAM/1bfb/2cc8/-84f7-407b-a6ec-4685afbc8772?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GI0WzSuZj9ADCYYLLkDin4w2CgslBLRW1kWpLKfM1N8tH6~ol6NUr29CBJQ8tzAQ6lCSFHdnRIQZ5Tpy~XD-uP8XEZOFEzwxEVK9w8Bg1wu05nxansdRPyr-qqpl~ICeQsZTz~jJU2khirmrpmQqFJGhrAfuNMzLGDipSwIz19Jj4fuxgt7IS1XOvK6qRJpOaU0OK0dSXUkcQhKxAB06mKXRXovBHvI0TylcE6BpusYMsSXTZOMoKkmCEDMfZfMPlga26vPFs8EGXN-1Fq4Bsb0CX0tSQImMk~UKYyvgonreEBrN0q~Z3D8nVXt4bM7iGbWoGATO~dENBzF4TfK33Q__"></video>
 
         <!-- Hero Content -->
         <div class="text-center text-white z-10">

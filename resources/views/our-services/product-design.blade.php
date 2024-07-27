@@ -16,7 +16,7 @@
 @section('content')
 <main class="w-full">
     <!-- Hero Section -->
-    <section class="relative  text-center justify-center py-5">
+    <section class="relative  text-center justify-center py-5 bg-black">
     <!-- Video Background -->
     <video class="absolute top-0 left-0 w-full h-full object-cover z-[-1]" autoplay muted loop playsinline>
         <source src="https://s3-figma-videos-production-sig.figma.com/video/1134555079227565548/TEAM/7965/521e/-00dd-40be-90b9-bc75a5039931?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=a1Dy~C8DwI7xYg1OTCALee~NtOOOQn~f9d2ZrWSEDLm9m5dANbMQkYyZcIHJo4DvwpWduDC3Wa~VXjBcVVSurU9pHk9sDQageE4e2kbLuAapPb01uBKcM-HRb0ssY3hm8dIeucP0-hmDwbgw11Ym7cqtuGwfjQVSFPlpXQqG3QkphwDiNEAvmJ7aW7b4ptJZkLwLVIiZvSwChqN2~iylN8qANxSbgNUatctl-4lAf29gRYlj5f-ajxGyQg3i0jS9rXxwQ7XZqgbLuXymQUlx0nLExnqAaN4QMSWUNmr-inFm-LQVQdv~HAtupoArWmVlajocofjoQSI4nYctHudu-A__" type="video/mp4">
