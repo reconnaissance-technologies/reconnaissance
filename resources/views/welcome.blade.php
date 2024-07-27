@@ -102,25 +102,25 @@
                 <div class="rounded-lg bg-rt-white p-6 shadow-lg">
                     <img src="{{ asset('assets/icons/medal-star.svg') }}" alt="">
                     <h4 class="pt-2 font-semibold text-black lg:text-4xl">3+</h4>
-                    <h6 class="font-semibold text-rt-primary">Years in Business</h6>
+                    <h6 class="font-semibold text-[#17191c]">Years in Business</h6>
                     <p class="py-3">Vast experience in delivering comprehensive IT solutions and services</p>
                 </div>
                 <div class="rounded-lg bg-rt-white p-6 shadow-lg">
                     <img src="{{ asset('assets/icons/cup.svg') }}" alt="">
                     <h4 class="pt-2 font-semibold text-black lg:text-4xl">5+</h4>
-                    <h6 class="font-semibold text-rt-primary">Awards</h6>
+                    <h6 class="font-semibold text-[#17191c]">Awards</h6>
                     <p class="py-3">Achieving acclaim via esteemed industry accolades for exceptional performance</p>
                 </div>
                 <div class="rounded-lg bg-rt-white p-6 shadow-lg">
                     <img src="{{ asset('assets/icons/teacher.svg') }}" alt="">
                     <h4 class="pt-2 font-semibold text-black lg:text-4xl">10+</h4>
-                    <h6 class="font-semibold text-rt-primary">Experts</h6>
+                    <h6 class="font-semibold text-[#17191c]">Experts</h6>
                     <p class="py-3">A commited team of passionate, experienced, and highly skilled professionals</p>
                 </div>
                 <div class="rounded-lg bg-rt-white p-6 shadow-lg">
                     <img src="{{ asset('assets/icons/people.svg') }}" alt="">
                     <h4 class="pt-2 font-semibold text-black lg:text-4xl">12+</h4>
-                    <h6 class="font-semibold text-rt-primary">Clients</h6>
+                    <h6 class="font-semibold text-[#17191c]">Clients</h6>
                     <p class="py-3">Our quality and processes are validated by testimonials from clients worldwide</p>
                 </div>
             </div>
