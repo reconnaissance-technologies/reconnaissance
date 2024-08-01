@@ -32,117 +32,31 @@ window.addEventListener("scroll", function () {
     }
 });
 
-/** Technology Stack Tabs Implementation */
-const tsTabsElement = document.getElementById('ts-section')
+document.addEventListener("DOMContentLoaded", function() {
+    const tabs = document.querySelectorAll("[data-tab]");
+    const contents = document.querySelectorAll(".tab-content");
 
-// create an array of objects with the id, trigger element (eg. button), and the content element
-const tsTabElements = [
-    {
-        id: 'web-tech',
-        triggerEl: document.querySelector('#web-tech-tab'),
-        targetEl: document.querySelector('#web-tech-tab-content'),
-    },
-    {
-        id: 'backend',
-        triggerEl: document.querySelector('#backend-tab'),
-        targetEl: document.querySelector('#backend-content'),
-    },
-];
+    tabs.forEach((tab, index) => {
+        tab.addEventListener("click", function() {
+            tabs.forEach((t, i) => {
+                t.classList.remove("bg-rt-primary", "text-white", "rounded-l-lg", "rounded-r-lg");
+                if (i === 0) {
+                    t.classList.add("rounded-l-lg");
+                } else if (i === tabs.length - 1) {
+                    t.classList.add("rounded-r-lg");
+                }
+            });
+            contents.forEach(c => c.classList.add("hidden"));
 
-// technology stack tabs options with default values
-const tsTabsOptions = {
-    defaultTabId: 'web-tech',
-    activeClasses: 'text-bold',
-    inactiveClasses: '',
-    onShow: () => {},
-};
+            tab.classList.add("bg-rt-primary", "text-white");
+            const content = document.querySelector(`[data-content='${tab.dataset.tab}']`);
+            content.classList.remove("hidden");
+        });
+    });
 
-// technoloy stack tabs instance options with default values
-const tsTabsInstanceOptions = {
-    id: 'ts-section',
-    override: true
-};
-
-/*
- * tsTabElements: array of tab objects
- * tsTabsOptions: optional
- * tsTabsInstanceOptions: optional
- */
-new Tabs(tsTabsElement, tsTabElements, tsTabsOptions, tsTabsInstanceOptions);
-/** End of Technology Stack Tabs Implementation */
-
-/** What We Do Tabs Implementation */
-// const wwdTabsElement = document.getElementById('wwd-tab');
-
-// create an array of objects with the id, trigger element (eg. button), and the content element
-// const wwdTabElements = [{
-//         id: 'experience',
-//         triggerEl: document.querySelector('#experience-tab'),
-//         targetEl: document.querySelector('#experience-tab-content'),
-//     },
-//     {
-//         id: 'architecture',
-//         triggerEl: document.querySelector('#architecture-tab'),
-//         targetEl: document.querySelector('#architecture-tab-content'),
-//     },
-//     {
-//         id: 'cloud',
-//         triggerEl: document.querySelector('#cloud-tab'),
-//         targetEl: document.querySelector('#cloud-tab-content'),
-//     },
-//     {
-//         id: 'perfomance-insights',
-//         triggerEl: document.querySelector('#performance-insights-tab'),
-//         targetEl: document.querySelector('#performance-insights-tab-content'),
-//     },
-//     {
-//         id: 'process',
-//         triggerEl: document.querySelector('#process-tab'),
-//         targetEl: document.querySelector('#process-tab-content'),
-//     },
-//     {
-//         id: 'security',
-//         triggerEl: document.querySelector('#security-tab'),
-//         targetEl: document.querySelector('#security-tab-content'),
-//     },
-//     {
-//         id: 'legal',
-//         triggerEl: document.querySelector('#legal-tab'),
-//         targetEl: document.querySelector('#legal-tab-content'),
-//     },
-//     {
-//         id: 'compliance',
-//         triggerEl: document.querySelector('#compliance-tab'),
-//         targetEl: document.querySelector('#compliance-tab-content'),
-//     },
-//     {
-//         id: 'innovation',
-//         triggerEl: document.querySelector('#innovation-tab'),
-//         targetEl: document.querySelector('#innovation-tab-content'),
-//     },
-// ];
-
-// what we deliver tabs options with default values
-// const wwdTabsOptions = {
-//     defaultTabId: 'experience',
-//     activeClasses: 'text-bold',
-//     inactiveClasses: '',
-//     onShow: () => {},
-// };
-
-// what we deliver tabs instance options with default values
-// const wwdTabsInstanceOptions = {
-//     id: 'wwd-tab',
-//     override: true
-// };
-
-/*
- * wwdTabElements: array of tab objects
- * wwdTabsOptions: optional
- * wwdTabsInstanceOptions: optional
- */
-// const wwdTabs = new Tabs(wwdTabsElement, wwdTabElements, wwdTabsOptions, wwdTabsInstanceOptions);
-/** End of What We Deliver Tabs Implementation */
-
-/** Clients and Testimonials Slider Implementation */
-/** End of Clients and Testimonials Slider Implementation */
+    // Initialize the first and last tab with rounded corners
+    if (tabs.length > 0) {
+        tabs[0].classList.add("rounded-l-lg");
+        tabs[tabs.length - 1].classList.add("rounded-r-lg");
+    }
+});

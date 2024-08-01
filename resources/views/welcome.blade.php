@@ -134,34 +134,34 @@
         <div class="w-full py-6">
             <h3 class="text-black text-sm py-3 uppercase font-semibold pb-4">Our Services</h3>
             <div class="inline-flex justify-center gap-1 border rounded-lg cursor-pointer text-[0.77rem] font-normal text-center">
-                <div data-tab="product-design" class="border-r border-gray-50 bg-[#194587] text-white flex items-center justify-center py-2 px-4">
+                <div data-tab="product-design" class="border-r border-gray-200 bg-rt-primary text-white flex items-center justify-center py-2 px-4">
                     <h1>Product Design</h1>
                 </div>
-                <div data-tab="software-development" class="border-r border-gray-50 flex items-center justify-center py-2 px-4">
+                <div data-tab="software-development" class="border-r border-gray-200 flex items-center justify-center py-2 px-4">
                     <h1>Software Development</h1>
                 </div>
-                <div data-tab="web-app-development" class="border-r border-gray-50 flex items-center justify-center py-2 px-4">
+                <div data-tab="web-app-development" class="border-r border-gray-200 flex items-center justify-center py-2 px-4">
                     <h1>Web App Development</h1>
                 </div>
-                <div data-tab="mobile-app-development" class="border-r border-gray-50 flex items-center justify-center py-2 px-4">
+                <div data-tab="mobile-app-development" class="border-r border-gray-200 flex items-center justify-center py-2 px-4">
                     <h1>Mobile App Development</h1>
                 </div>
-                <div data-tab="front-end-development" class="border-r border-gray-50 flex items-center justify-center py-2 px-4">
+                <div data-tab="front-end-development" class="border-r border-gray-200 flex items-center justify-center py-2 px-4">
                     <h1>Front-end Development</h1>
                 </div>
-                <div data-tab="cloud-infrastructure" class="border-r border-gray-50 flex items-center justify-center py-2 px-4">
+                <div data-tab="cloud-infrastructure" class="border-r border-gray-200 flex items-center justify-center py-2 px-4">
                     <h1>Cloud & Infrastructure</h1>
                 </div>
-                <div data-tab="ar-vr-development" class="border-r border-gray-50 flex items-center justify-center py-2 px-4">
+                <div data-tab="ar-vr-development" class="border-r border-gray-200 flex items-center justify-center py-2 px-4">
                     <h1>AR/VR Development</h1>
                 </div>
-                <div data-tab="ai-ml-development" class="border-r border-gray-50 flex items-center justify-center py-2 px-4">
+                <div data-tab="ai-ml-development" class="border-r border-gray-200 flex items-center justify-center py-2 px-4">
                     <h1>AI/ML Development</h1>
                 </div>
-                <div data-tab="iot-development" class="border-r border-gray-50 flex items-center justify-center py-2 px-4">
+                <div data-tab="iot-development" class="border-r border-gray-200 flex items-center justify-center py-2 px-4">
                     <h1>IOT Development</h1>
                 </div>
-                <div data-tab="chatbot-development" class="border-r border-gray-50 flex items-center justify-center py-2 px-4">
+                <div data-tab="chatbot-development" class="border-r border-gray-200 flex items-center justify-center py-2 px-4">
                     <h1>Chatbot Development</h1>
                 </div>
                 <div data-tab="cybersecurity" class="flex items-center justify-center py-2 px-4">
@@ -432,25 +432,6 @@
         </div>
 
     </section>
-
-    <!-- JavaScript for Tabs -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const tabs = document.querySelectorAll("[data-tab]");
-            const contents = document.querySelectorAll(".tab-content");
-
-            tabs.forEach(tab => {
-                tab.addEventListener("click", function() {
-                    tabs.forEach(t => t.classList.remove("bg-[#194587]", "text-white"));
-                    contents.forEach(c => c.classList.add("hidden"));
-
-                    tab.classList.add("bg-[#194587]", "text-white");
-                    const content = document.querySelector(`[data-content='${tab.dataset.tab}']`);
-                    content.classList.remove("hidden");
-                });
-            });
-        });
-    </script>
     <!-- End of Our Services Section -->
 
     <!-- Our Solutions Section -->
