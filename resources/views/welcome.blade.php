@@ -644,40 +644,40 @@
 
                 <div>
                     <div class="p-4" id="web-tech" role="tabpanel" aria-labelledby="web-tech-tab">
-                        <div class="grid grid-cols-5 gap-4">
-                            <div class="max-w-sm text-center m-auto" title="CSS3">
-                                <div class="w-20 h-20 mx-auto mb-2">
-                                    <img src="{{ asset('assets/img/technologies/php.png') }}" class="object-contain" alt="CSS3 Logo">
+                        <div class="grid grid-cols-5 gap-7">
+                            <div class="max-w-sm text-center m-auto" title="PHP">
+                                <div class="w-[38px] h-[19px] mx-auto mb-4">
+                                    <img src="{{ asset('assets/img/technologies/php.png') }}" class="object-contain" alt="PHP Logo">
                                 </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">PHP</p>
                             </div>
-                            <div class="max-w-sm text-center m-auto" title="HTML5">
-                                <div class="w-20 h-20 mx-auto mb-2">
-                                    <img src="{{ asset('assets/img/technologies/nodejs.png') }}" class="object-contain" alt="HTML5 Logo">
+                            <div class="max-w-sm text-center m-auto" title="NODEJS">
+                                <div class="w-[38px] h-[19px] mx-auto mb-6">
+                                    <img src="{{ asset('assets/img/technologies/NEWnodejs.png') }}" class="object-contain" alt="NODEJS Logo">
                                 </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Node.Js</p>
                             </div>
-                            <div class="max-w-sm text-center m-auto" title="Node.Js">
-                                <div class="w-20 h-20 mx-auto mb-2">
-                                    <img src="{{ asset('assets/img/technologies/css3.png') }}" class="object-contain" alt="Node.Js Logo">
+                            <div class="max-w-sm text-center m-auto" title="CSS3">
+                                <div class="w-[38px] h-[19px] mx-auto mb-6">
+                                    <img src="{{ asset('assets/img/technologies/pandacss.png') }}" class="object-contain" alt="PandaCSS Logo">
                                 </div>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">CSS3</p>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">CSS</p>
                             </div>
-                            <div class="max-w-sm text-center m-auto" title="PHP">
-                                <div class="w-20 h-20 mx-auto mb-2">
-                                    <img src="{{ asset('assets/img/technologies/html5.png') }}" class="object-contain" alt="PHP Logo">
+                            <div class="max-w-sm text-center m-auto" title="HTML5">
+                                <div class="w-[38px] h-[19px] mx-auto mb-6">
+                                    <img src="{{ asset('assets/img/technologies/html5.png') }}" class="object-contain" alt="HTML5 Logo">
                                 </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">HTML5</p>
                             </div>
-                            <div class="max-w-sm text-center m-auto" title="Python">
-                                <div class="w-20 h-20 mx-auto mb-2">
-                                    <img src="{{ asset('assets/img/technologies/javascript.png') }}" class="object-contain" alt="Python Logo">
+                            <div class="max-w-sm text-center m-auto" title="Javascript">
+                                <div class="w-[38px] h-[19px] mx-auto mb-6">
+                                    <img src="{{ asset('assets/img/technologies/javascript.png') }}" class="object-contain" alt="Javascript Logo">
                                 </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Javascript</p>
                             </div>
-                            <div class="max-w-sm text-center m-auto" title="Javascript">
-                                <div class="w-20 h-20 mx-auto mb-2">
-                                    <img src="{{ asset('assets/img/technologies/python.png') }}" class="object-contain" alt="Javascript Logo">
+                            <div class="max-w-sm text-center m-auto" title="Python">
+                                <div class="w-[38px] h-[19px] mx-auto mb-6">
+                                    <img src="{{ asset('assets/img/technologies/python.png') }}" class="object-contain" alt="Python Logo">
                                 </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Python</p>
                             </div>
@@ -686,45 +686,45 @@
                     </div>
 
                     <div class="hidden p-4" id="backend" role="tabpanel" aria-labelledby="backend-tab">
-                        <div class="grid grid-cols-5 gap-4">
+                        <div class="grid grid-cols-5 gap-7">
                             <div class="max-w-sm text-center m-auto" title=".NET">
-                                <div class="w-20 h-20 mx-auto mb-2">
+                                <div class="w-[38px] h-[19px] mx-auto mb-6">
                                     <img src="{{ asset('assets/img/technologies/dot-net.svg') }}" class="object-contain" alt=".NET Logo">
                                 </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">.NET</p>
                             </div>
                             <div class="max-w-sm text-center m-auto" title=".NET Core">
-                                <div class="w-20 h-20 mx-auto mb-2">
+                                <div class="w-[38px] h-[19px] mx-auto mb-6">
                                     <img src="{{ asset('assets/img/technologies/dot-net-core.png') }}" class="object-contain" alt=".NET Core Logo">
                                 </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">.NET Core</p>
                             </div>
                             <div class="max-w-sm text-center m-auto" title="Java">
-                                <div class="w-20 h-20 mx-auto mb-2">
+                                <div class="w-[38px] h-[19px] mx-auto mb-6">
                                     <img src="{{ asset('assets/img/technologies/java.png') }}" class="object-contain" alt="Java Logo">
                                 </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Java</p>
                             </div>
                             <div class="max-w-sm text-center m-auto" title="Node.Js">
-                                <div class="w-20 h-20 mx-auto mb-2">
-                                    <img src="{{ asset('assets/img/technologies/nodejs.png') }}" class="object-contain" alt="Node.Js Logo">
+                                <div class="w-[38px] h-[19px] mx-auto mb-6">
+                                    <img src="{{ asset('assets/img/technologies/NEWnodejs.png') }}" class="object-contain" alt="Node.Js Logo">
                                 </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Node.Js</p>
                             </div>
                             <div class="max-w-sm text-center m-auto" title="PHP">
-                                <div class="w-20 h-20 mx-auto mb-2">
+                                <div class="w-[38px] h-[19px] mx-auto mb-6">
                                     <img src="{{ asset('assets/img/technologies/php.png') }}" class="object-contain" alt="PHP Logo">
                                 </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">PHP</p>
                             </div>
                             <div class="max-w-sm text-center m-auto" title="Python">
-                                <div class="w-20 h-20 mx-auto mb-2">
+                                <div class="w-[38px] h-[19px] mx-auto mb-6">
                                     <img src="{{ asset('assets/img/technologies/python.png') }}" class="object-contain" alt="Python Logo">
                                 </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Python</p>
                             </div>
                             <div class="max-w-sm text-center m-auto" title="Ruby">
-                                <div class="w-20 h-20 mx-auto mb-2">
+                                <div class="w-[38px] h-[19px] mx-auto mb-6">
                                     <img src="{{ asset('assets/img/technologies/ruby.png') }}" class="object-contain" alt="Ruby Logo">
                                 </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Ruby</p>
@@ -733,93 +733,93 @@
                     </div>
 
                     <div class="hidden p-4" id="frontend" role="tabpanel" aria-labelledby="frontend-tab">
-                        <div class="grid grid-cols-5 gap-4">
+                        <div class="grid grid-cols-5 gap-7">
                             <div class="max-w-sm text-center m-auto" title="Angular">
-                                <div class="w-20 h-20 mx-auto mb-2">
+                                <div class="w-[38px] h-[19px] mx-auto mb-6">
                                     <img src="{{ asset('assets/img/technologies/angular.png') }}" class="object-contain" alt="Angular Logo">
                                 </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Angular</p>
                             </div>
                             <div class="max-w-sm text-center m-auto" title="Backbone.Js">
-                                <div class="w-20 h-20 mx-auto mb-2">
+                                <div class="w-[38px] h-[19px] mx-auto mb-6">
                                     <img src="{{ asset('assets/img/technologies/backbonejs.png') }}" class="object-contain" alt="Backbone.Js Logo">
                                 </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Backbone.Js</p>
                             </div>
                             <div class="max-w-sm text-center m-auto" title="Bootstrap">
-                                <div class="w-20 h-20 mx-auto mb-2">
+                                <div class="w-[38px] h-[19px] mx-auto mb-6">
                                     <img src="{{ asset('assets/img/technologies/bootstrap.png') }}" class="object-contain" alt="Bootstrap Logo">
                                 </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Bootstrap</p>
                             </div>
                             <div class="max-w-sm text-center m-auto" title="CSS3">
-                                <div class="w-20 h-20 mx-auto mb-2">
-                                    <img src="{{ asset('assets/img/technologies/css3.png') }}" class="object-contain" alt="CSS3 Logo">
+                                <div class="w-[38px] h-[19px] mx-auto mb-6">
+                                    <img src="{{ asset('assets/img/technologies/pandacss.png') }}" class="object-contain" alt="PandaCSS Logo">
                                 </div>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">CSS3</p>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">CSS</p>
                             </div>
                             <div class="max-w-sm text-center m-auto" title="D3 Js">
-                                <div class="w-20 h-20 mx-auto mb-2">
+                                <div class="w-[38px] h-[19px] mx-auto mb-6">
                                     <img src="{{ asset('assets/img/technologies/d3js.png') }}" class="object-contain" alt="D3 Js Logo">
                                 </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">D3 Js</p>
                             </div>
                             <div class="max-w-sm text-center m-auto" title="HTML5">
-                                <div class="w-20 h-20 mx-auto mb-2">
+                                <div class="w-[38px] h-[19px] mx-auto mb-6">
                                     <img src="{{ asset('assets/img/technologies/html5.png') }}" class="object-contain" alt="HTML5 Logo">
                                 </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">HTML5</p>
                             </div>
                             <div class="max-w-sm text-center m-auto" title="Javascript">
-                                <div class="w-20 h-20 mx-auto mb-2">
+                                <div class="w-[38px] h-[19px] mx-auto mb-6">
                                     <img src="{{ asset('assets/img/technologies/javascript.png') }}" class="object-contain" alt="Javascript Logo">
                                 </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Javascript</p>
                             </div>
                             <div class="max-w-sm text-center m-auto" title="Jquery">
-                                <div class="w-20 h-20 mx-auto mb-2">
+                                <div class="w-[38px] h-[19px] mx-auto mb-6">
                                     <img src="{{ asset('assets/img/technologies/jquery.gif') }}" class="object-contain" alt="Jquery Logo">
                                 </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Jquery</p>
                             </div>
                             <div class="max-w-sm text-center m-auto" title="Knockout Js">
-                                <div class="w-20 h-20 mx-auto mb-2">
+                                <div class="w-[38px] h-[19px] mx-auto mb-6">
                                     <img src="{{ asset('assets/img/technologies/knockoutjs.png') }}" class="object-contain" alt="KnockoutJs Logo">
                                 </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">KnockoutJs</p>
                             </div>
                             <div class="max-w-sm text-center m-auto" title="Next Js">
-                                <div class="w-20 h-20 mx-auto mb-2">
+                                <div class="w-[38px] h-[19px] mx-auto mb-6">
                                     <img src="{{ asset('assets/img/technologies/nextjs.png') }}" class="object-contain" alt="Next Js Logo">
                                 </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">NextJs</p>
                             </div>
                             <div class="max-w-sm text-center m-auto" title="NuxtJs">
-                                <div class="w-20 h-20 mx-auto mb-2">
+                                <div class="w-[38px] h-[19px] mx-auto mb-6">
                                     <img src="{{ asset('assets/img/technologies/nuxtjs.svg') }}" class="object-contain" alt="NuxtJs Logo">
                                 </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">NuxtJs</p>
                             </div>
                             <div class="max-w-sm text-center m-auto" title="React">
-                                <div class="w-20 h-20 mx-auto mb-2">
+                                <div class="w-[38px] h-[19px] mx-auto mb-6">
                                     <img src="{{ asset('assets/img/technologies/reactjs.png') }}" class="object-contain" alt="React Logo">
                                 </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">React</p>
                             </div>
                             <div class="max-w-sm text-center m-auto" title="Tailwind CSS">
-                                <div class="w-20 h-20 mx-auto mb-2">
+                                <div class="w-[38px] h-[19px] mx-auto mb-6">
                                     <img src="{{ asset('assets/img/technologies/tailwind-css.png') }}" class="object-contain" alt="Tailwind CSS Logo">
                                 </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Tailwind CSS</p>
                             </div>
                             <div class="max-w-sm text-center m-auto" title="Typescript">
-                                <div class="w-20 h-20 mx-auto mb-2">
+                                <div class="w-[38px] h-[19px] mx-auto mb-6">
                                     <img src="{{ asset('assets/img/technologies/typescript.webp') }}" class="object-contain" alt="Typescript Logo">
                                 </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Typescript</p>
                             </div>
                             <div class="max-w-sm text-center m-auto" title="VueJs">
-                                <div class="w-20 h-20 mx-auto mb-2">
+                                <div class="w-[38px] h-[19px] mx-auto mb-6">
                                     <img src="{{ asset('assets/img/technologies/vuejs.png') }}" class="object-contain" alt="VueJs Logo">
                                 </div>
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">VueJs</p>
@@ -829,57 +829,57 @@
 
                 </div>
                 <div class="hidden" id="ai-ml" role="tabpanel" aria-labelledby="ai-ml-tab">
-                    <div class="grid grid-cols-5 gap-4">
+                    <div class="grid grid-cols-5 gap-7">
                         <div class="max-w-sm text-center m-auto" title="Chatbot">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/chatbot.svg') }}" class="object-contain" alt="Chatbot Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Chatbot</p>
                         </div>
                         <div class="max-w-sm text-center m-auto" title="ChatGPT">
-                            <div class="w-28 h-16 m-4">
+                            <div class="w-[60px] h-[19px] mb-6">
                                 <img src="{{ asset('assets/img/technologies/chatgpt.png') }}" class="object-fill" alt="ChatGPT Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">ChatGPT</p>
                         </div>
                         <div class="max-w-sm text-center m-auto" title="Computer Vision">
-                            <div class="w-16 h-16 m-4">
+                            <div class="w-[38px] h-[19px] mb-6">
                                 <img src="{{ asset('assets/img/technologies/computer-vision.png') }}" class="object-contain" alt="Computer Vision Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Computer Vision</p>
                         </div>
                         <div class="max-w-sm text-center m-auto" title="Convolutional Neural Network">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/convolutional-neural-network.png') }}" class="object-contain" alt="Convolutional Neural Network Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">C N N</p>
                         </div>
                         <div class="max-w-sm text-center m-auto" title="Deep Learning">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/deep-learning.png') }}" class="object-contain" alt="Deep Learning Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Deep Learning</p>
                         </div>
                         <div class="max-w-sm text-center m-auto" title="Generative AI">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/generative-ai.svg') }}" class="object-contain" alt="Generative AI Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Generative AI</p>
                         </div>
                         <div class="max-w-sm text-center m-auto" title="Linear Regression">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/linear-regression.svg') }}" class="object-contain" alt="Linear Regression Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Linear Regression</p>
                         </div>
                         <div class="max-w-sm text-center m-auto" title="Logistic Regression">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/logistic-regression.png') }}" class="object-contain" alt="Logistic Regression Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Logistic Regression</p>
                         </div>
                         <div class="max-w-sm text-center m-auto" title="NLP">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/nlp.png') }}" class="object-contain" alt="NLP Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">NLP</p>
@@ -888,33 +888,33 @@
                 </div>
 
                 <div class="hidden p-3" id="mobile-tech" role="tabpanel" aria-labelledby="mobile-tech-tab">
-                    <div class="grid grid-cols-5 gap-4">
+                    <div class="grid grid-cols-5 gap-7">
                         <div class="text-center" title="Flutter">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/flutter.png') }}" class="object-contain" alt="Flutter Logo">
                             </div>
                             <p class="mb-2 font-normal text-gray-700 dark:text-gray-300">Flutter</p>
                         </div>
                         <div class="text-center" title="Kotlin">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/kotlin.png') }}" class="object-contain" alt="Kotlin Logo">
                             </div>
                             <p class="mb-2 font-normal text-gray-700 dark:text-gray-300">Kotlin</p>
                         </div>
                         <div class="text-center" title="React Native">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/react-native.png') }}" class="object-contain" alt="React Native Logo">
                             </div>
                             <p class="mb-2 font-normal text-gray-700 dark:text-gray-300">React Native</p>
                         </div>
                         <div class="text-center" title="Swift">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/swift.png') }}" class="object-contain" alt="Swift Logo">
                             </div>
                             <p class="mb-2 font-normal text-gray-700 dark:text-gray-300">Swift</p>
                         </div>
                         <div class="text-center" title="Unity 3D">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/unity-3d.png') }}" class="object-contain" alt="Unity 3D Logo">
                             </div>
                             <p class="mb-2 font-normal text-gray-700 dark:text-gray-300">Unity 3D</p>
@@ -923,57 +923,57 @@
                 </div>
 
                 <div class="hidden p-4" id="database" role="tabpanel" aria-labelledby="database-tab">
-                    <div class="grid grid-cols-5 gap-5">
+                    <div class="grid grid-cols-5 gap-7">
                         <div class="max-w-sm  text-center m-auto" title="Dynamo DB">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/dynamodb.png') }}" class="object-contain" alt="Dynamo DB Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">Dynamo DB</p>
                         </div>
                         <div class="max-w-sm  text-center m-auto" title="IBM DB2">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/ibm-db2.png') }}" class="object-contain" alt="IBM DB2 Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">IBM DB2</p>
                         </div>
                         <div class="max-w-sm  text-center m-auto" title="Maria DB">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/mariadb.png') }}" class="object-contain" alt="Maria DB Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">Maria DB</p>
                         </div>
                         <div class="max-w-sm  text-center m-auto" title="Mongo DB">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/mongodb.png') }}" class="object-contain" alt="Mongo DB Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">Mongo DB</p>
                         </div>
                         <div class="max-w-sm  text-center m-auto" title="MySQL">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/mysql.png') }}" class="object-contain" alt="MySQL Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">MySQL</p>
                         </div>
                         <div class="max-w-sm  text-center m-auto" title="Oracle DB">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/oracle-db.png') }}" class="object-contain" alt="Oracle DB Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">Oracle DB</p>
                         </div>
                         <div class="max-w-sm  text-center m-auto" title="PostgreSQL">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/postgresql.png') }}" class="object-contain" alt="PostgreSQL Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">PostgreSQL</p>
                         </div>
                         <div class="max-w-sm  text-center m-auto" title="SQLite">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/sqlite.png') }}" class="object-contain" alt="SQLite Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">SQLite</p>
                         </div>
                         <div class="max-w-sm  text-center m-auto" title="Sybase">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/sybase.png') }}" class="object-contain" alt="Sybase Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">Sybase</p>
@@ -981,57 +981,57 @@
                     </div>
                 </div>
                 <div class="hidden p-4" id="devops" role="tabpanel" aria-labelledby="devops-tab">
-                    <div class="grid grid-cols-5 gap-5">
+                    <div class="grid grid-cols-5 gap-7">
                         <div class="max-w-sm text-center m-auto" title="AWS">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/aws.png') }}" class="object-contain" alt="AWS Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">AWS</p>
                         </div>
                         <div class="max-w-sm text-center m-auto" title="Azure">
-                            <div class="w-14 h-9 m-6">
+                            <div class="w-[38px] h[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/azure.png') }}" class="object-contain" alt="Azure Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">Azure</p>
                         </div>
                         <div class="max-w-sm text-center m-auto" title="Docker">
-                            <div class="w-16 h-16 m-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/docker.png') }}" class="object-contain" alt="Docker Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">Docker</p>
                         </div>
                         <div class="max-w-sm text-center m-auto" title="Google Cloud">
-                            <div class="w-16 h-12 m-4">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/google-cloud.png') }}" class="object-contain" alt="Google Cloud Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">Google Cloud</p>
                         </div>
                         <div class="max-w-sm text-center m-auto" title="Jenkins">
-                            <div class="w-11 h-16 m-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/jenkins.png') }}" class="object-contain" alt="Jenkins Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">Jenkins</p>
                         </div>
                         <div class="max-w-sm text-center m-auto" title="Kubernetes">
-                            <div class="w-16 h-16 m-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/kubernetes.svg') }}" class="object-contain" alt="Kubernetes Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">Kubernetes</p>
                         </div>
                         <div class="max-w-sm text-center m-auto" title="Maven">
-                            <div class="w-16 h-16 m-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/maven.png') }}" class="object-contain" alt="Maven Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">Maven</p>
                         </div>
                         <div class="max-w-sm text-center m-auto" title="Openshift">
-                            <div class="w-16 h-16 m-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/openshift.png') }}" class="object-contain" alt="Openshift Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">Openshift</p>
                         </div>
                         <div class="max-w-sm text-center m-auto" title="Oracle Cloud">
-                            <div class="w-16 h-16 m-1">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/oracle-cloud.png') }}" class="object-contain" alt="Oracle Cloud Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">Oracle Cloud</p>
@@ -1039,45 +1039,45 @@
                     </div>
                 </div>
                 <div class="hidden p-4" id="cms" role="tabpanel" aria-labelledby="cms-tab">
-                    <div class="grid grid-cols-5 gap-5">
+                    <div class="grid grid-cols-5 gap-7">
                         <div class="max-w-sm  text-center m-auto" title="Drupal">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/drupal.png') }}" class="object-contain" alt="Drupal Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">Drupal</p>
                         </div>
                         <div class="max-w-sm  text-center m-auto" title="Magento">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/magento-logo.png') }}" class="object-contain" alt="Magento Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">Magento</p>
                         </div>
                         <div class="max-w-sm  text-center m-auto" title="Shopify">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/shopify.png') }}" class="object-contain" alt="Shopify Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">Shopify</p>
                         </div>
                         <div class="max-w-sm  text-center m-auto" title="Sitecore">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/sitecore.webp') }}" class="object-contain" alt="Sitecore Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">Sitecore</p>
                         </div>
                         <div class="max-w-sm  text-center m-auto" title="Strapi">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/strapi.png') }}" class="object-contain" alt="Strapi Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">Strapi</p>
                         </div>
                         <div class="max-w-sm  text-center m-auto" title="WooCommerce">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/woocommerce.png') }}" class="object-contain" alt="WooCommerce Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">WooCommerce</p>
                         </div>
                         <div class="max-w-sm  text-center m-auto" title="Wordpress">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/wordpress.png') }}" class="object-contain" alt="Wordpress Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">Wordpress</p>
@@ -1085,63 +1085,63 @@
                     </div>
                 </div>
                 <div class="hidden p-4" id="framework" role="tabpanel" aria-labelledby="framework-tab">
-                    <div class="grid grid-cols-5 gap-4">
+                    <div class="grid grid-cols-5 gap-7">
                         <div class="max-w-sm text-center m-auto" title="Codeigniter">
-                            <div class="w-16 h-14 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/codeigniter.png') }}" class="object-contain" alt="Codeigniter Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">Codeigniter</p>
                         </div>
                         <div class="max-w-sm text-center m-auto" title="Django">
-                            <div class="w-16 h-14 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/django.webp') }}" class="object-contain" alt="Django Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">Django</p>
                         </div>
                         <div class="max-w-sm text-center m-auto" title=".NET Core">
-                            <div class="w-16 h-14 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/dot-net-core.png') }}" class="object-contain" alt=".NET Core Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">.NET Core</p>
                         </div>
                         <div class="max-w-sm text-center m-auto" title=".NET MVC">
-                            <div class="w-16 h-14 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/dot-net-mvc.png') }}" class="object-contain" alt=".NET MVC Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">.NET MVC</p>
                         </div>
                         <div class="max-w-sm text-center m-auto" title="Express Js">
-                            <div class="w-16 h-14 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/expressjs.png') }}" class="object-contain" alt="Express Js Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">Express Js</p>
                         </div>
                         <div class="max-w-sm text-center m-auto" title="Flask">
-                            <div class="w-12 h-12 mx-auto mb-4">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/flask.svg') }}" class="object-contain" alt="Flask Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">Flask</p>
                         </div>
                         <div class="max-w-sm text-center m-auto" title="Hibernate">
-                            <div class="w-16 h-14 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/hibernate.svg') }}" class="object-contain" alt="Hibernate Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">Hibernate</p>
                         </div>
                         <div class="max-w-sm text-center m-auto" title="Laravel">
-                            <div class="w-16 h-14 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/laravel.png') }}" class="object-contain" alt="Laravel Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">Laravel</p>
                         </div>
                         <div class="max-w-sm text-center m-auto" title="Spring Boot">
-                            <div class="w-16 h-14 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/spring-boot.png') }}" class="object-contain" alt="Spring Boot Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">Spring Boot</p>
                         </div>
                         <div class="max-w-sm text-center m-auto" title="Spring Cloud">
-                            <div class="w-16 h-14 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/spring-cloud.png') }}" class="object-contain" alt="Spring Cloud Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">Spring Cloud</p>
@@ -1149,27 +1149,27 @@
                     </div>
                 </div>
                 <div class="hidden p-4" id="qa" role="tabpanel" aria-labelledby="qa-tab">
-                    <div class="grid grid-cols-4 gap-x-6">
+                    <div class="grid grid-cols-4 gap-7">
                         <div class="max-w-sm text-center m-auto" title="Circle CI">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/circle-ci.png') }}" class="object-contain" alt="Circle CI Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">Circle CI</p>
                         </div>
                         <div class="max-w-sm text-center m-auto" title="Gradle">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/gradle.png') }}" class="object-contain" alt="Gradle Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">Gradle</p>
                         </div>
                         <div class="max-w-sm text-center m-auto" title="Maven">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/maven.png') }}" class="object-contain" alt="Maven Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">Maven</p>
                         </div>
                         <div class="max-w-sm text-center m-auto" title="Selenuim">
-                            <div class="w-20 h-20 mx-auto mb-2">
+                            <div class="w-[38px] h-[19px] mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/selenium.jpg') }}" class="object-contain" alt="Selenium Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700">Selenium</p>
@@ -1991,10 +1991,10 @@
     <!-- Insights & News Section -->
     <section class="px-16 bg-white flex justify-between">
         <div class="w-full py-6">
-            <h3 class="text-rt-primary text-xl uppercase font-semibold">Insights & News</h3>
-            <h1 class="w-3/4 text-xl lg:text-4xl font-bold mt-2 mb-2 lg:mb-6">
+            <h3 class="text-black text-xl uppercase font-semibold">Browse Our Latest Insights</h3>
+            <!-- <h1 class="w-3/4 text-xl lg:text-4xl font-bold mt-2 mb-2 lg:mb-6">
                 Explore insights into the IT industry and stay updated on the latest technology trends
-            </h1>
+            </h1> -->
 
             <div class="py-6 grid grid-cols-5">
                 <!-- Our Work Section -->
