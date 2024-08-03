@@ -1874,7 +1874,7 @@
             </div>
 
             <div class="pt-8 mb-4 border-b border-gray-200">
-                <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="iws-tab" data-tabs-toggle="#iws-tab-content" role="tablist">
+                <ul class="inline-flex -mb-px text-sm font-medium text-center" id="iws-tab" data-tabs-toggle="#iws-tab-content" role="tablist">
                     <li class="me-2" role="presentation">
                         <button class="inline-block p-2 border-b-2 rounded-t-lg" id="education-tab" data-tabs-target="#education" type="button" role="tab" aria-controls="education" aria-selected="false">Education</button>
                     </li>
@@ -1885,16 +1885,22 @@
                         <button class="inline-block p-2 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300" id="healthcare-tab" data-tabs-target="#healthcare" type="button" role="tab" aria-controls="healthcare" aria-selected="false">Healthcare</button>
                     </li>
                     <li class="me-2" role="presentation">
-                        <button class="inline-block p-2 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300" id="hitech-tab" data-tabs-target="#hitech" type="button" role="tab" aria-controls="hitech" aria-selected="false">Hi-Tech</button>
+                        <button class="whitespace-nowrap p-2 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300" id="hitech-tab" data-tabs-target="#hitech" type="button" role="tab" aria-controls="hitech" aria-selected="false">Hi-Tech</button>
                     </li>
                     <li class="me-2" role="presentation">
                         <button class="inline-block p-2 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300" id="logistics-tab" data-tabs-target="#logistics" type="button" role="tab" aria-controls="logistics" aria-selected="false">Logistics</button>
                     </li>
                     <li class="me-2" role="presentation">
+                        <button class="inline-block p-2 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300" id="manufacturing-tab" data-tabs-target="#manufacturing" type="button" role="tab" aria-controls="manufacturing" aria-selected="false">Manufacturing</button>
+                    </li>
+                    <li class="me-2" role="presentation">
                         <button class="inline-block p-2 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300" id="medent-tab" data-tabs-target="#medent" type="button" role="tab" aria-controls="medent" aria-selected="false">Media & Entertainment</button>
                     </li>
                     <li class="me-2" role="presentation">
-                        <button class="inline-block p-2 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300" id="realcon-tab" data-tabs-target="#realcon" type="button" role="tab" aria-controls="realcon" aria-selected="false">Real Estate</button>
+                        <button class="inline-block p-2 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300" id="minag-tab" data-tabs-target="#minag" type="button" role="tab" aria-controls="minag" aria-selected="false">Mining & Agriculture</button>
+                    </li>
+                    <li class="me-2" role="presentation">
+                        <button class="inline-block p-2 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300" id="realcon-tab" data-tabs-target="#realcon" type="button" role="tab" aria-controls="realcon" aria-selected="false">Real Estate & Construction</button>
                     </li>
                     <li class="me-2" role="presentation">
                         <button class="inline-block p-2 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300" id="retecom-tab" data-tabs-target="#retecom" type="button" role="tab" aria-controls="retecom" aria-selected="false">Retail & eCommerce</button>
@@ -1968,7 +1974,13 @@
                 <div class="hidden p-4 rounded-lg bg-gray-50" id="logistics" role="tabpanel" aria-labelledby="logistics-tab">
                     <p class="text-sm text-gray-500">This is some placeholder content the <strong class="font-medium text-gray-800">Profile tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
                 </div>
+                <div class="hidden p-4 rounded-lg bg-gray-50" id="manufacturing" role="tabpanel" aria-labelledby="manufacturing-tab">
+                    <p class="text-sm text-gray-500">This is some placeholder content the <strong class="font-medium text-gray-800">Profile tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                </div>
                 <div class="hidden p-4 rounded-lg bg-gray-50" id="medent" role="tabpanel" aria-labelledby="medent-tab">
+                    <p class="text-sm text-gray-500">This is some placeholder content the <strong class="font-medium text-gray-800">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                </div>
+                <div class="hidden p-4 rounded-lg bg-gray-50" id="minag" role="tabpanel" aria-labelledby="minag-tab">
                     <p class="text-sm text-gray-500">This is some placeholder content the <strong class="font-medium text-gray-800">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
                 </div>
                 <div class="hidden p-4 rounded-lg bg-gray-50" id="realcon" role="tabpanel" aria-labelledby="realcon-tab">
