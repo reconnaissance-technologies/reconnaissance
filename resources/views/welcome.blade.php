@@ -376,7 +376,7 @@
                         </div>
                     </div>
                 </section>
-                <div class="w-full flex justify-center mt-8">
+                <div class="w-full flex justify-center mt-4 mb-8">
                     <a class="w-[155px] h-[59px] pl-[34px] pr-[35px] py-[18px] rounded-lg border border-[#143669] justify-center items-center inline-flex" href="{{ route('services.product-design') }}">
                         <button class="text-[#143669] text-base font-normal">Learn More</button>
                     </a>
@@ -435,7 +435,7 @@
     <!-- End of Our Services Section -->
 
     <!-- Our Solutions Section -->
-    <section class="px-16 bg-white">
+    <section class="px-16 bg-[#F5F5FB]">
         <div class="w-full py-6">
             <h3 class="text-black text-md py-3 font-semibold">Our Solutions</h3>
             <p class="w-full lg:w-full flex justify-between items-center">
@@ -444,51 +444,51 @@
         </div>
 
         <div class="grid grid-cols-4 gap-8 py-8">
-            <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
+            <div class="p-10 rounded-lg border text-center border-gray-400 flex-col justify-end items-center gap-px inline-flex">
                 <img class="" src="{{ asset('assets/icons/ecommerce-solution-icon.svg') }}" />
                 <div class="text-zinc-800 pt-3 font-normal">eCommerce Solution</div>
             </div>
-            <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
+            <div class="p-10 rounded-lg border text-center border-gray-400 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/eLeraning-solution-icon.svg') }}" />
                 <div class="text-zinc-800 pt-3 font-normal">eLearning Solution</div>
             </div>
-            <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
+            <div class="p-10 rounded-lg border text-center border-gray-400 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/healthcare-solution-icon.svg') }}" />
                 <div class="text-zinc-800 pt-3 font-normal">Healthcare Solution</div>
             </div>
-            <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
+            <div class="p-10 rounded-lg border text-center border-gray-400 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/performance-solution-icon.svg') }}" />
                 <div class="text-zinc-800 pt-3 font-normal">Perfomance Solution</div>
             </div>
-            <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
+            <div class="p-10 rounded-lg border text-center border-gray-400 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/inventory-and-invoice-solution-icon.svg') }}" />
                 <div class="text-zinc-800 pt-3 font-normal">Invoice & Inventory Solution</div>
             </div>
-            <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
+            <div class="p-10 rounded-lg border text-center border-gray-400 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/fleet-management-solution-icon.svg') }}" />
                 <div class="text-zinc-800 pt-3 font-normal">Fleet Management Solution</div>
             </div>
-            <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
+            <div class="p-10 rounded-lg border text-center border-gray-400 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/erp-solution-icon.svg') }}" />
                 <div class="text-zinc-800 pt-3 font-normal">ERP Solution</div>
             </div>
-            <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
+            <div class="p-10 rounded-lg border text-center border-gray-400 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/warehouse-solution-icon.svg') }}" />
                 <div class="text-zinc-800 pt-3 font-normal">Warehouse Solution</div>
             </div>
-            <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
+            <div class="p-10 rounded-lg border text-center border-gray-400 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/payroll-management-solution-icon.svg') }}" />
                 <div class="text-zinc-800 pt-3 font-normal">Payroll Management Solution</div>
             </div>
-            <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
+            <div class="p-10 rounded-lg border text-center border-gray-400 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/smart-estate-solution-icon.svg') }}" />
                 <div class="text-zinc-800 pt-3 font-normal">Smart Estate Solution</div>
             </div>
-            <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
+            <div class="p-10 rounded-lg border text-center border-gray-400 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/document-management-solution-icon.svg') }}" />
                 <div class="text-zinc-800 pt-3 font-normal">Document Management Solution</div>
             </div>
-            <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
+            <div class="p-10 rounded-lg border text-center border-gray-400 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/hrm-solution-icon.svg') }}" />
                 <div class="text-zinc-800 pt-3 font-normal">HRM SOLUTION</div>
             </div>
@@ -1199,10 +1199,10 @@
 
             tabs.forEach(tab => {
                 tab.addEventListener('click', () => {
-                    tabs.forEach(item => item.classList.remove('active', 'text-white', 'bg-rt-primary-dark'));
+                    tabs.forEach(item => item.classList.remove('active', 'text-white', 'bg-rt-primary-dark', 'border-l-8', 'border-l-rt-secondary'));
                     tabContents.forEach(content => content.classList.add('hidden'));
 
-                    tab.classList.add('active', 'text-white', 'bg-rt-primary-dark');
+                    tab.classList.add('active', 'text-white', 'bg-rt-primary-dark', 'border-l-8', 'border-l-rt-secondary');
                     document.querySelector(tab.getAttribute('data-tabs-target')).classList.remove('hidden');
                 });
             });
