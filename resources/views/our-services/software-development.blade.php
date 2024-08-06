@@ -38,8 +38,7 @@
 
             </div>
             <div class="w-full lg:w-1/2 pt-20">
-                <img src="{{ asset('assets/img/software-product-development-image.png') }}"
-                    class="object-fill" alt="Software Product Development - Reconnaissance Technologies">
+                <img src="{{ asset('assets/img/software-product-development-image.png') }}" class="object-fill" alt="Software Product Development - Reconnaissance Technologies">
             </div>
         </div>
     </section>
@@ -74,7 +73,7 @@
                     <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
                         User-Centric Design
                     </h1>
-                    
+
                     <p>
                         Focusing on intuitive and engaging user interfaces, enhancing user experience to drive customer satisfaction and loyalty.
                     </p>
@@ -83,7 +82,7 @@
                     <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
                         Robust Security Measures
                     </h1>
-                    
+
                     <p>
                         Implementing top-notch security protocols to protect sensitive data and ensure compliance with global standards.
                     </p>
@@ -136,50 +135,50 @@
             <div class="grid grid-cols-3 gap-8 py-8">
                 <div class="card drop-shadow-lg dark:text-black border-b-8 border-b-violet-600 w-[500]">
                     <img src="{{ asset('assets/img/our-services/web-app-icon.png') }}" class="w-20 h-20" alt="Web App Development - Reconnaissance Technologies">
-                    
+
                     <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl lg:w-50">
                         Web App Development
                     </h1>
 
                     <p>
-                        <ol>
-                            <li class="flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                </svg>
-                                Customized user interfaces for enhanced user experience.
-                            </li>
-                            <li class="flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                </svg>
-                                Scalable architecture to support business growth.
-                            </li>
-                            <li class="flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                </svg>
-                                Advanced security protocols to safeguard user data.
-                            </li>
-                            <li class="flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                </svg>
-                                Integration capabilities with existing business systems.
-                            </li>
-                            <li class="flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                </svg>
-                                Optimization for high performance and speed.
-                            </li>
-                            <li class="flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                </svg>
-                                Responsive design for cross-platform compatibility.
-                            </li>
-                        </ol>
+                    <ol>
+                        <li class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            Customized user interfaces for enhanced user experience.
+                        </li>
+                        <li class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            Scalable architecture to support business growth.
+                        </li>
+                        <li class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            Advanced security protocols to safeguard user data.
+                        </li>
+                        <li class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            Integration capabilities with existing business systems.
+                        </li>
+                        <li class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            Optimization for high performance and speed.
+                        </li>
+                        <li class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            Responsive design for cross-platform compatibility.
+                        </li>
+                    </ol>
                     </p>
                 </div>
                 <div class="card drop-shadow-lg dark:text-black border-b-8 border-b-purple-900">
@@ -188,94 +187,94 @@
                     <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
                         Mobile App Development
                     </h1>
-                    
+
                     <p>
-                        <ol>
-                            <li class="flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                </svg>
-                                User-centric designs for increased engagements.
-                            </li>
-                            <li class="flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                </svg>
-                                Cross-platform development for wider reach.
-                            </li>
-                            <li class="flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                </svg>
-                                Performance optimization for seamless functionality.
-                            </li>
-                            <li class="flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                </svg>
-                                Robust security features for data protection.
-                            </li>
-                            <li class="flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                </svg>
-                                Integration with advanced technologies like AR/VR.
-                            </li>
-                            <li class="flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                </svg>
-                                Continuous updates for evolving user needs.
-                            </li>
-                        </ol>
+                    <ol>
+                        <li class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            User-centric designs for increased engagements.
+                        </li>
+                        <li class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            Cross-platform development for wider reach.
+                        </li>
+                        <li class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            Performance optimization for seamless functionality.
+                        </li>
+                        <li class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            Robust security features for data protection.
+                        </li>
+                        <li class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            Integration with advanced technologies like AR/VR.
+                        </li>
+                        <li class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            Continuous updates for evolving user needs.
+                        </li>
+                    </ol>
                     </p>
                 </div>
                 <div class="card drop-shadow-lg dark:text-black border-b-8 border-b-slate-800">
                     <img src="{{ asset('assets/img/our-services/frontend-dev-icon.png') }}" class="w-20 h-20" alt="Frontend Development - Reconnaissance Technologies">
 
                     <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                    Frontend Development
+                        Frontend Development
                     </h1>
-                    
+
                     <p>
-                        <ol>
-                            <li class="flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                </svg>
-                                Modern, intuitive designs for user engagements.
-                            </li>
-                            <li class="flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                </svg>
-                                Responsive layouts for all devices and browsers.
-                            </li>
-                            <li class="flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                </svg>
-                                Fast load times for improvd user experience.
-                            </li>
-                            <li class="flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                </svg>
-                                Accessibility compliance for wider user inclusivity.
-                            </li>
-                            <li class="flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                </svg>
-                                Interactive elements for dynamic user interfaces.
-                            </li>
-                            <li class="flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                </svg>
-                                Consistent branding across all digital touchpoints.
-                            </li>
-                        </ol>
+                    <ol>
+                        <li class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            Modern, intuitive designs for user engagements.
+                        </li>
+                        <li class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            Responsive layouts for all devices and browsers.
+                        </li>
+                        <li class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            Fast load times for improvd user experience.
+                        </li>
+                        <li class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            Accessibility compliance for wider user inclusivity.
+                        </li>
+                        <li class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            Interactive elements for dynamic user interfaces.
+                        </li>
+                        <li class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            Consistent branding across all digital touchpoints.
+                        </li>
+                    </ol>
                     </p>
                 </div>
             </div>
@@ -383,14 +382,14 @@
                                 <li class="py-3">Serverless</li>
                                 <li class="py-3">Micro Frontend</li>
                                 <li class="py-3">Event Driven</li>
-                                <li class="py-3">Lambda Architecture</li>    
-                                <li class="py-3">Service-Oriented Architecture (SOA)</li>   
+                                <li class="py-3">Lambda Architecture</li>
+                                <li class="py-3">Service-Oriented Architecture (SOA)</li>
                             </ul>
-                            <ul class="list-disc"> 
+                            <ul class="list-disc">
                                 <li class="py-3">Big Data Architectures</li>
-                                <li class="py-3">Client-Server Architecture</li>   
+                                <li class="py-3">Client-Server Architecture</li>
                                 <li class="py-3">Layered Architecture</li>
-                                <li class="py-3">Peer-to-Peer (P2P) Architecture</li>    
+                                <li class="py-3">Peer-to-Peer (P2P) Architecture</li>
                                 <li class="py-3">Distributed Systems</li>
                                 <li class="py-3">Containerization</li>
                             </ul>
@@ -410,7 +409,7 @@
                                 <li class="py-3">Software as a Service (SaaS)</li>
                                 <li class="py-3">Cloud Deployment Models</li>
                             </ul>
-                            <ul class="list-disc"> 
+                            <ul class="list-disc">
                                 <li class="py-3">Private Cloud</li>
                                 <li class="py-3">Public Cloud</li>
                                 <li class="py-3">Hybrid Cloud</li>
@@ -564,8 +563,7 @@
                     </p>
                 </div>
                 <div>
-                    <a href="{{ route('contact-us') }}"
-                        class="p-4 border-2 border-rt-primary rounded-lg hover:bg-rt-primary text-rt-primary hover:text-white">
+                    <a href="{{ route('contact-us') }}" class="p-4 border-2 border-rt-primary rounded-lg hover:bg-rt-primary text-rt-primary hover:text-white">
                         Speak to an Expert
                     </a>
                 </div>
@@ -589,7 +587,7 @@
                             Healthcare Compliance
                         </h1>
                     </div>
-                    
+
                     <p class="py-8">
                         Adherence to HIPAA and HITECH regulations for healthcare-related software, safe guarding patient data and ensuring confidentiality and integrity.
                     </p>
@@ -642,5 +640,59 @@
         </div>
     </section>
     <!-- End of Our Commitment Section -->
+
+    <!-- Locations & Enquiry Section -->
+    <section class="w-[1440px] h-[684px] pl-[50px] pr-[104px] py-[91px] bg-[#EDEDF8] justify-start items-center inline-flex">
+        <div class="py-6">
+            <div class="px-16 ">
+                <h2 class="text-[#424d57] text-xl pb-5 uppercase font-semibold">GET IN TOUCH</h2>
+                <h1 class="w-3/4 text-xl lg:text-2xl font-bold mt-2 mb-2 lg:mb-3 text-[#292D32] whitespace-nowrap">
+                    Let's build something magical <br> together!
+                </h1>
+            </div>
+            <div class="relative h-96 py-6 bg-center bg-no-repeat bg-blend-multiply">
+                <p class="pl-16 text-md text-[#424d57] font-normal ">Do you have an app idea and need to get it validated? Let us give you <br> our honest opinion</p>
+                <div class="flex pt-6 pl-16 text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                    </svg>
+                    <div class="pl-3 text-[#424d57]">
+                        <p class="text-xl font-medium whitespace-nowrap">
+                            No 50, Ebitu Ukiwe Street, Jabi, Abuja - 900108, FCT
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex py-3 text-[#424d57] pl-16">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                    </svg>
+                    <div class="pl-3 ">
+                        <p class="text-xl font-medium">
+                            <a href="tel:+2342013309246" title="Call Reconnaissance Technologies Nigeria">+234 201 330 9246</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex text-[#424d57] pl-16 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                    </svg>
+                    <div class="pl-3 ">
+                        <p class="text-xl font-medium">
+                            <a href="mailto:enquiries@reconnaissancetechnologies.com" title="Email Reconnaissance Technologies for enquiries">enquiries@reconnaissancetechnologies.com</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="absolute lg:w-[500px] xl:w-[500px] 2xl:w-[500px] left-[650px] -top-28 p-4 bg-rt-primary border-gray-200 rounded-lg shadow-lg sm:p-6 md:p-8">
+                    <!-- <h3 class="text-black mb-6 text-xl font-semibold">Hola :)</h3> -->
+                    @include('inc.get-a-quote-form')
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Locations & Enquiry Section -->
 </main>
 @endsection

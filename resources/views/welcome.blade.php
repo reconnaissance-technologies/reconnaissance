@@ -2202,39 +2202,36 @@
     <!-- Clients Showcase & Testimonials Section -->
     <section class="px-16 bg-white flex justify-between py-20">
         <div class="w-full py-6">
-            <h3 class="text-rt-primary text-xl uppercase font-semibold">Our Clients & What They Say</h3>
-            <div class="flex justify-between">
-                <h1 class="w-3/4 text-xl lg:text-4xl font-bold mt-2 mb-2 lg:mb-6">
-                    Trusted by Businesses Worldwide
-                </h1>
-                <div>
-                    <a href="{{ route('our-services') }}" class=" flex justify-between items-center p-2 border-2 border-rt-primary rounded-lg hover:bg-rt-primary text-rt-primary hover:text-white">
-                        View All
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
+            <h3 class="text-rt-primary text-md uppercase font-semibold pb-14">Our Client's & Their success stories</h3>
+
             <!-- Our Clients Logo Section -->
-            <div class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6">
+            <div class="h-10 justify-start items-center gap-[20px] inline-flex px-0">
                 <a href="{{ route('clients.blue-sea-travels') }}" title="Blue Sea Travels" class="flex justify-center items-center filter grayscale hover:grayscale-0">
                     <img src="{{ asset('assets/img/clients/bstl.png') }}" alt="Blue Sea Travels' Logo">
-                </a>
-                <a href="#" title="CarvFit" class="flex justify-center items-center filter grayscale hover:grayscale-0">
-                    <img src="{{ asset('assets/img/clients/carvfit.png') }}" alt="CarvFit Logo">
                 </a>
                 <a href="{{ route('clients.how-tech-ltd') }}" title="H.O.W Tech Limited" class="flex justify-center items-center filter grayscale hover:grayscale-0">
                     <img src="{{ asset('assets/img/clients/how-tech-ltd.png') }}" alt="H.O.W Tech Limited's Logo">
                 </a>
+                <a href="#" title="Webmaxy" class="flex justify-center items-center filter grayscale hover:grayscale-0">
+                    <img src="{{ asset('assets/img/clients/webmaxy.png') }}" alt="Webmaxy Logo">
+                </a>
                 <a href="{{ route('clients.ultrashot') }}" title="Ultrashot Nigeria Limited" class="flex justify-center items-center filter grayscale hover:grayscale-0">
                     <img src="{{ asset('assets/img/clients/ultrashot.webp') }}" alt="Ultrashot Nigeria Limited's Logo">
                 </a>
-                <a href="{{ route('clients.cac-foundation') }}" title="Celestina Adams Foundation" class="flex justify-center items-center filter grayscale hover:grayscale-0">
-                    <img src="{{ asset('assets/img/clients/celestina-adams-foundation.png') }}" alt="Celestina Adams Foundation's Logo">
+                <a href="#" title="CarvFit" class="flex justify-center items-center filter grayscale hover:grayscale-0">
+                    <img src="{{ asset('assets/img/clients/carvfit.png') }}" alt="CarvFit Logo">
+                </a>
+                <a href="#" title="Prabhuji" class="flex justify-center items-center filter grayscale hover:grayscale-0">
+                    <img src="{{ asset('assets/img/clients/prabhuji.png') }}" alt="Prabhuji Logo">
                 </a>
                 <a href="{{ route('clients.bliss-explorers') }}" title="Bliss Explorers" class="flex justify-center items-center filter grayscale hover:grayscale-0">
                     <img src="{{ asset('assets/img/clients/bliss-explorers.svg') }}" alt="Bliss Explorers' Logo">
+                </a>
+                <a href="#" title="American Farm School" class="flex justify-center items-center filter grayscale hover:grayscale-0">
+                    <img src="{{ asset('assets/img/clients/american-farm-school.png') }}" alt="Bliss Explorers' Logo">
+                </a>
+                <a href="{{ route('clients.cac-foundation') }}" title="Celestina Adams Foundation" class="flex justify-center items-center filter grayscale hover:grayscale-0">
+                    <img src="{{ asset('assets/img/clients/celestina-adams-foundation.png') }}" alt="Celestina Adams Foundation's Logo">
                 </a>
             </div>
             <!-- End of Our Clients Logo Section -->
