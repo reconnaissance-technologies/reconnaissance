@@ -27,7 +27,7 @@
     <!-- Hero Section -->
     <section class="relative flex items-center justify-center h-screen overflow-hidden bg-black">
         <!-- Video Background -->
-        <video autoplay muted loop class="absolute inset-0 object-cover w-full h-full" src="https://s3-figma-videos-production-sig.figma.com/video/1134555079227565548/TEAM/1bfb/2cc8/-84f7-407b-a6ec-4685afbc8772?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GI0WzSuZj9ADCYYLLkDin4w2CgslBLRW1kWpLKfM1N8tH6~ol6NUr29CBJQ8tzAQ6lCSFHdnRIQZ5Tpy~XD-uP8XEZOFEzwxEVK9w8Bg1wu05nxansdRPyr-qqpl~ICeQsZTz~jJU2khirmrpmQqFJGhrAfuNMzLGDipSwIz19Jj4fuxgt7IS1XOvK6qRJpOaU0OK0dSXUkcQhKxAB06mKXRXovBHvI0TylcE6BpusYMsSXTZOMoKkmCEDMfZfMPlga26vPFs8EGXN-1Fq4Bsb0CX0tSQImMk~UKYyvgonreEBrN0q~Z3D8nVXt4bM7iGbWoGATO~dENBzF4TfK33Q__"></video>
+        <video autoplay muted loop class="absolute inset-0 object-cover w-full h-full" src="https://s3-figma-videos-production-sig.figma.com/video/1134555079227565548/TEAM/1bfb/2cc8/-84f7-407b-a6ec-4685afbc8772?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pZJ3wdTSrh5FKwjHei9wg3iWD6BOZRjSuEQibXzZrfTVy5srTk424XAsPDqVPSYtakWvLA2lxnkEw56Pc0kyhvlGsZFTp~tahlCCZH4UJ62dEpiBhI7WSaK7FSi16L4OozSQH-Ts-dTjefgDSbWzD~3TpCoDgyQrLBgFgsBed0~z-uMtrrUU-R5Fd4vrWNXoK80-qmCCtILVaN0GTESTLpo7ggWFUe-RGIZZBruVAhm61oqLFWDDaVs3BCi59Y4z-bgOdeVDyNkZfpkvMWo8xvA05MV-IuvlvLhR6BzZy59xxlXyWj4U-50sv1zdzvgJxwtknjiHosjTEYBN2V7lIQ__"></video>
 
         <!-- Hero Content -->
         <div class="text-center text-white z-10">
@@ -2045,109 +2045,153 @@
                 Explore insights into the IT industry and stay updated on the latest technology trends
             </h1> -->
 
-            <div class="py-6 grid grid-cols-5">
-                <!-- Our Work Section -->
-                <div title="Our Work" class="card-no-padding drop-shadow-lg rounded-xl col-span-2 max-h-max">
-                    <figure class="relative transition-all duration-300 cursor-pointer">
-                        <a href="{{ route('work.portfolio') }}">
-                            <img class="rounded-t-lg w-full max-h-72" src="{{ asset('assets/img/our-work.jpg') }}" alt="Our Work Image - Reconnaissance Technologies">
-                        </a>
-                    </figure>
-                    <div class="p-6 overflow-hidden">
-                        <h3 class="text-rt-primary text-lg uppercase font-semibold">Our Work</h3>
-                        <p>
-                            Explore our diverse portfolio showcasing our unwavering dedication to quality and
-                            excellence.
-                            Our solutions go beyond borders, catering to global clients across various industries.
-                            Experience the pinnacle of excellence through our portfolio.
-                        </p>
+            <div class="pt-8 mb-4">
+                <ul class="flex flex-wrap -mb-px text-sm gap-x-14  font-medium text-center" id="iws-tab" data-tabs-toggle="#iws-tab-content" role="tablist">
+                    <li class="me-2" role="presentation">
+                        <button class="inline-block p-2 rounded-t-lg" id="all-tab" data-tabs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="false">All</button>
+                    </li>
+                    <li class="me-2" role="presentation">
+                        <button class="inline-block p-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300" id="blogs-tab" data-tabs-target="#blogs" type="button" role="tab" aria-controls="blogs" aria-selected="false">Blogs</button>
+                    </li>
+                    <li class="me-2" role="presentation">
+                        <button class="inline-block p-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300" id="solutions-tab" data-tabs-target="#solutions" type="button" role="tab" aria-controls="solutions" aria-selected="false">Solutions</button>
+                    </li>
+                    <li class="me-2" role="presentation">
+                        <button class="inline-block p-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300" id="opportunities-tab" data-tabs-target="#opportunities" type="button" role="tab" aria-controls="opportunities" aria-selected="false">Opportunities</button>
+                    </li>
+                    <li class="me-2" role="presentation">
+                        <button class="inline-block p-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300" id="csr-tab" data-tabs-target="#csr" type="button" role="tab" aria-controls="csr" aria-selected="false">CSR</button>
+                    </li>
+                </ul>
+                <div class="w-[550px] h-[0px] border border-[#e9ebf8]"></div>
+            </div>
 
-                        <div class="flex justify-end text-rt-primary">
-                            <a href="{{ route('work.portfolio') }}" class="shadow-xl hover:animate-ping rounded-full p-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                                </svg>
-                            </a>
+            <!-- All Tab -->
+            <div>
+
+                <div class="hidden p-4 pt-9 overflow-hidden relative" id="all" role="tabpanel" aria-labelledby="all-tab">
+                    <div class="h-[378px] flex justify-start items-start gap-[31px] overflow-hidden" id="slider-content">
+                        <div class="flex-col justify-start items-start gap-4 inline-flex">
+                            <div class="w-[393px] h-[226px] relative bg-[#7f7474] rounded-[18px]">
+                                <div class="w-[393px] h-[226px] left-0 top-0 absolute"></div>
+                                <video src="https://s3-figma-videos-production-sig.figma.com/video/1134555079227565548/TEAM/93ec/b784/-5773-4852-aa84-946182d3ebba?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FKi2glq~ZKpKbdu5UJhUZ6i0U~P-JTOpkxh1~6tykJgerVV5B84GUIafkbWMnnXL39aVW8CKl9bMWwpX8MrCKI9zxmS0H3CgCMgZkCuQdH4oZV48w0VlA5ubYpuOlG8JNJ8HnhejlRWUAZHbAqelZU~OlcNnj9QMqXUKq2Rv0VLbaXYSeBUJTmPm3g4mY9BPxdYrHLQ750U8vCdD7PZbeDwJmdWvCv2l92tTq3-F03y4D6Bm6tNc0-vxzAGC3V7SFBZymGFyiHLblnKYeUkyuZVXeXXstb9IVVe5nU1rDbiw~6QeI5GIup7ofzFOCxmnrj7uAE8zJ0-UXXNpTtZ8Pw__"></video>
+                                <div class="w-[393px] h-[226px] left-0 top-0 absolute bg-[#292d32]/20"></div>
+                            </div>
+                            <div class="flex-col justify-start items-start gap-2 flex">
+                                <div class="text-[#424d5e] text-sm font-normal">January 2, 2024</div>
+                                <div class="w-[393px] text-[#17191c] text-sm font-semibold">Congratulations Asiri Magazines: Celebrating the successful Lunch of their revamped website</div>
+                                <div class="w-[393px] text-[#424d5f] text-sm font-normal">We're eager to announce some exciting developments! The dedicated team at Reconnaissance has been diligently working on a remarkable project.</div>
+                            </div>
+                        </div>
+                        <div class="flex-col justify-start items-start gap-4 inline-flex">
+                            <div class="w-[393px] h-[226px] relative bg-[#7f7474] rounded-[18px]">
+                                <img class="w-[393px] h-[226px] left-0 top-0 absolute" src="{{ asset('assets/img/allimages2.png') }}" />
+                                <div class="w-[393px] h-[226px] left-0 top-0 absolute bg-[#292d32]/20"></div>
+                            </div>
+                            <div class="flex-col justify-start items-start gap-2 flex">
+                                <div class="text-[#424d5e] text-sm font-normal">January 2, 2024</div>
+                                <div class="w-[393px] text-[#17191c] text-sm font-semibold">Congratulations Asiri Magazines: Celebrating the successful Lunch of their revamped website</div>
+                                <div class="w-[393px] text-[#424d5f] text-sm font-normal">We're eager to announce some exciting developments! The dedicated team at Reconnaissance has been diligently working on a remarkable project.</div>
+                            </div>
+                        </div>
+                        <div class="flex-col justify-start items-start gap-4 inline-flex">
+                            <div class="w-[393px] h-[226px] relative bg-[#7f7474] rounded-[18px]">
+                                <img class="w-[393px] h-[226px] left-0 top-0 absolute" src="{{ asset('assets/img/allimages3.png') }}" />
+                                <div class="w-[393px] h-[226px] left-0 top-0 absolute bg-[#292d32]/20"></div>
+                            </div>
+                            <div class="flex-col justify-start items-start gap-2 flex">
+                                <div class="text-[#424d5e] text-sm font-normal">January 2, 2024</div>
+                                <div class="w-[393px] text-[#17191c] text-sm font-semibold">Congratulations Asiri Magazines: Celebrating the successful Lunch of their revamped website</div>
+                                <div class="w-[393px] text-[#424d5f] text-sm font-normal">We're eager to announce some exciting developments! The dedicated team at Reconnaissance has been diligently working on a remarkable project.</div>
+                            </div>
+                        </div>
+                        <div class="flex-col justify-start items-start gap-4 inline-flex">
+                            <div class="w-[393px] h-[226px] relative bg-[#7f7474] rounded-[18px]">
+                                <img class="w-[394px] h-[226px] left-[-1px] top-0 absolute rounded-2xl" src="{{ asset('assets/img/allimages4.png') }}" />
+                                <div class="w-[393px] h-[226px] left-0 top-0 absolute bg-[#292d32]/20"></div>
+                            </div>
+                            <div class="flex-col justify-start items-start gap-2 flex">
+                                <div class="text-[#424d5e] text-sm font-normal">January 2, 2024</div>
+                                <div class="w-[393px] text-[#17191c] text-sm font-semibold">Congratulations Asiri Magazines: Celebrating the successful Lunch of their revamped website</div>
+                                <div class="w-[393px] text-[#424d5f] text-sm font-normal">We're eager to announce some exciting developments! The dedicated team at Reconnaissance has been diligently working on a remarkable project.</div>
+                            </div>
                         </div>
                     </div>
+                    <div class="pt-10 pb-10 flex justify-center">
+                        <button class="bg-gray-100 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full mr-12" onclick="scrollLeft()" id="arrowL">
+                            <img src="{{ asset('assets/img/arrow-right.svg') }}" alt="Left Arrow" />
+                        </button>
+                        <button class="bg-gray-100 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full ml-12" onclick="scrollRight()" id="arrowR">
+                            <img src="{{ asset('assets/img/arrow-left.svg') }}" alt="Right Arrow" />
+                        </button>
+                    </div>
                 </div>
-                <!-- End of Our Work Section -->
+            </div>
+            <!-- End of All Tab -->
 
-                <div class="col-span-3">
-                    <div class="grid grid-cols-2">
-                        <!-- Our Blog -->
-                        <div title="Our Blog" class="card rounded-xl mx-3 mb-3 drop-shadow-lg p-6">
-                            <h3 class="text-rt-primary text-lg uppercase font-semibold">Explore Our Blogs</h3>
-                            <p class="max-h-max">
-                                Gain a comprehensive understanding of the latest breakthroughs, best practices, and
-                                future prospects that drive progress and define the future of the Software &
-                                Information Technology sector. </p>
-                            {{-- <div class="flex justify-end text-rt-primary">
-                                <a href="{{ route('our-blog') }}"
-                            class="shadow-xl hover:animate-ping rounded-full p-3">
+            <script>
+                const arrowL = document.getElementById("arrowL")
+                arrowL.addEventListener("click", scrollLeft)
+
+                function scrollLeft() {
+                    const sliderContent = document.getElementById('slider-content');
+                    sliderContent.scrollBy({
+                        top: 0,
+                        left: -393, // Scroll by the width of one card
+                        behavior: 'smooth'
+                    });
+                }
+
+                function scrollRight() {
+                    const sliderContent = document.getElementById('slider-content');
+                    sliderContent.scrollBy({
+                        top: 0,
+                        left: 393, // Scroll by the width of one card
+                        behavior: 'smooth'
+                    });
+                }
+            </script>
+
+
+
+            <!-- Blogs Tab -->
+            <div class="hidden p-4 rounded-lg bg-gray-50" id="blogs" role="tabpanel" aria-labelledby="blogs-tab">
+                <p class="text-sm text-gray-500">This is some placeholder content the <strong class="font-medium text-gray-800">Blogs tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+            </div>
+            <!-- End of Blogs Tab -->
+
+            <!-- Solutions Tab -->
+            <div class="hidden p-4 rounded-lg bg-gray-50" id="solutions" role="tabpanel" aria-labelledby="solutions-tab">
+                <div title="Our Solutions" class="card rounded-xl mx-3 mb-3 drop-shadow-lg p-6">
+                    <h3 class="text-rt-primary text-lg uppercase font-semibold">Explore Our Solutions</h3>
+                    <p>
+                        Dive into our suite of solutions and discover how our expertise has helped elevate
+                        businesses, streamline processes, and drive unprecedented growth in today's dynamic
+                        digital landscape.
+                    </p>
+                    <div class="flex justify-end  text-rt-primary">
+                        <a href="{{ route('our-solutions') }}" class="shadow-xl hover:animate-ping rounded-full p-3">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                             </svg>
-                            </a>
-                        </div> --}}
-                    </div>
-                    <!-- End of Our Blog Section -->
-
-                    <!-- Our Solutions Section -->
-                    <div title="Our Solutions" class="card rounded-xl mx-3 mb-3 drop-shadow-lg p-6">
-                        <h3 class="text-rt-primary text-lg uppercase font-semibold">Explore Our Solutions</h3>
-                        <p>
-                            Dive into our suite of solutions and discover how our expertise has helped elevate
-                            businesses, streamline processes, and drive unprecedented growth in today's dynamic
-                            digital landscape.
-                        </p>
-                        <div class="flex justify-end  text-rt-primary">
-                            <a href="{{ route('our-solutions') }}" class="shadow-xl hover:animate-ping rounded-full p-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- End of Our Solutions Section -->
-
-                    <!--Careers Section -->
-                    <div title="Careers" class="card rounded-xl mx-3 mt-3 drop-shadow-lg p-6">
-                        <h3 class="text-rt-primary text-lg uppercase font-semibold">Explore Opportunities</h3>
-                        <p>
-                            Step into our community today and begin your journey toward substantial growth!
-                            Explore the myriad of possibilities that await, achieve your goals, and tap into
-                            your boundless potential
-                        </p>
-                        <div class="flex justify-end text-rt-primary">
-                            <a href="{{ route('career-overview') }}" class="shadow-xl hover:animate-ping rounded-full p-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- End of Careers Section -->
-
-                    <!-- CSR Section -->
-                    <div title="Our Corporate Social Responsibility" class="card rounded-xl mx-3 mt-3 drop-shadow-lg p-6">
-                        <h3 class="text-rt-primary text-lg uppercase font-semibold">C S R</h3>
-                        <p>
-                            Our commitment to corporate social responsibility is exemplified through our
-                            partnership with The Iwoni Foundation to create lasting change, empower lives, and
-                            pave the way for a brighter future.
-                        </p>
-                        {{-- <div class="flex justify-end text-rt-primary">
-                                <a href="{{ route('csr') }}"
-                        class="shadow-xl hover:animate-ping rounded-full p-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                        </svg>
                         </a>
-                    </div> --}}
+                    </div>
                 </div>
-                <!-- End of CSR Section -->
+                <!-- <p class="text-sm text-gray-500">This is some placeholder content the <strong class="font-medium text-gray-800">Profile tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p> -->
             </div>
+            <!-- End of Solutions Tab -->
+
+            <!-- Opportunities Tab -->
+            <div class="hidden p-4 rounded-lg bg-gray-50" id="opportunities" role="tabpanel" aria-labelledby="opportunities-tab">
+                <p class="text-sm text-gray-500">This is some placeholder content the <strong class="font-medium text-gray-800">Settings tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+            </div>
+            <!-- End of Opportunities Tab -->
+
+            <!-- CSR Tab -->
+            <div class="hidden p-4 rounded-lg bg-gray-50" id="csr" role="tabpanel" aria-labelledby="csr-tab">
+                <p class="text-sm text-gray-500">This is some placeholder content the <strong class="font-medium text-gray-800">CSR tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+            </div>
+            <!-- End of CSR Tab -->
         </div>
 
         </div>
@@ -2156,7 +2200,7 @@
     <!-- End of Insights & News Section -->
 
     <!-- Clients Showcase & Testimonials Section -->
-    <section class="px-16 bg-white flex justify-between">
+    <section class="px-16 bg-white flex justify-between py-20">
         <div class="w-full py-6">
             <h3 class="text-rt-primary text-xl uppercase font-semibold">Our Clients & What They Say</h3>
             <div class="flex justify-between">
