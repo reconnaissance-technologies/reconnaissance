@@ -47,7 +47,7 @@ jobs:
           local-dir: ./public/  # Path to your public directory
           server-dir: public_html/  # Path on your cPanel server
           exclude: |
-            public/index.php
+            index.php
 
       - name: Deploy other files to cPanel website directory
         uses: SamKirkland/FTP-Deploy-Action@4.2.0
