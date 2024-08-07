@@ -25,7 +25,7 @@ jobs:
           tools: composer
 
       - name: Install dependencies
-        run: composer install --no-progress --no-suggest --prefer-dist --optimize-autoloader
+        run: composer install --no-progress --prefer-dist --optimize-autoloader
 
       - name: Install Node.js
         uses: actions/setup-node@v3
@@ -45,7 +45,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./public/  # Path to your public directory
-          server-dir: /public_html  # Path on your cPanel server
+          server-dir: /public_html/  # Path on your cPanel server
           exclude: |
             public/index.php
 
@@ -56,7 +56,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./  # Path to your local directory (root of the repository)
-          server-dir: /website  # Path on your cPanel server
+          server-dir: /website/  # Path on your cPanel server
           exclude: |
             .git/**/*
             .github/**/*
