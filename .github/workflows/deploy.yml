@@ -33,7 +33,7 @@ jobs:
           node-version: '20'  # Specify your Node.js version
 
       - name: Install NPM dependencies
-        run: npm install
+        run: npm install && npm audit fix
 
       - name: Build assets
         run: npm run build
@@ -61,6 +61,5 @@ jobs:
             .git/**/*
             .github/**/*
             node_modules/**/*
-            vendor/**/*
             .env
           method: upload  # Only upload and override files without deleting
