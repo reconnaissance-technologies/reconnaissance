@@ -16,10 +16,10 @@
 @section('content')
 <main class="w-full">
     <!-- Hero Section -->
-    <section class="relative  text-center justify-center py-5">
+    <section class="relative  text-center justify-center py-5 ">
     <!-- Video Background -->
     <video class="absolute top-0 left-0 w-full h-full object-cover z-[-1]" autoplay muted loop playsinline>
-        <source src="https://s3-figma-videos-production-sig.figma.com/video/1134555079227565548/TEAM/7965/521e/-00dd-40be-90b9-bc75a5039931?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=a1Dy~C8DwI7xYg1OTCALee~NtOOOQn~f9d2ZrWSEDLm9m5dANbMQkYyZcIHJo4DvwpWduDC3Wa~VXjBcVVSurU9pHk9sDQageE4e2kbLuAapPb01uBKcM-HRb0ssY3hm8dIeucP0-hmDwbgw11Ym7cqtuGwfjQVSFPlpXQqG3QkphwDiNEAvmJ7aW7b4ptJZkLwLVIiZvSwChqN2~iylN8qANxSbgNUatctl-4lAf29gRYlj5f-ajxGyQg3i0jS9rXxwQ7XZqgbLuXymQUlx0nLExnqAaN4QMSWUNmr-inFm-LQVQdv~HAtupoArWmVlajocofjoQSI4nYctHudu-A__" type="video/mp4">
+        <source src="https://s3-figma-videos-production-sig.figma.com/video/1134555079227565548/TEAM/7965/521e/-00dd-40be-90b9-bc75a5039931?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D1-CjoLHAuOXujDt1CiamMygmSYEhk8cuG3KA3gpfEyoZHrw-7pdSGFbIvsc3LDzqmyYwNzjeQ-xqD5WHWMGz7wCnqR4L7XS~GQ8pXHu5lIEyZPTaDy372hqoONpYrucL9AaaJr-A9hw5IS-UZ~H5uWsiLNQw7oU8eKjiyxHoVzJHxiA3Rp3qD7Atr1dzKonPFyUAZwqdFlwKGRO9FAoYb7jsDdJVIPbz7poUrhnfRcfMkzZhzsnEjEyQV2lbIoh-Hc0S0y-VvE~B67BavOYy~8Tuo1ACjlWLY2H601zvxOs~aUaztE~CFrre75lZXDN~7QztoR8aER2KFvI9cLVDQ__" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
