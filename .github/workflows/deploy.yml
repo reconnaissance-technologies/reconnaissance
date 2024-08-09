@@ -48,7 +48,6 @@ jobs:
           server-dir: public_html/  # Path on your cPanel server
           exclude: |
             index.php
-          method: upload  # Only upload and override files without deleting
 
       - name: Deploy other files to cPanel website directory
         uses: SamKirkland/FTP-Deploy-Action@4.2.0
