@@ -22,10 +22,59 @@
 </style>
 @endsection
 
+@section('custom-scripts')
+<script>
+    //Our Services Tab Script
+    document.addEventListener("DOMContentLoaded", function() {
+        const tabs = document.querySelectorAll("[data-tab]");
+        const contents = document.querySelectorAll(".tab-content");
+
+        tabs.forEach((tab, index) => {
+            tab.addEventListener("click", function() {
+                tabs.forEach((t, i) => {
+                    t.classList.remove("bg-rt-primary", "text-white", "rounded-l-lg", "rounded-r-lg");
+                    if (i === 0) {
+                        t.classList.add("rounded-l-lg");
+                    } else if (i === tabs.length - 1) {
+                        t.classList.add("rounded-r-lg");
+                    }
+                });
+                contents.forEach(c => c.classList.add("hidden"));
+
+                tab.classList.add("bg-rt-primary", "text-white");
+                const content = document.querySelector(`[data-content='${tab.dataset.tab}']`);
+                content.classList.remove("hidden");
+            });
+        });
+
+        // Initialize the first and last tab with rounded corners
+        if (tabs.length > 0) {
+            tabs[0].classList.add("rounded-l-lg");
+            tabs[tabs.length - 1].classList.add("rounded-r-lg");
+        }
+    });
+
+    //Tech Stack Tab Script
+    document.addEventListener("DOMContentLoaded", () => {
+        const tabs = document.querySelectorAll(".tab");
+        tabs.forEach(tab => {
+            tab.addEventListener("click", () => {
+                tabs.forEach(t => {
+                    t.classList.remove("border-l-8", "border-l-rt-secondary", "text-white", "bg-rt-primary-dark", "active");
+                    t.querySelector(".chevron-icon").classList.add("hidden");
+                });
+                tab.classList.add("border-l-8", "border-l-rt-secondary", "text-white", "bg-rt-primary-dark", "active");
+                tab.querySelector(".chevron-icon").classList.remove("hidden");
+            });
+        });
+    });
+</script>
+@endsection
+
 @section('content')
 <main class="w-full">
     <!-- Hero Section -->
-    <section class="relative flex items-center justify-center h-screen overflow-hidden bg-black">
+    <section class="relative flex items-center justify-center h-screen overflow-hidden">
         <!-- Video Background -->
         <video autoplay muted loop class="absolute inset-0 object-cover w-full h-full" src="https://s3-figma-videos-production-sig.figma.com/video/1134555079227565548/TEAM/1bfb/2cc8/-84f7-407b-a6ec-4685afbc8772?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pZJ3wdTSrh5FKwjHei9wg3iWD6BOZRjSuEQibXzZrfTVy5srTk424XAsPDqVPSYtakWvLA2lxnkEw56Pc0kyhvlGsZFTp~tahlCCZH4UJ62dEpiBhI7WSaK7FSi16L4OozSQH-Ts-dTjefgDSbWzD~3TpCoDgyQrLBgFgsBed0~z-uMtrrUU-R5Fd4vrWNXoK80-qmCCtILVaN0GTESTLpo7ggWFUe-RGIZZBruVAhm61oqLFWDDaVs3BCi59Y4z-bgOdeVDyNkZfpkvMWo8xvA05MV-IuvlvLhR6BzZy59xxlXyWj4U-50sv1zdzvgJxwtknjiHosjTEYBN2V7lIQ__"></video>
 
@@ -629,21 +678,6 @@
                         </button>
                     </li>
                 </ul>
-                <script>
-                    document.addEventListener("DOMContentLoaded", () => {
-                        const tabs = document.querySelectorAll(".tab");
-                        tabs.forEach(tab => {
-                            tab.addEventListener("click", () => {
-                                tabs.forEach(t => {
-                                    t.classList.remove("border-l-8", "border-l-rt-secondary", "text-white", "bg-rt-primary-dark", "active");
-                                    t.querySelector(".chevron-icon").classList.add("hidden");
-                                });
-                                tab.classList.add("border-l-8", "border-l-rt-secondary", "text-white", "bg-rt-primary-dark", "active");
-                                tab.querySelector(".chevron-icon").classList.remove("hidden");
-                            });
-                        });
-                    });
-                </script>
 
                 <div>
                     <div class="p-4" id="web-tech" role="tabpanel" aria-labelledby="web-tech-tab">
@@ -893,7 +927,6 @@
                     </div>
                 </div>
 
-
                 <div class="hidden p-3" id="mobile-tech" role="tabpanel" aria-labelledby="mobile-tech-tab">
                     <div class="grid grid-cols-5 gap-7">
                         <div class="flex flex-col items-center" title="Flutter">
@@ -928,7 +961,6 @@
                         </div>
                     </div>
                 </div>
-
 
                 <div class="hidden p-4" id="database" role="tabpanel" aria-labelledby="database-tab">
                     <div class="grid grid-cols-5 gap-7">
@@ -1006,7 +1038,6 @@
                     </div>
                 </div>
 
-
                 <div class="hidden p-4" id="devops" role="tabpanel" aria-labelledby="devops-tab">
                     <div class="grid grid-cols-5 gap-7">
                         <!-- AWS -->
@@ -1082,7 +1113,6 @@
                         </div>
                     </div>
                 </div>
-
 
                 <div class="hidden p-4" id="cms" role="tabpanel" aria-labelledby="cms-tab">
                     <div class="grid grid-cols-5 gap-7">
@@ -1224,24 +1254,9 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
         </div>
-        </div>
-        </div>
-
-        </div>
-
-        </div>
-
-        </div>
-        </div>
-        </div>
-    </section>
-
-    </div>
-    </div>
     </section>
     <!-- End of Technology Stack Section -->
 
