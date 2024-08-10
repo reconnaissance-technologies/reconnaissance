@@ -31,32 +31,3 @@ window.addEventListener("scroll", function () {
         scrollToTop.classList.add("hidden")
     }
 });
-
-document.addEventListener("DOMContentLoaded", function() {
-    const tabs = document.querySelectorAll("[data-tab]");
-    const contents = document.querySelectorAll(".tab-content");
-
-    tabs.forEach((tab, index) => {
-        tab.addEventListener("click", function() {
-            tabs.forEach((t, i) => {
-                t.classList.remove("bg-rt-primary", "text-white", "rounded-l-lg", "rounded-r-lg");
-                if (i === 0) {
-                    t.classList.add("rounded-l-lg");
-                } else if (i === tabs.length - 1) {
-                    t.classList.add("rounded-r-lg");
-                }
-            });
-            contents.forEach(c => c.classList.add("hidden"));
-
-            tab.classList.add("bg-rt-primary", "text-white");
-            const content = document.querySelector(`[data-content='${tab.dataset.tab}']`);
-            content.classList.remove("hidden");
-        });
-    });
-
-    // Initialize the first and last tab with rounded corners
-    if (tabs.length > 0) {
-        tabs[0].classList.add("rounded-l-lg");
-        tabs[tabs.length - 1].classList.add("rounded-r-lg");
-    }
-});
