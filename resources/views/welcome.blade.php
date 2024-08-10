@@ -19,6 +19,18 @@
     .logo-mixed {
         background-image: url("/assets/img/logo-mixed.svg")
     }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+    .animate-marquee {
+        animation: marquee 45s linear infinite;
+    }
 </style>
 @endsection
 
@@ -181,7 +193,7 @@
     <!-- Our Services Section -->
     <section class="px-16 bg-white justify-between">
         <div class="w-full py-6">
-            <h3 class="text-black text-sm py-3 uppercase font-semibold pb-4">Our Services</h3>
+            <h3 class="text-rt-primary text-sm py-3 uppercase font-semibold pb-4">Our Services</h3>
             <div class="inline-flex justify-center gap-1 border rounded-lg cursor-pointer text-[0.77rem] font-normal text-center">
                 <div data-tab="product-design" class="border-r border-gray-200 bg-rt-primary text-white flex items-center justify-center py-2 px-4">
                     <h1>Product Design</h1>
@@ -486,13 +498,13 @@
     <!-- Our Solutions Section -->
     <section class="px-16 bg-white">
         <div class="w-full py-6">
-            <h3 class="text-black text-md py-3 font-semibold">Our Solutions</h3>
+            <h3 class="text-rt-primary py-3 text-sm uppercase font-semibold">Our Solutions</h3>
             <p class="w-full lg:w-full flex justify-between items-center">
                 Elevating Experiences, Empowering Innovation: Our Solutions Redefine Possibilities and Drive Success
             </p>
         </div>
 
-        <div class="grid grid-cols-4 gap-8 py-8">
+        <div class="grid grid-cols-4 gap-8 pb-8">
             <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
                 <img class="" src="{{ asset('assets/icons/ecommerce-solution-icon.svg') }}" />
                 <div class="text-zinc-800 pt-3 font-normal">eCommerce Solution</div>
@@ -548,8 +560,8 @@
     <!-- Technology Stack Section -->
     <section class="px-16 bg-white flex justify-between">
         <div class="w-full py-6">
-            <h3 class="text-black text-md py-3 uppercase font-semibold">Our Tech Stack</h3>
-            <div class="w-3/4 lg:w-3/4 py-5 flex justify-between items-center">
+            <h3 class="text-rt-primary py-3 text-sm uppercase font-semibold">Our Tech Stack</h3>
+            <div class="w-3/4 lg:w-3/4 flex justify-between items-center">
                 <p>
                     Developing software requires advanced skills and expertise. The selection of the right technology stack is crucial, as demonstrated by our IT company's array of programming languages, frameworks, and platforms.
                 </p>
@@ -1260,18 +1272,17 @@
     </section>
     <!-- End of Technology Stack Section -->
 
-
     <!-- Industries We Serve Section -->
     <section class="px-16 bg-[#F5F5FB] flex justify-between">
         <div class="w-full py-6">
-            <h3 class="text-black text-md py-3 uppercase font-semibold">Industries We Serve</h3>
-            <div class="w-3/4 py-5 lg:w-3/4 flex justify-between items-center">
+            <h3 class="text-rt-primary py-3 text-sm uppercase font-semibold">Industries We Serve</h3>
+            <div class="w-3/4 lg:w-3/4 flex justify-between items-center">
                 <p>
                     Collaborating closely with our clients, our team of software development experts understands their challenges and goals, enabling us to create bespoke software solutions that are efficient, scalable, and cater to diverse needs.
                 </p>
             </div>
 
-            <div class="pt-8 mb-4 border-b border-gray-200">
+            <div class="pt-10 mb-4 border-b border-gray-200">
                 <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="iws-tab" data-tabs-toggle="#iws-tab-content" role="tablist">
                     <li class="me-2" role="presentation">
                         <button class="inline-block p-2 border-b-2 rounded-t-lg" id="education-tab" data-tabs-target="#education" type="button" role="tab" aria-controls="education" aria-selected="false">Education</button>
@@ -1389,7 +1400,7 @@
     <!-- Insights & News Section -->
     <section class="px-16 bg-white flex justify-between">
         <div class="w-full py-6">
-            <h3 class="text-black text-md py-3 uppercase font-semibold">Browse Our Latest Insights</h3>
+            <h3 class="text-rt-primary py-3 text-sm uppercase font-semibold">Browse Our Latest Insights</h3>
             <!-- <h1 class="w-3/4 text-xl lg:text-4xl font-bold mt-2 mb-2 lg:mb-6">
                 Explore insights into the IT industry and stay updated on the latest technology trends
             </h1> -->
@@ -1545,22 +1556,24 @@
     <!-- End of Insights & News Section -->
 
     <!-- Clients Showcase & Testimonials Section -->
-    <section class="px-0 bg-white flex justify-between">
+    <section class="px-0 bg-white">
         <div class="w-full py-6">
-            <h3 class="px-12 text-black text-md uppercase font-semibold pb-14">Our Client's & Their success stories</h3>
+            <h3 class="text-rt-primary py-3 px-16 text-sm uppercase font-semibold">Our Clients</h3>
+            {{-- <h1 class="w-3/4 text-md lg:text-md font-bold mt-2 mb-2 lg:mb-6">
+                Those we have served and their success stories
+            </h1> --}}
 
             <!-- Our Clients Logo Section -->
-            <div class="h-10 justify-start items-center gap-[20px] inline-flex">
-                <img class="w-44 h-[38px]" src="{{ asset('assets/img/clients/bstl.png') }}" />
-                <img class="w-[133px] h-10" src="{{ asset('assets/img/clients/how-tech-ltd.png') }}" />
-                <img class="w-[70.92px] h-[27px]" src="{{ asset('assets/img/clients/webmaxy.png') }}" />
-                <img class="w-[142px] h-[39px]" src="{{ asset('assets/img/clients/ultrashot.png') }}" />
-                <img class="w-[169px] h-[37px]" src="{{ asset('assets/img/clients/carvfit.png') }}" />
-                <img class="w-[70.92px] h-[27px]" src="{{ asset('assets/img/clients/prabhuji.png') }}" />
-                <img class="w-[167px] h-[27px]" src="{{ asset('assets/img/clients/bliss-explorers.svg') }}" />
-                <img class="w-[73.29px] h-[27px]" src="{{ asset('assets/img/clients/american-farm-school.png') }}" />
-                <img class="w-[175px] h-8" src="{{ asset('assets/img/clients/celestina-adams-foundation.png') }}" />
-                <img class="w-[175px] h-8" src="{{ asset('assets/img/clients/clientwatermark.png') }}" />
+            <div class="h-10 justify-start items-center gap-[20px] inline-flex animate-marquee">
+                <img class="w-48" src="{{ asset('assets/img/clients/blue-sea-travels.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/africasiaconnect.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/ultrashot-nigeria.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/how-tech.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/celestina-adams-care-foundation.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/africasiaconnect.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/ultrashot-nigeria.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/how-tech.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/celestina-adams-care-foundation.png') }}" />
             </div>
             <!-- End of Our Clients Logo Section -->
 

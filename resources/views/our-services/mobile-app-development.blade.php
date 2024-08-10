@@ -16,32 +16,71 @@
 @section('content')
 <main class="w-full">
     <!-- Hero Section -->
-    <section class="bg-gradient-to-tr from-violet-200 to-slate-700 px-16">
+    <section class="relative  text-center justify-center py-5 ">
+        <!-- Video Background -->
+        <video class="absolute top-0 left-0 w-full h-full object-cover z-[-1]" autoplay muted loop playsinline>
+            <source src="https://s3-figma-videos-production-sig.figma.com/video/1134555079227565548/TEAM/2a6e/0c4e/-2cf8-4720-9f26-d61c4b7d6edd?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ax1Y1NVZh9aQEN2A1SlsYrCvKTlAd5MSZgJuBmFPeo-JDEBculMuCNtC3bI3y7kTzb6wyuGZHVKwPbe2Ze1ugZ3DE3AlMXnhfY9DWvxmI1Ovp0-SsjD0IJKfZxbLXbYZHLlSK1PsY-EFy62FQhgDUTcEygWqKeAlUbsvWqyHc5rtMRgfROAet864v1e3AyezdzIqzUVaqCUV93w2J55rp4u5wJ0VSJ2Qhz5I8uG~CIrrtsLxDcGhRwRd28uZerPKdz6qH-X7H61BfN8TkSuC8cMU37Z9ojcYWLO3CMnbTT2Mm6~2PauXtXyOIvoq8weKN1QKJ9BPA9TDK4KEKOhuhQ__" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
         <!-- hero section content goes here -->
-        <div class="w-full lg:flex items-center">
-            <div class="w-full lg:w-1/2 md:w1/2 lg:pt-32 my-16">
+        <div class="relative w-full lg:flex items-center justify-center">
+            <div class="w-full md:pt-40 lg:pt-48 z-10 text-center text-white">
                 <!-- hero section description goes here -->
-                <h1 class="text-xl lg:text-5xl font-bold text-white mt-2 mb-2 lg:mb-6">
-                    Mobile Application Development
-                </h1>
-                <p class="text-md lg:text-xl text-white mb-8">
-                    Our unmatched expertise in iOS, Android, and Cross-Platform development ensures that your mobile app is not only aesthetically pleasing but also robust, scalable, and secure.
+                <h2 class="text-center justify-center text-white text-2xl md:text-4xl py-2 font-bold">
+                Crafting Mobile Experiences that Captivate and Connect
+                </h2>
+                <p class="text-sm md:text-md mb-4">
+                From concept to deployment, we specialize in developing intuitive and impactful mobile apps tailored to your vision and your users' needs
                 </p>
 
                 <!-- CTA Button -->
-                <div class="w-full flex py-6">
-                    <a href="{{ route('contact-us') }}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-                        Speak with an Expert
+                <div class="flex justify-center mx-3">
+                    <a href="#" class="border border-rt-white px-8 py-3.5 text-base font-medium text-white inline-flex items-center hover:font-bold  hover:bg-white hover:text-rt-primary hover:border-white focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center mr-10">
+                        Case Studies
+                    </a>
+
+                    <a href="#" class="px-8 py-3.5 text-base font-medium text-black inline-flex items-center bg-rt-white hover:text-rt-primary hover:font-bold focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center">
+                        Start a Project
+                        <img class="px-2 w-8" src="{{ asset('assets/icons/send.svg') }}" alt="">
                     </a>
                 </div>
                 <!-- End of CTA Button -->
-
             </div>
-            <div class="w-full lg:w-1/2 pt-20">
-                <img src="{{ asset('assets/img/mobile-app-image.png') }}" class="object-fill" alt="Mobile App Development - Reconnaissance Technologies">
+        </div>
+
+        <!-- Awards section -->
+        <div class="relative w-full flex justify-end pr-6">
+            <div class="flex items-center gap-4">
+                <a href="https://clutch.co/profile/reconnaissance-technologies" target="_blank" class="w-20 h-auto" title="Clutch.co 2023 Top Health &  Wellness App Developer, Nigeria">
+                    <img src="{{ asset('assets/img/recognition/clutch-health-wellness-app-developers-nigeria-2023.png') }}" alt="Clutch.co 2023 Top Health &  Wellness App Developer, Nigeria Badge">
+                </a>
+                <a href="https://techbehemoths.com/awards-2023/cybersecurity/nigeria#view=60717" target="_blank" class="w-20 h-auto" title="TechBehemoths Top Cyber Security Company in Nigeria Awards 2023">
+                    <img class="" src="{{ asset('assets/img/recognition/banner-award-2023-white-winner-alt (2).png') }}" alt="TechBehemoths Top Cyber Security Company in Nigeria Awards 2023 Badge">
+                    <img class="hidden" src="{{ asset('assets/img/recognition/tb-cyber-security.png') }}" alt="TechBehemoths Top Cyber Security Company in Nigeria Awards 2023 Badge">
+                </a>
+                <a href="https://techbehemoths.com/awards-2023/custom-software-development/nigeria#view=60717" target="_blank" class="w-20 h-auto" title="TechBehemoths Top Custom Software Development Company in Nigeria Awards 2023">
+                    <img src="{{ asset('assets/img/recognition/banner-award-2023-white-winner-alt (1).png') }}" alt="TechBehemoths Top Custom Software Development Company in Nigeria Awards 2023 Badge">
+                </a>
+            </div>
+        </div>
+
+        <!-- Image section -->
+        <div class="w-full flex justify-center mt-20">
+            <div class="w-full max-w-screen-xl flex justify-between items-center">
+                <img class="w-[60px] h-auto" src="{{ asset('assets/img/testimonials/deepblue.png') }}" />
+                <img class="w-[90px] h-auto" src="{{ asset('assets/img/testimonials/carvfit.png') }}" />
+                <img class="w-[90px] h-auto" src="{{ asset('assets/img/testimonials/how-tech-ltd.png') }}" />
+                <img class="w-[63px] h-auto" src="{{ asset('assets/img/testimonials/celestina.png') }}" />
+                <img class="w-[66px] h-auto" src="{{ asset('assets/img/testimonials/ultrashot.png') }}" />
+                <img class="w-[28px] h-auto" src="{{ asset('assets/img/testimonials/Explorer.png') }}" />
+                <img class="w-[76px] h-auto" src="{{ asset('assets/img/testimonials/carvfit-white.png') }}" />
             </div>
         </div>
     </section>
+
+
+
     <!-- End of Hero Section -->
 
     <!-- What We Offer Section -->
