@@ -67,14 +67,17 @@
 
         <!-- Image section -->
         <div class="w-full flex justify-center mb-5">
-            <div class="w-full max-w-screen-xl flex justify-between items-center animate-marquee">
-                <img class="w-[60px] h-auto" src="{{ asset('assets/img/testimonials/deepblue.png') }}"/>
-                <img class="w-[90px] h-auto" src="{{ asset('assets/img/testimonials/carvfit.png') }}" />
-                <img class="w-[90px] h-auto" src="{{ asset('assets/img/testimonials/how-tech-ltd.png') }}" />
-                <img class="w-[63px] h-auto" src="{{ asset('assets/img/testimonials/celestina.png') }}" />
-                <img class="w-[66px] h-auto" src="{{ asset('assets/img/testimonials/ultrashot.png') }}" />
-                <img class="w-[28px] h-auto" src="{{ asset('assets/img/testimonials/Explorer.png') }}" />
-                <img class="w-[76px] h-auto" src="{{ asset('assets/img/testimonials/carvfit-white.png') }}" />
+            <div class="h-10 justify-start items-center gap-10 inline-flex animate-marquee">
+            {{-- <div class="w-full max-w-screen-xl flex gap-4 justify-between items-center animate-marquee"> --}}
+                <img class="w-48" src="{{ asset('assets/img/clients/blue-sea-travels.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/africasiaconnect.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/ultrashot-nigeria.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/how-tech.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/celestina-adams-care-foundation.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/africasiaconnect.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/ultrashot-nigeria.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/how-tech.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/celestina-adams-care-foundation.png') }}" />
             </div>
         </div>
     </section>
