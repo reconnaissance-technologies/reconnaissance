@@ -28,10 +28,10 @@
             <div class="w-full md:pt-40 lg:pt-48 z-10 text-center text-white">
                 <!-- hero section description goes here -->
                 <h2 class="text-center justify-center text-white text-2xl md:text-4xl py-2 font-bold">
-                Crafting Mobile Experiences that Captivate and Connect
+                    Crafting Mobile Experiences that Captivate and Connect
                 </h2>
                 <p class="text-sm md:text-md mb-4">
-                From concept to deployment, we specialize in developing intuitive and impactful mobile apps tailored to your vision and your users' needs
+                    From concept to deployment, we specialize in developing intuitive and impactful mobile apps tailored to your vision and your users' needs
                 </p>
 
                 <!-- CTA Button -->
@@ -79,138 +79,158 @@
         </div>
     </section>
 
-
-
     <!-- End of Hero Section -->
 
-    <!-- What We Offer Section -->
-    <section class="px-16 bg-white dark:text-white dark:bg-gray-800 flex justify-between">
-        <div class="w-full py-6">
-            <h3 class="text-rt-primary text-xl uppercase font-semibold">What We Offer</h3>
-            <h1 class="w-3/4 text-xl lg:text-4xl font-bold mt-2 mb-2 lg:mb-6">
-                Custom Mobile App Development Solutions
-            </h1>
-            <div class="w-full lg:w-full flex justify-between items-center">
-                <div class="lg:w-3/4">
-                    <p>
-                        With industry-leading experience and a team of skilled mobile app developers, we create innovative and custom mobile applications for various platforms, including iOS, Android, and cross-platform solutions. As a leading mobile app development company, we prioritize user experience, security, and performance to ensure your app stands ahead of the curve.
+    <!-- What makes us different -->
+
+    <div class="w-[1440px] h-[567px] pl-[103px] pr-[172px] pt-2 pb-[7px] bg-[#f7f7fc] justify-start items-center gap-[100px] inline-flex">
+        <div class=" flex-col gap-[50px] inline-flex">
+            <div class="flex-col justify-start items-start gap-2.5 flex">
+                <div class="flex-col justify-start items-start gap-2.5 flex">
+                    <h4 class="text-[#194587] text-base font-medium">WHAT MAKES US DIFFERENT</h4>
+                    <h3 class="text-[#17191c] text-2xl font-semibold">Why We Should Create Your Mobile Application?</h3>
+                </div>
+                <p class="w-[529px] text-[#3b4454] text-[15px] font-normal">We serve as your dedicated partners throughout the entire mobile app development process, guiding you from ideation to implementation, leveraging cloud infrastructure and automation to ensure efficient delivery and a remarkable user experience that drives your success.</p>
+            </div>
+            <div class="">
+                <a href="#" class="px-20 py-4 bg-[#143669] rounded-lg text-white text-base font-normal hover:bg-[#143671]">Let’s talk</a>
+            </div>
+        </div>
+        <img class="w-[400px] h-[552px] rotate-360" src="{{ asset('assets/img/Develop-an-Android-App.svg') }}" />
+    </div>
+    <!-- End of What makes us different -->
+
+    <!-- Our Strength Section -->
+    <div class="w-full relative">
+        <div class="flex justify-between items-start">
+            <!-- Text Section -->
+            <div class="flex flex-col justify-start items-start gap-4 px-20 pt-32">
+                <h2 class="text-[#194587] font-semibold">OUR STRENGTH</h2>
+                <p class="w-[423px] text-black text-lg font-semibold">
+                    What We Do that Makes Us Stand Out Against Other Mobile Application Development Companies
+                </p>
+            </div>
+            <!-- Image Section -->
+            <img class="w-[650px] h-[450px] right-0 mt-4" src="{{ asset('assets/img/our-services/Ourmobservices.svg') }}" />
+        </div>
+
+        <!-- Content Below Image -->
+        <div class="flex flex-col gap-8 px-20 mt-0">
+            <!-- First Block -->
+            <div class="flex gap-4 items-start">
+                <img class="w-6 h-6" src="{{ asset('assets/img/our-services/codesymbol.svg') }}" alt="Icon" />
+                <div>
+                    <h3 class="text-[#194587] text-base font-semibold">Free Consultation</h3>
+                    <p class="w-[500px] text-[#292d32] text-sm font-normal">
+                        Unlike our competitors, we offer you the chance to take the first step into bringing your app idea to life with our free Consultation session.
                     </p>
                 </div>
             </div>
 
-            <div class="grid grid-cols-3 gap-8 py-8">
-                <div class="card drop-shadow-lg dark:text-black border border-blue-800">
-                    <img src="{{ asset('assets/img/our-services/mvp-icon.svg') }}" alt="MVP App Development - Reconnaissance Technologies">
-
-                    <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl lg:w-50">
-                        MVP App Development
-                    </h1>
-
-                    <p>
-                        Accelerate success with our MVP App Development. We help you to validate your idea, ensuring faster time to market. Our MVP services allow to make informed decisions for iterations.
-                    </p>
+            <!-- Second Block with Grid Layout -->
+            <div class="grid grid-cols-2 gap-8">
+                <!-- Second Block -->
+                <div class="flex gap-4 items-start">
+                    <img class="w-6 h-6" src="{{ asset('assets/img/our-services/codesymbol.svg') }}" alt="Icon" />
+                    <div>
+                        <h3 class="text-[#194587] text-base font-semibold">Seamless Integration Across Platforms</h3>
+                        <p class="w-[500px] text-[#292d32] text-sm font-normal">
+                            Our app seamlessly integrates across multiple platforms, offering a consistent and cohesive experience whether users access it on their mobile devices, tablets, or desktops.
+                        </p>
+                    </div>
                 </div>
-                <div class="card drop-shadow-lg dark:text-black border border-blue-800">
-                    <img src="{{ asset('assets/img/our-services/ui-ux-design-icon.svg') }}" alt="UI/UX Design Service - Reconnaissance Technologies">
 
-                    <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                        UI/UX Design Services
-                    </h1>
-
-                    <p>
-                        Creative UI / UX design services build trust and increase engagement in mobil apps. Our mobile app design and development services team constantly follow Apple and Google UI/UX guidelines.
-                    </p>
+                <!-- Third Block -->
+                <div class="flex gap-4 items-start">
+                    <img class="w-6 h-6" src="{{ asset('assets/img/our-services/codesymbol.svg') }}" alt="Icon" />
+                    <div>
+                        <h3 class="text-[#194587] text-base font-semibold">Mobile Application Development Solutions for Diverse Industries</h3>
+                        <p class="w-[500px] text-[#292d32] text-sm font-normal">
+                            We partner closely with our clients to grasp their challenges and goals, crafting bespoke software solutions that are both powerful and adaptable across industries.
+                        </p>
+                    </div>
                 </div>
-                <div class="card drop-shadow-lg dark:text-black border border-blue-800">
-                    <img src="{{ asset('assets/img/our-services/cms-icon.svg') }}" alt="Content Management System - Reconnaissance Technologies">
 
-                    <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                        Mobile App Consulting
-                    </h1>
-
-                    <p>
-                        Our Mobile App Consulting encompasses a comprehensive Discovery Phase, Mobile App Audit, and App modernization to ensure optimal performance and success in ‘the ever-changing digital realm.
-                    </p>
+                <!-- Fourth Block -->
+                <div class="flex gap-4 items-start">
+                    <img class="w-6 h-6" src="{{ asset('assets/img/our-services/codesymbol.svg') }}" alt="Icon" />
+                    <div>
+                        <h3 class="text-[#194587] text-base font-semibold">MVP App Development</h3>
+                        <p class="w-[500px] text-[#292d32] text-sm font-normal">
+                            We empower your journey to success with our MVP App Development, guiding you to validate your idea swiftly, accelerate time to market, and make informed decisions for iterative improvements.
+                        </p>
+                    </div>
                 </div>
-                <div class="card drop-shadow-lg dark:text-black border border-blue-800">
-                    <img src="{{ asset('assets/img/our-services/enterprise-web-app-icon.svg') }}" alt="Enterprise Mobility - Reconnaissance Technologies">
 
-                    <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                        Enterprise Mobility
-                    </h1>
-
-                    <p>
-                        Our Enterprise Mobility services empower businesses with seamless access to data and apps. With enterprise mobilty, we enhance productivity streamline operations & ensure connectivity.
-                    </p>
+                <!-- Fifth Block -->
+                <div class="flex gap-4 items-start">
+                    <img class="w-6 h-6" src="{{ asset('assets/img/our-services/codesymbol.svg') }}" alt="Icon" />
+                    <div>
+                        <h3 class="text-[#194587] text-base font-semibold">Mobile App Maintenance & Robust Security Measures</h3>
+                        <p class="w-[500px] text-[#292d32] text-sm font-normal">
+                            Security is paramount in today's digital landscape. Our app integrates state-of-the-art security measures, including encryption, authentication, and secure data storage.
+                        </p>
+                    </div>
                 </div>
-                <div class="card drop-shadow-lg dark:text-black border border-blue-800">
-                    <img src="{{ asset('assets/img/our-services/app-support-icon.svg') }}" alt="Mobile App Support & Maintenance - Reconnaissance Technologies">
 
-                    <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                        Mobile App Maintenance and Support
-                    </h1>
-
-                    <p>
-                        Our maintenance services include regular updates, bug fixes, security enhancements, and monitoring to ensure your app runs smoothly. We provide timely support to address any issues
-                    </p>
+                <!-- Sixth Block -->
+                <div class="flex gap-4 items-start">
+                    <img class="w-6 h-6" src="{{ asset('assets/img/our-services/codesymbol.svg') }}" alt="Icon" />
+                    <div>
+                        <h3 class="text-[#194587] text-base font-semibold">Native App Development Services</h3>
+                        <p class="w-[500px] text-[#292d32] text-sm font-normal">
+                            As a premier mobile application development agency, we specialize in crafting bespoke, cutting-edge native apps meticulously tailored for singular platforms.
+                        </p>
+                    </div>
                 </div>
-                <div class="card drop-shadow-lg dark:text-black border border-blue-800">
-                    <img src="{{ asset('assets/img/our-services/cross-platform-icon.svg') }}" alt="Cross-platform App Development - Reconnaissance Technologies">
 
-                    <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                        Cross-platform App Development Services
-                    </h1>
-
-                    <p>
-                        Our Cross-platform mobile app. development services offer customized, user-friendly, and high-quality apps with a rich user experience that runs across all devices and operating systems.
-                    </p>
+                <!-- Seventh Block -->
+                <div class="flex gap-4 items-start">
+                    <img class="w-6 h-6" src="{{ asset('assets/img/our-services/codesymbol.svg') }}" alt="Icon" />
+                    <div>
+                        <h3 class="text-[#194587] text-base font-semibold">Intuitive User Experience (UX)</h3>
+                        <p class="w-[500px] text-[#292d32] text-sm font-normal">
+                            Our app prioritizes user-centric design, offering a seamless and intuitive experience from the moment users launch the app.
+                        </p>
+                    </div>
                 </div>
-                <div class="card drop-shadow-lg dark:text-black border border-blue-800">
-                    <img src="{{ asset('assets/img/our-services/native-app-icon.svg') }}" alt="Native App Development - Reconnaissance Technologies">
 
-                    <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                        Native App Development Services
-                    </h1>
-
-                    <p>
-                        As a leading mobile application development agency, we offer native mobile app development services to create functional & innovative apps that are built exclusively for single platforms.
-                    </p>
+                <!-- Eighth Block -->
+                <div class="flex gap-4 items-start">
+                    <img class="w-6 h-6" src="{{ asset('assets/img/our-services/codesymbol.svg') }}" alt="Icon" />
+                    <div>
+                        <h3 class="text-[#194587] text-base font-semibold">Our Partners are Visionary Businesses and Diverse Clientele</h3>
+                        <p class="w-[500px] text-[#292d32] text-sm font-normal">
+                            By partnering with visionary businesses and a diverse clientele, we ensure that our solutions are finely tuned to meet the unique needs and challenges of various industries.
+                        </p>
+                    </div>
                 </div>
-                <div class="card drop-shadow-lg dark:text-black border border-blue-800">
-                    <img src="{{ asset('assets/img/our-services/pwa-service-icon.svg') }}" alt="Progressive Web App (PWA)- Reconnaissance Technologies">
 
-                    <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                        Progressive Web App (PWA)
-                    </h1>
-
-                    <p>
-                        Get lightweight, highly functional & secure Progressive Web Apps design & development services. Our best mobile app. development team is at your service to provide secure PWA solutions.
-                    </p>
+                <!-- Ninth Block -->
+                <div class="flex gap-4 items-start">
+                    <img class="w-6 h-6" src="{{ asset('assets/img/our-services/codesymbol.svg') }}" alt="Icon" />
+                    <div>
+                        <h3 class="text-[#194587] text-base font-semibold">Enterprise Mobility</h3>
+                        <p class="w-[500px] text-[#292d32] text-sm font-normal">
+                            We elevate your business operations with our Enterprise Mobility solutions, enabling effortless access to critical data and applications.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- End of What We Offer Section -->
 
-    <!-- Have a Request CTA Section -->
-    <section class=" h-80 px-16 bg-black text-white flex justify-between items-center">
-        <div class="w-3/4 py-6">
-            <h1 class="text-xl lg:text-4xl font-bold mt-2 mb-2 lg:mb-6">
-                Do you have a mobile app idea?
-            </h1>
-            <p>
-                We have a team of experienced app developers to transform your app vision into reality.
-            </p>
+            <!-- Centered Button -->
+            <div class="max-w-[933px] mx-auto flex flex-col justify-start items-center gap-[53px] text-center mt-10">
+                <a href="#" class="px-9 py-3 bg-[#143669] rounded-lg text-white text-base font-normal hover:bg-[#143671]">
+                    See Case Studies
+                </a>
+            </div>
         </div>
+    </div>
+    <!-- End of Our Strength Section -->
 
-        <a href="{{ route('contact-us') }}" class="text-white border bg-blue-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">
-            Speak with an Expert
-        </a>
-    </section>
-    <!-- End of Have a Request CTA Section -->
 
     <!-- Visionary Partners Section -->
-    <section class="px-16 bg-white dark:text-white dark:bg-gray-800 flex justify-between">
+    <section class="px-16 pt-8 bg-white dark:text-white dark:bg-gray-800 flex justify-between">
         <div class="w-full py-6">
             <h3 class="text-rt-primary text-xl uppercase font-semibold">Our Partners Are</h3>
             <h1 class="w-3/4 text-xl lg:text-4xl font-bold mt-2 mb-2 lg:mb-6">
