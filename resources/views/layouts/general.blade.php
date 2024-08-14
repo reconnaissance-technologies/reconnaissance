@@ -92,6 +92,8 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+@yield('custom-scripts')
+
 @if ( Request::is('/') || Request::is('our-company/contact-us'))
 <script>
     $(document).ready(function() {
