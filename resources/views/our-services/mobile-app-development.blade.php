@@ -219,7 +219,7 @@
             </div>
 
             <!-- Centered Button -->
-            <div class="max-w-[933px] mx-auto flex flex-col justify-start items-center gap-[53px] text-center mt-10">
+            <div class="max-w-[933px] mx-auto flex flex-col justify-start items-center gap-[53px] text-center mt-10 pb-10">
                 <a href="#" class="px-9 py-3 bg-[#143669] rounded-lg text-white text-base font-normal hover:bg-[#143671]">
                     See Case Studies
                 </a>
@@ -229,79 +229,117 @@
     <!-- End of Our Strength Section -->
 
 
-    <!-- Visionary Partners Section -->
-    <section class="px-16 pt-8 bg-white dark:text-white dark:bg-gray-800 flex justify-between">
-        <div class="w-full py-6">
-            <h3 class="text-rt-primary text-xl uppercase font-semibold">Our Partners Are</h3>
-            <h1 class="w-3/4 text-xl lg:text-4xl font-bold mt-2 mb-2 lg:mb-6">
-                Visionary Businesses and Diverse Clientele
-            </h1>
-            <div class="w-full lg:w-full flex justify-between items-center">
-                <div class="lg:w-3/4">
-                    <p>
-                        Explore our proven track record of delivering mobile app development services to diverse customer segments ranging from startups to large enterprises. Discover how we can assist you in achieving your business goals.
-                    </p>
-                </div>
+    <!-- Project Stages and Flow Section -->
+    <section class="relative w-full h-[1460px] bg-cover bg-center" style="background-image: url('{{ asset('assets/img/our-services/ProjectStagesImg.png') }}')">
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="relative z-10 w-full h-full flex flex-col justify-start items-start gap-[50px] px-[50px] py-[46px] text-white">
+            <div class="flex flex-col justify-start items-start gap-[30px]">
+                <h2 class="text-2xl font-medium">Project Stages & Flow</h2>
+                <p class="w-[676px] text-[15px] font-medium leading-snug">
+                    Tailored to your project's phase, we'll present an optimized strategy to meet your goals, aligning seamlessly with your timeline and budget constraints.
+                </p>
+                <a href="#" class="w-[198px] px-[65px] py-[18px] bg-[#143669] rounded-lg text-base font-medium text-center">Let’s talk</a>
             </div>
+            <p class="text-[#ffd90f] text-base font-medium">Our typical project flow includes the following phases:</p>
 
-            <div class="grid grid-cols-4 gap-8 py-8">
-                <div class="card drop-shadow-lg dark:text-black border border-blue-800">
-                    <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl lg:w-50">
-                        Startups
-                    </h1>
+            <!-- Phase Blocks Wrapper -->
+            <div class="w-full flex justify-center">
+                <div class="max-w-[1200px] w-full flex flex-col gap-8 items-center">
+                    <!-- First Row -->
+                    <div class="flex justify-center items-center gap-8 w-full">
+                        <div class="px-[15px] pt-10 pb-[50px] bg-[#06042d]/40 flex items-center">
+                            <div class="flex flex-col gap-4">
+                                <div class="flex flex-col gap-2">
+                                    <div class="text-[#ffd90f] text-2xl font-semibold">01</div>
+                                    <div class="text-[#f8f8fc] text-[17px] font-semibold">Discovery Phase:</div>
+                                </div>
+                                <div class="w-[552px] text-white text-[15px] font-normal">
+                                    This stage involves defining the project's purpose and scope. It includes conducting market research, user interviews, and competitor analysis to gather insights, Identifying project objectives, target audience, key performance indicators (KPIs), and also developing profiles representing different user types and their needs.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-[15px] pt-10 pb-[50px] bg-[#06042d]/40 flex items-center">
+                            <div class="flex flex-col gap-4">
+                                <div class="flex flex-col gap-2">
+                                    <div class="text-[#ffd90f] text-2xl font-semibold">02</div>
+                                    <div class="text-[#f8f8fc] text-[17px] font-semibold">Planning Phase:</div>
+                                </div>
+                                <div class="w-[552px] text-white text-[15px] font-normal">
+                                    During this stage, detailed planning is carried out to determine the core features and functionality of the mobile app. Low-fidelity wireframes are created to outline the app's layout and navigation. A User Flow is designed to map out the user journey and interactions within the app. Additionally, a project plan is developed, outlining how the project will be executed, monitored, and controlled.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <p>
-                        From ambitious entrepreneurs to VC funded ventures, we have supported startups in their technological journey, helping them transform ideas into reality.
-                    </p>
-                </div>
-                <div class="card drop-shadow-lg dark:text-black border border-blue-800">
-                    <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                        Product Companies
-                    </h1>
+                    <!-- Second Row -->
+                    <div class="flex justify-center items-center gap-8 w-full">
+                        <div class="px-[15px] pt-10 pb-[50px] bg-[#06042d]/40 flex items-center">
+                            <div class="flex flex-col gap-2.5">
+                                <div class="flex flex-col gap-2">
+                                    <div class="text-[#ffd90f] text-2xl font-semibold">03</div>
+                                    <div class="text-[#f8f8fc] text-[17px] font-semibold">Design Phase:</div>
+                                </div>
+                                <div class="w-[552px] text-white text-[15px] font-normal">
+                                    In this stage, the project plan is put into action. Tasks are executed according to the schedule, resources are allocated, and communication among team members is facilitated. High-fidelity designs are created, including UI elements, color schemes, typography, and imagery. Interactive prototypes are built to simulate the app's functionality and user experience. Feedback is gathered from stakeholders and users, and designs are iterated based on insights.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-[15px] pt-10 pb-[90px] bg-[#06042d]/40 flex items-center">
+                            <div class="flex flex-col gap-4">
+                                <div class="flex flex-col gap-2">
+                                    <div class="text-[#ffd90f] text-2xl font-semibold">04</div>
+                                    <div class="text-[#f8f8fc] text-[17px] font-semibold">Development Phase:</div>
+                                </div>
+                                <div class="w-[552px] text-white text-[15px] font-normal">
+                                    In this stage, the project plan is put into action. Tasks are executed according to the schedule, resources are allocated, and communication among team members is facilitated. The project manager oversees the implementation of activities to ensure they align with the project objectives.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <p>
-                        We have partnered with product-focused businesses, assisting them in developing and enhancing their mobile app design & development. Services to meet market demands and stay ahead of the competition.
-                    </p>
-                </div>
-                <div class="card drop-shadow-lg dark:text-black border border-blue-800">
-                    <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                        Agencies
-                    </h1>
-
-                    <p>
-                        Collaborating with digital agencies, we have contributed to the creation of captivating digital experiences, leveraging our expertise to deliver innovative and impactful solutions that engage and inspire.
-                    </p>
-                </div>
-                <div class="card drop-shadow-lg dark:text-black border border-blue-800">
-                    <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                        Enterprises
-                    </h1>
-
-                    <p>
-                        Our extensive experience working with large enterprises enables us to provide scalable mobile applications that handle high volumes of traffic, large data sets, and complex business processes, ensuring optimal performance.
-                    </p>
+                    <!-- Third Row - Centered -->
+                    <div class="flex justify-center mt-8 w-full">
+                        <div class="w-[604px] px-[26px] pt-10 pb-[81px] bg-black/50 rounded-lg flex items-center">
+                            <div class="flex flex-col gap-4">
+                                <div class="flex flex-col gap-2">
+                                    <div class="text-[#ffd90f] text-2xl font-semibold">05</div>
+                                    <div class="text-[#f8f8fc] text-[17px] font-semibold">Monitoring and Controlling</div>
+                                </div>
+                                <div class="w-[552px] text-white text-[15px] font-normal">
+                                    Throughout the project, progress is monitored, and performance is measured against the project plan. Any variances from the plan are identified, and corrective actions are taken as needed to keep the project on track. This stage also involves managing risks, resolving issues, and ensuring quality standards are met.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End of Visionary Partners Section -->
+    <!-- End of Project Stages and Flow Section -->
+
+
+
+
+
 
     <!-- Banner CTA Section -->
-    <section class=" h-80 px-16 bg-black text-white flex justify-between items-center">
-        <div class="w-3/4 py-6">
-            <h1 class="text-xl lg:text-4xl font-bold mt-2 mb-2 lg:mb-6">
-                Experience Your Business Grow Exponentially with Us!
-            </h1>
-            <p>
-                Experience a guaranteed 30% increase in efficiency with our expert software development.
-            </p>
+    <div class="w-full h-[405px] px-[100px] py-[55px] flex justify-center items-center bg-white">
+        <div class="max-w-screen-xl w-full bg-[#07062e] p-[38px] rounded-lg flex flex-col items-center gap-[42px]">
+            <div class="text-center flex flex-col gap-[15px]">
+                <div class="text-[#e0bd00] text-2xl font-medium">Q: Already have a PRD, wireframe, or initial design?</div>
+                <div class="text-white text-[15px] font-normal">Not to worry, we’ve got you covered</div>
+                <div class="text-white text-[15px] font-normal w-full mx-auto max-w-[1200px]">Our design and engineering team will analyze your project to determine the remaining scope of work and suggest a vision for the next stages of development.</div>
+            </div>
+            <a href="#" class="w-[259px] py-[18px] bg-white rounded-lg flex justify-center items-center text-[#143669] text-base font-medium text-center">
+                Let’s talk
+            </a>
         </div>
-
-        <a href="{{ route('contact-us') }}" class="text-white border bg-blue-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">
-            Speak with an Expert
-        </a>
-    </section>
+    </div>
     <!-- End of Banner CTA Section -->
+
+
+
+
 
     <!-- Industry Solutions Section -->
     <section class="px-16 bg-white dark:text-white dark:bg-gray-800 flex justify-between">
