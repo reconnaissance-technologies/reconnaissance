@@ -323,7 +323,7 @@
 
 
     <!-- Banner CTA Section -->
-    <div class="w-full h-[405px] px-[100px] py-[55px] flex justify-center items-center bg-white">
+    <div class="w-full h-[405px] px-[75px] py-[55px] flex justify-center items-center bg-white">
         <div class="max-w-screen-xl w-full bg-[#07062e] p-[38px] rounded-lg flex flex-col items-center gap-[42px]">
             <div class="text-center flex flex-col gap-[15px]">
                 <div class="text-[#e0bd00] text-2xl font-medium">Q: Already have a PRD, wireframe, or initial design?</div>
@@ -340,266 +340,323 @@
 
 
 
-
-    <!-- Industry Solutions Section -->
-    <section class="px-16 bg-white dark:text-white dark:bg-gray-800 flex justify-between">
-        <div class="w-full py-6">
-            <h1 class="w-full text-xl lg:text-4xl font-bold mt-2 mb-2 lg:mb-6 text-center">
-                Mobile Application Development Solutions for Diverse Industries
-            </h1>
-            <div class="w-full lg:w-full flex justify-between items-center text-center">
-                <div class="lg:w-full">
-                    <p>
-                        Our team of software development experts collaborates with clients to understand their roadblocks and objectives,enabling us to develop custom software development solutions that are efficient and scalable for diverse industries.
-                    </p>
+    <!-- What We Offer Section -->
+    <div class=" mx-auto px-4 py-12">
+        <div class="px-14 mb-8">
+            <h2 class="text-[#17191c] text-2xl font-semibold">
+                Here’s Our Toolkit Used for Mobile App Development Services
+            </h2>
+            <p class="text-[#143669] text-[13px] font-medium mt-4">
+                Our Mobile App Development Services are Driven by Cutting-edge Technologies and Platforms, Ensuring Unparalleled Performance and Innovation.
+            </p>
+        </div>
+        <div class="flex justify-center px-14 pb-2">
+            <!-- Libraries Section -->
+            <div class="w-full mx-auto py-4 px-10 mr-1 rounded-lg border border-[#e6e6e6]">
+                <div class="flex flex-col text-left gap-4">
+                    <div class="w-12 h-12 mb-4">
+                        <img src="{{ asset('assets/img/our-services/NewcodeIcon.svg') }}" alt="">
+                    </div>
+                    <div class="text-[#17191c] text-md font-semibold">Libraries</div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mt-2">
+                        <!-- First Row: 4 Items -->
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            Firebase
+                        </div>
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            NativeScript
+                        </div>
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            Isolator
+                        </div>
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            FixHava
+                        </div>
+                        <!-- Second Row: 4 Items -->
+                        <div class="col-span-2 md:col-span-1 px-3 py-3 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            Google SDK
+                        </div>
+                        <div class="col-span-2 md:col-span-1 px-3 py-3 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            Flutter
+                        </div>
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            Swift (for iOS development)
+                        </div>
+                        <div class="col-span-2 md:col-span-1 px-3 py-3 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            MvvmCross
+                        </div>
+                        <!-- Third Row: 3 Items -->
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            Xamarin
+                        </div>
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            Ionic
+                        </div>
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            AppsFlyer
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="grid grid-cols-3 gap-8 py-8">
-
-                <div class="card drop-shadow-lg dark:text-black border-b-8 border-b-violet-600">
-                    <a href="{{ route('industries.media-and-entertainment') }}">
-                        <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl lg:w-50">
-                            Media & Entertainment
-                        </h1>
-
-                        <p>
-                            <ol>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Music Streaming Application
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Video Streaming Application
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Social Networking Platform
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    News Portal
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Event Booking Platform
-                                </li>
-                            </ol>
-                        </p>
-                    </a>
+            <!-- Tools and Frameworks Section -->
+            <div class="w-full mx-auto py-4 px-10 ml-1 rounded-lg border border-[#e6e6e6]">
+                <div class="flex flex-col text-left gap-4">
+                    <div class="w-12 h-12 mb-4">
+                        <img src="{{ asset('assets/img/our-services/SecondNewcodeIcon.svg') }}" alt="">
+                    </div>
+                    <div class="text-[#17191c] text-lg font-semibold">Tools and Frameworks</div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mt-4">
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            Xamarin
+                        </div>
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            Swift (for iOS)
+                        </div>
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            Ionic
+                        </div>
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            React Script
+                        </div>
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            NativeScript
+                        </div>
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            Flutter
+                        </div>
+                    </div>
                 </div>
-
-                <div class="card drop-shadow-lg dark:text-black border-b-8 border-b-purple-900">
-                    <a href="{{ route('industries.healthcare') }}">
-                        <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                            Healthcare
-                        </h1>
-
-                        <p>
-                            <ol>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Hospital Management System
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Laboratory Service
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Telemedicine Solution
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Clinical Communication System
-                                </li>
-                            </ol>
-                        </p>
-                    </a>
+            </div>
+        </div>
+        <div class="flex justify-center px-14 pb-2">
+            <!-- IDEs Section -->
+            <div class="w-full mx-auto py-4 px-10 mr-1 rounded-lg border border-[#e6e6e6]">
+                <div class="flex flex-col text-left gap-4">
+                    <div class="w-12 h-12 mb-4">
+                        <img src="{{ asset('assets/img/our-services/SecondNewcodeIcon.svg') }}" alt="">
+                    </div>
+                    <div class="text-[#17191c] text-lg font-semibold">IDEs</div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-2 mt-4">
+                        <!-- First Row: 3 Items -->
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            Android Studio
+                        </div>
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            Flutter/DartPad
+                        </div>
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            Xcode (for iOS)
+                        </div>
+                        <!-- Second Row: 3 Items -->
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            React Native CLI
+                        </div>
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            Xamarin
+                        </div>
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            IntelliJ IDEA
+                        </div>
+                    </div>
                 </div>
-
-                <div class="card drop-shadow-lg dark:text-black border-b-8 border-b-slate-800">
-                    <a href="{{ route('industries.education') }}">
-                        <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                            Education / eLearning
-                        </h1>
-
-                        <p>
-                            <ol>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    School Management System
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Learning Management System
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Virtual Classroom
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Student's Portal
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Quizzes and Exams Portal
-                                </li>
-                            </ol>
-                        </p>
-                    </a>
+            </div>
+            <!-- ORMs Section -->
+            <div class="w-full mx-auto py-4 px-10 ml-1 rounded-lg border border-[#e6e6e6]">
+                <div class="flex flex-col text-left gap-4">
+                    <div class="w-12 h-12 mb-4">
+                        <img src="{{ asset('assets/img/our-services/NewcodeIcon.svg') }}" alt="">
+                    </div>
+                    <div class="text-[#17191c] text-lg font-semibold">ORMs</div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mt-4">
+                        <!-- First Row: 4 Items -->
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            Core Data (iOS)
+                        </div>
+                        <div class="col-span-2 md:col-span-1 px-3 py-3 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            ObjectBox
+                        </div>
+                        <div class="col-span-2 md:col-span-1 px-3 py-3 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            Firebase
+                        </div>
+                        <div class="col-span-2 md:col-span-1 px-3 py-3 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            Realm
+                        </div>
+                        <!-- Second Row: 1 Item -->
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            SQLite-Net
+                        </div>
+                    </div>
                 </div>
-
-                <div class="card drop-shadow-lg dark:text-black border-b-8 border-b-red-800">
-                    <a href="{{ route('industries.retail-ecommerce') }}">
-                        <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                            Retail / eCommerce
-                        </h1>
-
-                        <p>
-                            <ol>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Multi vendor eCommerce Platform
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Warehouse Solutions
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Delivery Solutions
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Retail ERP Software
-                                </li>
-                            </ol>
-                        </p>
-                    </a>
+            </div>
+        </div>
+        <div class="justify-start flex-col items-start inline-flex px-14">
+            <!-- Design Patterns Section -->
+            <div class="w-full mx-auto py-4 px-10 mr-6 rounded-lg border border-[#e6e6e6]">
+                <div class="flex flex-col text-left gap-4">
+                    <div class="w-12 h-12 mb-4">
+                        <img src="{{ asset('assets/img/our-services/NewcodeIcon.svg') }}" alt="">
+                    </div>
+                    <div class="text-[#17191c] text-lg font-semibold">Design Patterns</div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-2 mt-4">
+                        <!-- First Row: 3 Items -->
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            MVVM
+                        </div>
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            Repository Pattern
+                        </div>
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            BLoC
+                        </div>
+                        <!-- Second Row: 3 Items -->
+                        <div class="col-span-2 md:col-span-1 px-3 py-3 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            Riverpod
+                        </div>
+                        <div class="col-span-2 md:col-span-1 px-3 py-3 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            MVC
+                        </div>
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            Dependency Injection
+                        </div>
+                        <!-- Third Row: 2 Items -->
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            Clean Architecture
+                        </div>
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                            Observer
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+        <div class="mt-12 flex justify-center">
+            <a href="#" class="px-8 py-4 bg-[#143669] rounded-lg text-white text-base font-normal font-['Inter']">
+                Request a Free 15mins Consultation
+            </a>
+        </div>
+    </div>
+    <!-- End of What We Offer Section -->
 
-                <div class="card drop-shadow-lg dark:text-black border-b-8 border-b-yellow-800">
-                    <a href="{{ route('industries.real-estate') }}">
-                        <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                            Real Estate
-                        </h1>
 
-                        <p>
-                            <ol>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Property Marketplace
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    ERP Solutions
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    AR/VR Property Solution
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Estate Management Solution
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Property Auction Portal
-                                </li>
-                            </ol>
-                        </p>
-                    </a>
+    <!-- Pricing Section -->
+    <section class="pricing-section container w-full max-w-[1440px] h-auto relative bg-gray-50 p-6">
+        <div class="flex flex-col justify-start pl-16 gap-2.5">
+            <h2 class="text-[#17191C] text-xl font-bold">OUR FLEXIBLE PAYMENT PLANS</h2>
+            <p class="text-[#292D32] text-[15px] font-normal">We provide flexible models to meet your budgets and business objectives.</p>
+        </div>
+        <div class="flex flex-wrap justify-center items-center gap-8 mt-8">
+            <div class="flex flex-col p-6 w-[350px] h-[250px] rounded-md border border-[#008080] relative">
+                <img src="{{ asset('assets/img/our-services/dollar-circle.png') }}" alt="icon" class="w-10 h-10 absolute top-4 left-4">
+                <h3 class="mt-14 text-center text-[#008080] text-lg font-medium">Fixed Price Model</h3>
+                <p class="text-center whitespace-nowrap text-[#008080] text-[15px] font-normal">
+                    As a software development company, when <br> your project objectives are clearly defined, you <br> have the option to choose a fixed-price model, <br> offering a predetermined production cost, <br> contingent upon the maintenance of the <br> original scope.
+                </p>
+            </div>
+            <div class="flex flex-col p-6 w-[350px] h-[250px] rounded-md border border-[#FFA500] relative">
+                <img src="{{ asset('assets/img/our-services/watchIcon.png') }}" alt="icon" class="w-10 h-10 absolute top-4 left-4">
+                <h3 class="mt-14 text-center text-[#FFA500] text-lg font-medium">Phased Payment Structure</h3>
+                <p class="text-center whitespace-nowrap text-[#FFA500] text-[15px] font-normal mt-2">
+                    Tailored for progressive development <br> initiatives, this model ensures enhanced <br> adaptability, with payments synchronized to <br> the achievement of predefined project <br> milestones.
+                </p>
+            </div>
+            <div class="flex flex-col p-6 w-[350px] h-[250px] rounded-md border border-[#444444] relative">
+                <img src="{{ asset('assets/img/our-services/peopleIcon.png') }}" alt="icon" class="w-10 h-10 absolute top-4 left-4">
+                <h3 class="mt-14 text-center text-[#444444] text-lg font-medium">Leverage Elite Expertise</h3>
+                <p class="text-center whitespace-nowrap text-[#444444] text-[15px] font-normal mt-2">
+                    Access our onshore and offshore teams of top- <br> tier professionals to bolster your bespoke <br> product development.
+                </p>
+            </div>
+        </div>
+        <div class="flex justify-center items-center mt-8">
+            <a href="{{ route('contact-us') }}" class=" px-12 py-3 bg-[#143669] rounded-lg text-white text-base font-normal hover:bg-[#143671]">
+                Start a Project
+            </a>
+        </div>
+    </section>
+    <!-- End of Pricing Section -->
+
+
+    <!-- Frequently Asked Question Section -->
+    <section class="bg-[#f5f5fb] px-16 py-12 flex justify-center items-center">
+        <div class="w-full max-w-4xl">
+            <div class="text-center text-[#17191C] text-2xl font-semibold mb-8">FAQs</div>
+            <div class="space-y-4">
+                <div class="border-b border-gray-200 pb-4">
+                    <button class="w-full flex justify-between items-center text-left text-lg font-medium text-[#17191C] focus:outline-none" onclick="toggleFAQ(this)">
+                        What platforms do you develop apps for?
+                        <span class="transform transition-transform duration-200">&#x25BC;</span>
+                    </button>
+                    <div class="hidden pt-4 text-[#374151]">
+                        <p>We develop apps for a variety of platforms, including iOS, Android, and cross-platform solutions using frameworks such as React Native and Flutter. This ensures your app can reach a broad audience across different devices.</p>
+                    </div>
                 </div>
-
-                <div class="card drop-shadow-lg dark:text-black border-b-8 border-b-green-800">
-                    <a href="{{ route('industries.fintech') }}">
-                        <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                            FinTech
-                        </h1>
-
-                        <p>
-                            <ol>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Inventory Management System
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Loan Management System
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    On-demand Delivery Solutions
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Accounts Management Solution
-                                </li>
-                            </ol>
-                        </p>
-                    </a>
+                <div class="border-b border-gray-200 pb-4">
+                    <button class="w-full flex justify-between items-center text-left text-lg font-medium text-[#17191C] focus:outline-none" onclick="toggleFAQ(this)">
+                        How long does it take to develop a mobile app?
+                        <span class="transform transition-transform duration-200">&#x25BC;</span>
+                    </button>
+                    <div class="hidden pt-4 text-[#374151]">
+                        <p>The time to develop a mobile app can vary greatly depending on the complexity and features required. Generally, a standard mobile app can take anywhere from 3 to 6 months, including design, development, testing, and deployment.</p>
+                    </div>
+                </div>
+                <div class="border-b border-gray-200 pb-4">
+                    <button class="w-full flex justify-between items-center text-left text-lg font-medium text-[#17191C] focus:outline-none" onclick="toggleFAQ(this)">
+                        How much does it cost to develop a mobile app?
+                        <span class="transform transition-transform duration-200">&#x25BC;</span>
+                    </button>
+                    <div class="hidden pt-4 text-[#374151]">
+                        <p>The cost of developing a mobile app depends on various factors, including the app's complexity, platform, design, and additional features. On average, the cost can range from $10,000 to $100,000. We provide detailed estimates based on your specific requirements.</p>
+                    </div>
+                </div>
+                <div class="border-b border-gray-200 pb-4">
+                    <button class="w-full flex justify-between items-center text-left text-lg font-medium text-[#17191C] focus:outline-none" onclick="toggleFAQ(this)">
+                        Do you provide maintenance and support after the app is launched?
+                        <span class="transform transition-transform duration-200">&#x25BC;</span>
+                    </button>
+                    <div class="hidden pt-4 text-[#374151]">
+                        <p>Yes, we offer ongoing maintenance and support services post-launch to ensure your app continues to function smoothly. This includes updates, bug fixes, performance enhancements, and new feature development as needed.</p>
+                    </div>
+                </div>
+                <div class="border-b border-gray-200 pb-4">
+                    <button class="w-full flex justify-between items-center text-left text-lg font-medium text-[#17191C] focus:outline-none" onclick="toggleFAQ(this)">
+                        Will my app be compatible with different devices and screen sizes?
+                        <span class="transform transition-transform duration-200">&#x25BC;</span>
+                    </button>
+                    <div class="hidden pt-4 text-[#374151]">
+                        <p>Yes, we design and develop apps with responsiveness in mind, ensuring compatibility across various devices and screen sizes. Whether it's a smartphone, tablet, or wearable device, your app will provide a seamless user experience.</p>
+                    </div>
+                </div>
+                <div class="border-b border-gray-200 pb-4">
+                    <button class="w-full flex justify-between items-center text-left text-lg font-medium text-[#17191C] focus:outline-none" onclick="toggleFAQ(this)">
+                        What steps are involved in the app development process?
+                        <span class="transform transition-transform duration-200">&#x25BC;</span>
+                    </button>
+                    <div class="hidden pt-4 text-[#374151]">
+                        <p>The app development process typically involves several key steps: requirement gathering, design, development, testing, and deployment. We work closely with you at each stage to ensure the final product aligns with your vision and business goals.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End of Industry Solutions Section -->
+    <!-- End of Frequently Asked Question Section -->
+
+
+    <script>
+        function toggleFAQ(element) {
+            const content = element.nextElementSibling;
+            const icon = element.querySelector('span');
+
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+
+
 
     <!-- Locations & Enquiry Section -->
     <section class="w-[1440px] h-[684px] pl-[50px] pr-[104px] py-[91px] bg-[#EDEDF8] justify-start items-center inline-flex">
