@@ -31,7 +31,7 @@
 @section('content')
 <main class="w-full">
     <!-- Hero Section -->
-    <section class="relative h-screen flex flex-col justify-between text-center" style="background-image: url('{{ asset('assets/img/webdevhero.png') }}'); background-size: cover; background-position: center;">
+    <section class="relative h-screen flex flex-col justify-between text-center" style="background-image: url('{{ asset('assets/img/webdevhero.png') }}')">
         <!-- Dark Overlay -->
         <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
 
@@ -159,83 +159,85 @@
     <!-- End of Premium WebDev Section -->
 
 
-    <!-- Have a Request CTA Section -->
-    <div class="w-[1440px] h-[671px] relative bg-[#f8f8fc] flex-col justify-start items-start inline-flex">
-        <div class="flex-col justify-center items-start gap-2.5 inline-flex">
-            <div class="flex-col justify-center items-start gap-2.5 flex">
-                <div class="text-[#194587] text-base font-medium font-['Inter'] leading-normal">OUR SERVICES</div>
-                <div class="w-[1093px] text-[#17191c] text-lg font-semibold font-['Inter'] leading-relaxed">Explore Our Comprehensive Range of Bespoke Web Application Development Solutions tailored to meet your unique business needs.</div>
+    <!-- Our Service Section -->
+    <section class="w-[1440px] h-[630px] relative justify-start px-20 pt-14">
+        <div class="gap-[43px]">
+            <div class="flex-col">
+                <h2 class="text-[#194587] text-base font-semibold pb-4">OUR SERVICES</h2>
+                <h3 class="w-[1000px] text-[#17191c] text-md font-semibold pb-4">Explore Our Comprehensive Range of Bespoke Web Application Development Solutions tailored to meet your unique business needs.</h3>
             </div>
-            <div class="w-[918px] text-[#17191c] text-[15px] font-normal font-['Inter'] leading-snug">"Elevate your digital presence with our expertly crafted solutions designed for seamless performance and unmatched user experience."</div>
+            <p class="w-[890px] text-[#17191c] text-[15px] font-normal pb-7">"Elevate your digital presence with our expertly crafted solutions designed for seamless performance and unmatched user experience."</p>
         </div>
-        <div class="justify-start items-start gap-[30px] inline-flex">
-            <div class="justify-start items-start gap-1.5 flex">
-                <div class="w-6 h-6 justify-center items-center flex">
-                    <div class="w-6 h-6 relative">
+        <div class="">
+            <div class="flex gap-8 py-4">
+                <!-- First Block -->
+                <div class="flex gap-2 items-start">
+                    <img class="w-6 h-6" src="{{ asset('assets/img/our-services/codesymbol.svg') }}" alt="Icon" />
+                    <div>
+                        <h3 class="text-[#194587] text-base font-semibold">Mobile Application Development</h3>
+                        <p class="w-[500px] text-[#292d32] text-sm font-normal">
+                            Our seasoned team of custom web app developers excels in crafting seamless native, hybrid, and cross-platform applications, delivering impeccably secure, scalable, and polished mobile solutions.
+                        </p>
                     </div>
                 </div>
-                <div class="flex-col justify-start items-start gap-3 inline-flex">
-                    <div class="text-[#194587] text-[17px] font-medium font-['Inter'] leading-normal">Mobile Application Development</div>
-                    <div class="w-[576px] text-[#292d32] text-sm font-normal font-['Inter'] leading-tight">Our seasoned team of custom web app developers excels in crafting seamless native, hybrid, and cross-platform applications, delivering impeccably secure, scalable, and polished mobile solutions.</div>
+                <!-- Second Block -->
+                <div class="flex gap-4 items-start">
+                    <img class="w-6 h-6" src="{{ asset('assets/img/our-services/codesymbol.svg') }}" alt="Icon" />
+                    <div>
+                        <h3 class="text-[#194587] text-base font-semibold">Desktop Custom Software Development</h3>
+                        <p class="w-[500px] text-[#292d32] text-sm font-normal">
+                            Enhance your business efficiency with tailor-made desktop applications designed for seamless integration across all major operating systems, including Windows, MacOS, and Linux.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="justify-start items-start gap-1.5 flex">
-                <div class="w-6 h-6 justify-center items-center flex">
-                    <div class="w-6 h-6 relative">
+            <div class="flex gap-6 py-4">
+                <!-- Third Block -->
+                <div class="flex gap-4 items-start">
+                    <img class="w-6 h-6" src="{{ asset('assets/img/our-services/codesymbol.svg') }}" alt="Icon" />
+                    <div>
+                        <h3 class="text-[#194587] text-base font-semibold">DevOps Services</h3>
+                        <p class="w-[500px] text-[#292d32] text-sm font-normal">
+                            Leveraging DevOps services, we're optimizing development and operations for enhanced speed, reliability, and cost-effectiveness.
+                        </p>
                     </div>
                 </div>
-                <div class="flex-col justify-start items-start gap-3 inline-flex">
-                    <div class="text-[#194587] text-[17px] font-medium font-['Inter'] leading-normal">Desktop Custom Software Development</div>
-                    <div class="w-[576px] text-[#292d32] text-sm font-normal font-['Inter'] leading-tight">Enhance your business efficiency with tailor-made desktop applications designed for seamless integration across all major operating systems, including Windows, MacOS, and Linux.</div>
+                <!-- Fourth Block -->
+                <div class="flex gap-4 items-start">
+                    <img class="w-6 h-6" src="{{ asset('assets/img/our-services/codesymbol.svg') }}" alt="Icon" />
+                    <div>
+                        <h3 class="text-[#194587] text-base font-semibold">Front-end Web Application Development</h3>
+                        <p class="w-[500px] text-[#292d32] text-sm font-normal">
+                            Through meticulous strategic planning and custom web app development, we craft a compelling front-end tailored precisely to elevate your web applications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-6 py-4">
+                <!-- Fifth Block -->
+                <div class="flex gap-4 items-start">
+                    <img class="w-6 h-6" src="{{ asset('assets/img/our-services/codesymbol.svg') }}" alt="Icon" />
+                    <div>
+                        <h3 class="text-[#194587] text-base font-semibold">Custom We Application Development</h3>
+                        <p class="w-[500px] text-[#292d32] text-sm font-normal">
+                            Elevate your online presence with our tailored web applications—crafted to deliver robust functionality, fortified security, scalability, and beyond.
+                        </p>
+                    </div>
+                </div>
+                <!-- Sixth Block -->
+                <div class="flex gap-4 items-start">
+                    <img class="w-6 h-6" src="{{ asset('assets/img/our-services/codesymbol.svg') }}" alt="Icon" />
+                    <div>
+                        <h3 class="text-[#194587] text-base font-semibold">IT Staff Augmentation Service</h3>
+                        <p class="w-[500px] text-[#292d32] text-sm font-normal">
+                            Do you need some extra help with your development projects? If yes then worry no more as our custom web app development company have got your back covered.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="justify-start items-start gap-[30px] inline-flex">
-            <div class="justify-start items-start gap-1.5 flex">
-                <div class="w-6 h-6 justify-center items-center flex">
-                    <div class="w-6 h-6 relative">
-                    </div>
-                </div>
-                <div class="flex-col justify-start items-start gap-3 inline-flex">
-                    <div class="text-[#194587] text-[17px] font-medium font-['Inter'] leading-normal">DevOps Services</div>
-                    <div class="w-[576px] text-[#292d32] text-sm font-normal font-['Inter'] leading-tight">Leveraging DevOps services, we're optimizing development and operations for enhanced speed, reliability, and cost-effectiveness.</div>
-                </div>
-            </div>
-            <div class="justify-start items-start gap-1.5 flex">
-                <div class="w-6 h-6 justify-center items-center flex">
-                    <div class="w-6 h-6 relative">
-                    </div>
-                </div>
-                <div class="flex-col justify-start items-start gap-3 inline-flex">
-                    <div class="text-[#194587] text-[17px] font-medium font-['Inter'] leading-normal">Front-end Web Application Development</div>
-                    <div class="w-[576px] text-[#292d32] text-sm font-normal font-['Inter'] leading-tight">Through meticulous strategic planning and custom web app development, we craft a compelling front-end tailored precisely to elevate your web applications.</div>
-                </div>
-            </div>
-        </div>
-        <div class="justify-start items-start gap-[30px] inline-flex">
-            <div class="justify-start items-start gap-1.5 flex">
-                <div class="w-6 h-6 justify-center items-center flex">
-                    <div class="w-6 h-6 relative">
-                    </div>
-                </div>
-                <div class="flex-col justify-start items-start gap-3 inline-flex">
-                    <div class="text-[#194587] text-[17px] font-medium font-['Inter'] leading-normal">Custom We Application Development</div>
-                    <div class="w-[576px] text-[#292d32] text-sm font-normal font-['Inter'] leading-tight">Elevate your online presence with our tailored web applications—crafted to deliver robust functionality, fortified security, scalability, and beyond.</div>
-                </div>
-            </div>
-            <div class="justify-start items-start gap-1.5 flex">
-                <div class="w-6 h-6 justify-center items-center flex">
-                    <div class="w-6 h-6 relative">
-                    </div>
-                </div>
-                <div class="flex-col justify-start items-start gap-3 inline-flex">
-                    <div class="text-[#194587] text-[17px] font-medium font-['Inter'] leading-normal">IT Staff Augmentation Service</div>
-                    <div class="w-[576px] text-[#292d32] text-sm font-normal font-['Inter'] leading-tight">Do you need some extra help with your development projects? If yes then worry no more as our custom web app development company have got your back covered.</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End of Have a Request CTA Section -->
+    </section>
+    <!-- End of Our Service Section -->
 
     <!-- Visionary Partners Section -->
     <section class="px-16 bg-white dark:text-white dark:bg-gray-800 flex justify-between">

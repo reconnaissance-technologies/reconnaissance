@@ -130,7 +130,7 @@
             <!-- Second Block with Grid Layout -->
             <div class="grid grid-cols-2 gap-8">
                 <!-- Second Block -->
-                <div class="flex gap-4 items-start">
+                <div class="flex items-start">
                     <img class="w-6 h-6" src="{{ asset('assets/img/our-services/codesymbol.svg') }}" alt="Icon" />
                     <div>
                         <h3 class="text-[#194587] text-base font-semibold">Seamless Integration Across Platforms</h3>
