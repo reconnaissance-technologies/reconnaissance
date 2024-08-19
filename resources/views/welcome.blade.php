@@ -80,6 +80,27 @@
             });
         });
     });
+
+    const arrowL = document.getElementById("arrowL")
+    arrowL.addEventListener("click", scrollLeft)
+
+    function scrollLeft() {
+        const sliderContent = document.getElementById('slider-content');
+        sliderContent.scrollBy({
+            top: 0,
+            left: -600, // Scroll by the width of one card
+            behavior: 'smooth'
+        });
+    }
+
+    function scrollRight() {
+        const sliderContent = document.getElementById('slider-content');
+        sliderContent.scrollBy({
+            top: 0,
+            left: 600, // Scroll by the width of one card
+            behavior: 'smooth'
+        });
+    }
 </script>
 @endsection
 
@@ -88,7 +109,7 @@
     <!-- Hero Section -->
     <section class="relative flex items-center justify-center h-screen overflow-hidden">
         <!-- Video Background -->
-        <video autoplay muted loop class="absolute inset-0 object-cover w-full h-full" src="https://s3-figma-videos-production-sig.figma.com/video/1134555079227565548/TEAM/1bfb/2cc8/-84f7-407b-a6ec-4685afbc8772?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pZJ3wdTSrh5FKwjHei9wg3iWD6BOZRjSuEQibXzZrfTVy5srTk424XAsPDqVPSYtakWvLA2lxnkEw56Pc0kyhvlGsZFTp~tahlCCZH4UJ62dEpiBhI7WSaK7FSi16L4OozSQH-Ts-dTjefgDSbWzD~3TpCoDgyQrLBgFgsBed0~z-uMtrrUU-R5Fd4vrWNXoK80-qmCCtILVaN0GTESTLpo7ggWFUe-RGIZZBruVAhm61oqLFWDDaVs3BCi59Y4z-bgOdeVDyNkZfpkvMWo8xvA05MV-IuvlvLhR6BzZy59xxlXyWj4U-50sv1zdzvgJxwtknjiHosjTEYBN2V7lIQ__"></video>
+        <video autoplay muted loop class="absolute inset-0 object-cover w-full h-full" src="https://res.cloudinary.com/reconaissance-technologies/video/upload/v1724068463/rt-website/videos/hero-section/homepage-bg-video.webm"></video>
 
         <!-- Hero Content -->
         <div class="text-center text-white z-10">
@@ -123,20 +144,20 @@
     <!-- End of Hero Section -->
 
     <!-- About Us Section -->
-    <section class="px-16 bg-[#F5F5FB]">
+    <section class="px-16 bg-gray-100">
         <!-- Company Introduction -->
         <div class="w-full flex justify-between">
             <div class="lg:w-1/2 py-6">
                 <h3 class="text-rt-primary py-3 text-sm uppercase font-semibold">Introduction</h3>
-                <h4 class="w-3/4 text-lg lg:text-lg font-bold mt-2 mb-2 lg:mb-6">
+                <p class="w-3/4 text-lg lg:text-lg mt-2 mb-2 lg:mb-6">
                     Our commitment lies in empowering businesses to excel in the ever-evolving market landscape.
                     We achieve this by delivering impactful software development and enterprise technology solutions
                     that yield tangible and measurable outcomes.
-                </h4>
+                </p>
             </div>
 
             <div class="lg:w-1/2 pt-6">
-                <h3 class="text-[#F5F5FB] py-3 uppercase font-semibold">Introduction</h3>
+                <h3 class="text-gray-100 py-3 uppercase font-semibold">Introduction</h3>
                 <div>
                     <p class="">
                         Reconnaissance Technologies is a seasoned software development company leveraging years of expertise
@@ -163,25 +184,25 @@
                 <div class="rounded-lg bg-rt-white p-6 shadow-lg">
                     <img src="{{ asset('assets/icons/medal-star.svg') }}" alt="">
                     <h4 class="pt-2 font-semibold text-black lg:text-4xl">3+</h4>
-                    <h6 class="font-semibold text-[#17191c]">Years in Business</h6>
+                    <h6 class="font-semibold text-black">Years in Business</h6>
                     <p class="py-3">Vast experience in delivering comprehensive IT solutions and services</p>
                 </div>
                 <div class="rounded-lg bg-rt-white p-6 shadow-lg">
                     <img src="{{ asset('assets/icons/cup.svg') }}" alt="">
                     <h4 class="pt-2 font-semibold text-black lg:text-4xl">5+</h4>
-                    <h6 class="font-semibold text-[#17191c]">Awards</h6>
+                    <h6 class="font-semibold text-black">Awards</h6>
                     <p class="py-3">Achieving acclaim via esteemed industry accolades for exceptional performance</p>
                 </div>
                 <div class="rounded-lg bg-rt-white p-6 shadow-lg">
                     <img src="{{ asset('assets/icons/teacher.svg') }}" alt="">
                     <h4 class="pt-2 font-semibold text-black lg:text-4xl">10+</h4>
-                    <h6 class="font-semibold text-[#17191c]">Experts</h6>
+                    <h6 class="font-semibold text-black">Experts</h6>
                     <p class="py-3">A commited team of passionate, experienced, and highly skilled professionals</p>
                 </div>
                 <div class="rounded-lg bg-rt-white p-6 shadow-lg">
                     <img src="{{ asset('assets/icons/people.svg') }}" alt="">
                     <h4 class="pt-2 font-semibold text-black lg:text-4xl">12+</h4>
-                    <h6 class="font-semibold text-[#17191c]">Clients</h6>
+                    <h6 class="font-semibold text-black">Clients</h6>
                     <p class="py-3">Our quality and processes are validated by testimonials from clients worldwide</p>
                 </div>
             </div>
@@ -234,217 +255,218 @@
         <div>
             <div data-content="product-design" class="tab-content">
 
-                <div class="text-[#17191c] pt-4 font-bold">Elevate Your Digital Products with Our Design Expertise</div>
-                <div class="w-[1164px] text-[#3b4454] text-[15px] font-normal mt-3">Transform your ideas into exceptional digital products with our comprehensive Product Design Services. From concept to execution, we collaborate closely with you to create user-centric designs that drive engagement and deliver outstanding user experiences.</div>
+                <div class="text-black pt-4 font-bold">Elevate Your Digital Products with Our Design Expertise</div>
+                <div class="w-[1164px] text-gray-700 text-sm font-normal mt-3">Transform your ideas into exceptional digital products with our comprehensive Product Design Services. From concept to execution, we collaborate closely with you to create user-centric designs that drive engagement and deliver outstanding user experiences.</div>
                 <div class="flex py-8">
                     <img class="w-[448px] h-60" src="{{ asset('assets/img/our-services/3d-cartoon.png') }}" alt="">
-                    <div class="w-[739px] text-[#3b4454] text-[15px] font-normal ml-9">Our Product Design Services offer comprehensive solutions to transform your ideas into exceptional digital products. From concept to execution, we collaborate closely with you to create user-centric designs that drive engagement and deliver outstanding user experiences.
+                    <div class="w-[739px] text-gray-700 text-sm font-normal ml-9">Our Product Design Services offer comprehensive solutions to transform your ideas into exceptional digital products. From concept to execution, we collaborate closely with you to create user-centric designs that drive engagement and deliver outstanding user experiences.
                         <br>
                         <br>
                         Tailored product design teams aligned with your project needs, ensuring skill alignment and cultural compatibility, fostering close collaboration to inject fresh energy and innovative ideas into your project.
                     </div>
                 </div>
-                <div class="h-[275px] justify-start items-start gap-[70px] inline-flex">
+                <div class="h-[275px] justify-start items-start gap-16 inline-flex">
                     <div class="flex-col justify-start items-start gap-2.5 inline-flex">
-                        <div class="text-[#17191c] text-base font-semibold">Key Features</div>
+                        <div class="text-black text-base font-semibold">Key Features</div>
                         <div class="flex-col justify-start items-start gap-2.5 flex">
-                            <div class="justify-start items-center gap-2.5 inline-flex">
-                                <div class="w-8 h-8 p-[9px] bg-[#4970a9]/40 rounded-[100px] justify-center items-center flex">
-                                    <div class="w-3.5 h-3.5 relative bg-[#3d4566] rounded-[100px]"></div>
+                            <div class="justify-start items-center gap-2.5 inline-flex hover:animate-pulse">
+                                <div class="w-8 h-8 p-2 bg-blue-900/40 rounded-full justify-center items-center flex">
+                                    <div class="w-3.5 h-3.5 relative bg-blue-900 rounded-full"></div>
                                 </div>
-                                <div class="text-[#3b4454] text-[15px] font-normal">User Research</div>
+                                <div class="text-gray-700 text-sm font-normal">User Research</div>
                             </div>
-                            <div class="justify-center items-center gap-2.5 inline-flex">
-                                <div class="w-8 h-8 p-[9px] bg-[#4970a9]/40 rounded-[100px] justify-center items-center flex">
-                                    <div class="w-3.5 h-3.5 relative bg-[#3d4566] rounded-[100px]"></div>
+                            <div class="justify-center items-center gap-2.5 inline-flex hover:animate-pulse">
+                                <div class="w-8 h-8 p-2 bg-blue-900/40 rounded-full justify-center items-center flex">
+                                    <div class="w-3.5 h-3.5 relative bg-blue-900 rounded-full"></div>
                                 </div>
-                                <div class="text-[#3b4454] text-[15px] font-normal">Wireframing and Prototyping</div>
+                                <div class="text-gray-700 text-sm font-normal">Wireframing and Prototyping</div>
                             </div>
-                            <div class="justify-center items-center gap-2.5 inline-flex">
-                                <div class="w-8 h-8 p-[9px] bg-[#4970a9]/40 rounded-[100px] justify-center items-center flex">
-                                    <div class="w-3.5 h-3.5 relative bg-[#3d4566] rounded-[100px]"></div>
+                            <div class="justify-center items-center gap-2.5 inline-flex hover:animate-pulse">
+                                <div class="w-8 h-8 p-2 bg-blue-900/40 rounded-full justify-center items-center flex">
+                                    <div class="w-3.5 h-3.5 relative bg-blue-900 rounded-full"></div>
                                 </div>
-                                <div class="text-[#3b4454] text-[15px] font-normal">UI/UX Design</div>
+                                <div class="text-gray-700 text-sm font-normal">UI/UX Design</div>
                             </div>
-                            <div class="justify-center items-center gap-2.5 inline-flex">
-                                <div class="w-8 h-8 p-[9px] bg-[#4970a9]/40 rounded-[100px] justify-center items-center flex">
-                                    <div class="w-3.5 h-3.5 relative bg-[#3d4566] rounded-[100px]"></div>
+                            <div class="justify-center items-center gap-2.5 inline-flex hover:animate-pulse">
+                                <div class="w-8 h-8 p-2 bg-blue-900/40 rounded-full justify-center items-center flex">
+                                    <div class="w-3.5 h-3.5 relative bg-blue-900 rounded-full"></div>
                                 </div>
-                                <div class="text-[#3b4454] text-[15px] font-normal">Iterative Testing</div>
+                                <div class="text-gray-700 text-sm font-normal">Iterative Testing</div>
                             </div>
-                            <div class="justify-center items-center gap-2.5 inline-flex">
-                                <div class="w-8 h-8 p-[9px] bg-[#4970a9]/40 rounded-[100px] justify-center items-center flex">
-                                    <div class="w-3.5 h-3.5 relative bg-[#3d4566] rounded-[100px]"></div>
+                            <div class="justify-center items-center gap-2.5 inline-flex hover:animate-pulse">
+                                <div class="w-8 h-8 p-2 bg-blue-900/40 rounded-full justify-center items-center flex">
+                                    <div class="w-3.5 h-3.5 relative bg-blue-900 rounded-full"></div>
                                 </div>
-                                <div class="text-[#3b4454] text-[15px] font-normal">Collaboration with Dev Teams</div>
+                                <div class="text-gray-700 text-sm font-normal">Collaboration with Dev Teams</div>
                             </div>
-                            <div class="justify-center items-center gap-2.5 inline-flex">
-                                <div class="w-8 h-8 p-[9px] bg-[#4970a9]/40 rounded-[100px] justify-center items-center flex">
-                                    <div class="w-3.5 h-3.5 relative bg-[#3d4566] rounded-[100px]"></div>
+                            <div class="justify-center items-center gap-2.5 inline-flex hover:animate-pulse">
+                                <div class="w-8 h-8 p-2 bg-blue-900/40 rounded-full justify-center items-center flex">
+                                    <div class="w-3.5 h-3.5 relative bg-blue-900 rounded-full"></div>
                                 </div>
-                                <div class="text-[#3b4454] text-[15px] font-normal">Delivery of Design Assets</div>
+                                <div class="text-gray-700 text-sm font-normal">Delivery of Design Assets</div>
                             </div>
                         </div>
                     </div>
                     <div class="flex-col justify-start items-start gap-2.5 inline-flex">
-                        <div class="text-[#17191c] text-base font-semibold">Benefits</div>
+                        <div class="text-black text-base font-semibold">Benefits</div>
                         <div class="flex-col justify-start items-start gap-2.5 flex">
-                            <div class="justify-start items-center gap-2.5 inline-flex">
-                                <div class="w-8 h-8 p-[9px] bg-[#4970a9]/40 rounded-[100px] justify-center items-center flex">
-                                    <div class="w-3.5 h-3.5 relative bg-[#3d4566] rounded-[100px]"></div>
+                            <div class="justify-start items-center gap-2.5 inline-flex hover:animate-pulse">
+                                <div class="w-8 h-8 p-2 bg-blue-900/40 rounded-full justify-center items-center flex">
+                                    <div class="w-3.5 h-3.5 relative bg-blue-900 rounded-full"></div>
                                 </div>
-                                <div class="text-[#3b4454] text-[15px] font-normal">Enhanced User Experience</div>
+                                <div class="text-gray-700 text-sm font-normal">Enhanced User Experience</div>
                             </div>
-                            <div class="justify-center items-center gap-2.5 inline-flex">
-                                <div class="w-8 h-8 p-[9px] bg-[#4970a9]/40 rounded-[100px] justify-center items-center flex">
-                                    <div class="w-3.5 h-3.5 relative bg-[#3d4566] rounded-[100px]"></div>
+                            <div class="justify-center items-center gap-2.5 inline-flex hover:animate-pulse">
+                                <div class="w-8 h-8 p-2 bg-blue-900/40 rounded-full justify-center items-center flex">
+                                    <div class="w-3.5 h-3.5 relative bg-blue-900 rounded-full"></div>
                                 </div>
-                                <div class="text-[#3b4454] text-[15px] font-normal">Faster Time-to-Market</div>
+                                <div class="text-gray-700 text-sm font-normal">Faster Time-to-Market</div>
                             </div>
-                            <div class="justify-center items-center gap-2.5 inline-flex">
-                                <div class="w-8 h-8 p-[9px] bg-[#4970a9]/40 rounded-[100px] justify-center items-center flex">
-                                    <div class="w-3.5 h-3.5 relative bg-[#3d4566] rounded-[100px]"></div>
+                            <div class="justify-center items-center gap-2.5 inline-flex hover:animate-pulse">
+                                <div class="w-8 h-8 p-2 bg-blue-900/40 rounded-full justify-center items-center flex">
+                                    <div class="w-3.5 h-3.5 relative bg-blue-900 rounded-full"></div>
                                 </div>
-                                <div class="text-[#3b4454] text-[15px] font-normal">Reduced Development Costs</div>
+                                <div class="text-gray-700 text-sm font-normal">Reduced Development Costs</div>
                             </div>
-                            <div class="justify-center items-center gap-2.5 inline-flex">
-                                <div class="w-8 h-8 p-[9px] bg-[#4970a9]/40 rounded-[100px] justify-center items-center flex">
-                                    <div class="w-3.5 h-3.5 relative bg-[#3d4566] rounded-[100px]"></div>
+                            <div class="justify-center items-center gap-2.5 inline-flex hover:animate-pulse">
+                                <div class="w-8 h-8 p-2 bg-blue-900/40 rounded-full justify-center items-center flex">
+                                    <div class="w-3.5 h-3.5 relative bg-blue-900 rounded-full"></div>
                                 </div>
-                                <div class="text-[#3b4454] text-[15px] font-normal">Enhanced Product Competitiveness</div>
+                                <div class="text-gray-700 text-sm font-normal">Enhanced Product Competitiveness</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="h-[316px] flex-col justify-start items-start gap-10 inline-flex">
+                <div class="h-72 flex-col justify-start items-start gap-10 inline-flex">
                     <div class="flex-col justify-start items-start gap-5 flex ml-28">
-                        <div class="text-[#17191c] text-lg font-bold">ToolKits</div>
+                        <div class="text-black text-base font-semibold">ToolKits</div>
                         <div class="flex-col justify-start items-start gap-2.5 flex">
-                            <div class="text-[#17191c] text-base font-medium">Design Tools</div>
+                            <div class="text-black text-base font-medium">Design Tools</div>
                             <div class="justify-start items-start gap-3 inline-flex">
-                                <div class="flex-col justify-center items-center gap-[27px] inline-flex">
-                                    <div class="flex-col justify-center items-center gap-[15px] flex">
-                                        <div class="w-[47px] h-[47px] relative bg-[#f5f5fb] rounded-lg">
+                                <div class="flex-col justify-center items-center gap-7 inline-flex">
+                                    <div class="flex-col justify-center items-center gap-4 flex">
+                                        <div class="w-12 h-12 relative bg-gray-200 rounded-lg">
                                             <img src="{{ asset('assets/img/our-services/figmaImg.png') }}" alt="">
                                         </div>
-                                        <div class="text-[#717171] text-sm font-normal">Figma</div>
+                                        <div class="text-gray-700 text-sm font-normal">Figma</div>
                                     </div>
                                 </div>
-                                <div class="flex-col justify-center items-center gap-[27px] inline-flex">
-                                    <div class="flex-col justify-center items-center gap-[15px] flex">
-                                        <div class="w-[47px] h-[47px] pl-3 pr-[13px] pt-[13px] pb-3.5 bg-[#f5f5fb] rounded-lg justify-center items-center inline-flex">
+                                <div class="flex-col justify-center items-center gap-7 inline-flex">
+                                    <div class="flex-col justify-center items-center gap-4 flex">
+                                        <div class="w-12 h-12 pl-3 pr-3 pt-3 pb-3.5 bg-gray-200 rounded-lg justify-center items-center inline-flex">
                                             <img src="{{ asset('assets/img/our-services/diamondImg.png') }}" alt="">
-                                            <div class="w-[22px] h-5 relative flex-col justify-start items-start flex"></div>
+                                            <div class="w- h-5 relative flex-col justify-start items-start flex"></div>
                                         </div>
-                                        <div class="text-[#717171] text-sm font-normal">Sketch</div>
+                                        <div class="text-gray-700 text-sm font-normal">Sketch</div>
                                     </div>
                                 </div>
-                                <div class="flex-col justify-center items-center gap-[27px] inline-flex">
-                                    <div class="flex-col justify-center items-center gap-[15px] flex">
-                                        <div class="w-[47px] h-[47px] pl-3 pr-[13px] py-[13px] bg-[#f5f5fb] rounded-lg justify-center items-center inline-flex">
+                                <div class="flex-col justify-center items-center gap-7 inline-flex">
+                                    <div class="flex-col justify-center items-center gap-4 flex">
+                                        <div class="w-12 h-12 pl-3 pr-3 py-3 bg-gray-200 rounded-lg justify-center items-center inline-flex">
                                             <img src="{{ asset('assets/img/our-services/adobexdImg.png') }}" alt="">
-                                            <div class="w-[22px] h-[21px] relative flex-col justify-start items-start flex"></div>
+                                            <div class="w-5 h-5 relative flex-col justify-start items-start flex"></div>
                                         </div>
-                                        <div class="text-[#717171] text-sm font-normal">Adobe XD</div>
+                                        <div class="text-gray-700 text-sm font-normal">Adobe XD</div>
                                     </div>
                                 </div>
-                                <div class="flex-col justify-center items-center gap-[27px] inline-flex">
-                                    <div class="flex-col justify-center items-center gap-[15px] flex">
-                                        <div class="w-[47px] h-[47px] pl-3 pr-[13px] pt-3 pb-[13px] bg-[#f5f5fb] rounded-lg justify-center items-center inline-flex">
+                                <div class="flex-col justify-center items-center gap-7 inline-flex">
+                                    <div class="flex-col justify-center items-center gap-4 flex">
+                                        <div class="w-12 h-12 pl-3 pr-3 pt-3 pb-3 bg-gray-200 rounded-lg justify-center items-center inline-flex">
                                             <img src="{{ asset('assets/img/our-services/invisionImg.png') }}" alt="">
-                                            <div class="w-[22px] h-[22px] relative flex-col justify-start items-start flex"></div>
+                                            <div class="w-5 h-5 relative flex-col justify-start items-start flex"></div>
                                         </div>
-                                        <div class="text-[#717171] text-sm font-normal">InVision</div>
+                                        <div class="text-gray-700 text-sm font-normal">InVision</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="justify-start items-start gap-[70px] inline-flex">
+                    <div class="justify-start items-start gap-16 inline-flex">
                         <div class="flex-col justify-start items-start gap-2.5 inline-flex ml-28">
-                            <div class="text-[#17191c] text-base font-medium">Collaboration Tools</div>
+                            <div class="text-black text-base font-medium">Collaboration Tools</div>
                             <div class="justify-start items-start gap-3 inline-flex">
-                                <div class="flex-col justify-center items-center gap-[27px] inline-flex">
-                                    <div class="flex-col justify-center items-center gap-[15px] flex">
-                                        <div class="w-[47px] h-[47px] pl-[13px] pr-3.5 pt-[13px] pb-3.5 bg-[#f5f5fb] rounded-lg justify-center items-center inline-flex">
+                                <div class="flex-col justify-center items-center gap-7 inline-flex">
+                                    <div class="flex-col justify-center items-center gap-4 flex">
+                                        <div class="w-12 h-12 pl-3 pr-3.5 pt-3 pb-3.5 bg-gray-200 rounded-lg justify-center items-center inline-flex">
                                             <img src="{{ asset('assets/img/our-services/slackImg.png') }}" alt="">
                                             <div class="w-5 h-5 relative flex-col justify-start items-start flex"></div>
                                         </div>
-                                        <div class="text-[#717171] text-sm font-normal">Slack</div>
+                                        <div class="text-gray-700 text-sm font-normal">Slack</div>
                                     </div>
                                 </div>
-                                <div class="flex-col justify-center items-center gap-[27px] inline-flex">
-                                    <div class="flex-col justify-center items-center gap-[15px] flex">
-                                        <div class="w-[47px] h-[47px] px-[12.50px] pt-3 pb-[13px] bg-[#f5f5fb] rounded-lg justify-center items-center inline-flex">
+                                <div class="flex-col justify-center items-center gap-7 inline-flex">
+                                    <div class="flex-col justify-center items-center gap-4 flex">
+                                        <div class="w-12 h-12 px-3 pt-3 pb-3 bg-gray-200 rounded-lg justify-center items-center inline-flex">
                                             <img src="{{ asset('assets/img/our-services/githubImg.png') }}" alt="">
-                                            <div class="w-[22px] h-[22px] relative flex-col justify-start items-start flex"></div>
+                                            <div class="w-5 h-5 relative flex-col justify-start items-start flex"></div>
                                         </div>
-                                        <div class="text-[#717171] text-sm font-normal">GitHub</div>
+                                        <div class="text-gray-700 text-sm font-normal">GitHub</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="flex-col justify-start items-start gap-2.5 inline-flex">
-                            <div class="text-[#17191c] font-medium">Prototyping Tools</div>
+                            <div class="text-black font-medium">Prototyping Tools</div>
                             <div class="justify-start items-start gap-3 inline-flex">
-                                <div class="flex-col justify-center items-center gap-[27px] inline-flex">
-                                    <div class="flex-col justify-center items-center gap-[15px] flex">
-                                        <div class="w-[47px] h-[47px] pl-[11.50px] pr-[12.50px] py-[13px] bg-[#f5f5fb] rounded-lg justify-center items-center inline-flex">
-                                            <img class="w-[23px] h-[21px]" src="{{ asset('assets/img/our-services/protoImg.png') }}" />
+                                <div class="flex-col justify-center items-center gap-7 inline-flex">
+                                    <div class="flex-col justify-center items-center gap-4 flex">
+                                        <div class="w-12 h-12 pl-2 pr-3 py-3 bg-gray-200 rounded-lg justify-center items-center inline-flex">
+                                            <img class="w-5 h-5" src="{{ asset('assets/img/our-services/protoImg.png') }}" />
                                         </div>
-                                        <div class="text-[#717171] text-sm font-normal">Proto.io</div>
+                                        <div class="text-gray-700 text-sm font-normal">Proto.io</div>
                                     </div>
                                 </div>
-                                <div class="flex-col justify-center items-center gap-[27px] inline-flex">
-                                    <div class="flex-col justify-center items-center gap-[15px] flex">
-                                        <div class="w-[47px] h-[47px] p-[11px] bg-[#f5f5fb] rounded-lg justify-center items-center inline-flex">
-                                            <img class="w-[25px] h-[25px] rounded-lg" src="{{ asset('assets/img/our-services/marvelImg.png') }}" />
+                                <div class="flex-col justify-center items-center gap-7 inline-flex">
+                                    <div class="flex-col justify-center items-center gap-4 flex">
+                                        <div class="w-12 h-12 p-3 bg-gray-200 rounded-lg justify-center items-center inline-flex">
+                                            <img class="w-5 h-5 rounded-lg" src="{{ asset('assets/img/our-services/marvelImg.png') }}" />
                                         </div>
-                                        <div class="text-[#717171] text-sm font-normal">Marvel</div>
+                                        <div class="text-gray-700 text-sm font-normal">Marvel</div>
                                     </div>
                                 </div>
-                                <div class="flex-col justify-center items-center gap-[27px] inline-flex">
-                                    <div class="flex-col justify-center items-center gap-[15px] flex">
-                                        <div class="w-[47px] h-[47px] pl-[9.50px] pr-[10.50px] pt-[13px] pb-3.5 bg-[#f5f5fb] rounded-lg justify-center items-center inline-flex">
-                                            <img class="w-[27px] h-5 rounded-lg" src="{{ asset('assets/img/our-services/principleImg.png') }}" />
+                                <div class="flex-col justify-center items-center gap-7 inline-flex">
+                                    <div class="flex-col justify-center items-center gap-4 flex">
+                                        <div class="w-12 h-12 pl-2 pr-2 pt-3 pb-3.5 bg-gray-200 rounded-lg justify-center items-center inline-flex">
+                                            <img class="w-5 h-5 rounded-lg" src="{{ asset('assets/img/our-services/principleImg.png') }}" />
                                         </div>
-                                        <div class="text-[#717171] text-sm font-normal">Principle</div>
+                                        <div class="text-gray-700 text-sm font-normal">Principle</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <section class="w-full h-[502px] px-16 pt-[69px] pb-[70px] bg-transparent flex justify-center items-center">
-                    <div class="w-full max-w-[1200px] pl-[93px] pr-[94px] pt-[47px] pb-12 bg-[#143669] rounded-lg flex justify-between items-center">
-                        <div class="flex flex-col justify-start items-start gap-[27px]">
-                            <div class="w-[450px] text-white text-2xl font-medium whitespace-nowrap">
+
+                <div class="w-full h-[502px] px-16 pt-16 pb-16 bg-transparent flex justify-center items-center">
+                    <div class="w-full max-w-[1200px] pl-24 pr-24 pt-12 pb-12 bg-rt-primary-dark rounded-lg flex justify-between items-center">
+                        <div class="flex flex-col justify-start items-start gap-7">
+                            <div class="w-80 text-white text-2xl font-medium whitespace-nowrap">
                                 Discover how our Product Design Services <br> transformed VIVINO's digital product, resulting <br> in a 60% increase in engagement and a 10% <br> decrease in bounce rate.
                             </div>
-                            <div class="flex justify-start items-center gap-[26px]">
-                                <img class="w-[67px] h-[67px] relative rounded-[100px]" src="{{ asset('assets/img/testimonials/Heinelayout.png') }}" />
+                            <div class="flex justify-start items-center gap-6">
+                                <img class="w-16 h-16 relative rounded-full" src="{{ asset('assets/img/testimonials/Heinelayout.png') }}" />
                                 <div class="flex flex-col justify-start items-start gap-2">
                                     <div class="text-white text-sm font-bold">HEINE ZACHARIASSEN</div>
                                     <div class="text-white text-sm font-normal">Founder & CEO</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="flex px-[17px] pt-4 pb-[17px] bg-white rounded-2xl justify-center items-center">
+                        <div class="flex px-4 pt-4 pb-4 bg-white rounded-2xl justify-center items-center">
                             <div class="flex justify-start items-center">
-                                <img class="w-[131px] h-[232px]" src="{{ asset('assets/img/testimonials/Winelayout.png') }}" />
-                                <img class="w-[127px] h-[235px]" src="{{ asset('assets/img/testimonials/Phonelayout.png') }}" />
+                                <img class="w-32 h-56" src="{{ asset('assets/img/testimonials/Winelayout.png') }}" />
+                                <img class="w-32 h-56" src="{{ asset('assets/img/testimonials/Phonelayout.png') }}" />
                             </div>
                         </div>
                     </div>
-                </section>
-                <div class="w-full flex justify-center mt-8">
-                    <a class="w-[155px] h-[59px] pl-[34px] pr-[35px] py-[18px] rounded-lg border border-[#143669] justify-center items-center inline-flex" href="{{ route('services.product-design') }}">
-                        <button class="text-[#143669] text-base font-normal">Learn More</button>
-                    </a>
                 </div>
 
-
+                <div class="w-full flex justify-center mb-10">
+                    <a class="w-40 px-9 py-4 rounded-lg border hover:bg-rt-primary-dark hover:text-white border-rt-primary-dark text-rt-primary-dark justify-center items-center inline-flex" href="{{ route('services.product-design') }}">
+                        Learn More
+                    </a>
+                </div>
             </div>
+            
             <!-- Repeat for other tabs content (Software Development, Web App Development, etc.) -->
             <!-- Example for software development tab -->
             <div data-content="software-development" class="tab-content hidden">
@@ -496,7 +518,7 @@
     <!-- End of Our Services Section -->
 
     <!-- Our Solutions Section -->
-    <section class="px-16 bg-white">
+    <section class="px-16 bg-gray-100">
         <div class="w-full py-6">
             <h3 class="text-rt-primary py-3 text-sm uppercase font-semibold">Our Solutions</h3>
             <p class="w-full lg:w-full flex justify-between items-center">
@@ -505,51 +527,51 @@
         </div>
 
         <div class="grid grid-cols-4 gap-8 pb-8">
-            <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
+            <div class="p-10 rounded-lg border text-center border-gray-900 flex-col justify-end items-center gap-px inline-flex">
                 <img class="" src="{{ asset('assets/icons/ecommerce-solution-icon.svg') }}" />
                 <div class="text-zinc-800 pt-3 font-normal">eCommerce Solution</div>
             </div>
-            <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
+            <div class="p-10 rounded-lg border text-center border-gray-900 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/eLeraning-solution-icon.svg') }}" />
                 <div class="text-zinc-800 pt-3 font-normal">eLearning Solution</div>
             </div>
-            <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
+            <div class="p-10 rounded-lg border text-center border-gray-900 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/healthcare-solution-icon.svg') }}" />
                 <div class="text-zinc-800 pt-3 font-normal">Healthcare Solution</div>
             </div>
-            <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
+            <div class="p-10 rounded-lg border text-center border-gray-900 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/performance-solution-icon.svg') }}" />
                 <div class="text-zinc-800 pt-3 font-normal">Perfomance Solution</div>
             </div>
-            <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
+            <div class="p-10 rounded-lg border text-center border-gray-900 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/inventory-and-invoice-solution-icon.svg') }}" />
                 <div class="text-zinc-800 pt-3 font-normal">Invoice & Inventory Solution</div>
             </div>
-            <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
+            <div class="p-10 rounded-lg border text-center border-gray-900 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/fleet-management-solution-icon.svg') }}" />
                 <div class="text-zinc-800 pt-3 font-normal">Fleet Management Solution</div>
             </div>
-            <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
+            <div class="p-10 rounded-lg border text-center border-gray-900 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/erp-solution-icon.svg') }}" />
                 <div class="text-zinc-800 pt-3 font-normal">ERP Solution</div>
             </div>
-            <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
+            <div class="p-10 rounded-lg border text-center border-gray-900 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/warehouse-solution-icon.svg') }}" />
                 <div class="text-zinc-800 pt-3 font-normal">Warehouse Solution</div>
             </div>
-            <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
+            <div class="p-10 rounded-lg border text-center border-gray-900 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/payroll-management-solution-icon.svg') }}" />
                 <div class="text-zinc-800 pt-3 font-normal">Payroll Management Solution</div>
             </div>
-            <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
+            <div class="p-10 rounded-lg border text-center border-gray-900 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/smart-estate-solution-icon.svg') }}" />
                 <div class="text-zinc-800 pt-3 font-normal">Smart Estate Solution</div>
             </div>
-            <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
+            <div class="p-10 rounded-lg border text-center border-gray-900 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/document-management-solution-icon.svg') }}" />
                 <div class="text-zinc-800 pt-3 font-normal">Document Management Solution</div>
             </div>
-            <div class="p-10 rounded-lg border text-center border-neutral-200 flex-col justify-end items-center gap-px inline-flex">
+            <div class="p-10 rounded-lg border text-center border-gray-900 flex-col justify-end items-center gap-px inline-flex">
                 <img class="w-12" src="{{ asset('assets/icons/hrm-solution-icon.svg') }}" />
                 <div class="text-zinc-800 pt-3 font-normal">HRM SOLUTION</div>
             </div>
@@ -568,9 +590,9 @@
             </div>
 
             <div class="pt-10 md:flex">
-                <ul class="flex-column space-y-4 text-sm font-medium text-gray-500 md:me-4 mb-4 md:mb-0" id="ts-section" role="tablist" data-tabs-toggle="ts-tab-content">
+                <ul class="flex-column space-y-4 text-sm font-medium text-gray-700 md:me-4 mb-4 md:mb-0" id="ts-section" role="tablist" data-tabs-toggle="ts-tab-content">
                     <li role="presentation">
-                        <button id="web-tech-tab" data-tabs-target="#web-tech" class="hover:bg-rt-primary-dark hover:border-l-rt-secondary hover:text-rt-secondary tab w-[330px] flex justify-between items-center px-10 py-4 border-l-8 border-l-rt-secondary text-white bg-rt-primary-dark rounded-lg border-b border-gray-300 active" type="button" role="tab" aria-controls="web-tech" aria-selected="false">
+                        <button id="web-tech-tab" data-tabs-target="#web-tech" class="hover:bg-rt-primary-dark hover:border-l-8 hover:border-l-rt-secondary hover:text-rt-secondary tab w-[330px] flex justify-between items-center px-10 py-4 border-l-8 border-l-rt-secondary text-white bg-rt-primary-dark rounded-lg border-b border-gray-300 active" type="button" role="tab" aria-controls="web-tech" aria-selected="false">
                             <span class="font-semibold">Web Technologies</span>
                             <svg class="chevron-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="vuesax/outline/arrow-down">
@@ -691,247 +713,242 @@
                     </li>
                 </ul>
 
-                <div>
-                    <div class="p-4" id="web-tech" role="tabpanel" aria-labelledby="web-tech-tab">
-                        <div class="grid grid-cols-5 gap-7">
-                            <div class="flex flex-col items-center" title="PHP">
-                                <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
-                                    <img src="{{ asset('assets/img/technologies/php.png') }}" class="object-contain w-[45px] h-[25px]" alt="PHP Logo">
-                                </div>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">PHP</p>
+                <div class="" id="web-tech" role="tabpanel" aria-labelledby="web-tech-tab">
+                    <div class="grid grid-cols-5 gap-7">
+                        <div class="flex flex-col items-center" title="PHP">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
+                                <img src="{{ asset('assets/img/technologies/php.png') }}" class="object-contain w-[45px] h-[25px]" alt="PHP Logo">
                             </div>
-                            <div class="flex flex-col items-center" title="NODEJS">
-                                <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
-                                    <img src="{{ asset('assets/img/technologies/NEWnodejs.png') }}" class="object-contain w-[45px] h-[25px]" alt="NODEJS Logo">
-                                </div>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Node.Js</p>
-                            </div>
-                            <div class="flex flex-col items-center" title="CSS3">
-                                <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
-                                    <img src="{{ asset('assets/img/technologies/pandacss.png') }}" class="object-contain w-[45px] h-[25px]" alt="PandaCSS Logo">
-                                </div>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">CSS</p>
-                            </div>
-                            <div class="flex flex-col items-center" title="HTML5">
-                                <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
-                                    <img src="{{ asset('assets/img/technologies/html5.png') }}" class="object-contain w-[45px] h-[25px]" alt="HTML5 Logo">
-                                </div>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">HTML5</p>
-                            </div>
-                            <div class="flex flex-col items-center" title="Javascript">
-                                <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
-                                    <img src="{{ asset('assets/img/technologies/javascript.png') }}" class="object-contain w-[45px] h-[25px]" alt="Javascript Logo">
-                                </div>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Javascript</p>
-                            </div>
-                            <div class="flex flex-col items-center" title="Python">
-                                <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
-                                    <img src="{{ asset('assets/img/technologies/python.png') }}" class="object-contain w-[50px] h-[30px]" alt="Python Logo">
-                                </div>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Python</p>
-                            </div>
-                            <!-- Add more items as needed -->
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">PHP</p>
                         </div>
-                    </div>
-
-
-                    <div class="hidden p-4" id="backend" role="tabpanel" aria-labelledby="backend-tab">
-                        <div class="grid grid-cols-5 gap-7">
-                            <div class="flex flex-col items-center" title=".NET">
-                                <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
-                                    <img src="{{ asset('assets/img/technologies/dot-net.svg') }}" class="object-contain w-[45px] h-[25px]" alt=".NET Logo">
-                                </div>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">.NET</p>
+                        <div class="flex flex-col items-center" title="NODEJS">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
+                                <img src="{{ asset('assets/img/technologies/NEWnodejs.png') }}" class="object-contain w-[45px] h-[25px]" alt="NODEJS Logo">
                             </div>
-                            <div class="flex flex-col items-center" title=".NET Core">
-                                <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
-                                    <img src="{{ asset('assets/img/technologies/dot-net-core.png') }}" class="object-contain w-[45px] h-[25px]" alt=".NET Core Logo">
-                                </div>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">.NET Core</p>
-                            </div>
-                            <div class="flex flex-col items-center" title="Java">
-                                <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
-                                    <img src="{{ asset('assets/img/technologies/java.png') }}" class="object-contain w-[45px] h-[25px]" alt="Java Logo">
-                                </div>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Java</p>
-                            </div>
-                            <div class="flex flex-col items-center" title="Node.Js">
-                                <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
-                                    <img src="{{ asset('assets/img/technologies/NEWnodejs.png') }}" class="object-contain w-[45px] h-[25px]" alt="Node.Js Logo">
-                                </div>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Node.Js</p>
-                            </div>
-                            <div class="flex flex-col items-center" title="PHP">
-                                <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
-                                    <img src="{{ asset('assets/img/technologies/php.png') }}" class="object-contain w-[45px] h-[25px]" alt="PHP Logo">
-                                </div>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">PHP</p>
-                            </div>
-                            <div class="flex flex-col items-center" title="Python">
-                                <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
-                                    <img src="{{ asset('assets/img/technologies/python.png') }}" class="object-contain w-[45px] h-[25px]" alt="Python Logo">
-                                </div>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Python</p>
-                            </div>
-                            <div class="flex flex-col items-center" title="Ruby">
-                                <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
-                                    <img src="{{ asset('assets/img/technologies/ruby.png') }}" class="object-contain w-[45px] h-[25px]" alt="Ruby Logo">
-                                </div>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Ruby</p>
-                            </div>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Node.Js</p>
                         </div>
-                    </div>
-
-
-                    <div class="hidden p-4" id="frontend" role="tabpanel" aria-labelledby="frontend-tab">
-                        <div class="grid grid-cols-5 gap-7">
-                            <div class="flex flex-col items-center" title="Angular">
-                                <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
-                                    <img src="{{ asset('assets/img/technologies/angular.png') }}" class="object-contain w-[45px] h-[25px]" alt="Angular Logo">
-                                </div>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Angular</p>
+                        <div class="flex flex-col items-center" title="CSS3">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
+                                <img src="{{ asset('assets/img/technologies/pandacss.png') }}" class="object-contain w-[45px] h-[25px]" alt="PandaCSS Logo">
                             </div>
-                            <div class="flex flex-col items-center" title="Backbone.Js">
-                                <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
-                                    <img src="{{ asset('assets/img/technologies/backbonejs.png') }}" class="object-contain w-[45px] h-[25px]" alt="Backbone.Js Logo">
-                                </div>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Backbone.Js</p>
-                            </div>
-                            <div class="flex flex-col items-center" title="Bootstrap">
-                                <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
-                                    <img src="{{ asset('assets/img/technologies/bootstrap.png') }}" class="object-contain w-[45px] h-[25px]" alt="Bootstrap Logo">
-                                </div>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Bootstrap</p>
-                            </div>
-                            <div class="flex flex-col items-center" title="CSS3">
-                                <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
-                                    <img src="{{ asset('assets/img/technologies/pandacss.png') }}" class="object-contain w-[45px] h-[25px]" alt="PandaCSS Logo">
-                                </div>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">CSS</p>
-                            </div>
-                            <div class="flex flex-col items-center" title="D3 Js">
-                                <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
-                                    <img src="{{ asset('assets/img/technologies/d3js.png') }}" class="object-contain w-[45px] h-[25px]" alt="D3 Js Logo">
-                                </div>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">D3 Js</p>
-                            </div>
-                            <div class="flex flex-col items-center" title="HTML5">
-                                <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
-                                    <img src="{{ asset('assets/img/technologies/html5.png') }}" class="object-contain w-[45px] h-[25px]" alt="HTML5 Logo">
-                                </div>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">HTML5</p>
-                            </div>
-                            <div class="flex flex-col items-center" title="Javascript">
-                                <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
-                                    <img src="{{ asset('assets/img/technologies/javascript.png') }}" class="object-contain w-[45px] h-[25px]" alt="Javascript Logo">
-                                </div>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Javascript</p>
-                            </div>
-                            <div class="flex flex-col items-center" title="Jquery">
-                                <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
-                                    <img src="{{ asset('assets/img/technologies/jquery.gif') }}" class="object-contain w-[45px] h-[25px]" alt="Jquery Logo">
-                                </div>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Jquery</p>
-                            </div>
-                            <div class="flex flex-col items-center" title="Knockout Js">
-                                <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
-                                    <img src="{{ asset('assets/img/technologies/knockoutjs.png') }}" class="object-contain w-[45px] h-[25px]" alt="KnockoutJs Logo">
-                                </div>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">KnockoutJs</p>
-                            </div>
-                            <div class="flex flex-col items-center" title="Next Js">
-                                <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
-                                    <img src="{{ asset('assets/img/technologies/nextjs.png') }}" class="object-contain w-[45px] h-[25px]" alt="Next Js Logo">
-                                </div>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">NextJs</p>
-                            </div>
-                            <div class="flex flex-col items-center" title="NuxtJs">
-                                <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
-                                    <img src="{{ asset('assets/img/technologies/nuxtjs.svg') }}" class="object-contain w-[45px] h-[25px]" alt="NuxtJs Logo">
-                                </div>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">NuxtJs</p>
-                            </div>
-                            <div class="flex flex-col items-center" title="React">
-                                <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
-                                    <img src="{{ asset('assets/img/technologies/reactjs.png') }}" class="object-contain w-[45px] h-[25px]" alt="React Logo">
-                                </div>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">React</p>
-                            </div>
-                            <div class="flex flex-col items-center" title="Tailwind CSS">
-                                <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
-                                    <img src="{{ asset('assets/img/technologies/tailwind-css.png') }}" class="object-contain w-[45px] h-[25px]" alt="Tailwind CSS Logo">
-                                </div>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Tailwind CSS</p>
-                            </div>
-                            <div class="flex flex-col items-center" title="Typescript">
-                                <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
-                                    <img src="{{ asset('assets/img/technologies/typescript.webp') }}" class="object-contain w-[45px] h-[25px]" alt="Typescript Logo">
-                                </div>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Typescript</p>
-                            </div>
-                            <div class="flex flex-col items-center" title="VueJs">
-                                <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
-                                    <img src="{{ asset('assets/img/technologies/vuejs.png') }}" class="object-contain w-[45px] h-[25px]" alt="VueJs Logo">
-                                </div>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">VueJs</p>
-                            </div>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">CSS</p>
                         </div>
+                        <div class="flex flex-col items-center" title="HTML5">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
+                                <img src="{{ asset('assets/img/technologies/html5.png') }}" class="object-contain w-[45px] h-[25px]" alt="HTML5 Logo">
+                            </div>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">HTML5</p>
+                        </div>
+                        <div class="flex flex-col items-center" title="Javascript">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
+                                <img src="{{ asset('assets/img/technologies/javascript.png') }}" class="object-contain w-[45px] h-[25px]" alt="Javascript Logo">
+                            </div>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Javascript</p>
+                        </div>
+                        <div class="flex flex-col items-center" title="Python">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
+                                <img src="{{ asset('assets/img/technologies/python.png') }}" class="object-contain w-[50px] h-[30px]" alt="Python Logo">
+                            </div>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Python</p>
+                        </div>
+                        <!-- Add more items as needed -->
                     </div>
-
-
                 </div>
+
+                <div class="hidden" id="backend" role="tabpanel" aria-labelledby="backend-tab">
+                    <div class="grid grid-cols-5 gap-7">
+                        <div class="flex flex-col items-center" title=".NET">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
+                                <img src="{{ asset('assets/img/technologies/dot-net.svg') }}" class="object-contain w-[45px] h-[25px]" alt=".NET Logo">
+                            </div>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">.NET</p>
+                        </div>
+                        <div class="flex flex-col items-center" title=".NET Core">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
+                                <img src="{{ asset('assets/img/technologies/dot-net-core.png') }}" class="object-contain w-[45px] h-[25px]" alt=".NET Core Logo">
+                            </div>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">.NET Core</p>
+                        </div>
+                        <div class="flex flex-col items-center" title="Java">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
+                                <img src="{{ asset('assets/img/technologies/java.png') }}" class="object-contain w-[45px] h-[25px]" alt="Java Logo">
+                            </div>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Java</p>
+                        </div>
+                        <div class="flex flex-col items-center" title="Node.Js">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
+                                <img src="{{ asset('assets/img/technologies/NEWnodejs.png') }}" class="object-contain w-[45px] h-[25px]" alt="Node.Js Logo">
+                            </div>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Node.Js</p>
+                        </div>
+                        <div class="flex flex-col items-center" title="PHP">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
+                                <img src="{{ asset('assets/img/technologies/php.png') }}" class="object-contain w-[45px] h-[25px]" alt="PHP Logo">
+                            </div>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">PHP</p>
+                        </div>
+                        <div class="flex flex-col items-center" title="Python">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
+                                <img src="{{ asset('assets/img/technologies/python.png') }}" class="object-contain w-[45px] h-[25px]" alt="Python Logo">
+                            </div>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Python</p>
+                        </div>
+                        <div class="flex flex-col items-center" title="Ruby">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
+                                <img src="{{ asset('assets/img/technologies/ruby.png') }}" class="object-contain w-[45px] h-[25px]" alt="Ruby Logo">
+                            </div>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Ruby</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden" id="frontend" role="tabpanel" aria-labelledby="frontend-tab">
+                    <div class="grid grid-cols-5 gap-7">
+                        <div class="flex flex-col items-center" title="Angular">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
+                                <img src="{{ asset('assets/img/technologies/angular.png') }}" class="object-contain w-[45px] h-[25px]" alt="Angular Logo">
+                            </div>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Angular</p>
+                        </div>
+                        <div class="flex flex-col items-center" title="Backbone.Js">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
+                                <img src="{{ asset('assets/img/technologies/backbonejs.png') }}" class="object-contain w-[45px] h-[25px]" alt="Backbone.Js Logo">
+                            </div>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Backbone.Js</p>
+                        </div>
+                        <div class="flex flex-col items-center" title="Bootstrap">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
+                                <img src="{{ asset('assets/img/technologies/bootstrap.png') }}" class="object-contain w-[45px] h-[25px]" alt="Bootstrap Logo">
+                            </div>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Bootstrap</p>
+                        </div>
+                        <div class="flex flex-col items-center" title="CSS3">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
+                                <img src="{{ asset('assets/img/technologies/pandacss.png') }}" class="object-contain w-[45px] h-[25px]" alt="PandaCSS Logo">
+                            </div>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">CSS</p>
+                        </div>
+                        <div class="flex flex-col items-center" title="D3 Js">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
+                                <img src="{{ asset('assets/img/technologies/d3js.png') }}" class="object-contain w-[45px] h-[25px]" alt="D3 Js Logo">
+                            </div>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">D3 Js</p>
+                        </div>
+                        <div class="flex flex-col items-center" title="HTML5">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
+                                <img src="{{ asset('assets/img/technologies/html5.png') }}" class="object-contain w-[45px] h-[25px]" alt="HTML5 Logo">
+                            </div>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">HTML5</p>
+                        </div>
+                        <div class="flex flex-col items-center" title="Javascript">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
+                                <img src="{{ asset('assets/img/technologies/javascript.png') }}" class="object-contain w-[45px] h-[25px]" alt="Javascript Logo">
+                            </div>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Javascript</p>
+                        </div>
+                        <div class="flex flex-col items-center" title="Jquery">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
+                                <img src="{{ asset('assets/img/technologies/jquery.gif') }}" class="object-contain w-[45px] h-[25px]" alt="Jquery Logo">
+                            </div>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Jquery</p>
+                        </div>
+                        <div class="flex flex-col items-center" title="Knockout Js">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
+                                <img src="{{ asset('assets/img/technologies/knockoutjs.png') }}" class="object-contain w-[45px] h-[25px]" alt="KnockoutJs Logo">
+                            </div>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">KnockoutJs</p>
+                        </div>
+                        <div class="flex flex-col items-center" title="Next Js">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
+                                <img src="{{ asset('assets/img/technologies/nextjs.png') }}" class="object-contain w-[45px] h-[25px]" alt="Next Js Logo">
+                            </div>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">NextJs</p>
+                        </div>
+                        <div class="flex flex-col items-center" title="NuxtJs">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
+                                <img src="{{ asset('assets/img/technologies/nuxtjs.svg') }}" class="object-contain w-[45px] h-[25px]" alt="NuxtJs Logo">
+                            </div>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">NuxtJs</p>
+                        </div>
+                        <div class="flex flex-col items-center" title="React">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
+                                <img src="{{ asset('assets/img/technologies/reactjs.png') }}" class="object-contain w-[45px] h-[25px]" alt="React Logo">
+                            </div>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">React</p>
+                        </div>
+                        <div class="flex flex-col items-center" title="Tailwind CSS">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
+                                <img src="{{ asset('assets/img/technologies/tailwind-css.png') }}" class="object-contain w-[45px] h-[25px]" alt="Tailwind CSS Logo">
+                            </div>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Tailwind CSS</p>
+                        </div>
+                        <div class="flex flex-col items-center" title="Typescript">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
+                                <img src="{{ asset('assets/img/technologies/typescript.webp') }}" class="object-contain w-[45px] h-[25px]" alt="Typescript Logo">
+                            </div>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Typescript</p>
+                        </div>
+                        <div class="flex flex-col items-center" title="VueJs">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
+                                <img src="{{ asset('assets/img/technologies/vuejs.png') }}" class="object-contain w-[45px] h-[25px]" alt="VueJs Logo">
+                            </div>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">VueJs</p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="hidden" id="ai-ml" role="tabpanel" aria-labelledby="ai-ml-tab">
                     <div class="grid grid-cols-5 gap-7">
                         <div class="flex flex-col items-center" title="Chatbot">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
                                 <img src="{{ asset('assets/img/technologies/chatbot.svg') }}" class="object-contain w-[45px] h-[25px]" alt="Chatbot Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Chatbot</p>
                         </div>
                         <div class="flex flex-col items-center" title="ChatGPT">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
                                 <img src="{{ asset('assets/img/technologies/chatgpt.png') }}" class="object-contain w-[45px] h-[25px]" alt="ChatGPT Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">ChatGPT</p>
                         </div>
                         <div class="flex flex-col items-center" title="Computer Vision">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
                                 <img src="{{ asset('assets/img/technologies/computer-vision.png') }}" class="object-contain w-[45px] h-[25px]" alt="Computer Vision Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Computer Vision</p>
                         </div>
                         <div class="flex flex-col items-center" title="Convolutional Neural Network">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
                                 <img src="{{ asset('assets/img/technologies/convolutional-neural-network.png') }}" class="object-contain w-[45px] h-[25px]" alt="Convolutional Neural Network Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">C N N</p>
                         </div>
                         <div class="flex flex-col items-center" title="Deep Learning">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
                                 <img src="{{ asset('assets/img/technologies/deep-learning.png') }}" class="object-contain w-[45px] h-[25px]" alt="Deep Learning Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Deep Learning</p>
                         </div>
                         <div class="flex flex-col items-center" title="Generative AI">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
                                 <img src="{{ asset('assets/img/technologies/generative-ai.svg') }}" class="object-contain w-[45px] h-[25px]" alt="Generative AI Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Generative AI</p>
                         </div>
                         <div class="flex flex-col items-center" title="Linear Regression">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
                                 <img src="{{ asset('assets/img/technologies/linear-regression.svg') }}" class="object-contain w-[45px] h-[25px]" alt="Linear Regression Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Linear Regression</p>
                         </div>
                         <div class="flex flex-col items-center" title="Logistic Regression">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
                                 <img src="{{ asset('assets/img/technologies/logistic-regression.png') }}" class="object-contain w-[45px] h-[25px]" alt="Logistic Regression Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Logistic Regression</p>
                         </div>
                         <div class="flex flex-col items-center" title="NLP">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
                                 <img src="{{ asset('assets/img/technologies/nlp.png') }}" class="object-contain w-[45px] h-[25px]" alt="NLP Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">NLP</p>
@@ -939,34 +956,34 @@
                     </div>
                 </div>
 
-                <div class="hidden p-3" id="mobile-tech" role="tabpanel" aria-labelledby="mobile-tech-tab">
+                <div class="hidden" id="mobile-tech" role="tabpanel" aria-labelledby="mobile-tech-tab">
                     <div class="grid grid-cols-5 gap-7">
                         <div class="flex flex-col items-center" title="Flutter">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
                                 <img src="{{ asset('assets/img/technologies/flutter.png') }}" class="object-contain w-[45px] h-[25px]" alt="Flutter Logo">
                             </div>
                             <p class="mb-2 font-normal text-gray-700 dark:text-gray-300">Flutter</p>
                         </div>
                         <div class="flex flex-col items-center" title="Kotlin">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
                                 <img src="{{ asset('assets/img/technologies/kotlin.png') }}" class="object-contain w-[45px] h-[25px]" alt="Kotlin Logo">
                             </div>
                             <p class="mb-2 font-normal text-gray-700 dark:text-gray-300">Kotlin</p>
                         </div>
                         <div class="flex flex-col items-center" title="React Native">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
                                 <img src="{{ asset('assets/img/technologies/react-native.png') }}" class="object-contain w-[45px] h-[25px]" alt="React Native Logo">
                             </div>
                             <p class="mb-2 font-normal text-gray-700 dark:text-gray-300">React Native</p>
                         </div>
                         <div class="flex flex-col items-center" title="Swift">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
                                 <img src="{{ asset('assets/img/technologies/swift.png') }}" class="object-contain w-[45px] h-[25px]" alt="Swift Logo">
                             </div>
                             <p class="mb-2 font-normal text-gray-700 dark:text-gray-300">Swift</p>
                         </div>
                         <div class="flex flex-col items-center" title="Unity 3D">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex justify-center items-center mb-4">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex justify-center items-center mb-4">
                                 <img src="{{ asset('assets/img/technologies/unity-3d.png') }}" class="object-contain w-[45px] h-[25px]" alt="Unity 3D Logo">
                             </div>
                             <p class="mb-2 font-normal text-gray-700 dark:text-gray-300">Unity 3D</p>
@@ -974,198 +991,198 @@
                     </div>
                 </div>
 
-                <div class="hidden p-4" id="database" role="tabpanel" aria-labelledby="database-tab">
+                <div class="hidden" id="database" role="tabpanel" aria-labelledby="database-tab">
                     <div class="grid grid-cols-5 gap-7">
                         <!-- Dynamo DB -->
                         <div class="flex flex-col items-center gap-3" title="Dynamo DB">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center">
                                 <img src="{{ asset('assets/img/technologies/dynamodb.png') }}" class="w-[45px] h-[25px] object-contain" alt="Dynamo DB Logo">
                             </div>
-                            <p class="text-[#717171] text-sm font-medium">Dynamo DB</p>
+                            <p class="text-gray-700 text-sm font-medium">Dynamo DB</p>
                         </div>
 
                         <!-- IBM DB2 -->
                         <div class="flex flex-col items-center gap-3" title="IBM DB2">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center">
                                 <img src="{{ asset('assets/img/technologies/ibm-db2.png') }}" class="w-[45px] h-[25px] object-contain" alt="IBM DB2 Logo">
                             </div>
-                            <p class="text-[#717171] text-sm font-medium">IBM DB2</p>
+                            <p class="text-gray-700 text-sm font-medium">IBM DB2</p>
                         </div>
 
                         <!-- Maria DB -->
                         <div class="flex flex-col items-center gap-3" title="Maria DB">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center">
                                 <img src="{{ asset('assets/img/technologies/mariadb.png') }}" class="w-[45px] h-[25px] object-contain" alt="Maria DB Logo">
                             </div>
-                            <p class="text-[#717171] text-sm font-medium">Maria DB</p>
+                            <p class="text-gray-700 text-sm font-medium">Maria DB</p>
                         </div>
 
                         <!-- Mongo DB -->
                         <div class="flex flex-col items-center gap-3" title="Mongo DB">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center">
                                 <img src="{{ asset('assets/img/technologies/mongodb.png') }}" class="w-[45px] h-[25px] object-contain" alt="Mongo DB Logo">
                             </div>
-                            <p class="text-[#717171] text-sm font-medium">Mongo DB</p>
+                            <p class="text-gray-700 text-sm font-medium">Mongo DB</p>
                         </div>
 
                         <!-- MySQL -->
                         <div class="flex flex-col items-center gap-3" title="MySQL">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center">
                                 <img src="{{ asset('assets/img/technologies/mysql.png') }}" class="w-[60px] h-[32px] object-contain" alt="MySQL Logo">
                             </div>
-                            <p class="text-[#717171] text-sm font-medium">MySQL</p>
+                            <p class="text-gray-700 text-sm font-medium">MySQL</p>
                         </div>
 
                         <!-- Oracle DB -->
                         <div class="flex flex-col items-center gap-3" title="Oracle DB">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center">
                                 <img src="{{ asset('assets/img/technologies/oracle-db.png') }}" class="w-[45px] h-[25px] object-contain" alt="Oracle DB Logo">
                             </div>
-                            <p class="text-[#717171] text-sm font-medium">Oracle DB</p>
+                            <p class="text-gray-700 text-sm font-medium">Oracle DB</p>
                         </div>
 
                         <!-- PostgreSQL -->
                         <div class="flex flex-col items-center gap-3" title="PostgreSQL">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center">
                                 <img src="{{ asset('assets/img/technologies/postgresql.png') }}" class="w-[45px] h-[25px] object-contain" alt="PostgreSQL Logo">
                             </div>
-                            <p class="text-[#717171] text-sm font-medium">PostgreSQL</p>
+                            <p class="text-gray-700 text-sm font-medium">PostgreSQL</p>
                         </div>
 
                         <!-- SQLite -->
                         <div class="flex flex-col items-center gap-3" title="SQLite">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center">
                                 <img src="{{ asset('assets/img/technologies/sqlite.png') }}" class="w-[60px] h-[30px] object-contain" alt="SQLite Logo">
                             </div>
-                            <p class="text-[#717171] text-sm font-medium">SQLite</p>
+                            <p class="text-gray-700 text-sm font-medium">SQLite</p>
                         </div>
 
                         <!-- Sybase -->
                         <div class="flex flex-col items-center gap-3" title="Sybase">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center">
                                 <img src="{{ asset('assets/img/technologies/sybase.png') }}" class="w-[60px] h-[30px] object-contain" alt="Sybase Logo">
                             </div>
-                            <p class="text-[#717171] text-sm font-medium">Sybase</p>
+                            <p class="text-gray-700 text-sm font-medium">Sybase</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="hidden p-4" id="devops" role="tabpanel" aria-labelledby="devops-tab">
+                <div class="hidden" id="devops" role="tabpanel" aria-labelledby="devops-tab">
                     <div class="grid grid-cols-5 gap-7">
                         <!-- AWS -->
                         <div class="flex flex-col items-center gap-3" title="AWS">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center">
                                 <img src="{{ asset('assets/img/technologies/aws.png') }}" class="w-[45px] h-[25px] object-contain" alt="AWS Logo">
                             </div>
-                            <p class="text-[#717171] text-sm font-medium">AWS</p>
+                            <p class="text-gray-700 text-sm font-medium">AWS</p>
                         </div>
 
                         <!-- Azure -->
                         <div class="flex flex-col items-center gap-3" title="Azure">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center">
                                 <img src="{{ asset('assets/img/technologies/azure.png') }}" class="w-[45px] h-[25px] object-contain" alt="Azure Logo">
                             </div>
-                            <p class="text-[#717171] text-sm font-medium">Azure</p>
+                            <p class="text-gray-700 text-sm font-medium">Azure</p>
                         </div>
 
                         <!-- Docker -->
                         <div class="flex flex-col items-center gap-3" title="Docker">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center">
                                 <img src="{{ asset('assets/img/technologies/docker.png') }}" class="w-[45px] h-[25px] object-contain" alt="Docker Logo">
                             </div>
-                            <p class="text-[#717171] text-sm font-medium">Docker</p>
+                            <p class="text-gray-700 text-sm font-medium">Docker</p>
                         </div>
 
                         <!-- Google Cloud -->
                         <div class="flex flex-col items-center gap-3" title="Google Cloud">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center">
                                 <img src="{{ asset('assets/img/technologies/google-cloud.png') }}" class="w-[45px] h-[25px] object-contain" alt="Google Cloud Logo">
                             </div>
-                            <p class="text-[#717171] text-sm font-medium">Google Cloud</p>
+                            <p class="text-gray-700 text-sm font-medium">Google Cloud</p>
                         </div>
 
                         <!-- Jenkins -->
                         <div class="flex flex-col items-center gap-3" title="Jenkins">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center">
                                 <img src="{{ asset('assets/img/technologies/jenkins.png') }}" class="w-[45px] h-[25px] object-contain" alt="Jenkins Logo">
                             </div>
-                            <p class="text-[#717171] text-sm font-medium">Jenkins</p>
+                            <p class="text-gray-700 text-sm font-medium">Jenkins</p>
                         </div>
 
                         <!-- Kubernetes -->
                         <div class="flex flex-col items-center gap-3" title="Kubernetes">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center">
                                 <img src="{{ asset('assets/img/technologies/kubernetes.svg') }}" class="w-[45px] h-[25px] object-contain" alt="Kubernetes Logo">
                             </div>
-                            <p class="text-[#717171] text-sm font-medium">Kubernetes</p>
+                            <p class="text-gray-700 text-sm font-medium">Kubernetes</p>
                         </div>
 
                         <!-- Maven -->
                         <div class="flex flex-col items-center gap-3" title="Maven">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center">
                                 <img src="{{ asset('assets/img/technologies/maven.png') }}" class="w-[45px] h-[25px] object-contain" alt="Maven Logo">
                             </div>
-                            <p class="text-[#717171] text-sm font-medium">Maven</p>
+                            <p class="text-gray-700 text-sm font-medium">Maven</p>
                         </div>
 
                         <!-- Openshift -->
                         <div class="flex flex-col items-center gap-3" title="Openshift">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center">
                                 <img src="{{ asset('assets/img/technologies/openshift.png') }}" class="w-[45px] h-[25px] object-contain" alt="Openshift Logo">
                             </div>
-                            <p class="text-[#717171] text-sm font-medium">Openshift</p>
+                            <p class="text-gray-700 text-sm font-medium">Openshift</p>
                         </div>
 
                         <!-- Oracle Cloud -->
                         <div class="flex flex-col items-center gap-3" title="Oracle Cloud">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center">
                                 <img src="{{ asset('assets/img/technologies/oracle-cloud.png') }}" class="w-[45px] h-[25px] object-contain" alt="Oracle Cloud Logo">
                             </div>
-                            <p class="text-[#717171] text-sm font-medium">Oracle Cloud</p>
+                            <p class="text-gray-700 text-sm font-medium">Oracle Cloud</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="hidden p-4" id="cms" role="tabpanel" aria-labelledby="cms-tab">
+                <div class="hidden" id="cms" role="tabpanel" aria-labelledby="cms-tab">
                     <div class="grid grid-cols-5 gap-7">
                         <div class="text-center" title="Drupal">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg mx-auto flex items-center justify-center mb-6">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg mx-auto flex items-center justify-center mb-6">
                                 <img src="{{ asset('assets/img/technologies/drupal.png') }}" class="w-[45px] h-[25px] object-contain" alt="Drupal Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Drupal</p>
                         </div>
                         <div class="text-center" title="Magento">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg mx-auto flex items-center justify-center mb-6">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg mx-auto flex items-center justify-center mb-6">
                                 <img src="{{ asset('assets/img/technologies/magento-logo.png') }}" class="w-[45px] h-[25px] object-contain" alt="Magento Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Magento</p>
                         </div>
                         <div class="text-center" title="Shopify">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg mx-auto flex items-center justify-center mb-6">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg mx-auto flex items-center justify-center mb-6">
                                 <img src="{{ asset('assets/img/technologies/shopify.png') }}" class="w-[45px] h-[25px] object-contain" alt="Shopify Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Shopify</p>
                         </div>
                         <div class="text-center" title="Sitecore">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg mx-auto flex items-center justify-center mb-6">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg mx-auto flex items-center justify-center mb-6">
                                 <img src="{{ asset('assets/img/technologies/sitecore.webp') }}" class="w-[45px] h-[25px] object-contain" alt="Sitecore Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Sitecore</p>
                         </div>
                         <div class="text-center" title="Strapi">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg mx-auto flex items-center justify-center mb-6">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg mx-auto flex items-center justify-center mb-6">
                                 <img src="{{ asset('assets/img/technologies/strapi.png') }}" class="w-[45px] h-[25px] object-contain" alt="Strapi Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Strapi</p>
                         </div>
                         <div class="text-center" title="WooCommerce">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg mx-auto flex items-center justify-center mb-6">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg mx-auto flex items-center justify-center mb-6">
                                 <img src="{{ asset('assets/img/technologies/woocommerce.png') }}" class="w-[45px] h-[25px] object-contain" alt="WooCommerce Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">WooCommerce</p>
                         </div>
                         <div class="text-center" title="WordPress">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg mx-auto flex items-center justify-center mb-6">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg mx-auto flex items-center justify-center mb-6">
                                 <img src="{{ asset('assets/img/technologies/wordpress.png') }}" class="w-[45px] h-[25px] object-contain" alt="WordPress Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">WordPress</p>
@@ -1173,64 +1190,64 @@
                     </div>
                 </div>
 
-                <div class="hidden p-4" id="framework" role="tabpanel" aria-labelledby="framework-tab">
+                <div class="hidden" id="framework" role="tabpanel" aria-labelledby="framework-tab">
                     <div class="grid grid-cols-5 gap-7">
                         <div class="text-center" title="Codeigniter">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center mx-auto mb-6">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/codeigniter.png') }}" class="w-[45px] h-[25px] object-contain" alt="Codeigniter Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Codeigniter</p>
                         </div>
                         <div class="text-center" title="Django">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center mx-auto mb-6">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/django.webp') }}" class="w-[45px] h-[25px] object-contain" alt="Django Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Django</p>
                         </div>
                         <div class="text-center" title=".NET Core">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center mx-auto mb-6">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/dot-net-core.png') }}" class="w-[45px] h-[25px] object-contain" alt=".NET Core Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">.NET Core</p>
                         </div>
                         <div class="text-center" title=".NET MVC">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center mx-auto mb-6">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/dot-net-mvc.png') }}" class="w-[45px] h-[25px] object-contain" alt=".NET MVC Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">.NET MVC</p>
                         </div>
                         <div class="text-center" title="Express Js">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center mx-auto mb-6">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/expressjs.png') }}" class="w-[45px] h-[25px] object-contain" alt="Express Js Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Express Js</p>
                         </div>
                         <div class="text-center" title="Flask">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center mx-auto mb-6">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/flask.svg') }}" class="w-[45px] h-[25px] object-contain" alt="Flask Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Flask</p>
                         </div>
                         <div class="text-center" title="Hibernate">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center mx-auto mb-6">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/hibernate.svg') }}" class="w-[45px] h-[25px] object-contain" alt="Hibernate Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Hibernate</p>
                         </div>
                         <div class="text-center" title="Laravel">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center mx-auto mb-6">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/laravel.png') }}" class="w-[45px] h-[25px] object-contain" alt="Laravel Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Laravel</p>
                         </div>
                         <div class="text-center" title="Spring Boot">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center mx-auto mb-6">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/spring-boot.png') }}" class="w-[45px] h-[25px] object-contain" alt="Spring Boot Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Spring Boot</p>
                         </div>
                         <div class="text-center" title="Spring Cloud">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center mx-auto mb-6">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/spring-cloud.png') }}" class="w-[45px] h-[25px] object-contain" alt="Spring Cloud Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Spring Cloud</p>
@@ -1238,28 +1255,28 @@
                     </div>
                 </div>
 
-                <div class="hidden p-4" id="qa" role="tabpanel" aria-labelledby="qa-tab">
+                <div class="hidden" id="qa" role="tabpanel" aria-labelledby="qa-tab">
                     <div class="grid grid-cols-4 gap-7">
                         <div class="text-center" title="Circle CI">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center mx-auto mb-6">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/circle-ci.png') }}" class="w-[45px] h-[25px] object-contain" alt="Circle CI Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Circle CI</p>
                         </div>
                         <div class="text-center" title="Gradle">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center mx-auto mb-6">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/gradle.png') }}" class="w-[45px] h-[25px] object-contain" alt="Gradle Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Gradle</p>
                         </div>
                         <div class="text-center" title="Maven">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center mx-auto mb-6">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/maven.png') }}" class="w-[45px] h-[25px] object-contain" alt="Maven Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Maven</p>
                         </div>
                         <div class="text-center" title="Selenium">
-                            <div class="w-[59px] h-[57px] bg-[#f5f5fb] rounded-lg flex items-center justify-center mx-auto mb-6">
+                            <div class="w-14 h-14 bg-gray-200 rounded-lg flex items-center justify-center mx-auto mb-6">
                                 <img src="{{ asset('assets/img/technologies/selenium.jpg') }}" class="w-[45px] h-[25px] object-contain" alt="Selenium Logo">
                             </div>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-300">Selenium</p>
@@ -1273,7 +1290,7 @@
     <!-- End of Technology Stack Section -->
 
     <!-- Industries We Serve Section -->
-    <section class="px-16 bg-[#F5F5FB] flex justify-between">
+    <section class="px-16 bg-gray-100 flex justify-between">
         <div class="w-full py-6">
             <h3 class="text-rt-primary py-3 text-sm uppercase font-semibold">Industries We Serve</h3>
             <div class="w-3/4 lg:w-3/4 flex justify-between items-center">
@@ -1318,7 +1335,7 @@
             </div>
             <div id="iws-tab-content">
                 <!-- Education Tab -->
-                <div class="hidden rounded-lg" id="education" role="tabpanel" aria-labelledby="education-tab">
+                <div class="hiddenrounded-lg" id="education" role="tabpanel" aria-labelledby="education-tab">
                     <div class="w-full flex">
                         <div class="w-1/2">
                             <p class="w-3/4 pt-12">
@@ -1363,34 +1380,34 @@
                 <!-- End of Education Tab -->
 
                 <!-- FinTech Tab -->
-                <div class="hidden p-4 rounded-lg bg-gray-50" id="fintech" role="tabpanel" aria-labelledby="fintech-tab">
-                    <p class="text-sm text-gray-500">This is some placeholder content the <strong class="font-medium text-gray-800">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                <div class="hiddenp-4 rounded-lg bg-gray-50" id="fintech" role="tabpanel" aria-labelledby="fintech-tab">
+                    <p class="text-sm text-gray-700">This is some placeholder content the <strong class="font-medium text-gray-800">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
                 </div>
                 <!-- End of FinTech Tab -->
 
-                <div class="hidden p-4 rounded-lg bg-gray-50" id="healthcare" role="tabpanel" aria-labelledby="healthcare-tab">
-                    <p class="text-sm text-gray-500">This is some placeholder content the <strong class="font-medium text-gray-800">Settings tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                <div class="hiddenp-4 rounded-lg bg-gray-50" id="healthcare" role="tabpanel" aria-labelledby="healthcare-tab">
+                    <p class="text-sm text-gray-700">This is some placeholder content the <strong class="font-medium text-gray-800">Settings tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
                 </div>
-                <div class="hidden p-4 rounded-lg bg-gray-50" id="hitech" role="tabpanel" aria-labelledby="hitech-tab">
-                    <p class="text-sm text-gray-500">This is some placeholder content the <strong class="font-medium text-gray-800">Contacts tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                <div class="hiddenp-4 rounded-lg bg-gray-50" id="hitech" role="tabpanel" aria-labelledby="hitech-tab">
+                    <p class="text-sm text-gray-700">This is some placeholder content the <strong class="font-medium text-gray-800">Contacts tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
                 </div>
-                <div class="hidden p-4 rounded-lg bg-gray-50" id="logistics" role="tabpanel" aria-labelledby="logistics-tab">
-                    <p class="text-sm text-gray-500">This is some placeholder content the <strong class="font-medium text-gray-800">Profile tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                <div class="hiddenp-4 rounded-lg bg-gray-50" id="logistics" role="tabpanel" aria-labelledby="logistics-tab">
+                    <p class="text-sm text-gray-700">This is some placeholder content the <strong class="font-medium text-gray-800">Profile tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
                 </div>
-                <div class="hidden p-4 rounded-lg bg-gray-50" id="medent" role="tabpanel" aria-labelledby="medent-tab">
-                    <p class="text-sm text-gray-500">This is some placeholder content the <strong class="font-medium text-gray-800">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                <div class="hiddenp-4 rounded-lg bg-gray-50" id="medent" role="tabpanel" aria-labelledby="medent-tab">
+                    <p class="text-sm text-gray-700">This is some placeholder content the <strong class="font-medium text-gray-800">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
                 </div>
-                <div class="hidden p-4 rounded-lg bg-gray-50" id="realcon" role="tabpanel" aria-labelledby="realcon-tab">
-                    <p class="text-sm text-gray-500">This is some placeholder content the <strong class="font-medium text-gray-800">Settings tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                <div class="hiddenp-4 rounded-lg bg-gray-50" id="realcon" role="tabpanel" aria-labelledby="realcon-tab">
+                    <p class="text-sm text-gray-700">This is some placeholder content the <strong class="font-medium text-gray-800">Settings tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
                 </div>
-                <div class="hidden p-4 rounded-lg bg-gray-50" id="retecom" role="tabpanel" aria-labelledby="retecom-tab">
-                    <p class="text-sm text-gray-500">This is some placeholder content the <strong class="font-medium text-gray-800">Contacts tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                <div class="hiddenp-4 rounded-lg bg-gray-50" id="retecom" role="tabpanel" aria-labelledby="retecom-tab">
+                    <p class="text-sm text-gray-700">This is some placeholder content the <strong class="font-medium text-gray-800">Contacts tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
                 </div>
-                <div class="hidden p-4 rounded-lg bg-gray-50" id="travhos" role="tabpanel" aria-labelledby="travhos-tab">
-                    <p class="text-sm text-gray-500">This is some placeholder content the <strong class="font-medium text-gray-800">Profile tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                <div class="hiddenp-4 rounded-lg bg-gray-50" id="travhos" role="tabpanel" aria-labelledby="travhos-tab">
+                    <p class="text-sm text-gray-700">This is some placeholder content the <strong class="font-medium text-gray-800">Profile tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
                 </div>
-                <div class="hidden p-4 rounded-lg bg-gray-50" id="utidem" role="tabpanel" aria-labelledby="utidem-tab">
-                    <p class="text-sm text-gray-500">This is some placeholder content the <strong class="font-medium text-gray-800">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                <div class="hiddenp-4 rounded-lg bg-gray-50" id="utidem" role="tabpanel" aria-labelledby="utidem-tab">
+                    <p class="text-sm text-gray-700">This is some placeholder content the <strong class="font-medium text-gray-800">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
                 </div>
             </div>
         </div>
@@ -1428,7 +1445,7 @@
 
             <!-- All Tab -->
             <div>
-                <div class="hidden p-4 pt-9 overflow-hidden relative" id="all" role="tabpanel" aria-labelledby="all-tab">
+                <div class="hiddenp-4 pt-9 overflow-hiddenrelative" id="all" role="tabpanel" aria-labelledby="all-tab">
                     <div id="slider-content" class="h-[378px] justify-start items-start gap-[31px] flex overflow-hidden">
                         <div class="flex-col justify-start items-start gap-4 inline-flex">
                             <div>
@@ -1436,7 +1453,7 @@
                             </div>
                             <div class="flex-col justify-start items-start gap-2 flex">
                                 <div class="text-[#424d5e] text-sm font-normal">January 2, 2024</div>
-                                <div class="w-[393px] text-[#17191c] text-sm font-semibold">Congratulations Asiri Magazines: Celebrating the successful Lunch of their revamped website</div>
+                                <div class="w-[393px] text-black text-sm font-semibold">Congratulations Asiri Magazines: Celebrating the successful Lunch of their revamped website</div>
                                 <div class="w-[393px] text-[#424d5f] text-sm font-normal">We're eager to announce some exciting developments! The dedicated team at Reconnaissance has been diligently working on a remarkable project.</div>
                             </div>
                         </div>
@@ -1446,7 +1463,7 @@
                             </div>
                             <div class="flex-col justify-start items-start gap-2 flex">
                                 <div class="text-[#424d5e] text-sm font-normal">January 2, 2024</div>
-                                <div class="w-[393px] text-[#17191c] text-sm font-semibold">Congratulations Asiri Magazines: Celebrating the successful Lunch of their revamped website</div>
+                                <div class="w-[393px] text-black text-sm font-semibold">Congratulations Asiri Magazines: Celebrating the successful Lunch of their revamped website</div>
                                 <div class="w-[393px] text-[#424d5f] text-sm font-normal">We're eager to announce some exciting developments! The dedicated team at Reconnaissance has been diligently working on a remarkable project.</div>
                             </div>
                         </div>
@@ -1456,7 +1473,7 @@
                             </div>
                             <div class="flex-col justify-start items-start gap-2 flex">
                                 <div class="text-[#424d5e] text-sm font-normal">January 2, 2024</div>
-                                <div class="w-[393px] text-[#17191c] text-sm font-semibold">Congratulations Asiri Magazines: Celebrating the successful Lunch of their revamped website</div>
+                                <div class="w-[393px] text-black text-sm font-semibold">Congratulations Asiri Magazines: Celebrating the successful Lunch of their revamped website</div>
                                 <div class="w-[393px] text-[#424d5f] text-sm font-normal">We're eager to announce some exciting developments! The dedicated team at Reconnaissance has been diligently working on a remarkable project.</div>
                             </div>
                         </div>
@@ -1466,17 +1483,17 @@
                             </div>
                             <div class="flex-col justify-start items-start gap-2 flex">
                                 <div class="text-[#424d5e] text-sm font-normal">January 2, 2024</div>
-                                <div class="w-[393px] text-[#17191c] text-sm font-semibold">Congratulations Asiri Magazines: Celebrating the successful Lunch of their revamped website</div>
+                                <div class="w-[393px] text-black text-sm font-semibold">Congratulations Asiri Magazines: Celebrating the successful Lunch of their revamped website</div>
                                 <div class="w-[393px] text-[#424d5f] text-sm font-normal">We're eager to announce some exciting developments! The dedicated team at Reconnaissance has been diligently working on a remarkable project.</div>
                             </div>
                         </div>
                         <!-- Add more cards as needed -->
                     </div>
                     <div class="pt-10 pb-2 flex justify-center">
-                        <button class="bg-gray-100 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full mr-12" onclick="scrollLeft()" id="arrowL">
+                        <button class="bg-gray-200 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full mr-12" onclick="scrollLeft()" id="arrowL">
                             <img src="{{ asset('assets/img/arrow-right.svg') }}" alt="Left Arrow" />
                         </button>
-                        <button class="bg-gray-100 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full ml-12" onclick="scrollRight()" id="arrowR">
+                        <button class="bg-gray-200 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full ml-12" onclick="scrollRight()" id="arrowR">
                             <img src="{{ asset('assets/img/arrow-left.svg') }}" alt="Right Arrow" />
                         </button>
                     </div>
@@ -1484,40 +1501,14 @@
             </div>
             <!-- End of All Tab -->
 
-            <script>
-                const arrowL = document.getElementById("arrowL")
-                arrowL.addEventListener("click", scrollLeft)
-
-                function scrollLeft() {
-                    const sliderContent = document.getElementById('slider-content');
-                    sliderContent.scrollBy({
-                        top: 0,
-                        left: -600, // Scroll by the width of one card
-                        behavior: 'smooth'
-                    });
-                }
-
-                function scrollRight() {
-                    const sliderContent = document.getElementById('slider-content');
-                    sliderContent.scrollBy({
-                        top: 0,
-                        left: 600, // Scroll by the width of one card
-                        behavior: 'smooth'
-                    });
-                }
-            </script>
-
-
-
-
             <!-- Blogs Tab -->
-            <div class="hidden p-4 rounded-lg bg-gray-50" id="blogs" role="tabpanel" aria-labelledby="blogs-tab">
-                <p class="text-sm text-gray-500">This is some placeholder content the <strong class="font-medium text-gray-800">Blogs tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+            <div class="hiddenp-4 rounded-lg bg-gray-50" id="blogs" role="tabpanel" aria-labelledby="blogs-tab">
+                <p class="text-sm text-gray-700">This is some placeholder content the <strong class="font-medium text-gray-800">Blogs tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
             </div>
             <!-- End of Blogs Tab -->
 
             <!-- Solutions Tab -->
-            <div class="hidden p-4 rounded-lg bg-gray-50" id="solutions" role="tabpanel" aria-labelledby="solutions-tab">
+            <div class="hiddenp-4 rounded-lg bg-gray-50" id="solutions" role="tabpanel" aria-labelledby="solutions-tab">
                 <div title="Our Solutions" class="card rounded-xl mx-3 mb-3 drop-shadow-lg p-6">
                     <h3 class="text-rt-primary text-lg uppercase font-semibold">Explore Our Solutions</h3>
                     <p>
@@ -1533,19 +1524,19 @@
                         </a>
                     </div>
                 </div>
-                <!-- <p class="text-sm text-gray-500">This is some placeholder content the <strong class="font-medium text-gray-800">Profile tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p> -->
+                <!-- <p class="text-sm text-gray-700">This is some placeholder content the <strong class="font-medium text-gray-800">Profile tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p> -->
             </div>
             <!-- End of Solutions Tab -->
 
             <!-- Opportunities Tab -->
-            <div class="hidden p-4 rounded-lg bg-gray-50" id="opportunities" role="tabpanel" aria-labelledby="opportunities-tab">
-                <p class="text-sm text-gray-500">This is some placeholder content the <strong class="font-medium text-gray-800">Settings tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+            <div class="hiddenp-4 rounded-lg bg-gray-50" id="opportunities" role="tabpanel" aria-labelledby="opportunities-tab">
+                <p class="text-sm text-gray-700">This is some placeholder content the <strong class="font-medium text-gray-800">Settings tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
             </div>
             <!-- End of Opportunities Tab -->
 
             <!-- CSR Tab -->
-            <div class="hidden p-4 rounded-lg bg-gray-50" id="csr" role="tabpanel" aria-labelledby="csr-tab">
-                <p class="text-sm text-gray-500">This is some placeholder content the <strong class="font-medium text-gray-800">CSR tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+            <div class="hiddenp-4 rounded-lg bg-gray-50" id="csr" role="tabpanel" aria-labelledby="csr-tab">
+                <p class="text-sm text-gray-700">This is some placeholder content the <strong class="font-medium text-gray-800">CSR tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
             </div>
             <!-- End of CSR Tab -->
         </div>
@@ -1586,8 +1577,8 @@
                                 <div class="text-white text-sm font-normal">VIVINO</div>
                                 <div class="w-[440px] text-white text-xl font-medium">“We’ve been working with Reconnaissance Technologies for a while now. They have a great team  of expert mobile app developers.”</div>
                             </div>
-                            <div class="justify-start items-center gap-[26px] inline-flex">
-                                <img class="w-[57px] h-[57px] relative rounded-[100px]" src="{{ asset('assets/img/testimonials/Heinelayout.png') }}" />
+                            <div class="justify-start items-center gap-6 inline-flex">
+                                <img class="w-[57px] h-14 relative rounded-full" src="{{ asset('assets/img/testimonials/Heinelayout.png') }}" />
                                 <div class="flex-col justify-start items-start gap-2 inline-flex">
                                     <div class="text-white text-sm font-bold">HEINE ZACHARIASSEN</div>
                                     <div class="text-white text-sm font-normal">Founder & CEO</div>
@@ -1597,12 +1588,12 @@
                     </div>
                 </div>
                 <div class="flex-col justify-start items-start gap-2.5 inline-flex">
-                    <div class="px-[19px] py-3 bg-[#143669] rounded-[18px] border justify-center items-center inline-flex">
+                    <div class="px-[19px] py-3 bg-rt-primary-dark rounded-[18px] border justify-center items-center inline-flex">
                         <div class="self-stretch flex-col justify-start items-start gap-2 inline-flex">
                             <div class="text-white text-sm font-medium">HOUSE BYTES </div>
                             <div class="w-[480px] text-white text-[14px] font-medium">We hired Reconnaissance Technologies to complete our SaaS-based web app. After 4 months, i was able to take my app to market. Highly recommend.</div>
                             <div class="justify-start items-center gap-1.5 inline-flex">
-                                <img class="w-[57px] h-[57px] relative rounded-[100px]" src="{{ asset('assets/img/testimonials/Sutherland.png') }}" />
+                                <img class="w-[57px] h-14 relative rounded-full" src="{{ asset('assets/img/testimonials/Sutherland.png') }}" />
                                 <div class="flex-col justify-center items-start gap-1.5 inline-flex">
                                     <div class="text-white text-sm font-medium">GAB SUTHERLAND</div>
                                     <div class="text-white text-sm font-semibold">CEO</div>
@@ -1615,8 +1606,8 @@
                             <div class="text-[#292d32] text-sm font-normal">ZENYUM</div>
                             <div class="w-[500px] text-[#292d32] text-[14px] font-semibold">Highly recommended! Reconnaissance Technologies is the best go-to mobile app development company.</div>
                             <div class="w-[197px] justify-start items-center gap-1.5 inline-flex">
-                                <img class="w-[57px] h-[57px] relative rounded-[100px]" src="{{ asset('assets/img/testimonials/Krass.png') }}" />
-                                <div class="flex-col justify-center items-center gap-[9px] inline-flex">
+                                <img class="w-[57px] h-14 relative rounded-full" src="{{ asset('assets/img/testimonials/Krass.png') }}" />
+                                <div class="flex-col justify-center items-center gap-2 inline-flex">
                                     <div class="text-[#292d32] text-sm font-medium">FREDERIK KRASS</div>
                                     <div class="text-[#292d32] text-sm font-medium">COO</div>
                                 </div>
@@ -1627,10 +1618,10 @@
 
             </div>
             <div class="pt-6 pb-2 flex justify-center">
-                <button class="bg-gray-100 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-[100px] mr-12" onclick="" id="">
+                <button class="bg-gray-100 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full mr-12" onclick="" id="">
                     <img src="{{ asset('assets/img/arrow-right.svg') }}" alt="Left Arrow" />
                 </button>
-                <button class="bg-gray-100 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-[100px] ml-9" onclick="" id="">
+                <button class="bg-gray-100 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full ml-9" onclick="" id="">
                     <img src="{{ asset('assets/img/arrow-left.svg') }}" alt="Right Arrow" />
                 </button>
             </div>
@@ -1648,7 +1639,7 @@
     {{-- <section class="px-16 bg-white flex justify-between">
         <div class="w-full pt-16">
             <div
-                class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6">
+                class="grid grid-cols-2 gap-8 text-gray-700 sm:gap-12 md:grid-cols-3 lg:grid-cols-6">
                 <a href="#" class="flex justify-center items-center">
                     <svg class="h-9 hover:text-gray-900" viewBox="0 0 125 35"
                         fill="currentColor" xmlns="http://www.w3.org/2000/svg">
