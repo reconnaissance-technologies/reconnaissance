@@ -11,38 +11,75 @@
 @section('title', 'Web Application Development Services | Web Development Company - Reconnaissance Technologies')
 
 @section('custom-styles')
+<style>
+    @keyframes marquee {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    .animate-marquee {
+        animation: marquee 45s linear infinite;
+    }
+</style>
 @endsection
 
 @section('content')
 <main class="w-full">
     <!-- Hero Section -->
-    <section class="bg-gradient-to-tr from-violet-200 to-slate-700 px-16">
-        <!-- hero section content goes here -->
-        <div class="w-full lg:flex items-center">
-            <div class="w-full lg:w-1/2 md:w1/2 lg:pt-32 my-16">
-                <!-- hero section description goes here -->
-                <h1 class="text-xl lg:text-5xl font-bold text-white mt-2 mb-2 lg:mb-6">
-                    Web Application Development
-                </h1>
-                <p class="text-md lg:text-xl text-white mb-8">
-                    Our website development expertise spans across latest frameworks, modern programming languages, and agile methodologies, setting a new benchmark in custom web app development.
+    <section class="relative h-screen flex flex-col justify-between text-center" style="background-image: url('{{ asset('assets/img/webdevhero.png') }}'); background-size: cover; background-position: center;">
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
+
+        <!-- Hero section content goes here -->
+        <div class="relative w-full lg:flex items-center justify-center z-10">
+            <div class="w-full md:pt-40 lg:pt-48 px-4 text-center text-white">
+                <!-- Hero section description goes here -->
+                <h2 class="text-white text-2xl md:text-4xl lg:text-5xl font-bold py-2">
+                    Crafting Digital Experiences that Inspire, Engage, and Empower Users
+                </h2>
+                <p class="text-sm md:text-lg mb-4">
+                    Transforming Ideas into Seamless Web Solutions with Innovative Design and Precision Development.
                 </p>
 
                 <!-- CTA Button -->
-                <div class="w-full flex py-6">
-                    <a href="{{ route('contact-us') }}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-                        Speak with an Expert
+                <div class="flex justify-center mx-3">
+                    <a href="#" class="border border-rt-white px-8 py-3.5 text-base font-medium text-white inline-flex items-center hover:font-bold hover:bg-white hover:text-rt-primary hover:border-white focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center mr-10">
+                        Case Studies
+                    </a>
+
+                    <a href="#" class="px-8 py-3.5 text-base font-medium text-black inline-flex items-center bg-rt-white hover:text-rt-primary hover:font-bold focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center">
+                        Start a Project
+                        <img class="px-2 w-8" src="{{ asset('assets/icons/send.svg') }}" alt="">
                     </a>
                 </div>
                 <!-- End of CTA Button -->
-
             </div>
-            <div class="w-full lg:w-1/2 pt-20">
-                <img src="{{ asset('assets/img/web-application-development.png') }}" class="object-fill" alt="Web Application Development - Reconnaissance Technologies">
+        </div>
+
+        <!-- Image section -->
+        <div class="w-full flex justify-center mb-5 z-10">
+            <div class="h-10 justify-start items-center gap-10 inline-flex animate-marquee">
+                {{-- <div class="w-full max-w-screen-xl flex gap-4 justify-between items-center animate-marquee"> --}}
+                <img class="w-48" src="{{ asset('assets/img/clients/blue-sea-travels.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/africasiaconnect.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/ultrashot-nigeria.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/how-tech.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/celestina-adams-care-foundation.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/africasiaconnect.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/ultrashot-nigeria.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/how-tech.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/celestina-adams-care-foundation.png') }}" />
             </div>
         </div>
     </section>
     <!-- End of Hero Section -->
+
+
 
     <!-- What We Offer Section -->
     <section class="px-16 bg-white dark:text-white dark:bg-gray-800 flex justify-between">
