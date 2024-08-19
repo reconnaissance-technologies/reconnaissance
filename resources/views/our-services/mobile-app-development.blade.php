@@ -235,7 +235,7 @@
         <div class="relative z-10 w-full h-full flex flex-col justify-start items-start gap-[50px] px-[50px] py-[46px] text-white">
             <div class="flex flex-col justify-start items-start gap-[30px]">
                 <h2 class="text-2xl font-medium">Project Stages & Flow</h2>
-                <p class="w-[676px] text-[15px] font-medium leading-snug">
+                <p class="w-[676px] text-[15px] font-medium">
                     Tailored to your project's phase, we'll present an optimized strategy to meet your goals, aligning seamlessly with your timeline and budget constraints.
                 </p>
                 <a href="#" class="w-[198px] px-[65px] py-[18px] bg-[#143669] rounded-lg text-base font-medium text-center">Let’s talk</a>
@@ -360,39 +360,39 @@
                     <div class="text-[#17191c] text-md font-semibold">Libraries</div>
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mt-2">
                         <!-- First Row: 4 Items -->
-                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             Firebase
                         </div>
-                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             NativeScript
                         </div>
-                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             Isolator
                         </div>
-                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             FixHava
                         </div>
                         <!-- Second Row: 4 Items -->
-                        <div class="col-span-2 md:col-span-1 px-3 py-3 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-3 bg-[#eff2f4] rounded-full text- text-center">
                             Google SDK
                         </div>
-                        <div class="col-span-2 md:col-span-1 px-3 py-3 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-3 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             Flutter
                         </div>
-                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             Swift (for iOS development)
                         </div>
-                        <div class="col-span-2 md:col-span-1 px-3 py-3 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-3 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             MvvmCross
                         </div>
                         <!-- Third Row: 3 Items -->
-                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             Xamarin
                         </div>
-                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             Ionic
                         </div>
-                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             AppsFlyer
                         </div>
                     </div>
@@ -406,22 +406,22 @@
                     </div>
                     <div class="text-[#17191c] text-lg font-semibold">Tools and Frameworks</div>
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mt-4">
-                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             Xamarin
                         </div>
-                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             Swift (for iOS)
                         </div>
-                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             Ionic
                         </div>
-                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             React Script
                         </div>
-                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             NativeScript
                         </div>
-                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             Flutter
                         </div>
                     </div>
@@ -438,23 +438,23 @@
                     <div class="text-[#17191c] text-lg font-semibold">IDEs</div>
                     <div class="grid grid-cols-2 md:grid-cols-3 gap-2 mt-4">
                         <!-- First Row: 3 Items -->
-                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             Android Studio
                         </div>
-                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             Flutter/DartPad
                         </div>
-                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             Xcode (for iOS)
                         </div>
                         <!-- Second Row: 3 Items -->
-                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             React Native CLI
                         </div>
-                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             Xamarin
                         </div>
-                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             IntelliJ IDEA
                         </div>
                     </div>
@@ -469,20 +469,20 @@
                     <div class="text-[#17191c] text-lg font-semibold">ORMs</div>
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mt-4">
                         <!-- First Row: 4 Items -->
-                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             Core Data (iOS)
                         </div>
-                        <div class="col-span-2 md:col-span-1 px-3 py-3 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-3 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             ObjectBox
                         </div>
-                        <div class="col-span-2 md:col-span-1 px-3 py-3 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-3 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             Firebase
                         </div>
-                        <div class="col-span-2 md:col-span-1 px-3 py-3 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-3 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             Realm
                         </div>
                         <!-- Second Row: 1 Item -->
-                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             SQLite-Net
                         </div>
                     </div>
@@ -499,30 +499,30 @@
                     <div class="text-[#17191c] text-lg font-semibold">Design Patterns</div>
                     <div class="grid grid-cols-2 md:grid-cols-3 gap-2 mt-4">
                         <!-- First Row: 3 Items -->
-                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             MVVM
                         </div>
-                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             Repository Pattern
                         </div>
-                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             BLoC
                         </div>
                         <!-- Second Row: 3 Items -->
-                        <div class="col-span-2 md:col-span-1 px-3 py-3 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-3 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             Riverpod
                         </div>
-                        <div class="col-span-2 md:col-span-1 px-3 py-3 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-3 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             MVC
                         </div>
-                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             Dependency Injection
                         </div>
                         <!-- Third Row: 2 Items -->
-                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             Clean Architecture
                         </div>
-                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal font-['Inter'] leading-tight text-center">
+                        <div class="col-span-2 md:col-span-1 px-3 py-1 bg-[#eff2f4] rounded-full text-[#292d32] text-sm font-normal text-center">
                             Observer
                         </div>
                     </div>
@@ -530,7 +530,7 @@
             </div>
         </div>
         <div class="mt-12 flex justify-center">
-            <a href="#" class="px-8 py-4 bg-[#143669] rounded-lg text-white text-base font-normal font-['Inter']">
+            <a href="#" class="px-8 py-4 bg-[#143669] rounded-lg text-white text-base font-normal">
                 Request a Free 15mins Consultation
             </a>
         </div>
