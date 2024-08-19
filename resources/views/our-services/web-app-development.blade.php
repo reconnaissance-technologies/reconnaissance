@@ -81,125 +81,83 @@
 
 
 
-    <!-- What We Offer Section -->
-    <section class="px-16 bg-white dark:text-white dark:bg-gray-800 flex justify-between">
-        <div class="w-full py-6">
-            <h3 class="text-rt-primary text-xl uppercase font-semibold">What We Offer</h3>
-            <h1 class="w-3/4 text-xl lg:text-4xl font-bold mt-2 mb-2 lg:mb-6">
-                End-to-End Web Development
-            </h1>
-            <div class="w-full lg:w-full flex justify-between items-center">
-                <div class="lg:w-3/4">
-                    <p>
-                        With our bespoke web development approach, we ensure that every aspect of the web application, from the user interface to the backend functionality, is optimized to steer your business forward.
+    <!-- Premium WebDev Section -->
+    <section class="w-[1440px] h-[630px] relative justify-start px-20 pt-14">
+        <div class="gap-[43px]">
+            <div class="flex flex-col justify-start">
+                <h3 class="text-[#194587] text-md font-semibold pb-5">WE ARE A PREMIUM WEB DEVELOPMENT COMPANY</h3>
+                <div class=" gap-2.5">
+                    <h2 class="text-[#17191c] text-xl font-bold pb-3">
+                        And We Can Help You Unleash Your Brand’s Potential
+                    </h2>
+                    <p class="w-[37%] text-[#292d32] font-normal">
+                        From Inception to Mid-project, Our Team of Skilled Developers Stands Ready to Expedite Your App Development Journey With Professional Expertise.
                     </p>
                 </div>
             </div>
+            <div class="mt-8">
+                <a href="{{ route('contact-us') }}" class=" px-12 py-3 bg-[#143669] rounded-lg text-white text-base font-normal hover:bg-[#143671]">
+                    Let's Talk
+                </a>
+            </div>
+        </div>
 
-            <div class="grid grid-cols-3 gap-8 py-8">
-                <div class="card drop-shadow-lg dark:text-black border-b-8 border-b-red-700">
-                    <img src="{{ asset('assets/img/our-services/custom-web-app-icon.svg') }}" alt="Custom Web Application - Reconnaissance Technologies">
-
-                    <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl lg:w-50">
-                        Custom Web App Development
-                    </h1>
-
-                    <p>
-                        Get the power of tailored custom web application development services for your business needs. Our web consultants utilize proven methodologies to develop custom web solutions.
+        <div class="flex px-14 gap-[30px] mt-10">
+            <!-- Web Development Card -->
+            <div class="pl-3 pr-[10px] pt-[49px] pb-12 bg-white rounded-lg border border-[#f0f0f0] flex-col justify-center items-center relative">
+                <div class="flex-col justify-start items-start">
+                    <h3 class="text-[#17191c] text-base font-semibold pb-6">Web Development</h3>
+                    <p class="w-[204px] text-[#17191c] text-[15px] font-normal">
+                        Utilize advanced platforms and tools to construct a compelling and resilient online presence, incorporating the latest technology for a vibrant and impactful web experience.
                     </p>
                 </div>
-                <div class="card drop-shadow-lg dark:text-black border-b-8 border-b-orange-500">
-                    <img src="{{ asset('assets/img/our-services/fullstack-dev-icon.svg') }}" alt="Full Stack Development - Reconnaissance Technologies">
+                <a href="#" class="absolute bottom-4 right-4">
+                    <img src="{{ asset('assets/img/arrow-left.svg') }}" alt="Arrow">
+                </a>
+            </div>
 
-                    <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                        Fullstack Development Services
-                    </h1>
-
-                    <p>
-                        Comprehensive full-stack development services, delivering high-quality, scalable solutions with cutting-edge technologies. Our full-stack services ensure exceptional restilts.
+            <!-- E-commerce Development Card -->
+            <div class="pl-4 pr-[15px] py-[48.50px] bg-white rounded-lg border border-[#f0f0f0] flex-col justify-center items-center relative">
+                <div class="flex-col justify-start items-start">
+                    <h3 class="text-[#17191c] text-base font-semibold pb-6">E-commerce Development</h3>
+                    <p class="w-[204px] text-[#17191c] text-[15px] font-normal">
+                    Empower your brand's growth with sophisticated e-commerce tools, enabling seamless online trading from inception to expansion.
                     </p>
                 </div>
-                <div class="card drop-shadow-lg dark:text-black border-b-8 border-b-yellow-500">
-                    <img src="{{ asset('assets/img/our-services/cms-icon.svg') }}" alt="Content Management System - Reconnaissance Technologies">
+                <a href="#" class="absolute bottom-4 right-4">
+                    <img src="{{ asset('assets/img/arrow-left.svg') }}" alt="Arrow">
+                </a>
+            </div>
 
-                    <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                        Content Management Systems (CMS)
-                    </h1>
-
-                    <p>
-                        Our CMS development services offer tailored content management solutions, enabling effective website updates and seamless content organization for your business.
+            <!-- Content Management Card -->
+            <div class="pl-4 pr-[15px] py-[48.50px] bg-white rounded-lg border border-[#f0f0f0] flex-col justify-center items-center relative">
+                <div class="flex-col justify-start items-start">
+                    <h3 class="text-[#17191c] text-base font-semibold pb-6">Content Management</h3>
+                    <p class="w-[204px] text-[#17191c] text-[15px] font-normal">
+                        Effortlessly manage textual, visual, and multimedia content through intuitive administrative controls, enabling seamless customization and optimization.
                     </p>
                 </div>
-                <div class="card drop-shadow-lg dark:text-black border-b-8 border-b-green-500">
-                    <img src="{{ asset('assets/img/our-services/enterprise-web-app-icon.svg') }}" alt="Enterprise Web Application - Reconnaissance Technologies">
+                <a href="#" class="absolute bottom-4 right-4">
+                    <img src="{{ asset('assets/img/arrow-left.svg') }}" alt="Arrow">
+                </a>
+            </div>
 
-                    <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                        Enterprise Web Application
-                    </h1>
-
-                    <p>
-                        We specialize in building complex, scalable, and secure web applications that caterto enterprise clients, Our experienced developers leverage cutting-edge technologies and industry best practices
+            <!-- Custom Development Card -->
+            <div class="pl-4 pr-[15px] py-[48.50px] bg-white rounded-lg border border-[#f0f0f0] flex-col justify-center items-center relative">
+                <div class="flex-col justify-start items-start">
+                    <h3 class="text-[#17191c] text-base font-semibold pb-6">Custom Development</h3>
+                    <p class="w-[204px] text-[#17191c] text-[15px] font-normal">
+                        Craft bespoke web solutions precisely tuned to your unique requirements and brand essence, ensuring seamless alignment with your vision and identity.
                     </p>
                 </div>
-                <div class="card drop-shadow-lg dark:text-black border-b-8 border-b-blue-500">
-                    <img src="{{ asset('assets/img/our-services/spa-icon.svg') }}" alt="Single Page Applications - Reconnaissance Technologies">
-
-                    <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                        Single Page Applications (SPAs)
-                    </h1>
-
-                    <p>
-                        Building a single-page application to deliver fluid web apps as well as create dynamic, fast, and interactive user experiences with Single Page Applications.
-                    </p>
-                </div>
-                <div class="card drop-shadow-lg dark:text-black border-b-8 border-b-indigo-500">
-                    <img src="{{ asset('assets/img/our-services/modernization-icon.svg') }}" alt="Integration, Upgrade & Migration - Reconnaissance Technologies">
-
-                    <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                        Integration, Upgrades & Migration
-                    </h1>
-
-                    <p>
-                        Effortlessly upgrade your website or migrate to new platform with our seamless services. Minimize disruptions, downtime and enhance performance for improved user engagement.
-                    </p>
-                </div>
-                <div class="card drop-shadow-lg dark:text-black border-b-8 border-b-violet-500">
-                    <img src="{{ asset('assets/img/our-services/ui-ux-icon.svg') }}" alt="UI/UX Modernization - Reconnaissance Technologies">
-
-                    <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                        UI/UX Modernization
-                    </h1>
-
-                    <p>
-                        Revitalize your user interface with our UI/UX Modernization services. Our team specializes in transforming outdated interfaces into sleek, intuitive, and visually appealing designs.
-                    </p>
-                </div>
-                <div class="card drop-shadow-lg dark:text-black border-b-8 border-b-green-900">
-                    <img src="{{ asset('assets/img/our-services/pwa-icon.svg') }}" alt="Progressive Web Application (PWA)- Reconnaissance Technologies">
-
-                    <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                        Progressive Web App Development (PWA)
-                    </h1>
-
-                    <p>
-                        Unlock the power of progressive web apps with our advanced web app development services. Create fast, engaging, and seamless user experiences across devices for your business.
-                    </p>
-                </div>
-                <div class="card drop-shadow-lg dark:text-black border-b-8 border-b-fuchsia-950">
-                    <img src="{{ asset('assets/img/our-services/web-maintenance-icon.svg') }}" alt="Web Maintenance - Reconnaissance Technologies">
-
-                    <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                        Website Support & Maintenance
-                    </h1>
-
-                    <p>
-                        We provide comprehensive website support and maintenance services, ensuring your web applications run smoothly, stay up-to- date with the latest trends, and remain gltch-free.
-                    </p>
-                </div>
+                <a href="#" class="absolute bottom-4 right-4">
+                    <img src="{{ asset('assets/img/arrow-left.svg') }}" alt="Arrow">
+                </a>
             </div>
         </div>
     </section>
-    <!-- End of What We Offer Section -->
+    <!-- End of Premium WebDev Section -->
+
 
     <!-- Have a Request CTA Section -->
     <section class=" h-80 px-16 bg-black text-white flex justify-between items-center">
