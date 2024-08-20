@@ -80,6 +80,27 @@
             });
         });
     });
+
+    const arrowL = document.getElementById("arrowL")
+    arrowL.addEventListener("click", scrollLeft)
+
+    function scrollLeft() {
+        const sliderContent = document.getElementById('slider-content');
+        sliderContent.scrollBy({
+            top: 0,
+            left: -600, // Scroll by the width of one card
+            behavior: 'smooth'
+        });
+    }
+
+    function scrollRight() {
+        const sliderContent = document.getElementById('slider-content');
+        sliderContent.scrollBy({
+            top: 0,
+            left: 600, // Scroll by the width of one card
+            behavior: 'smooth'
+        });
+    }
 </script>
 @endsection
 
@@ -88,7 +109,7 @@
     <!-- Hero Section -->
     <section class="relative flex items-center justify-center h-screen overflow-hidden">
         <!-- Video Background -->
-        <video autoplay muted loop class="absolute inset-0 object-cover w-full h-full" src="https://s3-figma-videos-production-sig.figma.com/video/1134555079227565548/TEAM/1bfb/2cc8/-84f7-407b-a6ec-4685afbc8772?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pZJ3wdTSrh5FKwjHei9wg3iWD6BOZRjSuEQibXzZrfTVy5srTk424XAsPDqVPSYtakWvLA2lxnkEw56Pc0kyhvlGsZFTp~tahlCCZH4UJ62dEpiBhI7WSaK7FSi16L4OozSQH-Ts-dTjefgDSbWzD~3TpCoDgyQrLBgFgsBed0~z-uMtrrUU-R5Fd4vrWNXoK80-qmCCtILVaN0GTESTLpo7ggWFUe-RGIZZBruVAhm61oqLFWDDaVs3BCi59Y4z-bgOdeVDyNkZfpkvMWo8xvA05MV-IuvlvLhR6BzZy59xxlXyWj4U-50sv1zdzvgJxwtknjiHosjTEYBN2V7lIQ__"></video>
+        <video autoplay muted loop class="absolute inset-0 object-cover w-full h-full" src="https://res.cloudinary.com/reconaissance-technologies/video/upload/v1724068463/rt-website/videos/hero-section/homepage-bg-video.webm"></video>
 
         <!-- Hero Content -->
         <div class="text-center text-white z-10">
@@ -123,7 +144,7 @@
     <!-- End of Hero Section -->
 
     <!-- About Us Section -->
-    <section class="px-16 bg-gray-200">
+    <section class="px-16 bg-gray-100">
         <!-- Company Introduction -->
         <div class="w-full flex justify-between">
             <div class="lg:w-1/2 py-6">
@@ -136,7 +157,7 @@
             </div>
 
             <div class="lg:w-1/2 pt-6">
-                <h3 class="text-[#F5F5FB] py-3 uppercase font-semibold">Introduction</h3>
+                <h3 class="text-gray-100 py-3 uppercase font-semibold">Introduction</h3>
                 <div>
                     <p class="">
                         Reconnaissance Technologies is a seasoned software development company leveraging years of expertise
@@ -497,7 +518,7 @@
     <!-- End of Our Services Section -->
 
     <!-- Our Solutions Section -->
-    <section class="px-16 bg-gray-200">
+    <section class="px-16 bg-gray-100">
         <div class="w-full py-6">
             <h3 class="text-rt-primary py-3 text-sm uppercase font-semibold">Our Solutions</h3>
             <p class="w-full lg:w-full flex justify-between items-center">
@@ -1269,7 +1290,7 @@
     <!-- End of Technology Stack Section -->
 
     <!-- Industries We Serve Section -->
-    <section class="px-16 bg-gray-200 flex justify-between">
+    <section class="px-16 bg-gray-100 flex justify-between">
         <div class="w-full py-6">
             <h3 class="text-rt-primary py-3 text-sm uppercase font-semibold">Industries We Serve</h3>
             <div class="w-3/4 lg:w-3/4 flex justify-between items-center">
@@ -1469,42 +1490,16 @@
                         <!-- Add more cards as needed -->
                     </div>
                     <div class="pt-10 pb-2 flex justify-center">
-                        <button class="bg-gray-100 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full mr-12" onclick="scrollLeft()" id="arrowL">
+                        <button class="bg-gray-200 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full mr-12" onclick="scrollLeft()" id="arrowL">
                             <img src="{{ asset('assets/img/arrow-right.svg') }}" alt="Left Arrow" />
                         </button>
-                        <button class="bg-gray-100 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full ml-12" onclick="scrollRight()" id="arrowR">
+                        <button class="bg-gray-200 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full ml-12" onclick="scrollRight()" id="arrowR">
                             <img src="{{ asset('assets/img/arrow-left.svg') }}" alt="Right Arrow" />
                         </button>
                     </div>
                 </div>
             </div>
             <!-- End of All Tab -->
-
-            <script>
-                const arrowL = document.getElementById("arrowL")
-                arrowL.addEventListener("click", scrollLeft)
-
-                function scrollLeft() {
-                    const sliderContent = document.getElementById('slider-content');
-                    sliderContent.scrollBy({
-                        top: 0,
-                        left: -600, // Scroll by the width of one card
-                        behavior: 'smooth'
-                    });
-                }
-
-                function scrollRight() {
-                    const sliderContent = document.getElementById('slider-content');
-                    sliderContent.scrollBy({
-                        top: 0,
-                        left: 600, // Scroll by the width of one card
-                        behavior: 'smooth'
-                    });
-                }
-            </script>
-
-
-
 
             <!-- Blogs Tab -->
             <div class="hiddenp-4 rounded-lg bg-gray-50" id="blogs" role="tabpanel" aria-labelledby="blogs-tab">
