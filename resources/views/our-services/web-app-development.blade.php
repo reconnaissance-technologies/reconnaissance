@@ -400,265 +400,49 @@
     </section>
     <!-- End of Our Project Approaches Section -->
 
-    <!-- Industry Solutions Section -->
-    <section class="px-16 bg-white dark:text-white dark:bg-gray-800 flex justify-between">
-        <div class="w-full py-6">
-            <h1 class="w-full text-xl lg:text-4xl font-bold mt-2 mb-2 lg:mb-6 text-center">
-                Web Application Development Solutions for Diverse Industries
-            </h1>
-            <div class="w-full lg:w-full flex justify-between items-center text-center">
-                <div class="lg:w-full">
-                    <p>
-                        Our team of software development experts collaborates with clients to understand their roadblocks and objectives,enabling us to develop custom software development solutions that are efficient and scalable for diverse industries.
-                    </p>
-                </div>
+    <!-- Custom Web Dev Section -->
+    <section class="relative w-full h-[700px] bg-cover bg-center bg-no-repeat" style="background-image: url('{{ asset('assets/img/customweb.png') }}');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-20 h-full flex flex-col lg:flex-row justify-between items-center">
+            <!-- Left Side Content -->
+            <div class="text-white max-w-lg lg:mr-20">
+                <h2 class="text-xl font-semibold whitespace-nowrap">What is Custom Web App Development?</h2>
+                <p class="mt-4 text-sm">
+                    Reconnaissance offers tailored web app development services, crafting bespoke solutions that not only fulfill your present requirements but also anticipate future growth, meticulously designed and meticulously implemented by our team of experts.
+                </p>
+                <p class="mt-4 text-[#e0bd00] text-sm">
+                    Achieving this goal requires collaborative effort from a diverse team including front-end, back-end, and full-stack developers, alongside business analysts and quality assurance testers.
+                </p>
+                <a href="#" class="inline-block mt-8 px-20 py-3 text-sm font-medium text-[#143669] bg-white rounded-md hover:bg-gray-200">
+                    Let's talk
+                </a>
             </div>
-
-            <div class="grid grid-cols-3 gap-8 py-8">
-
-                <div class="card drop-shadow-lg dark:text-black border-b-8 border-b-violet-600">
-                    <a href="{{ route('industries.media-and-entertainment') }}">
-                        <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl lg:w-50">
-                            Media & Entertainment
-                        </h1>
-
-                        <p>
-                            <ol>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Music Streaming Application
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Video Streaming Application
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Social Networking Platform
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    News Portal
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Event Booking Platform
-                                </li>
-                            </ol>
-                        </p>
-                    </a>
-                </div>
-
-                <div class="card drop-shadow-lg dark:text-black border-b-8 border-b-purple-900">
-                    <a href="{{ route('industries.healthcare') }}">
-                        <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                            Healthcare
-                        </h1>
-
-                        <p>
-                            <ol>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Hospital Management System
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Laboratory Service
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Telemedicine Solution
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Clinical Communication System
-                                </li>
-                            </ol>
-                        </p>
-                    </a>
-                </div>
-
-                <div class="card drop-shadow-lg dark:text-black border-b-8 border-b-slate-800">
-                    <a href="{{ route('industries.education') }}">
-                        <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                            Education / eLearning
-                        </h1>
-
-                        <p>
-                            <ol>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    School Management System
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Learning Management System
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Virtual Classroom
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Student's Portal
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Quizzes and Exams Portal
-                                </li>
-                            </ol>
-                        </p>
-                    </a>
-                </div>
-
-                <div class="card drop-shadow-lg dark:text-black border-b-8 border-b-red-800">
-                    <a href="{{ route('industries.retail-ecommerce') }}">
-                        <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                            Retail / eCommerce
-                        </h1>
-
-                        <p>
-                            <ol>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Multi vendor eCommerce Platform
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Warehouse Solutions
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Delivery Solutions
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Retail ERP Software
-                                </li>
-                            </ol>
-                        </p>
-                    </a>
-                </div>
-
-                <div class="card drop-shadow-lg dark:text-black border-b-8 border-b-yellow-800">
-                    <a href="{{ route('industries.real-estate') }}">
-                        <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                            Real Estate
-                        </h1>
-
-                        <p>
-                            <ol>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Property Marketplace
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    ERP Solutions
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    AR/VR Property Solution
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Estate Management Solution
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Property Auction Portal
-                                </li>
-                            </ol>
-                        </p>
-                    </a>
-                </div>
-
-                <div class="card drop-shadow-lg dark:text-black border-b-8 border-b-green-800">
-                    <a href="{{ route('industries.fintech') }}">
-                        <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                            FinTech
-                        </h1>
-
-                        <p>
-                            <ol>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Inventory Management System
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Loan Management System
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    On-demand Delivery Solutions
-                                </li>
-                                <li class="flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                    Accounts Management Solution
-                                </li>
-                            </ol>
-                        </p>
-                    </a>
-                </div>
+            <!-- Right Side Content -->
+            <div class="mt-10 lg:mt-0 flex flex-col items-start">
+                <ul class="space-y-4">
+                    <li class="flex items-center justify-between w-full">
+                        <span class="text-white mr-8">UI/UX Designers</span>
+                        <span class="text-[#e0bd00]">+</span>
+                    </li>
+                    <li class="flex items-center justify-between w-full">
+                        <span class="text-white mr-8">Front-end Developers</span>
+                        <span class="text-[#e0bd00]">+</span>
+                    </li>
+                    <li class="flex items-center justify-between w-full">
+                        <span class="text-white mr-8">Back-end Developers</span>
+                        <span class="text-[#e0bd00]">+</span>
+                    </li>
+                    <li class="flex items-center justify-between w-full">
+                        <span class="text-white mr-8">Full-Stack Developers</span>
+                        <span class="text-[#e0bd00]">+</span>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
-    <!-- End of Industry Solutions Section -->
+    <!-- End of Custom Web Dev Section -->
+
+
 
     <!-- Locations & Enquiry Section -->
     <section class="w-[1440px] h-[684px] pl-[50px] pr-[104px] py-[91px] bg-[#EDEDF8] justify-start items-center inline-flex">
