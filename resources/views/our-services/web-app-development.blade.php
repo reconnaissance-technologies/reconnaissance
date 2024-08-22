@@ -168,7 +168,7 @@
             </div>
             <p class="w-[890px] text-[#17191c] text-[15px] font-normal pb-7">"Elevate your digital presence with our expertly crafted solutions designed for seamless performance and unmatched user experience."</p>
         </div>
-        <div class="">
+        <div>
             <div class="flex gap-8 py-4">
                 <!-- First Block -->
                 <div class="flex gap-2 items-start">
@@ -239,62 +239,113 @@
     </section>
     <!-- End of Our Service Section -->
 
-    <!-- Visionary Partners Section -->
-    <section class="px-16 bg-white dark:text-white dark:bg-gray-800 flex justify-between">
-        <div class="w-full py-6">
-            <h3 class="text-rt-primary text-xl uppercase font-semibold">Our Partners Are</h3>
-            <h1 class="w-3/4 text-xl lg:text-4xl font-bold mt-2 mb-2 lg:mb-6">
-                Visionary Businesses and Diverse Clientele
-            </h1>
-            <div class="w-full lg:w-full flex justify-between items-center">
-                <div class="lg:w-3/4">
-                    <p>
-                        Explore our proven track record of delivering web design & development services to diverse customer segments ranging from startups to large enterprises. Discover how we can assist you in achieving your business goals.
-                    </p>
-                </div>
+    <!-- Our Process Section -->
+    <section class="py-12 bg-white">
+        <div class="px-20">
+            <!-- Section Title -->
+            <div class="mb-12">
+                <h2 class="text-[#194587] text-base font-semibold uppercase">Our Process</h2>
+                <p class="text-[#17191c] text-md font-bold mt-4">
+                    Empowering Your Digital Presence Through Our Meticulous and Innovative Web Application Development Process.
+                </p>
             </div>
 
-            <div class="grid grid-cols-4 gap-8 py-8">
-                <div class="card drop-shadow-lg dark:text-black border border-blue-800">
-                    <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl lg:w-50">
-                        Startups
-                    </h1>
-
-                    <p>
-                        From ambitious entrepreneurs to VC funded ventures, we have supported startups in their technological journey, helping them transform ideas into reality.
-                    </p>
+            <!-- Process Steps -->
+            <div class="flex flex-wrap justify-center gap-8 py-4">
+                <!-- First Block -->
+                <div class="relative flex flex-col items-start max-w-xs p-6 bg-white rounded-lg shadow-sm">
+                    <span class="absolute -top-7 left-0 text-[100px] text-[#143669] opacity-10 font-['Crimson Text'] leading-none">01</span>
+                    <div class="flex items-start gap-2 z-10">
+                        <img class="w-6 h-6" src="{{ asset('assets/img/our-services/codesymbol.svg') }}" alt="Icon" />
+                        <div>
+                            <h3 class="text-[#143669] text-base font-semibold">Requirements Gathering and Analysis</h3>
+                            <p class="text-gray-600 text-sm">
+                                Thoroughly understanding the client's needs and objectives, gathering requirements, and analyzing them to define the scope and features of the web application.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card drop-shadow-lg dark:text-black border border-blue-800">
-                    <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                        Product Companies
-                    </h1>
 
-                    <p>
-                        We have partnered with product-focused businesses, assisting them in developing and enhancing their web design & development. Services to meet market demands and stay ahead of the competition.
-                    </p>
+                <!-- Second Block -->
+                <div class="relative flex flex-col items-start max-w-xs p-6 bg-white rounded-lg shadow-sm">
+                    <span class="absolute -top-7 left-0 text-[100px] text-[#143669] opacity-10 font-['Crimson Text'] leading-none">02</span>
+                    <div class="flex items-start gap-2 z-10">
+                        <img class="w-6 h-6" src="{{ asset('assets/img/our-services/codesymbol.svg') }}" alt="Icon" />
+                        <div>
+                            <h3 class="text-[#143669] text-base font-semibold">Design and Prototyping</h3>
+                            <p class="text-gray-600 text-sm">
+                                Creating wireframes, mockups, and prototypes to visualize the user interface, user experience (UX), and overall design of the web application, ensuring usability and functionality.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card drop-shadow-lg dark:text-black border border-blue-800">
-                    <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                        Agencies
-                    </h1>
 
-                    <p>
-                        Collaborating with digital agencies, we have contributed to the creation of captivating digital experiences, leveraging our expertise to deliver innovative and impactful solutions that engage and inspire.
-                    </p>
+                <!-- Third Block -->
+                <div class="relative flex flex-col items-start max-w-xs p-6 bg-white rounded-lg shadow-sm">
+                    <span class="absolute -top-7 left-0 text-[100px] text-[#143669] opacity-10 font-['Crimson Text'] leading-none">03</span>
+                    <div class="flex items-start gap-2 z-10">
+                        <img class="w-6 h-6" src="{{ asset('assets/img/our-services/codesymbol.svg') }}" alt="Icon" />
+                        <div>
+                            <h3 class="text-[#143669] text-base font-semibold">Development and Coding</h3>
+                            <p class="text-gray-600 text-sm">
+                                Writing clean, efficient, and scalable code using appropriate technologies and frameworks, following best practices and coding standards to build the core functionality of the web application.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card drop-shadow-lg dark:text-black border border-blue-800">
-                    <h1 class="py-6 font-semibold text-black hover:text-rt-primary lg:text-xl">
-                        Enterprises
-                    </h1>
 
-                    <p>
-                        Our extensive experience working with large enterprises enables us to provide scalable web applications that handle high volumes of traffic, large data sets, and complex business processes, ensuring optimal performance.
-                    </p>
+                <!-- Fourth Block -->
+                <div class="relative flex flex-col items-start max-w-xs p-6 bg-white rounded-lg shadow-sm">
+                    <span class="absolute -top-7 left-0 text-[100px] text-[#143669] opacity-10 font-['Crimson Text'] leading-none">04</span>
+                    <div class="flex items-start gap-2 z-10">
+                        <img class="w-6 h-6" src="{{ asset('assets/img/our-services/codesymbol.svg') }}" alt="Icon" />
+                        <div>
+                            <h3 class="text-[#143669] text-base font-semibold">Testing and Quality Assurance (QA)</h3>
+                            <p class="text-gray-600 text-sm">
+                                Conducting comprehensive testing at various stages of development, including unit testing, integration testing, and user acceptance testing (UAT), to identify and fix bugs, ensure functionality, performance, and security.
+                            </p>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Fifth Block -->
+                <div class="relative flex flex-col items-start max-w-xs p-6 bg-white rounded-lg shadow-sm">
+                    <span class="absolute -top-7 left-0 text-[100px] text-[#143669] opacity-10 font-['Crimson Text'] leading-none">05</span>
+                    <div class="flex items-start gap-2 z-10">
+                        <img class="w-6 h-6" src="{{ asset('assets/img/our-services/codesymbol.svg') }}" alt="Icon" />
+                        <div>
+                            <h3 class="text-[#143669] text-base font-semibold">Deployment and Launch</h3>
+                            <p class="text-gray-600 text-sm">
+                                Deploying the web application to a production environment, configuring servers, databases, and other infrastructure components, and performing final testing before launching it to the public or intended users.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sixth Block -->
+                <div class="relative flex flex-col items-start max-w-xs p-6 bg-white rounded-lg shadow-sm">
+                    <span class="absolute -top-7 left-0 text-[100px] text-[#143669] opacity-10 font-['Crimson Text'] leading-none">06</span>
+                    <div class="flex items-start gap-2 z-10">
+                        <img class="w-6 h-6" src="{{ asset('assets/img/our-services/codesymbol.svg') }}" alt="Icon" />
+                        <div>
+                            <h3 class="text-[#143669] text-base font-semibold">Maintenance and Support</h3>
+                            <p class="text-gray-600 text-sm">
+                                Providing ongoing maintenance, updates, and support services to ensure the web application remains reliable, secure, and up-to-date, addressing any issues, implementing enhancements, and optimizing performance as needed.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Call to Action -->
+            <div class="max-w-[933px] mx-auto flex flex-col justify-start items-center gap-[53px] text-center mt-10 pb-10">
+                <a href="#" class="px-9 py-3 bg-[#143669] rounded-lg text-white text-base font-normal hover:bg-[#143671]">
+                    Start a Project
+                </a>
             </div>
         </div>
     </section>
-    <!-- End of Visionary Partners Section -->
+    <!-- End of Our Process Section -->
+
 
     <!-- Banner CTA Section -->
     <section class=" h-80 px-16 bg-black text-white flex justify-between items-center">

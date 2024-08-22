@@ -16,6 +16,7 @@ export default {
             },
             fontFamily: {
                 sans: ['Inter', 'sans-serif'],
+                customFont: ['"Crimson Text"', "sans-serif"],
                 display: ['Inter', 'sans-serif'],
                 body: ['Inter', 'sans-serif']
             },
