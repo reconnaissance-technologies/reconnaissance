@@ -442,6 +442,100 @@
     </section>
     <!-- End of Custom Web Dev Section -->
 
+    <!-- Our Success Stories Section -->
+    <section class="w-full h-[490px] bg-[#180918] overflow-hidden relative">
+        <!-- Title -->
+        <div class="text-white">
+            <h3 class="font-semibold text-white py-6 px-20 text-[20px]">Success stories of our clients</h3>
+        </div>
+
+        <!-- Slider Container -->
+        <div class="relative flex items-center">
+            <div id="testimonial-slider" class="flex transition-transform duration-500 ease-in-out pl-20">
+                <!-- Testimonial 1 -->
+                <div class="w-[480px] h-[300px] p-6 bg-white rounded-lg mx-2 flex-shrink-0">
+                    <div class="flex flex-col justify-between h-full">
+                        <div class="text-center">
+                            <span class="text-[#292d32] text-xl font-normal">“</span>
+                            <span class="w-2 text-[#292d32] text-[13px] font-medium">Incredible attention to detail and an unwavering commitment to excellence define our experience with Reconnaissance Technologies. From the seamless user experience of our new mobile app to the intuitive interface of our web platform, their team consistently delivers top-notch solutions that exceed our expectations. Their expertise spans across user research, design, and development, making them our trusted partner for all our digital needs.</span>
+                            <span class="text-[#292d32] text-2xl font-normal">”</span>
+                        </div>
+                        <div class="flex items-center gap-4 mt-4">
+                            <img class="w-[55px] h-[55px] rounded-full" src="{{ asset('assets/img/testimonials/heinneZac.png') }}" alt="Heine Zachariassen">
+                            <div class="flex flex-col">
+                                <div class="text-[#292d32] text-sm font-bold">HEINE ZACHARIASSEN</div>
+                                <div class="text-[#292d32] text-sm font-normal">Founder & CEO, VIVINO</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="w-[480px] h-[300px] p-6 bg-white rounded-lg mx-2 flex-shrink-0">
+                    <div class="flex flex-col justify-between h-full">
+                        <div class="text-center">
+                            <span class="text-[#292d32] text-xl font-normal">“</span>
+                            <span class="text-[#292d32] text-[13px] font-normal">Working with Reconnaissance Technologies has been a game-changer for our business. Their comprehensive approach to product design, coupled with their innovative solutions, has significantly improved our online presence and user engagement. From user research and wireframing to prototyping and final delivery, their team guided us every step of the way, ensuring our project's success. We highly recommend Reconnaissance Technologies to anyone looking to elevate their digital strategy.</span>
+                            <span class="text-[#292d32] text-2xl font-normal">”</span>
+                        </div>
+                        <div class="flex items-center gap-4 mt-2">
+                            <img class="w-[55px] h-[55px] rounded-full" src="{{ asset('assets/img/testimonials/gabSuth.png') }}" alt="Gab Sutherland">
+                            <div class="flex flex-col">
+                                <div class="text-[#292d32] text-sm font-bold">GAB SUTHERLAND</div>
+                                <div class="text-[#292d32] text-sm font-normal">CEO, HOUSE BYTES</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="w-[480px] h-[300px] p-6 bg-white rounded-lg mx-3 flex-shrink-0">
+                    <div class="flex flex-col justify-between h-full">
+                        <div class="text-center">
+                            <span class="text-[#292d32] text-xl font-normal">“</span>
+                            <span class="text-[#292d32] text-[13px] font-normal">Working with Reconnaissance Technologies has been a game-changer for our business. Their comprehensive approach to product design, coupled with their innovative solutions, has significantly improved our online presence and user engagement. From user research and wireframing to prototyping and final delivery, their team guided us every step of the way, ensuring our project's success. We highly recommend Reconnaissance Technologies to anyone looking to elevate their digital strategy.</span>
+                            <span class="text-[#292d32] text-2xl font-normal">”</span>
+                        </div>
+                        <div class="flex items-center gap-4 mt-2">
+                            <img class="w-[55px] h-[55px] rounded-full" src="{{ asset('assets/img/testimonials/fredKrass.png') }}" alt="Frederick Krass">
+                            <div class="flex flex-col">
+                                <div class="text-[#292d32] text-sm font-bold">Frederick Krass</div>
+                                <div class="text-[#292d32] text-sm font-normal">CEO, HOUSE BYTES</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Arrow -->
+        <div class="pt-10 pb-2 flex justify-end mr-20 text-white">
+            <button class="bg-gray-200 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full ml-12" onclick="scrollRight()" id="arrowR">
+                <img src="{{ asset('assets/img/arrow-left.svg') }}" alt="Right Arrow" />
+            </button>
+        </div>
+    </section>
+    <!-- End of Our Success Stories Section -->
+
+    <!-- JavaScript for Slider -->
+    <script>
+        let currentIndex = 0;
+
+        function scrollRight() {
+            const slider = document.getElementById('testimonial-slider');
+            const cardWidth = 480 + 24; // Width of card + margin
+            const maxIndex = slider.children.length - 1;
+
+            if (currentIndex < maxIndex) {
+                currentIndex++;
+                slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+            } else {
+                currentIndex = 0;
+                slider.style.transform = `translateX(0px)`;
+            }
+        }
+    </script>
+
 
 
     <!-- Locations & Enquiry Section -->
