@@ -349,54 +349,54 @@
 
     <!-- Banner CTA Section -->
     <section class="w-full h-[550px] relative bg-white flex flex-col px-20">
-        <div class="text-[#17191C] text-xl font-semibold mt-6">Project approaches</div>
-         
-         <div class="mx-auto">
-             <!-- Front-end + Back-end Card (Higher Position) -->
-             <div class="w-[332px] h-[249px] px-[21px] pt-[53.50px] pb-[52.50px] bg-[#143669] rounded-lg absolute top-[160px] items-center flex flex-col" style="left: 50%; transform: translateX(-50%);">
-                 <div class="self-stretch justify-start items-start gap-[5px] inline-flex">
-                     <div class="w-12 h-12 justify-center items-center flex">
-                         <div class="w-12 h-12 relative">
-                             <img src="{{ asset('assets/img/projectcodesymbol.svg') }}" alt="codesymbol">
-                         </div>
-                     </div>
-                     <div class="flex-col justify-start items-start gap-2.5 inline-flex">
-                         <div class="text-white text-base font-semibold">Front-end + Back-end</div>
-                         <div class="w-[230px] text-white text-[15px] font-normal">When you need to develop a back-end solution to support your mobile app, our back-end engineering team is ready to help.</div>
-                     </div>
-                 </div>
-             </div>
-     
-             <!-- Front-end Card (Aligned Below) -->
-             <div class="w-[332px] h-[249px] px-[17.50px] pt-[53.50px] pb-[52.50px] bg-[#143669] rounded-lg absolute top-[222px]" style="left: 22%; transform: translateX(-50%);">
-                 <div class="self-stretch justify-start items-start gap-[5px] inline-flex">
-                     <div class="w-12 h-12 justify-center items-center flex">
-                         <div class="w-12 h-12 relative">
-                             <img src="{{ asset('assets/img/projectcodesymbol.svg') }}" alt="codesymbol">
-                         </div>
-                     </div>
-                     <div class="flex-col justify-start items-start gap-2.5 inline-flex">
-                         <div class="text-white text-base font-semibold">Front-end</div>
-                         <div class="w-[244px] text-white text-[15px] font-normal">Our team can develop the front end user inference of your website or web app and integrate it with your existing back-end and API.</div>
-                     </div>
-                 </div>
-             </div>
-     
-             <!-- Admin Panel Card (Aligned Below) -->
-             <div class="w-[332px] h-[249px] px-[26px] pt-[53.50px] pb-[52.50px] bg-[#143669] rounded-lg absolute top-[222px] flex flex-col items-center" style="left: 78%; transform: translateX(-50%);">
-                 <div class="self-stretch justify-start items-start gap-[5px] inline-flex">
-                     <div class="w-12 h-12 justify-center items-center flex">
-                         <div class="w-12 h-12 relative">
-                             <img src="{{ asset('assets/img/projectcodesymbol.svg') }}" alt="codesymbol">
-                         </div>
-                     </div>
-                     <div class="flex-col justify-start items-start gap-2.5 inline-flex">
-                         <div class="text-white text-base font-semibold">Admin Panel</div>
-                         <div class="w-[227px] text-white text-[15px] font-normal">We design and develop easy-to-use admin panels for mobile and web apps, using popular UI solutions that are reliable and easy to support and extend.</div>
-                     </div>
-                 </div>
-             </div>
-         </div>
+        <h2 class="text-[#17191C] text-xl font-semibold mt-6">Project approaches</h2>
+
+        <div class="mx-auto">
+            <!-- Front-end + Back-end Card (Higher Position) -->
+            <div class="w-[332px] h-[249px] px-[21px] pt-[53.50px] pb-[52.50px] bg-[#143669] rounded-lg absolute top-[160px] items-center flex flex-col" style="left: 50%; transform: translateX(-50%);">
+                <div class="self-stretch justify-start items-start gap-[5px] inline-flex">
+                    <div class="w-12 h-12 justify-center items-center flex">
+                        <div class="w-12 h-12 relative">
+                            <img src="{{ asset('assets/img/projectcodesymbol.svg') }}" alt="codesymbol">
+                        </div>
+                    </div>
+                    <div class="flex-col justify-start items-start gap-2.5 inline-flex">
+                        <h3 class="text-white text-base font-semibold">Front-end + Back-end</h3>
+                        <p class="w-[230px] text-white text-[15px] font-normal">When you need to develop a back-end solution to support your mobile app, our back-end engineering team is ready to help.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Front-end Card (Aligned Below) -->
+            <div class="w-[332px] h-[249px] px-[17.50px] pt-[53.50px] pb-[52.50px] bg-[#143669] rounded-lg absolute top-[222px]" style="left: 22%; transform: translateX(-50%);">
+                <div class="self-stretch justify-start items-start gap-[5px] inline-flex">
+                    <div class="w-12 h-12 justify-center items-center flex">
+                        <div class="w-12 h-12 relative">
+                            <img src="{{ asset('assets/img/projectcodesymbol.svg') }}" alt="codesymbol">
+                        </div>
+                    </div>
+                    <div class="flex-col justify-start items-start gap-2.5 inline-flex">
+                        <h3 class="text-white text-base font-semibold">Front-end</h3>
+                        <p class="w-[244px] text-white text-[15px] font-normal">Our team can develop the front end user inference of your website or web app and integrate it with your existing back-end and API.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Admin Panel Card (Aligned Below) -->
+            <div class="w-[332px] h-[249px] px-[26px] pt-[53.50px] pb-[52.50px] bg-[#143669] rounded-lg absolute top-[222px] flex flex-col items-center" style="left: 78%; transform: translateX(-50%);">
+                <div class="self-stretch justify-start items-start gap-[5px] inline-flex">
+                    <div class="w-12 h-12 justify-center items-center flex">
+                        <div class="w-12 h-12 relative">
+                            <img src="{{ asset('assets/img/projectcodesymbol.svg') }}" alt="codesymbol">
+                        </div>
+                    </div>
+                    <div class="flex-col justify-start items-start gap-2.5 inline-flex">
+                        <h3 class="text-white text-base font-semibold">Admin Panel</h3>
+                        <p class="w-[227px] text-white text-[15px] font-normal">We design and develop easy-to-use admin panels for mobile and web apps, using popular UI solutions that are reliable and easy to support and extend.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- End of Banner CTA Section -->
 
