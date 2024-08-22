@@ -347,7 +347,7 @@
     <!-- End of Our Process Section -->
 
 
-    <!-- Banner CTA Section -->
+    <!-- Our Project Approaches Section -->
     <section class="w-full h-[550px] relative bg-white flex flex-col px-20">
         <h2 class="text-[#17191C] text-xl font-semibold mt-6">Project approaches</h2>
 
@@ -398,7 +398,7 @@
             </div>
         </div>
     </section>
-    <!-- End of Banner CTA Section -->
+    <!-- End of Our Project Approaches Section -->
 
     <!-- Industry Solutions Section -->
     <section class="px-16 bg-white dark:text-white dark:bg-gray-800 flex justify-between">
