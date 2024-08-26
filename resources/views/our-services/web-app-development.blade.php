@@ -669,13 +669,26 @@
                 </p>
             </div>
         </div>
-        <div class="flex justify-center items-center mt-8">
+        <div class="flex justify-center items-center mt-8 pb-6">
             <a href="{{ route('contact-us') }}" class=" px-12 py-3 bg-[#143669] rounded-lg text-white text-base font-normal hover:bg-[#143671]">
                 Start a Project
             </a>
         </div>
     </section>
     <!-- End of Pricing Section -->
+
+    <!-- Call to Action Section -->
+    <section class="w-full h-[310px] flex justify-center items-center bg-[#143669] px-4">
+        <div class="max-w-[933px] flex flex-col justify-start items-center gap-[53px] text-center">
+            <div class="text-white text-2xl font-bold">
+                Require the expertise of a Web application Design Specialist to streamline your Web app development process?
+            </div>
+            <a href="{{ route('contact-us') }}" class="px-8 py-4 bg-white rounded-lg text-[#143669] text-base font-normal">
+                Hire a Web Designer
+            </a>
+        </div>
+    </section>
+    <!-- End of Call to Action Section -->
 
     <!-- Locations & Enquiry Section -->
     <section class="w-[1440px] h-[684px] pl-[50px] pr-[104px] py-[91px] bg-[#EDEDF8] justify-start items-center inline-flex">
