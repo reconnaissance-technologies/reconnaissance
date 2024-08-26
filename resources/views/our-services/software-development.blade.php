@@ -11,38 +11,78 @@
 @section('title', 'Software Product Development | Product Development Company - Reconnaissance Technologies')
 
 @section('custom-styles')
+<style>
+    @keyframes marquee {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    .animate-marquee {
+        animation: marquee 45s linear infinite;
+    }
+</style>
 @endsection
 
 @section('content')
 <main class="w-full">
     <!-- Hero Section -->
-    <section class="bg-gradient-to-tr from-violet-200 to-slate-700 px-16">
-        <!-- hero section content goes here -->
-        <div class="w-full lg:flex items-center">
-            <div class="w-full lg:w-1/2 md:w1/2 lg:pt-32 my-16">
-                <!-- hero section description goes here -->
-                <h1 class="text-xl lg:text-5xl font-bold text-white mt-2 mb-2 lg:mb-6">
-                    Software Product Development
-                </h1>
-                <p class="text-md lg:text-xl text-white mb-8">
-                    Reconnaissance Technologies specializes in turning your vision into exceptional, market-leading software products. Leveraging cuting-edge technologies and deep industry expertise we address your unique challenges ensuring a seamless and impactful journey towards digital excellence.
+    <section class="relative h-screen flex flex-col justify-between text-center">
+        <!-- Video Background -->
+        <video class="absolute top-0 left-0 w-full h-full object-cover z-[-1]" autoplay muted loop playsinline>
+            <source src="https://s3-figma-videos-production-sig.figma.com/video/1134555079227565548/TEAM/5e0f/46b9/-9652-4b39-8d66-a816c78107c7?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JVlswnhvzZZJmaMNoZ0G1IzXJBVjAp7G28~rR4kgcnqiYytNOfEmesICGdrsqJxE8b8ga4Dg5GNKUvuFA0UygsCoqHzVRevg06Aq-jUB8yadlayq9PcxZbEKheAnVuM9QzlzGR6to03pLjC3UguWbR2jmUDFfAWh6Ds5XB4edDCCGD1x9sTD0lv4nSW2sqJ319QKO-YiY6AJauZJ6Z-6mN9Mg9-jKHabe~dm1FvGfdRFoe27AtQrI0T7wC4YIQKuIDo09j-wT~bVH~dACwWudaV-17IWtf8Ui5AW8Vfmpi94MWvy9hiTmzInSfcqXuCjkQV3UCEiEQ95E~wnqdYzXA__" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Overlay -->
+        <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-[-1]"></div>
+
+        <!-- Hero section content -->
+        <div class="relative w-full lg:flex items-center justify-center">
+            <div class="w-full md:pt-40 lg:pt-48 z-10 text-center text-white">
+                <!-- Hero section description -->
+                <h2 class="text-center justify-center text-white text-xl md:text-4xl py-2 font-bold whitespace-nowrap">
+                    Empowering Businesses with Innovative Software
+                </h2>
+                <p class="text-sm md:text-lg mb-4">
+                    From Concept to Code, We Engineer Bespoke Software Solutions That Propel Businesses Forward,<br> Leveraging Cutting-edge Technologies and Tailored Strategies to Meet Your Unique Needs
                 </p>
 
                 <!-- CTA Button -->
-                <div class="w-full flex py-6">
-                    <a href="{{ route('contact-us') }}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-                        Speak with an Expert
+                <div class="flex justify-center mx-3">
+                    <a href="#" class="border border-rt-white px-8 py-3.5 text-base font-medium text-white inline-flex items-center hover:font-bold hover:bg-white hover:text-rt-primary hover:border-white focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center mr-10">
+                        Case Studies
+                    </a>
+                    <a href="#" class="px-8 py-3.5 text-base font-medium text-black inline-flex items-center bg-rt-white hover:text-rt-primary hover:font-bold focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center">
+                        Start a Project
+                        <img class="px-2 w-8" src="{{ asset('assets/icons/send.svg') }}" alt="">
                     </a>
                 </div>
                 <!-- End of CTA Button -->
-
             </div>
-            <div class="w-full lg:w-1/2 pt-20">
-                <img src="{{ asset('assets/img/software-product-development-image.png') }}" class="object-fill" alt="Software Product Development - Reconnaissance Technologies">
+        </div>
+
+        <!-- Image section -->
+        <div class="w-full flex justify-center mb-5">
+            <div class="h-10 justify-start items-center gap-10 inline-flex animate-marquee">
+                <img class="w-48" src="{{ asset('assets/img/clients/blue-sea-travels.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/africasiaconnect.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/ultrashot-nigeria.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/how-tech.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/celestina-adams-care-foundation.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/africasiaconnect.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/ultrashot-nigeria.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/how-tech.png') }}" />
+                <img class="w-48" src="{{ asset('assets/img/clients/celestina-adams-care-foundation.png') }}" />
             </div>
         </div>
     </section>
     <!-- End of Hero Section -->
+
 
     <!-- What Makes Us Different Section -->
     <section class="px-16 bg-white dark:text-white dark:bg-gray-800 flex justify-between">
