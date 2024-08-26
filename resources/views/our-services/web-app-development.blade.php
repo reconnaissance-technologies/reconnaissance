@@ -536,6 +536,109 @@
         }
     </script>
 
+    <!-- Toolkit Section -->
+    <section class="w-full bg-[#f9fafb] py-12">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <!-- Section Header -->
+            <div class="mb-12">
+                <h2 class="text-xl font-semibold text-[#292d32]">Here’s Our Toolkit Used for Web Application Development Services</h2>
+                <p class="text-[#6b7280] mt-2">Experience Unmatched Performance and Innovation with Our Web App Development Services Powered by Cutting-edge Technologies and Platforms.</p>
+            </div>
+
+            <!-- Toolkit Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-2"> 
+                <!-- Back-end Programming Language -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex flex-col mb-4">
+                        <img src="{{ asset('assets/img/our-services/NewcodeIcon.svg') }}" alt="Backend Icon" class="w-8 h-8 mb-2">
+                        <h3 class="text-xl font-semibold text-[#292d32]">Back-end Programming Language</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Java</span>
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Python</span>
+                    </div>
+                </div>
+
+                <!-- Front-end Programming Languages -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex flex-col mb-4">
+                        <img src="{{ asset('assets/img/our-services/NewcodeIcon.svg') }}" alt="Frontend Icon" class="w-8 h-8 mb-2">
+                        <h3 class="text-xl font-semibold text-[#292d32]">Front-end Programming Languages</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">HTML5</span>
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">CSS3</span>
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Platforms -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex flex-col mb-4">
+                        <img src="{{ asset('assets/img/our-services/NewcodeIcon.svg') }}" alt="Platforms Icon" class="w-8 h-8 mb-2">
+                        <h3 class="text-xl font-semibold text-[#292d32]">Platforms</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">.Net</span>
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Node JS</span>
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">TypeScript</span>
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Vue.js</span>
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Angular</span>
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">React</span>
+                    </div>
+                </div>
+
+                <!-- Databases and Storages -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex flex-col mb-4">
+                        <img src="{{ asset('assets/img/our-services/NewcodeIcon.svg') }}" alt="Databases Icon" class="w-8 h-8 mb-2">
+                        <h3 class="text-xl font-semibold text-[#292d32]">Databases and Storages</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">MS SQL SERVER</span>
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">MONGO DB</span>
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">MYSQL</span>
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">POSTGRESQL</span>
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">DYNAMODB</span>
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">BIGQUERY</span>
+                    </div>
+                </div>
+
+                <!-- Clouds -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex flex-col mb-4">
+                        <img src="{{ asset('assets/img/our-services/NewcodeIcon.svg') }}" alt="Clouds Icon" class="w-8 h-8 mb-2">
+                        <h3 class="text-xl font-semibold text-[#292d32]">Clouds</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">AWS</span>
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Google Cloud</span>
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Azure</span>
+                    </div>
+                </div>
+
+                <!-- DevOps -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex flex-col mb-4">
+                        <img src="{{ asset('assets/img/our-services/NewcodeIcon.svg') }}" alt="DevOps Icon" class="w-8 h-8 mb-2">
+                        <h3 class="text-xl font-semibold text-[#292d32]">DevOps</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Gitlab CI</span>
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">TeamCity</span>
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">JENKINS</span>
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">ELK</span>
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">GRAFANA</span>
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">NEW RELIC</span>
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">DOCKER</span>
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">KUBERNETES</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Toolkit Section -->
+
 
 
     <!-- Locations & Enquiry Section -->
