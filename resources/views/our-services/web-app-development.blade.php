@@ -546,7 +546,7 @@
             </div>
 
             <!-- Toolkit Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-2"> 
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
                 <!-- Back-end Programming Language -->
                 <div class="bg-white p-8 rounded-lg shadow-md">
                     <div class="flex flex-col mb-4">
@@ -640,6 +640,42 @@
     <!-- End of Toolkit Section -->
 
 
+    <!-- Pricing Section -->
+    <section class="pricing-section container w-full max-w-[1440px] h-auto relative bg-gray-50 p-6">
+        <div class="flex flex-col justify-start pl-16 gap-2.5">
+            <h2 class="text-[#17191C] text-xl font-bold">OUR FLEXIBLE PAYMENT PLANS</h2>
+            <p class="text-[#292D32] text-[15px] font-normal">We provide flexible models to meet your budgets and business objectives.</p>
+        </div>
+        <div class="flex flex-wrap justify-center items-center gap-8 mt-8">
+            <div class="flex flex-col p-6 w-[350px] h-[250px] rounded-md border border-[#008080] relative">
+                <img src="{{ asset('assets/img/our-services/dollar-circle.png') }}" alt="icon" class="w-10 h-10 absolute top-4 left-4">
+                <h3 class="mt-14 text-center text-[#008080] text-lg font-medium">Fixed Price Model</h3>
+                <p class="text-center whitespace-nowrap text-[#008080] text-[15px] font-normal">
+                    As a software development company, when <br> your project objectives are clearly defined, you <br> have the option to choose a fixed-price model, <br> offering a predetermined production cost, <br> contingent upon the maintenance of the <br> original scope.
+                </p>
+            </div>
+            <div class="flex flex-col p-6 w-[350px] h-[250px] rounded-md border border-[#FFA500] relative">
+                <img src="{{ asset('assets/img/our-services/watchIcon.png') }}" alt="icon" class="w-10 h-10 absolute top-4 left-4">
+                <h3 class="mt-14 text-center text-[#FFA500] text-lg font-medium">Phased Payment Structure</h3>
+                <p class="text-center whitespace-nowrap text-[#FFA500] text-[15px] font-normal mt-2">
+                    Tailored for progressive development <br> initiatives, this model ensures enhanced <br> adaptability, with payments synchronized to <br> the achievement of predefined project <br> milestones.
+                </p>
+            </div>
+            <div class="flex flex-col p-6 w-[350px] h-[250px] rounded-md border border-[#444444] relative">
+                <img src="{{ asset('assets/img/our-services/peopleIcon.png') }}" alt="icon" class="w-10 h-10 absolute top-4 left-4">
+                <h3 class="mt-14 text-center text-[#444444] text-lg font-medium">Leverage Elite Expertise</h3>
+                <p class="text-center whitespace-nowrap text-[#444444] text-[15px] font-normal mt-2">
+                    Access our onshore and offshore teams of top- <br> tier professionals to bolster your bespoke <br> product development.
+                </p>
+            </div>
+        </div>
+        <div class="flex justify-center items-center mt-8">
+            <a href="{{ route('contact-us') }}" class=" px-12 py-3 bg-[#143669] rounded-lg text-white text-base font-normal hover:bg-[#143671]">
+                Start a Project
+            </a>
+        </div>
+    </section>
+    <!-- End of Pricing Section -->
 
     <!-- Locations & Enquiry Section -->
     <section class="w-[1440px] h-[684px] pl-[50px] pr-[104px] py-[91px] bg-[#EDEDF8] justify-start items-center inline-flex">
