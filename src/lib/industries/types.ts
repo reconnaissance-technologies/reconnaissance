@@ -21,7 +21,11 @@ export type IndustrySolution = {
 };
 
 export type IndustryUseCase = {
-  tags: [string, string];
+  // Not every industry page's use-case cards show tag badges on the live
+  // site (Logistics' do; Civic & Municipal Infrastructure's don't, for
+  // example) — `string[]` so a page with none can honestly pass `[]`
+  // rather than a fabricated pair.
+  tags: string[];
   title: string;
   inputs: string;
   automationSteps: string[];
