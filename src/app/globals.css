@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens sourced from design-system.md (extracted from the live
+ * reconnaissance.test Elementor site) with the brand palette corrected to
+ * the actual logo/favicon colors (navy + cyan replace the Elementor site's
+ * placeholder purple). See design-system.md §2 for the full rationale.
+ */
+:root {
+  /* Brand */
+  --color-brand-navy: #1c4b96;      /* primary interactive color — replaces purple */
+  --color-brand-navy-dark: #143a75; /* hover/active state for navy surfaces */
+  --color-brand-cyan: #01adf5;      /* secondary/decorative accent — dark bg or large elements only */
+
+  /* Neutrals */
+  --color-ink: #000000;
+  --color-warm-white: #faf9f7;
+  --color-dark-slate: #111827;
+  --color-border-subtle: rgba(0, 0, 0, 0.1);
+
+  /* Surfaces */
+  --background: #ffffff;
+  --foreground: #000000;
+}
+
+@theme inline {
+  /* Fonts — self-hosted via @fontsource, see layout.tsx */
+  --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-label: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+
+  /* Colors */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand-navy: var(--color-brand-navy);
+  --color-brand-navy-dark: var(--color-brand-navy-dark);
+  --color-brand-cyan: var(--color-brand-cyan);
+  --color-ink: var(--color-ink);
+  --color-warm-white: var(--color-warm-white);
+  --color-dark-slate: var(--color-dark-slate);
+  --color-border-subtle: var(--color-border-subtle);
+
+  /* Breakpoints — the live site's own Elementor breakpoints, not Tailwind's defaults */
+  --breakpoint-sm: 767px;
+  --breakpoint-md: 1024px;
+  --breakpoint-lg: 1280px;
+  --breakpoint-xl: 1600px;
+
+  /* Border radius scale (design-system.md §5) */
+  --radius-pill: 60px;      /* buttons */
+  --radius-badge: 20px;     /* badges, cards, quote block */
+  --radius-input: 6px;      /* form inputs */
+  --radius-card-torn: 20px 20px 20px 60px; /* asymmetric "torn corner" card variant, §9 */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
