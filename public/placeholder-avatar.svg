@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="500" viewBox="0 0 400 500">
+  <rect width="400" height="500" fill="#E3ECF9"/>
+  <circle cx="200" cy="190" r="70" fill="#1C4B96" opacity="0.25"/>
+  <rect x="90" y="290" width="220" height="160" rx="40" fill="#1C4B96" opacity="0.18"/>
+</svg>
