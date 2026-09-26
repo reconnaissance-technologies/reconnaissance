@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { MegaMenu } from "@/components/nav/MegaMenu";
-import { siteNavigation } from "@/lib/navigation/seed-navigation";
+import { getSiteNavigation } from "@/lib/navigation/get-site-navigation";
 
 /**
  * Site header — logo, mega menu (architecture plan §1/§4), and the CTA
@@ -12,8 +12,15 @@ import { siteNavigation } from "@/lib/navigation/seed-navigation";
  * `relative` + `z-30` here (above ordinary page content, below the
  * MegaMenu panel's own z-40/z-50) so the panel's backdrop and panel can
  * stack correctly against whatever the page renders below the header.
+ *
+ * Async because the nav content is now fetched from WordPress
+ * (`getSiteNavigation`, architecture plan §5 phase 2) rather than read
+ * from the static seed data — this is a Server Component, so the `await`
+ * happens at render time on the server, not in the browser.
  */
-export function Header() {
+export async function Header() {
+  const siteNavigation = await getSiteNavigation();
+
   return (
     <header className="relative z-30 w-full border-b border-border-subtle bg-white">
       <div className="mx-auto flex max-w-[1280px] items-center justify-between gap-6 px-6 py-4">

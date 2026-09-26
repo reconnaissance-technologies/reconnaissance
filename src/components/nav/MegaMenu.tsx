@@ -14,9 +14,10 @@ import type { NavItem, RightSlot } from "@/lib/navigation/types";
  * A trigger with a single tab skips the left rail entirely — the rail
  * only earns its place once there's something to switch between (e.g.
  * Services' two tabs). Everything here reads from `NavItem[]`, the same
- * shape the "Site Navigation" ACF options page will hand back over
- * WPGraphQL (architecture plan §4), so swapping the seed data for a real
- * query shouldn't require touching this component.
+ * shape the "Site Navigation" ACF options page hands back over WPGraphQL
+ * (architecture plan §4, wired up in `getSiteNavigation()`) — this
+ * component doesn't know or care whether `items` came from the live
+ * query or the seed-data fallback.
  */
 export function MegaMenu({ items }: { items: NavItem[] }) {
   const [openId, setOpenId] = useState<string | null>(null);

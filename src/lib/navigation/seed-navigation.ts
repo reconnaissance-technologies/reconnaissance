@@ -1,27 +1,29 @@
 import { SiteNavigation } from "./types";
 
 /**
- * Temporary seed data for the mega menu, until WPGraphQL + the "Site
- * Navigation" ACF options page (architecture plan §4) are wired up.
+ * Formerly the mega menu's only data source; now the **fallback** used by
+ * `getSiteNavigation()` (`./get-site-navigation.ts`) when the live
+ * WPGraphQL query fails or comes back empty (WordPress unreachable, a
+ * misconfigured endpoint, etc.) — see that module's doc comment. The
+ * real content now lives in wp-admin's "Site Navigation" options page,
+ * fully populated and GraphQL-verified as of 2026-09-26 (architecture
+ * plan §3/§5), so this file should stay in sync with that content
+ * loosely at best; it's a safety net, not the source of truth anymore.
  *
  * The top-level labels, links, and hrefs below were pulled live from the
  * current reconnaissance.test header (its plain Elementor dropdown menu)
- * on 2026-09-26, so they're real — nothing here is a placeholder link.
- * What IS new/invented for this rebuild:
+ * back when this was written, so they're real — nothing here is a
+ * placeholder link. What IS new/invented for this rebuild:
  *   - The rail-tab split on Services (the live site has no sub-categories;
  *     "AI & Automation" vs "Integration & Operations" is a proposed
  *     grouping to demonstrate the tab pattern — confirm with the team or
- *     replace with the real categories once ACF is wired up).
+ *     replace with the real categories, since it's now also live in
+ *     wp-admin, not just here).
  *   - The one-line descriptions under each link (the live dropdown has no
  *     descriptions; these are placeholder copy for layout purposes).
  *   - The right-column widgets (promo box copy reuses the real "Book a
  *     discovery call" CTA already on the site; the Resources tag list is
  *     illustrative only).
- *
- * Replace this whole module with a WPGraphQL query against the Site
- * Navigation options page once that's built (see Phase 2 in the
- * architecture plan) — the shape of `SiteNavigation` is designed to match
- * that query's response 1:1, so nothing downstream should need to change.
  */
 export const siteNavigation: SiteNavigation = {
   items: [
