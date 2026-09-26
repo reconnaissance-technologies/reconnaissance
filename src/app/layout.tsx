@@ -6,6 +6,7 @@ import "@fontsource/instrument-sans/400.css";
 import "@fontsource/instrument-sans/500.css";
 import "@fontsource/ibm-plex-sans/400.css";
 import "./globals.css";
+import { Header } from "@/components/nav/Header";
 
 export const metadata: Metadata = {
   title: "Reconnaissance Technologies",
@@ -15,7 +16,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className="h-full antialiased">
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

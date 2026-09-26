@@ -1,0 +1,373 @@
+[
+    {
+        "key": "group_recnav_site_navigation",
+        "title": "Site Navigation",
+        "fields": [
+            {
+                "key": "field_recnav_nav_items",
+                "label": "Navigation Items",
+                "name": "nav_items",
+                "type": "repeater",
+                "instructions": "One entry per top-level header trigger (Services, Industries, About, Resources...), in display order.",
+                "min": 1,
+                "max": 10,
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_recnav_label",
+                        "label": "Label",
+                        "name": "label",
+                        "type": "text",
+                        "instructions": "e.g. \u201cServices\u201d",
+                        "required": 1
+                    },
+                    {
+                        "key": "field_recnav_link",
+                        "label": "Link",
+                        "name": "link",
+                        "type": "link",
+                        "instructions": "Optional \u2014 set if the trigger itself should also be clickable, not just open the panel.",
+                        "required": 0,
+                        "return_format": "array"
+                    },
+                    {
+                        "key": "field_recnav_tabs",
+                        "label": "Tabs",
+                        "name": "tabs",
+                        "type": "repeater",
+                        "instructions": "Left-rail categories for this item's mega menu panel. Leave empty to render this item as a plain link instead of a panel trigger.",
+                        "min": 0,
+                        "max": 8,
+                        "layout": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_recnav_tab_label",
+                                "label": "Tab Label",
+                                "name": "tab_label",
+                                "type": "text",
+                                "instructions": "Left-rail label, e.g. \u201cArtificial Intelligence\u201d.",
+                                "required": 1
+                            },
+                            {
+                                "key": "field_recnav_tab_icon",
+                                "label": "Tab Icon",
+                                "name": "tab_icon",
+                                "type": "image",
+                                "instructions": "",
+                                "required": 0,
+                                "return_format": "array",
+                                "preview_size": "medium"
+                            },
+                            {
+                                "key": "field_recnav_columns",
+                                "label": "Columns",
+                                "name": "columns",
+                                "type": "repeater",
+                                "instructions": "Typically 2 columns of links.",
+                                "min": 1,
+                                "max": 3,
+                                "layout": "block",
+                                "sub_fields": [
+                                    {
+                                        "key": "field_recnav_links",
+                                        "label": "Links",
+                                        "name": "links",
+                                        "type": "repeater",
+                                        "instructions": "The link+description items in this column.",
+                                        "min": 1,
+                                        "max": 6,
+                                        "layout": "block",
+                                        "sub_fields": [
+                                            {
+                                                "key": "field_recnav_title",
+                                                "label": "Title",
+                                                "name": "title",
+                                                "type": "text",
+                                                "instructions": "Bold link title, e.g. \u201cAI Workflow Automation\u201d",
+                                                "required": 1
+                                            },
+                                            {
+                                                "key": "field_recnav_description",
+                                                "label": "Description",
+                                                "name": "description",
+                                                "type": "textarea",
+                                                "instructions": "One-line description shown under the title.",
+                                                "required": 0,
+                                                "rows": 2
+                                            },
+                                            {
+                                                "key": "field_recnav_url",
+                                                "label": "URL",
+                                                "name": "url",
+                                                "type": "link",
+                                                "instructions": "",
+                                                "required": 1,
+                                                "return_format": "array"
+                                            },
+                                            {
+                                                "key": "field_recnav_icon",
+                                                "label": "Icon",
+                                                "name": "icon",
+                                                "type": "image",
+                                                "instructions": "Optional line icon for this link.",
+                                                "required": 0,
+                                                "return_format": "array",
+                                                "preview_size": "medium"
+                                            }
+                                        ],
+                                        "button_label": "Add Link"
+                                    }
+                                ],
+                                "button_label": "Add Column"
+                            },
+                            {
+                                "key": "field_recnav_view_all_link",
+                                "label": "View All Link",
+                                "name": "view_all_link",
+                                "type": "link",
+                                "instructions": "Target for the \u201cVIEW ALL\u201d button under the grid.",
+                                "required": 0,
+                                "return_format": "array"
+                            },
+                            {
+                                "key": "field_recnav_right_slot",
+                                "label": "Right Slot",
+                                "name": "right_slot",
+                                "type": "flexible_content",
+                                "instructions": "Flexible widget shown in the panel's right column for this tab. Leave empty to omit the right column entirely for this tab.",
+                                "layouts": {
+                                    "widget_list": {
+                                        "key": "field_recnav_right_slot_widget_list",
+                                        "name": "widget_list",
+                                        "label": "Widget List",
+                                        "display": "block",
+                                        "sub_fields": [
+                                            {
+                                                "key": "field_recnav_heading",
+                                                "label": "Heading",
+                                                "name": "heading",
+                                                "type": "text",
+                                                "instructions": "",
+                                                "required": 1
+                                            },
+                                            {
+                                                "key": "field_recnav_items",
+                                                "label": "Items",
+                                                "name": "items",
+                                                "type": "repeater",
+                                                "instructions": "",
+                                                "min": 1,
+                                                "max": 6,
+                                                "layout": "block",
+                                                "sub_fields": [
+                                                    {
+                                                        "key": "field_recnav_title",
+                                                        "label": "Title",
+                                                        "name": "title",
+                                                        "type": "text",
+                                                        "instructions": "",
+                                                        "required": 1
+                                                    },
+                                                    {
+                                                        "key": "field_recnav_description",
+                                                        "label": "Description",
+                                                        "name": "description",
+                                                        "type": "textarea",
+                                                        "instructions": "",
+                                                        "required": 0,
+                                                        "rows": 2
+                                                    }
+                                                ],
+                                                "button_label": "Add Item"
+                                            }
+                                        ]
+                                    },
+                                    "tag_cloud": {
+                                        "key": "field_recnav_right_slot_tag_cloud",
+                                        "name": "tag_cloud",
+                                        "label": "Tag Cloud",
+                                        "display": "block",
+                                        "sub_fields": [
+                                            {
+                                                "key": "field_recnav_heading",
+                                                "label": "Heading",
+                                                "name": "heading",
+                                                "type": "text",
+                                                "instructions": "",
+                                                "required": 1
+                                            },
+                                            {
+                                                "key": "field_recnav_subheading",
+                                                "label": "Subheading",
+                                                "name": "subheading",
+                                                "type": "text",
+                                                "instructions": "",
+                                                "required": 0
+                                            },
+                                            {
+                                                "key": "field_recnav_tags",
+                                                "label": "Tags",
+                                                "name": "tags",
+                                                "type": "repeater",
+                                                "instructions": "",
+                                                "min": 1,
+                                                "max": 20,
+                                                "layout": "table",
+                                                "sub_fields": [
+                                                    {
+                                                        "key": "field_recnav_label",
+                                                        "label": "Label",
+                                                        "name": "label",
+                                                        "type": "text",
+                                                        "instructions": "",
+                                                        "required": 1
+                                                    }
+                                                ],
+                                                "button_label": "Add Tag"
+                                            }
+                                        ]
+                                    },
+                                    "promo_box": {
+                                        "key": "field_recnav_right_slot_promo_box",
+                                        "name": "promo_box",
+                                        "label": "Promo Box",
+                                        "display": "block",
+                                        "sub_fields": [
+                                            {
+                                                "key": "field_recnav_heading",
+                                                "label": "Heading",
+                                                "name": "heading",
+                                                "type": "text",
+                                                "instructions": "",
+                                                "required": 1
+                                            },
+                                            {
+                                                "key": "field_recnav_highlighted_word",
+                                                "label": "Highlighted Word",
+                                                "name": "highlighted_word",
+                                                "type": "text",
+                                                "instructions": "Optional word/phrase to visually emphasize within the heading or body.",
+                                                "required": 0
+                                            },
+                                            {
+                                                "key": "field_recnav_body",
+                                                "label": "Body",
+                                                "name": "body",
+                                                "type": "textarea",
+                                                "instructions": "",
+                                                "required": 1,
+                                                "rows": 2
+                                            },
+                                            {
+                                                "key": "field_recnav_show_phone_icon",
+                                                "label": "Show Phone Icon",
+                                                "name": "show_phone_icon",
+                                                "type": "true_false",
+                                                "instructions": "",
+                                                "ui": 1
+                                            },
+                                            {
+                                                "key": "field_recnav_cta",
+                                                "label": "Call To Action",
+                                                "name": "cta",
+                                                "type": "link",
+                                                "instructions": "",
+                                                "required": 1,
+                                                "return_format": "array"
+                                            }
+                                        ]
+                                    },
+                                    "banner_image": {
+                                        "key": "field_recnav_right_slot_banner_image",
+                                        "name": "banner_image",
+                                        "label": "Banner Image",
+                                        "display": "block",
+                                        "sub_fields": [
+                                            {
+                                                "key": "field_recnav_image",
+                                                "label": "Image",
+                                                "name": "image",
+                                                "type": "image",
+                                                "instructions": "",
+                                                "required": 1,
+                                                "return_format": "array",
+                                                "preview_size": "medium"
+                                            },
+                                            {
+                                                "key": "field_recnav_link",
+                                                "label": "Link",
+                                                "name": "link",
+                                                "type": "link",
+                                                "instructions": "",
+                                                "required": 0,
+                                                "return_format": "array"
+                                            }
+                                        ]
+                                    }
+                                },
+                                "min": 0,
+                                "max": 1,
+                                "button_label": "Add Right Slot Widget"
+                            }
+                        ],
+                        "button_label": "Add Tab"
+                    },
+                    {
+                        "key": "field_recnav_quick_tech_icons",
+                        "label": "Quick Technology Icons",
+                        "name": "quick_tech_icons",
+                        "type": "repeater",
+                        "instructions": "Shown once for this top-level item (not per tab) \u2014 e.g. a row of tech/brand logos under the rail. Optional; leave empty if not needed. (Architecture note: kept as a sibling of `tabs`, not nested inside it, since it's meant to persist across tab switches rather than vary per tab.)",
+                        "min": 0,
+                        "max": 16,
+                        "layout": "table",
+                        "sub_fields": [
+                            {
+                                "key": "field_recnav_icon",
+                                "label": "Icon / Logo",
+                                "name": "icon",
+                                "type": "image",
+                                "instructions": "",
+                                "required": 1,
+                                "return_format": "array",
+                                "preview_size": "medium"
+                            },
+                            {
+                                "key": "field_recnav_link",
+                                "label": "Link",
+                                "name": "link",
+                                "type": "link",
+                                "instructions": "",
+                                "required": 1,
+                                "return_format": "array"
+                            }
+                        ],
+                        "button_label": "Add Icon"
+                    }
+                ],
+                "button_label": "Add Navigation Item"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-site-navigation"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "show_in_rest": 0,
+        "modified": 1790431647,
+        "show_in_graphql": 1,
+        "graphql_field_name": "siteNavigation",
+        "map_graphql_types_from_location_rules": 0
+    }
+]
