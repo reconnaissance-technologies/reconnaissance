@@ -19,11 +19,18 @@ import { SiteNavigation } from "./types";
  *     grouping to demonstrate the tab pattern — confirm with the team or
  *     replace with the real categories, since it's now also live in
  *     wp-admin, not just here).
- *   - The one-line descriptions under each link (the live dropdown has no
- *     descriptions; these are placeholder copy for layout purposes).
  *   - The right-column widgets (promo box copy reuses the real "Book a
  *     discovery call" CTA already on the site; the Resources tag list is
  *     illustrative only).
+ *
+ * The Services links' one-line descriptions are NOT placeholder, despite
+ * an earlier note here claiming otherwise: they're verbatim matches for
+ * each service's real hero subhead on its own /services/[slug]/ page
+ * (confirmed 2026-09-26 while building that template — see
+ * seed-services.ts). The old Elementor dropdown itself never showed
+ * descriptions, which is likely why that assumption was made, but the
+ * text isn't invented — it's just sourced from a different part of the
+ * live site than the dropdown that used to hold these links.
  */
 export const siteNavigation: SiteNavigation = {
   items: [
