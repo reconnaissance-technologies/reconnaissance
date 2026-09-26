@@ -14,7 +14,7 @@
                 "layout": "block",
                 "sub_fields": [
                     {
-                        "key": "field_recnav_label",
+                        "key": "field_recnav_nav_items_label",
                         "label": "Label",
                         "name": "label",
                         "type": "text",
@@ -22,7 +22,7 @@
                         "required": 1
                     },
                     {
-                        "key": "field_recnav_link",
+                        "key": "field_recnav_nav_items_link",
                         "label": "Link",
                         "name": "link",
                         "type": "link",
@@ -31,7 +31,7 @@
                         "return_format": "array"
                     },
                     {
-                        "key": "field_recnav_tabs",
+                        "key": "field_recnav_nav_items_tabs",
                         "label": "Tabs",
                         "name": "tabs",
                         "type": "repeater",
@@ -41,7 +41,7 @@
                         "layout": "block",
                         "sub_fields": [
                             {
-                                "key": "field_recnav_tab_label",
+                                "key": "field_recnav_nav_items_tabs_tab_label",
                                 "label": "Tab Label",
                                 "name": "tab_label",
                                 "type": "text",
@@ -49,7 +49,7 @@
                                 "required": 1
                             },
                             {
-                                "key": "field_recnav_tab_icon",
+                                "key": "field_recnav_nav_items_tabs_tab_icon",
                                 "label": "Tab Icon",
                                 "name": "tab_icon",
                                 "type": "image",
@@ -59,7 +59,7 @@
                                 "preview_size": "medium"
                             },
                             {
-                                "key": "field_recnav_columns",
+                                "key": "field_recnav_nav_items_tabs_columns",
                                 "label": "Columns",
                                 "name": "columns",
                                 "type": "repeater",
@@ -69,7 +69,7 @@
                                 "layout": "block",
                                 "sub_fields": [
                                     {
-                                        "key": "field_recnav_links",
+                                        "key": "field_recnav_nav_items_tabs_columns_links",
                                         "label": "Links",
                                         "name": "links",
                                         "type": "repeater",
@@ -79,7 +79,7 @@
                                         "layout": "block",
                                         "sub_fields": [
                                             {
-                                                "key": "field_recnav_title",
+                                                "key": "field_recnav_nav_items_tabs_columns_links_title",
                                                 "label": "Title",
                                                 "name": "title",
                                                 "type": "text",
@@ -87,7 +87,7 @@
                                                 "required": 1
                                             },
                                             {
-                                                "key": "field_recnav_description",
+                                                "key": "field_recnav_nav_items_tabs_columns_links_description",
                                                 "label": "Description",
                                                 "name": "description",
                                                 "type": "textarea",
@@ -96,7 +96,7 @@
                                                 "rows": 2
                                             },
                                             {
-                                                "key": "field_recnav_url",
+                                                "key": "field_recnav_nav_items_tabs_columns_links_url",
                                                 "label": "URL",
                                                 "name": "url",
                                                 "type": "link",
@@ -105,7 +105,7 @@
                                                 "return_format": "array"
                                             },
                                             {
-                                                "key": "field_recnav_icon",
+                                                "key": "field_recnav_nav_items_tabs_columns_links_icon",
                                                 "label": "Icon",
                                                 "name": "icon",
                                                 "type": "image",
@@ -121,7 +121,7 @@
                                 "button_label": "Add Column"
                             },
                             {
-                                "key": "field_recnav_view_all_link",
+                                "key": "field_recnav_nav_items_tabs_view_all_link",
                                 "label": "View All Link",
                                 "name": "view_all_link",
                                 "type": "link",
@@ -130,20 +130,20 @@
                                 "return_format": "array"
                             },
                             {
-                                "key": "field_recnav_right_slot",
+                                "key": "field_recnav_nav_items_tabs_right_slot",
                                 "label": "Right Slot",
                                 "name": "right_slot",
                                 "type": "flexible_content",
                                 "instructions": "Flexible widget shown in the panel's right column for this tab. Leave empty to omit the right column entirely for this tab.",
                                 "layouts": {
                                     "widget_list": {
-                                        "key": "field_recnav_right_slot_widget_list",
+                                        "key": "field_recnav_nav_items_tabs_right_slot_widget_list",
                                         "name": "widget_list",
                                         "label": "Widget List",
                                         "display": "block",
                                         "sub_fields": [
                                             {
-                                                "key": "field_recnav_heading",
+                                                "key": "field_recnav_nav_items_tabs_right_slot_widget_list_heading",
                                                 "label": "Heading",
                                                 "name": "heading",
                                                 "type": "text",
@@ -151,7 +151,7 @@
                                                 "required": 1
                                             },
                                             {
-                                                "key": "field_recnav_items",
+                                                "key": "field_recnav_nav_items_tabs_right_slot_widget_list_items",
                                                 "label": "Items",
                                                 "name": "items",
                                                 "type": "repeater",
@@ -161,7 +161,7 @@
                                                 "layout": "block",
                                                 "sub_fields": [
                                                     {
-                                                        "key": "field_recnav_title",
+                                                        "key": "field_recnav_nav_items_tabs_right_slot_widget_list_items_title",
                                                         "label": "Title",
                                                         "name": "title",
                                                         "type": "text",
@@ -169,7 +169,7 @@
                                                         "required": 1
                                                     },
                                                     {
-                                                        "key": "field_recnav_description",
+                                                        "key": "field_recnav_nav_items_tabs_right_slot_widget_list_items_description",
                                                         "label": "Description",
                                                         "name": "description",
                                                         "type": "textarea",
@@ -183,13 +183,13 @@
                                         ]
                                     },
                                     "tag_cloud": {
-                                        "key": "field_recnav_right_slot_tag_cloud",
+                                        "key": "field_recnav_nav_items_tabs_right_slot_tag_cloud",
                                         "name": "tag_cloud",
                                         "label": "Tag Cloud",
                                         "display": "block",
                                         "sub_fields": [
                                             {
-                                                "key": "field_recnav_heading",
+                                                "key": "field_recnav_nav_items_tabs_right_slot_tag_cloud_heading",
                                                 "label": "Heading",
                                                 "name": "heading",
                                                 "type": "text",
@@ -197,7 +197,7 @@
                                                 "required": 1
                                             },
                                             {
-                                                "key": "field_recnav_subheading",
+                                                "key": "field_recnav_nav_items_tabs_right_slot_tag_cloud_subheading",
                                                 "label": "Subheading",
                                                 "name": "subheading",
                                                 "type": "text",
@@ -205,7 +205,7 @@
                                                 "required": 0
                                             },
                                             {
-                                                "key": "field_recnav_tags",
+                                                "key": "field_recnav_nav_items_tabs_right_slot_tag_cloud_tags",
                                                 "label": "Tags",
                                                 "name": "tags",
                                                 "type": "repeater",
@@ -215,7 +215,7 @@
                                                 "layout": "table",
                                                 "sub_fields": [
                                                     {
-                                                        "key": "field_recnav_label",
+                                                        "key": "field_recnav_nav_items_tabs_right_slot_tag_cloud_tags_label",
                                                         "label": "Label",
                                                         "name": "label",
                                                         "type": "text",
@@ -228,13 +228,13 @@
                                         ]
                                     },
                                     "promo_box": {
-                                        "key": "field_recnav_right_slot_promo_box",
+                                        "key": "field_recnav_nav_items_tabs_right_slot_promo_box",
                                         "name": "promo_box",
                                         "label": "Promo Box",
                                         "display": "block",
                                         "sub_fields": [
                                             {
-                                                "key": "field_recnav_heading",
+                                                "key": "field_recnav_nav_items_tabs_right_slot_promo_box_heading",
                                                 "label": "Heading",
                                                 "name": "heading",
                                                 "type": "text",
@@ -242,7 +242,7 @@
                                                 "required": 1
                                             },
                                             {
-                                                "key": "field_recnav_highlighted_word",
+                                                "key": "field_recnav_nav_items_tabs_right_slot_promo_box_highlighted_word",
                                                 "label": "Highlighted Word",
                                                 "name": "highlighted_word",
                                                 "type": "text",
@@ -250,7 +250,7 @@
                                                 "required": 0
                                             },
                                             {
-                                                "key": "field_recnav_body",
+                                                "key": "field_recnav_nav_items_tabs_right_slot_promo_box_body",
                                                 "label": "Body",
                                                 "name": "body",
                                                 "type": "textarea",
@@ -259,7 +259,7 @@
                                                 "rows": 2
                                             },
                                             {
-                                                "key": "field_recnav_show_phone_icon",
+                                                "key": "field_recnav_nav_items_tabs_right_slot_promo_box_show_phone_icon",
                                                 "label": "Show Phone Icon",
                                                 "name": "show_phone_icon",
                                                 "type": "true_false",
@@ -267,7 +267,7 @@
                                                 "ui": 1
                                             },
                                             {
-                                                "key": "field_recnav_cta",
+                                                "key": "field_recnav_nav_items_tabs_right_slot_promo_box_cta",
                                                 "label": "Call To Action",
                                                 "name": "cta",
                                                 "type": "link",
@@ -278,13 +278,13 @@
                                         ]
                                     },
                                     "banner_image": {
-                                        "key": "field_recnav_right_slot_banner_image",
+                                        "key": "field_recnav_nav_items_tabs_right_slot_banner_image",
                                         "name": "banner_image",
                                         "label": "Banner Image",
                                         "display": "block",
                                         "sub_fields": [
                                             {
-                                                "key": "field_recnav_image",
+                                                "key": "field_recnav_nav_items_tabs_right_slot_banner_image_image",
                                                 "label": "Image",
                                                 "name": "image",
                                                 "type": "image",
@@ -294,7 +294,7 @@
                                                 "preview_size": "medium"
                                             },
                                             {
-                                                "key": "field_recnav_link",
+                                                "key": "field_recnav_nav_items_tabs_right_slot_banner_image_link",
                                                 "label": "Link",
                                                 "name": "link",
                                                 "type": "link",
@@ -313,7 +313,7 @@
                         "button_label": "Add Tab"
                     },
                     {
-                        "key": "field_recnav_quick_tech_icons",
+                        "key": "field_recnav_nav_items_quick_tech_icons",
                         "label": "Quick Technology Icons",
                         "name": "quick_tech_icons",
                         "type": "repeater",
@@ -323,7 +323,7 @@
                         "layout": "table",
                         "sub_fields": [
                             {
-                                "key": "field_recnav_icon",
+                                "key": "field_recnav_nav_items_quick_tech_icons_icon",
                                 "label": "Icon / Logo",
                                 "name": "icon",
                                 "type": "image",
@@ -333,7 +333,7 @@
                                 "preview_size": "medium"
                             },
                             {
-                                "key": "field_recnav_link",
+                                "key": "field_recnav_nav_items_quick_tech_icons_link",
                                 "label": "Link",
                                 "name": "link",
                                 "type": "link",
@@ -367,7 +367,7 @@
         "show_in_rest": 0,
         "modified": 1790431647,
         "show_in_graphql": 1,
-        "graphql_field_name": "siteNavigation",
+        "graphql_field_name": "navigationFields",
         "map_graphql_types_from_location_rules": 0
     }
 ]
